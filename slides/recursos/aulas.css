@@ -1,0 +1,212 @@
+/*
+ * Componentes das aulas refeitas (novembro de 2026): contexto, plano, trilha de
+ * exercícios, ficha de exercício e prints anotados. A ideia é que todo slide
+ * diga onde a turma está, o que está usando e o que vem depois.
+ */
+
+/* Frase de contexto logo abaixo do título (como nos slides da CDAD). */
+.reveal .sub {
+  font-size: 0.6em;
+  color: var(--texto-fraco);
+  line-height: 1.45;
+  margin: -0.35rem 0 0.75rem;
+  max-width: 46em;
+}
+
+/* --------------------------------------------------------- plano da aula */
+.plano { display: grid; grid-template-columns: 6.2em 1fr; gap: 0.55rem 1rem; font-size: 0.7em; align-items: center; }
+.plano .t {
+  font-weight: 700; color: #fff; background: var(--texto-fraco); border-radius: 4px;
+  text-align: center; padding: 0.42rem 0.3rem; font-variant-numeric: tabular-nums; font-size: 0.9em;
+}
+.plano .t.ex { background: var(--laranja); }
+.plano .t.fala { background: var(--azul); }
+:root[data-tema="escuro"] .plano .t.fala { background: #3f4f59; }
+.plano .t.quiz { background: var(--turquesa); }
+.plano b { display: block; font-size: 1.02em; }
+.plano span.d { color: var(--texto-fraco); font-size: 0.92em; }
+
+/* ------------------------------------------------- trilha dos exercícios */
+.trilha { display: flex; align-items: stretch; gap: 0.35rem; font-size: 0.5em; margin: 0.3rem 0 0.8rem; }
+.trilha .no {
+  flex: 1; border: 1.5px solid var(--superficie-borda); border-radius: 8px; padding: 0.4rem 0.45rem;
+  background: var(--fundo); line-height: 1.25; position: relative;
+}
+.trilha .no .n { display: block; font-weight: 800; font-size: 1.25em; color: var(--texto-fraco); }
+.trilha .no.feito { opacity: 0.45; }
+.trilha .no.atual { border-color: var(--laranja); background: var(--superficie); box-shadow: 0 0 0 2px var(--laranja) inset; }
+.trilha .no.atual .n { color: var(--laranja); }
+.trilha .no.base { border-style: dashed; text-align: center; display: flex; align-items: center; justify-content: center; font-weight: 700; flex: 0.7; }
+.trilha .dia { font-weight: 700; color: var(--texto-fraco); writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; font-size: 0.95em; }
+
+/* ------------------------------------------------------------ marcadores */
+.chip {
+  display: inline-block; font-size: 0.62em; font-weight: 700; border-radius: 999px;
+  padding: 0.12rem 0.6rem; margin-right: 0.3rem; vertical-align: middle; border: 1.5px solid currentColor;
+}
+.chip.web { color: var(--turquesa); }
+.chip.desktop { color: var(--roxo); }
+.chip.codex { color: var(--azul); }
+.chip.papel { color: var(--laranja); }
+.chip.tempo { color: var(--texto-fraco); }
+
+/* --------------------------------------------------- ficha do exercício */
+.reveal section.exercicio-capa h2 { border-bottom-color: var(--laranja) !important; }
+.ex-num { font-size: 0.5em; font-weight: 800; color: var(--laranja); display: block; margin-bottom: 0.15rem; }
+.ficha { display: grid; grid-template-columns: 7.2em 1fr; gap: 0.45rem 1rem; font-size: 0.66em; line-height: 1.4; }
+.ficha > .r { font-weight: 700; color: var(--texto-fraco); padding-top: 0.05rem; }
+.ficha > .v { border-left: 3px solid var(--superficie-borda); padding-left: 0.7rem; }
+.ficha > .v.entrega { border-left-color: var(--laranja); }
+.ficha ol, .ficha ul { margin: 0 0 0 1.1em; }
+.ficha li { margin-bottom: 0.12rem; }
+
+/* ------------------------------------------------------- print anotado */
+.print { position: relative; display: inline-block; max-width: 100%; line-height: 0; }
+.print img { border: 1px solid var(--superficie-borda); border-radius: 8px; max-height: 520px !important; }
+.print .alvo {
+  position: absolute; line-height: 1.2; border: 3px solid var(--marca); border-radius: 8px;
+  box-shadow: 0 0 0 9999px rgba(14, 23, 29, 0.0); pointer-events: none;
+}
+.print .alvo::after {
+  content: attr(data-n); position: absolute; top: -0.9em; left: -0.9em; width: 1.5em; height: 1.5em;
+  background: var(--marca); color: #fff; border-radius: 50%; font: 700 0.5em/1.5em Inter, sans-serif; text-align: center;
+}
+.print-lado { display: grid; grid-template-columns: 1.55fr 1fr; gap: 1.2rem; align-items: start; }
+.print-lado .notas { font-size: 0.62em; line-height: 1.45; }
+.print-lado .notas ol { margin-left: 1.1em; }
+.print-lado .notas li { margin-bottom: 0.45rem; }
+.print-lado .notas li::marker { color: var(--marca); font-weight: 800; }
+
+/* Gráficos gerados em SVG com fundo transparente: no escuro, inverte. */
+.reveal img.grafico { border: none; }
+:root[data-tema="escuro"] .reveal img.grafico { filter: invert(1) hue-rotate(180deg); }
+
+/* Tabela "pergunta → gráfico" */
+.reveal table.guia td:first-child { font-weight: 650; white-space: nowrap; }
+
+/* Cartões simples de três ou quatro colunas */
+.cartoes-n { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); gap: 0.8rem; font-size: 0.64em; line-height: 1.4; }
+.cartoes-n > div { background: var(--superficie); border-top: 4px solid var(--regua); border-radius: 0 0 8px 8px; padding: 0.6rem 0.75rem; }
+.cartoes-n > div > b:first-child { display: block; font-size: 1.1em; margin-bottom: 0.2rem; }
+.cartoes-n > div.c1 { border-top-color: var(--turquesa); }
+.cartoes-n > div.c2 { border-top-color: var(--laranja); }
+.cartoes-n > div.c3 { border-top-color: var(--roxo); }
+.cartoes-n > div.c4 { border-top-color: var(--marca); }
+
+/* Número grande com legenda */
+.numerao { font-family: "GT Ultra Fine", Georgia, serif; font-size: 2.2em; line-height: 1; color: var(--titulo); }
+.numerao small, .numerao .small { display: block; font-family: Inter, sans-serif; font-size: 0.26em; color: var(--texto-fraco); margin-top: 0.3rem; line-height: 1.35; }
+
+/* O Pandoc embrulha spans num <p>: o parágrafo some do layout e os itens viram filhos diretos. */
+.trilha > p, .plano > p, .ficha > p { display: contents; }
+
+
+/* ajustes depois da primeira revisão das capturas */
+.trilha { font-size: 0.6em; }
+.trilha .no { padding: 0.55rem 0.5rem; min-height: 4.6em; }
+.ficha { font-size: 0.76em; gap: 0.6rem 1.1rem; }
+.cartoes-n { font-size: 0.72em; }
+.cartoes-n > div > p:first-child > strong:first-child { display: block; font-size: 1.08em; margin-bottom: 0.25rem; }
+.print-lado { grid-template-columns: 1.9fr 1fr; }
+.print-lado .notas { font-size: 0.66em; }
+
+/* barras horizontais simples (concordância etc.) */
+.barras-h { font-size: 0.58em; display: grid; gap: 0.32rem; margin: 0.3rem 0 0.7rem; }
+.barras-h > p { display: contents; }
+.barras-h > p > span, .barras-h > span { display: grid; grid-template-columns: 15em 1fr 4em; align-items: center; gap: 0.7rem; }
+.barras-h .rot { text-align: right; color: var(--texto-fraco); }
+.barras-h .trilho { background: var(--superficie); height: 1.05em; border-radius: 3px; position: relative; overflow: hidden; }
+.barras-h .b { position: absolute; left: 0; top: 0; bottom: 0; width: calc(var(--v) * 1%); background: var(--turquesa); border-radius: 3px; }
+.barras-h .b.alerta { background: var(--laranja); }
+.barras-h .val { font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* grifo que acende com data-marca */
+.grifo-p { transition: background 0.3s; border-radius: 3px; padding: 0 0.1em; }
+.grifo-p.marcado { background: var(--grifo); }
+
+/* Print anotado: a caixa tem exatamente o tamanho da imagem. Antes, a coluna da
+   grade esticava a caixa e o reveal punha margem na imagem, e as marcações (em %)
+   saíam do lugar em telas largas. */
+.reveal .print { display: block; width: fit-content; max-width: 100%; justify-self: start; align-self: start; }
+.reveal .print > p { margin: 0 !important; line-height: 0; }
+.reveal .print img { display: block; margin: 0 !important; max-width: 100%; height: auto; max-height: 560px !important; }
+.reveal .print-lado { grid-template-columns: fit-content(64%) minmax(0, 1fr); gap: 2rem; }
+
+/* Fontes maiores (revisão de 3/11): tudo o que é texto corrido sobe um degrau. */
+.reveal .sub { font-size: 0.7em; max-width: 52em; }
+.reveal .print-lado .notas { font-size: 0.78em; }
+.reveal .ficha { font-size: 0.84em; }
+.reveal .cartoes-n { font-size: 0.8em; }
+.reveal .plano { font-size: 0.8em; }
+.reveal .miudo { font-size: 0.7em; }
+.reveal .caixa { font-size: 0.8em; }
+.reveal .colunas { font-size: 0.92em; }
+.reveal table { font-size: 0.8em; }
+
+/* Diagrama "mesma pergunta, três vezes" */
+.repete { display: grid; grid-template-columns: 9.5em 2.2em 9em 2.2em 1fr; align-items: center; gap: 0.5rem 0.4rem; font-size: 0.74em; margin-top: 0.4rem; }
+.repete > p { display: contents; }
+.repete .rotulo-linha { grid-column: 1 / -1; font-weight: 700; color: var(--texto-fraco); margin-top: 0.6rem; font-size: 0.9em; }
+.repete .caixinha { border: 2px solid var(--superficie-borda); border-radius: 10px; padding: 0.55rem 0.6rem; text-align: center; background: var(--superficie); line-height: 1.25; }
+.repete .caixinha.modelo { border-color: var(--roxo); }
+.repete .caixinha.script { border-color: var(--turquesa); font-family: "JetBrains Mono", Consolas, monospace; font-size: 0.85em; }
+.repete .seta { text-align: center; font-size: 1.4em; color: var(--texto-fraco); }
+.repete .saidas { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.repete .saida { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.55em; border-radius: 8px; padding: 0.15rem 0.6rem; background: var(--superficie); }
+.repete .saida.varia { border: 2px dashed var(--laranja); }
+.repete .saida.fixa { border: 2px solid var(--turquesa); }
+
+/* gráficos maiores e notas laterais com respiro */
+.reveal img.grafico { width: 100%; height: auto; max-height: 470px; }
+.colunas > div > div[data-p] + div[data-p] { margin-top: 0.6rem; }
+.colunas > div.pequeno { font-size: 0.74em; line-height: 1.42; }
+
+/* Blocos de código escritos à mão (pre.cod): uma regra genérica de pre deixava fundo e texto brancos. */
+.reveal pre.cod { background: var(--codigo-fundo) !important; color: var(--codigo-texto) !important; font-size: 0.72em; }
+
+/* ---------------------------------------------------------- tour dos apps */
+/* Janela desenhada em HTML: barra lateral, seletor de modo, área de trabalho e
+   caixa de pedido. As áreas com .alvo acendem passo a passo (data-p). */
+.tour { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 1.6rem; align-items: start; }
+.mock { position: relative; border: 1.5px solid var(--superficie-borda); border-radius: 12px; overflow: hidden;
+  background: var(--fundo); font-family: Inter, sans-serif; font-size: 0.5em; line-height: 1.3; aspect-ratio: 16 / 11;
+  display: grid; grid-template-columns: 22% 1fr; grid-template-rows: 2.6em 1fr; box-shadow: 0 8px 30px rgba(0,0,0,.12); }
+.mock .barra { grid-column: 1 / -1; display: flex; align-items: center; gap: .6em; padding: 0 .9em; border-bottom: 1px solid var(--superficie-borda); background: var(--superficie); }
+.mock .barra .bolinhas { display: flex; gap: .35em; } .mock .barra .bolinhas i { width: .8em; height: .8em; border-radius: 50%; background: var(--superficie-borda); display: block; }
+.mock .barra .app-nome { font-weight: 700; margin-left: .5em; }
+.mock .modos { display: inline-flex; border: 1px solid var(--superficie-borda); border-radius: 999px; padding: .15em; margin-left: auto; margin-right: auto; }
+.mock .modos span { padding: .25em .9em; border-radius: 999px; } .mock .modos span.on { background: var(--titulo); color: var(--fundo); font-weight: 700; }
+.mock .lado { border-right: 1px solid var(--superficie-borda); padding: .8em .7em; display: flex; flex-direction: column; gap: .45em; background: var(--superficie); }
+.mock .lado b { font-size: .95em; color: var(--texto-fraco); margin-top: .4em; } .mock .lado span { padding: .2em .4em; border-radius: 6px; }
+.mock .lado span.on { background: var(--fundo); font-weight: 700; }
+.mock .area { padding: 1em 1.2em; display: flex; flex-direction: column; gap: .7em; min-width: 0; }
+.mock .bolha { align-self: flex-end; max-width: 75%; background: var(--superficie); border-radius: 10px; padding: .5em .8em; }
+.mock .passos { border-left: 2px solid var(--superficie-borda); padding-left: .7em; color: var(--texto-fraco); display: flex; flex-direction: column; gap: .25em; }
+.mock .passos .ok::before { content: "✓ "; color: var(--turquesa); font-weight: 700; }
+.mock .aviso { border: 1.5px solid var(--laranja); border-radius: 8px; padding: .45em .7em; display: flex; justify-content: space-between; gap: .6em; align-items: center; }
+.mock .aviso .bt { background: var(--titulo); color: var(--fundo); border-radius: 6px; padding: .15em .6em; font-weight: 700; white-space: nowrap; }
+.mock .caixa-pedido { margin-top: auto; border: 1.5px solid var(--superficie-borda); border-radius: 12px; padding: .6em .8em; display: flex; flex-direction: column; gap: .5em; }
+.mock .caixa-pedido .linha { display: flex; gap: .5em; align-items: center; flex-wrap: wrap; color: var(--texto-fraco); }
+.mock .pilula { border: 1px solid var(--superficie-borda); border-radius: 999px; padding: .1em .6em; white-space: nowrap; }
+.mock .pilula.forte { border-color: var(--titulo); color: var(--titulo); font-weight: 700; }
+.mock .direita { margin-left: auto; }
+.mock .alvo { position: absolute; border: 3px solid var(--marca); border-radius: 8px; pointer-events: none; }
+.mock .alvo::after { content: attr(data-n); position: absolute; top: -.9em; left: -.9em; width: 1.7em; height: 1.7em; background: var(--marca);
+  color: #fff; border-radius: 50%; font: 700 1.25em/1.7em Inter, sans-serif; text-align: center; }
+.tour .notas { font-size: 0.72em; line-height: 1.42; }
+.tour .notas ol { margin-left: 1.1em; } .tour .notas li { margin-bottom: .42rem; } .tour .notas li::marker { color: var(--marca); font-weight: 800; }
+.tour .fonte-tour { font-size: .8em; color: var(--texto-fraco); margin-top: .6rem; }
+
+/* ---------------------------------------- elementos inspirados nos slides de terça */
+/* rótulo com fio vermelho embaixo, palavra-chave do título em vermelho, cartões de número */
+.reveal .destaque { color: var(--marca); }
+.cartoes-num { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); gap: 1.4rem; margin-top: .6rem; }
+.cartoes-num > div { border-top: 1.5px solid var(--titulo); padding-top: .5rem; font-size: .7em; line-height: 1.35; }
+.cartoes-num .rot { font-family: "GT Ultra Fine", Georgia, serif; font-weight: 700; display: block; }
+.cartoes-num .num { font-family: "GT Ultra Fine", Georgia, serif; font-size: 2.1em; color: var(--marca); display: block; line-height: 1.1; margin: .15rem 0; }
+.cartoes-num > p { display: contents; }
+/* anel de destaque dentro do próprio elemento: acompanha o layout em qualquer tela */
+.mock .r { position: relative; }
+.mock .anel { position: absolute; inset: -5px; border: 3px solid var(--marca); border-radius: 10px; pointer-events: none; z-index: 2; }
+.mock .anel::after { content: attr(data-n); position: absolute; top: -1.05em; left: -1.05em; width: 1.7em; height: 1.7em; background: var(--marca);
+  color: #fff; border-radius: 50%; font: 700 1.2em/1.7em Inter, sans-serif; text-align: center; }

@@ -1,0 +1,74 @@
+/* Quiz ao vivo, celular. Fundo azul da Educação Executiva Insper e quatro
+   cores de botão, cada uma com uma forma, para quem não distingue cores. */
+:root {
+  --fundo: #0e171d;
+  --superficie: #17242c;
+  --borda: #2c3a43;
+  --texto: #ffffff;
+  --fraco: #b9c3ca;
+  --marca: #ff5a5a;
+  --c0: #e50505;
+  --c1: #1d6fd6;
+  --c2: #d59a00;
+  --c3: #1d9a6c;
+  --ok: #3acc9f;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--fundo); color: var(--texto); }
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px; line-height: 1.4; -webkit-text-size-adjust: 100%;
+  max-width: 560px; margin: 0 auto; padding: 0 16px calc(24px + env(safe-area-inset-bottom));
+  min-height: 100vh;
+}
+header.topo {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 14px 0 10px; border-bottom: 3px solid var(--c0); margin-bottom: 18px;
+}
+header.topo b { font-weight: 800; letter-spacing: .02em; }
+#conexao { font-size: 13px; color: var(--fraco); }
+#conexao.ruim { color: var(--marca); }
+h1 { font-size: 24px; line-height: 1.2; margin: 6px 0 14px; font-weight: 800; }
+.fraco { color: var(--fraco); }
+.centro { text-align: center; }
+.campo {
+  width: 100%; font: inherit; font-size: 20px; padding: 14px; border-radius: 12px;
+  border: 2px solid var(--borda); background: var(--superficie); color: var(--texto); margin: 8px 0 12px;
+}
+.enviar {
+  width: 100%; font: inherit; font-weight: 800; font-size: 20px; padding: 14px; border: 0;
+  border-radius: 12px; background: var(--c0); color: #fff; cursor: pointer;
+}
+.trocar { margin-top: 28px; background: none; border: 0; color: var(--fraco); text-decoration: underline; font: inherit; font-size: 14px; }
+.espera { text-align: center; padding: 30px 0 10px; }
+.ponto {
+  width: 18px; height: 18px; border-radius: 50%; background: var(--ok); margin: 0 auto 18px;
+  animation: pulsa 1.4s ease-in-out infinite;
+}
+@keyframes pulsa { 0%, 100% { transform: scale(.7); opacity: .5; } 50% { transform: scale(1.15); opacity: 1; } }
+.tempo { height: 10px; background: var(--superficie); border-radius: 5px; overflow: hidden; margin: 0 0 16px; }
+.tempo i { display: block; height: 100%; width: 100%; background: var(--ok); transition: width .1s linear; }
+.botoes { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.botao, .escolhida {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 76px; padding: 14px 16px;
+  border: 0; border-radius: 14px; color: #fff; font: inherit; font-weight: 600; font-size: 18px;
+  text-align: left; cursor: pointer; box-shadow: 0 4px 0 rgba(0,0,0,.35);
+}
+.botao:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.35); }
+.forma { font-size: 28px; line-height: 1; width: 30px; text-align: center; flex: none; }
+.c0 { background: var(--c0); } .c1 { background: var(--c1); } .c2 { background: var(--c2); } .c3 { background: var(--c3); }
+.escolhida { cursor: default; margin: 10px 0 14px; animation: entra .3s ease-out; }
+@keyframes entra { from { transform: scale(.94); opacity: .4; } to { transform: none; opacity: 1; } }
+.resultado { border-radius: 16px; padding: 22px 18px; margin: 10px 0 16px; display: grid; gap: 8px; animation: entra .35s ease-out; }
+.resultado b { font-size: 26px; font-weight: 800; }
+.resultado.ok { background: var(--c3); }
+.resultado.erro { background: var(--c0); }
+.resultado.neutro { background: var(--superficie); }
+.meu-placar {
+  display: flex; justify-content: space-between; background: var(--superficie); border-radius: 12px;
+  padding: 14px 16px; font-weight: 800; font-size: 19px; margin-top: 8px;
+}
+.aviso {
+  position: fixed; left: 16px; right: 16px; bottom: 20px; background: var(--marca); color: #fff;
+  padding: 12px 14px; border-radius: 12px; font-weight: 600; z-index: 9;
+}

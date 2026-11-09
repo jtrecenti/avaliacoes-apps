@@ -1,0 +1,292 @@
+/*-- scss:defaults --*/
+
+// Tema dos slides de Marketing Analítico (Educação Executiva Insper).
+//
+// Mesma arquitetura dos slides de CDAD: as cores ficam em variáveis CSS, e não
+// em variáveis do Sass, para o deck trocar de claro para escuro no meio da
+// aula (tecla "d") sem recompilar. Aqui ficam só os valores que o revealjs
+// exige em Sass.
+//
+// Paleta: o manual de marca pede, para Educação Executiva, o azul 0E171D em
+// destaque e cinzas escuros, com o vermelho em presença reduzida. Por isso o
+// título é azul quase preto, o vermelho aparece só em detalhes (barra de
+// progresso, número da parte, um grifo ou outro) e o modo escuro é o próprio
+// azul da Educação Executiva.
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !default;
+$presentation-font-size-root: 31px !default;
+$presentation-heading-font: "GT Ultra Fine", Georgia, serif !default;
+$presentation-heading-font-weight: 700 !default;
+$presentation-line-height: 1.36 !default;
+
+$body-bg: #ffffff !default;
+$body-color: #0e171d !default;
+$link-color: #e50505 !default;
+$selection-bg: #3acc9f !default;
+$code-block-font-size: 0.68em !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --marca: #e50505;
+  --azul: #0e171d;
+  --turquesa: #1d7a5d;
+  --turquesa-claro: #3acc9f;
+  --roxo: #730d9f;
+  --laranja: #d57800;
+  --amarelo: #cca300;
+  --rosa: #cd2f9a;
+
+  --fundo: #ffffff;
+  --superficie: #f3f4f5;
+  --superficie-borda: #dcdcdc;
+  --regua: #c4c4c4;
+  --texto: #0e171d;
+  --texto-fraco: #3f3f3f;
+  --titulo: #0e171d;
+  --codigo-fundo: #f3f4f5;
+  --codigo-texto: #0e171d;
+  --grifo: #fff1a8;
+}
+
+:root[data-tema="escuro"] {
+  --marca: #ff5a5a;
+  --azul: #e9eef2;
+  --turquesa: #3acc9f;
+  --turquesa-claro: #8ae1c6;
+  --roxo: #cb84e9;
+  --laranja: #fdbe87;
+  --amarelo: #ffe086;
+  --rosa: #f4a6d7;
+
+  --fundo: #0e171d;
+  --superficie: #17242c;
+  --superficie-borda: #2c3a43;
+  --regua: #3f4f59;
+  --texto: #ffffff;
+  --texto-fraco: #dcdcdc;
+  --titulo: #ffffff;
+  --codigo-fundo: #131f26;
+  --codigo-texto: #eef2f4;
+  --grifo: #5b4a00;
+}
+
+/* ------------------------------------------------------------ estrutura */
+
+.reveal, .reveal .slides section { color: var(--texto); }
+body, .reveal-viewport { background: var(--fundo) !important; }
+.reveal .slides section { text-align: left; height: 100%; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: var(--titulo);
+  font-family: "GT Ultra Fine", Georgia, serif;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  margin: 0 0 0.35rem;
+}
+.reveal h2 { font-size: 1.36em; line-height: 1.18; }
+.reveal h3 { font-size: 0.95em; font-family: "Inter", sans-serif; font-weight: 600; margin-top: 0.1rem; }
+
+/* A parte da aula, acima do título: discreta e em caixa normal. */
+.reveal .slides section[data-parte]:not(.secao)::before {
+  content: attr(data-parte);
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.42em;
+  font-weight: 600;
+  color: var(--texto-fraco);
+  margin-bottom: 0.3rem;
+  border-left: 3px solid var(--marca);
+  padding-left: 0.45em;
+  line-height: 1.1;
+}
+
+
+.reveal .slides section:not(.secao):not(.capa) > h2 {
+  border-bottom: 1px solid var(--superficie-borda);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.reveal a { color: var(--marca); text-decoration: none; border-bottom: 1px solid currentColor; }
+.reveal strong { color: var(--texto); font-weight: 650; }
+.reveal ul, .reveal ol { margin-left: 1.05em; }
+.reveal li { margin-bottom: 0.28rem; }
+.reveal li::marker { color: var(--texto-fraco); }
+.reveal p { margin: 0 0 0.55rem; }
+.reveal p:last-child { margin-bottom: 0; }
+
+.miudo { font-size: 0.7em; color: var(--texto-fraco); line-height: 1.45; }
+.pequeno { font-size: 0.82em; }
+.destaque { color: var(--marca); font-weight: 650; }
+.grifado { background: var(--grifo); padding: 0 .12em; border-radius: 3px; }
+.centro { text-align: center; }
+
+/* Frase grande, quando o slide inteiro é uma ideia só. */
+.frase {
+  font-family: "GT Ultra Fine", Georgia, serif;
+  font-size: 1.55em;
+  line-height: 1.2;
+  max-width: 21em;
+}
+.frase em { font-style: normal; color: var(--marca); }
+
+.reveal blockquote {
+  background: none; box-shadow: none;
+  border-left: 3px solid var(--marca);
+  margin: 0.6rem 0; padding: 0.1rem 0 0.1rem 1rem;
+  font-style: normal; width: auto;
+}
+.reveal blockquote p { font-size: 0.95em; }
+
+/* -------------------------------------------------------------- caixas */
+/* Poucas e discretas: régua fina e fundo quase imperceptível.            */
+
+.caixa {
+  background: var(--superficie);
+  border-left: 3px solid var(--regua);
+  border-radius: 0 6px 6px 0;
+  padding: 0.5rem 0.9rem;
+  margin: 0.42rem 0;
+}
+.caixa > :first-child { margin-top: 0; }
+.caixa > :last-child { margin-bottom: 0; }
+.caixa.ideia { border-left-color: var(--turquesa); }
+.caixa.atencao { border-left-color: var(--marca); }
+.caixa.caso { border-left-color: var(--roxo); }
+.caixa.exercicio { border-left-color: var(--laranja); }
+
+.rotulo, .caixa .rotulo {
+  display: block;
+  font-size: 0.62em;
+  font-weight: 700;
+  color: var(--texto-fraco);
+  margin-bottom: 0.2rem;
+}
+.caixa.ideia .rotulo { color: var(--turquesa); }
+.caixa.atencao .rotulo { color: var(--marca); }
+.caixa.caso .rotulo { color: var(--roxo); }
+.caixa.exercicio .rotulo { color: var(--laranja); }
+
+/* -------------------------------------------------------------- colunas */
+
+.colunas { display: flex; gap: 1.5rem; align-items: flex-start; }
+.colunas > * { flex: 1; min-width: 0; }
+.colunas.meio { align-items: center; }
+.colunas.larga-esquerda > *:first-child { flex: 1.6; }
+.colunas.larga-direita > *:last-child { flex: 1.6; }
+
+/* --------------------------------------------------------------- código */
+
+.reveal pre { box-shadow: none; width: 100%; margin: 0.4rem 0; }
+.reveal pre code {
+  background: var(--codigo-fundo); color: var(--codigo-texto);
+  border: 1px solid var(--superficie-borda); border-radius: 6px;
+  padding: 0.6rem 0.85rem; max-height: none; line-height: 1.45;
+  font-family: "Cascadia Code", Consolas, ui-monospace, monospace;
+}
+.reveal code { color: var(--roxo); font-size: 0.9em; font-family: "Cascadia Code", Consolas, ui-monospace, monospace; }
+.reveal pre code span { color: inherit !important; }
+.reveal div.sourceCode, .reveal pre.sourceCode { background: var(--codigo-fundo) !important; border: none; }
+:root[data-tema="escuro"] .reveal pre code { color: var(--codigo-texto); }
+
+/* Prompt: o texto que o aluno digita no ChatGPT. Não é código. */
+.prompt {
+  font-family: "Inter", sans-serif;
+  background: var(--fundo);
+  border: 1.5px solid var(--superficie-borda);
+  border-radius: 14px;
+  padding: 0.55rem 0.9rem 0.6rem 0.9rem;
+  font-size: 0.72em;
+  line-height: 1.45;
+  position: relative;
+  margin: .5rem 0;
+}
+.prompt::before {
+  content: attr(data-quem);
+  display: block;
+  font-size: 0.78em;
+  font-weight: 700;
+  color: var(--texto-fraco);
+  margin-bottom: .15rem;
+}
+.prompt.resposta { background: var(--superficie); border-color: transparent; }
+
+/* --------------------------------------------------------------- tabelas */
+
+.reveal table { font-size: 0.72em; border-collapse: collapse; margin: 0.35rem 0; width: 100%; }
+.reveal table th {
+  background: none; color: var(--texto-fraco);
+  border-bottom: 1.5px solid var(--texto-fraco);
+  text-align: left; padding: 0.28rem 0.6rem; font-weight: 650;
+}
+.reveal table td { border-bottom: 1px solid var(--superficie-borda); padding: 0.32rem 0.6rem; color: var(--texto); }
+.reveal table tr:last-child td { border-bottom: none; }
+
+/* --------------------------------------------------------------- figuras */
+
+.reveal .slides img { max-height: 500px; max-width: 100%; height: auto; object-fit: contain; }
+.reveal .slides img.moldura { border: 1px solid var(--superficie-borda); border-radius: 8px; }
+.reveal figure { margin: 0; }
+.reveal figcaption { font-size: 0.6em; color: var(--texto-fraco); margin-top: 0.3rem; }
+
+/* ------------------------------------------------------- slides apertados */
+
+.reveal section.denso > *:not(h1):not(h2) { font-size: 0.88em; }
+.reveal section.muito-denso > *:not(h1):not(h2) { font-size: 0.78em; }
+
+/* ------------------------------------------------------------- divisória */
+
+.reveal section.secao { display: flex !important; flex-direction: column; justify-content: center; height: 100%; }
+.reveal section.secao h2 { font-size: 2em; border: none; padding: 0; margin: 0; max-width: 18em; }
+.reveal section.secao[data-numero]::before {
+  content: "Parte " attr(data-numero);
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.5em;
+  font-weight: 700;
+  color: var(--marca);
+  margin-bottom: 0.6rem;
+}
+.reveal section.secao .miudo { margin-top: 0.8rem; max-width: 32em; font-size: .78em; }
+
+/* ------------------------------------------------------------------ capa */
+
+.reveal section.capa { display: flex !important; flex-direction: column; justify-content: center; height: 100%; }
+.reveal section.capa h2 { font-size: 2.05em; line-height: 1.08; border: none; max-width: 15em; margin-bottom: .6rem; }
+.capa .logo { position: absolute; top: 0; left: 0; height: 46px; }
+.capa .logo img { height: 46px; }
+.capa .logo .escuro { display: none; }
+:root[data-tema="escuro"] .capa .logo .claro { display: none; }
+:root[data-tema="escuro"] .capa .logo .escuro { display: inline; }
+.capa .curso { font-size: .62em; font-weight: 650; color: var(--marca); margin-bottom: .5rem; }
+.capa .quando { font-size: .6em; color: var(--texto-fraco); margin-top: .8rem; }
+.capa .faixa { position: absolute; left: 0; bottom: 0; width: 120px; height: 6px; background: var(--marca); }
+
+/* ---------------------------------------------------------------- rodapé */
+
+.reveal .slide-number {
+  background: none; color: var(--texto-fraco);
+  font-family: "Inter", sans-serif; font-size: 0.56em;
+  font-variant-numeric: tabular-nums; opacity: 0.7; right: 16px; bottom: 12px;
+}
+.reveal .slide-number a { border: none; color: inherit; }
+.reveal .progress { color: var(--marca); height: 4px; }
+
+#botao-tema {
+  position: fixed; left: 12px; bottom: 10px; z-index: 60;
+  border: 1px solid var(--superficie-borda); background: var(--fundo); color: var(--texto-fraco);
+  border-radius: 999px; padding: 0.18rem 0.62rem; font-family: "Inter", sans-serif; font-size: 11px;
+  cursor: pointer; opacity: 0.3; transition: opacity 0.15s;
+}
+#botao-tema:hover { opacity: 1; }
+@media print { #botao-tema { display: none; } }
+
+/* Fundo de destaque com variável CSS: desfaz a adivinhação do revealjs. */
+.reveal .slides section.has-dark-background,
+.reveal .slides section.has-light-background,
+.reveal .slides section.has-dark-background *,
+.reveal .slides section.has-light-background * { color: inherit; }
+.reveal .slides section.has-dark-background,
+.reveal .slides section.has-light-background { color: var(--texto); }
+.reveal section.has-dark-background h2, .reveal section.has-light-background h2 { color: var(--titulo); }

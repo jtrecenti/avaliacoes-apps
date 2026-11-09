@@ -1,0 +1,2726 @@
+{
+ "atualizado_em": "2026-11-09T16:52:47-0300",
+ "coleta_mais_recente": "2026-11-09 1644",
+ "fonte": "Feed público de avaliações da App Store do Brasil (até 500 mais recentes por app) e Play Store do Brasil (500 mais recentes por app, via google-play-scraper). Tema e reclamação classificados por IA (Jev) nas avaliações dos últimos 90 dias.",
+ "contagens": {
+  "coletas": 1,
+  "linhas_coletadas": 6350,
+  "linhas_ultima_coleta": 6350,
+  "avaliacoes_unicas": 6350,
+  "anotadas_90_dias": 5972,
+  "textos_diferentes_90_dias": 5267,
+  "sem_tema": 0,
+  "confianca_baixa_tema": 614,
+  "confianca_baixa_reclamacao": 68,
+  "classificadas_nesta_rodada": 0,
+  "segundos_jev_nesta_rodada": 0.0,
+  "log": [
+   "6350 linhas nas coletas viraram 6350 avaliações diferentes (0 repetidas entre coletas, contadas uma vez)",
+   "0 trecho(s) com cara de telefone, e-mail ou CPF mascarados nesta etapa",
+   "saíram 6350 linhas em dados/processados/avaliacoes.csv.gz"
+  ]
+ },
+ "checagens": [
+  {
+   "frase": "toda coleta tem exatamente as colunas esperadas",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhuma coleta guarda nome, apelido ou foto de quem avaliou",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "todo aplicativo da lista veio nas duas lojas na coleta mais recente",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "toda avaliação tem loja, empresa, identificador, data e nota",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "toda nota está entre 1 e 5",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhuma avaliação repetida na base final",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhuma avaliação com data depois do dia da coleta",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhum texto com telefone, e-mail ou CPF sem máscara",
+   "nivel": "bloqueia",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "a coleta mais recente tem pelo menos 200 avaliações por app e loja",
+   "nivel": "alerta",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "a nota oficial da loja veio para todo app nas duas lojas",
+   "nivel": "alerta",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "cada coleta alcança a anterior (nenhuma avaliação perdida no meio)",
+   "nivel": "alerta",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhuma avaliação mudou entre coletas",
+   "nivel": "alerta",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "nenhuma avaliação precisou de máscara de dado pessoal",
+   "nivel": "alerta",
+   "ok": false,
+   "detalhe": "2 avaliação(ões) com telefone, e-mail ou CPF mascarados"
+  },
+  {
+   "frase": "toda avaliação dos últimos 90 dias tem tema",
+   "nivel": "alerta",
+   "ok": true,
+   "detalhe": ""
+  },
+  {
+   "frase": "menos de 10% dos temas com confiança abaixo de 60%",
+   "nivel": "alerta",
+   "ok": false,
+   "detalhe": "614 com confiança baixa (10%)"
+  }
+ ],
+ "semanas": [
+  "17/08",
+  "24/08",
+  "31/08",
+  "07/09",
+  "14/09",
+  "21/09",
+  "28/09",
+  "05/10",
+  "12/10",
+  "19/10",
+  "26/10",
+  "02/11"
+ ],
+ "lojas": {
+  "app_store": "App Store",
+  "play_store": "Play Store"
+ },
+ "segmentos": {
+  "Bancos": {
+   "empresas": [
+    "Nubank",
+    "Itaú",
+    "Banco do Brasil",
+    "Bradesco"
+   ],
+   "temas": [
+    "app com falha",
+    "acesso e login",
+    "pix e pagamentos",
+    "cartão e fatura",
+    "crédito e limite",
+    "golpe e segurança",
+    "conta bloqueada ou encerrada",
+    "tarifas e cobranças",
+    "atendimento",
+    "sugestão de recurso",
+    "crítica geral",
+    "elogio geral",
+    "outro"
+   ]
+  },
+  "Delivery": {
+   "empresas": [
+    "iFood",
+    "Rappi",
+    "Zé Delivery"
+   ],
+   "temas": [
+    "app com falha",
+    "atraso na entrega",
+    "pedido errado ou incompleto",
+    "cancelamento e reembolso",
+    "preços e taxas",
+    "cupons e promoções",
+    "pagamento",
+    "conta e cadastro",
+    "atendimento",
+    "entregador",
+    "qualidade da comida ou do produto",
+    "crítica geral",
+    "elogio geral",
+    "outro"
+   ]
+  }
+ },
+ "apps": {
+  "Nubank": {
+   "segmento": "Bancos",
+   "lojas": {
+    "ambas": {
+     "n_total": 1000,
+     "data_min": "2026-09-04",
+     "data_max": "2026-11-08",
+     "n_30": 676,
+     "nota_30": 3.88,
+     "nota_30_ant": 2.69,
+     "pct_1_estrela_30": 20.9,
+     "semanal": [
+      null,
+      null,
+      2.0,
+      2.63,
+      2.6,
+      2.21,
+      3.11,
+      2.9,
+      3.33,
+      3.23,
+      3.52,
+      4.01
+     ],
+     "n_semanal": [
+      0,
+      0,
+      50,
+      49,
+      53,
+      68,
+      57,
+      52,
+      40,
+      40,
+      46,
+      545
+     ],
+     "n_anotadas_90": 1000,
+     "pct_reclamacao_90": 51.8,
+     "n_reclamacoes_90": 518,
+     "temas_reclamacao": {
+      "app com falha": 34.6,
+      "acesso e login": 13.7,
+      "pix e pagamentos": 11.6,
+      "cartão e fatura": 3.5,
+      "crédito e limite": 9.3,
+      "golpe e segurança": 2.9,
+      "conta bloqueada ou encerrada": 4.2,
+      "tarifas e cobranças": 3.5,
+      "atendimento": 1.4,
+      "sugestão de recurso": 4.8,
+      "crítica geral": 7.1,
+      "elogio geral": 0.0,
+      "outro": 3.5
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 34.6
+    },
+    "app_store": {
+     "n_total": 500,
+     "data_min": "2026-09-04",
+     "data_max": "2026-11-07",
+     "n_30": 176,
+     "nota_30": 3.32,
+     "nota_30_ant": 2.69,
+     "pct_1_estrela_30": 28.4,
+     "semanal": [
+      null,
+      null,
+      2.0,
+      2.63,
+      2.6,
+      2.21,
+      3.11,
+      2.9,
+      3.33,
+      3.23,
+      3.52,
+      3.27
+     ],
+     "n_semanal": [
+      0,
+      0,
+      50,
+      49,
+      53,
+      68,
+      57,
+      52,
+      40,
+      40,
+      46,
+      45
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 70.2,
+     "n_reclamacoes_90": 351,
+     "temas_reclamacao": {
+      "app com falha": 37.9,
+      "acesso e login": 10.8,
+      "pix e pagamentos": 12.5,
+      "cartão e fatura": 3.4,
+      "crédito e limite": 9.7,
+      "golpe e segurança": 2.8,
+      "conta bloqueada ou encerrada": 3.7,
+      "tarifas e cobranças": 3.4,
+      "atendimento": 0.6,
+      "sugestão de recurso": 5.4,
+      "crítica geral": 6.3,
+      "elogio geral": 0.0,
+      "outro": 3.4
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 37.9,
+     "nota_loja": 4.82,
+     "n_notas_loja": 1673353
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-11-06",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 4.07,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 18.2,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4.07
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 33.4,
+     "n_reclamacoes_90": 167,
+     "temas_reclamacao": {
+      "app com falha": 27.5,
+      "acesso e login": 19.8,
+      "pix e pagamentos": 9.6,
+      "cartão e fatura": 3.6,
+      "crédito e limite": 8.4,
+      "golpe e segurança": 3.0,
+      "conta bloqueada ou encerrada": 5.4,
+      "tarifas e cobranças": 3.6,
+      "atendimento": 3.0,
+      "sugestão de recurso": 3.6,
+      "crítica geral": 9.0,
+      "elogio geral": 0.0,
+      "outro": 3.6
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 27.5,
+     "nota_loja": 4.76,
+     "n_notas_loja": 6007902
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "O melhor",
+     "texto": "Libera crédito fácil, empréstimos e além de uma variedade de investimentos!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Naooooo",
+     "texto": "Não to conseguindo baixar",
+     "tema": "outro",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Decepcionado",
+     "texto": "O banco exclui sua conta do nada, na hora que eles bem entendem, sem expor o motivo, não indico mais esse banco, e vou avisando a todos que conheço que tem, troca, pq se eu em dia fui tratado assim…",
+     "tema": "conta bloqueada ou encerrada",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Meu pix não está funcionando.",
+     "texto": "Depois dessa atualização meu pix não funciona mais.",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 5,
+     "titulo": "O melhor",
+     "texto": "A Nubank tem me ajudado muito, tem me tirado do aperto\nO juros não é abusivo \nTem me dado empréstimo\nTem aumentado meu limite \nSempre pago direitinho a fatura, pois até aqui tem sido de grande serventia \nObrigado Nubank",
+     "tema": "crédito e limite",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 3,
+     "titulo": "Otimo banco",
+     "texto": "Porém esta mudando coisas que ja estávamos familiarizados,”tirou o dinheiro separado” algo que eu gostava muito,e estou pensando em parar d usar esse banco como pix e somente usar cartão de credito",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "+\\-",
+     "texto": "Pagar um dinheiro que vc não usa do cartão, todo mês não da né",
+     "tema": "tarifas e cobranças",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "iPhone Duo",
+     "texto": "Todos os aplicativos de banco tem que atualizar pois as fotos de reconhecimento não está dando certo urgente",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 5,
+     "titulo": "Parabéns Nubank",
+     "texto": "Satisfeitíssimo com a Nubank , vocês estão de parabéns com o serviço prestado a população brasileira, Deus abençoe toda diretoria e os demais colaboradores",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 5,
+     "titulo": "Top",
+     "texto": "Top demais",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "o nubank não me repassou meu dinheiro até hoje isso foi no dia 15 10 2026 um saque que não saiu o dinheiro notifique mais de 15 vez o banco é até hoje nada o a empresa que administra o banco 24 horas reconheceu a falha no saque repassou pro nubank dia 17 10 2026 e o nubank não me devolveu meu dinheiro ainda vou entrar com um processo por que eles não querem resolver e nem devolver meu dinheiro",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "top muito bom",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Amo o Nubank. Resolve tudo bem rápido! Atendimento nota 10! Super recomendo!!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "ate agora muito bom",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "excelente",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "é muito bom principalmente se você é criança",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "video seri",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 3,
+     "titulo": null,
+     "texto": "todas experiencias",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Melhor de todos.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Precisa liberar mais limite no cartão de crédito",
+     "tema": "crédito e limite",
+     "reclamacao": false
+    }
+   ]
+  },
+  "Itaú": {
+   "segmento": "Bancos",
+   "lojas": {
+    "ambas": {
+     "n_total": 1000,
+     "data_min": "2026-09-21",
+     "data_max": "2026-11-08",
+     "n_30": 804,
+     "nota_30": 3.41,
+     "nota_30_ant": 3.15,
+     "pct_1_estrela_30": 31.8,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      2.96,
+      3.32,
+      3.05,
+      3.19,
+      3.52,
+      3.34,
+      3.43
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      54,
+      81,
+      64,
+      68,
+      81,
+      76,
+      576
+     ],
+     "n_anotadas_90": 1000,
+     "pct_reclamacao_90": 50.1,
+     "n_reclamacoes_90": 501,
+     "temas_reclamacao": {
+      "app com falha": 24.4,
+      "acesso e login": 18.8,
+      "pix e pagamentos": 11.4,
+      "cartão e fatura": 8.2,
+      "crédito e limite": 4.4,
+      "golpe e segurança": 2.0,
+      "conta bloqueada ou encerrada": 0.8,
+      "tarifas e cobranças": 3.6,
+      "atendimento": 5.8,
+      "sugestão de recurso": 5.0,
+      "crítica geral": 12.8,
+      "elogio geral": 0.2,
+      "outro": 2.8
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 24.4
+    },
+    "app_store": {
+     "n_total": 500,
+     "data_min": "2026-09-21",
+     "data_max": "2026-11-07",
+     "n_30": 304,
+     "nota_30": 3.31,
+     "nota_30_ant": 3.15,
+     "pct_1_estrela_30": 33.6,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      2.96,
+      3.32,
+      3.05,
+      3.19,
+      3.52,
+      3.34,
+      3.2
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      54,
+      81,
+      64,
+      68,
+      81,
+      76,
+      76
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 53.4,
+     "n_reclamacoes_90": 267,
+     "temas_reclamacao": {
+      "app com falha": 23.2,
+      "acesso e login": 17.2,
+      "pix e pagamentos": 9.7,
+      "cartão e fatura": 9.0,
+      "crédito e limite": 3.4,
+      "golpe e segurança": 1.9,
+      "conta bloqueada ou encerrada": 0.7,
+      "tarifas e cobranças": 4.1,
+      "atendimento": 6.4,
+      "sugestão de recurso": 6.7,
+      "crítica geral": 13.9,
+      "elogio geral": 0.4,
+      "outro": 3.4
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 23.2,
+     "nota_loja": 4.7,
+     "n_notas_loja": 3283483
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-11-04",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 3.47,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 30.8,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.47
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 46.8,
+     "n_reclamacoes_90": 234,
+     "temas_reclamacao": {
+      "app com falha": 25.6,
+      "acesso e login": 20.5,
+      "pix e pagamentos": 13.2,
+      "cartão e fatura": 7.3,
+      "crédito e limite": 5.6,
+      "golpe e segurança": 2.1,
+      "conta bloqueada ou encerrada": 0.9,
+      "tarifas e cobranças": 3.0,
+      "atendimento": 5.1,
+      "sugestão de recurso": 3.0,
+      "crítica geral": 11.5,
+      "elogio geral": 0.0,
+      "outro": 2.1
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 25.6,
+     "nota_loja": 4.77,
+     "n_notas_loja": 5923821
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Péssimo app",
+     "texto": "Péssimo, sem lógica, difícil de achar as coisas. Faz cobranças indevidas e não consigo falar com gerente.",
+     "tema": "tarifas e cobranças",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Ok",
+     "texto": "Ok",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Muito bom ótimo",
+     "texto": "Aplicativo nota 1000",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Solicitação cansativa",
+     "texto": "Avaliação mesmo positiva incomoda todo vez que abre o APP",
+     "tema": "crítica geral",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 2,
+     "titulo": "Atualização de pagamento horrível",
+     "texto": "O bom pagador pobre sofre na mão desse banco, fiz um acordo recentemente para quitar uma dívida, paguei a primeira parcela e depois disso ainda veio mais cobrança referente a esse acordo, minha mãe tbm passou pela mesma coisa, um descaso com o cliente, até p encerrar a conta é uma peleja, não recomendo, o sistema de atualização é horrível, uma decepção p quem gosta de anotar as contas quitadas, co…",
+     "tema": "tarifas e cobranças",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Gerência",
+     "texto": "Poderiam trocar a gerência do meu banco, nunca está lá, manda email não responde direito e não resolve, a última tive q apelar pra o BC, pq não queria devolver meu dinheiro q paguei duas vezes. Melhore na gerência, q nunca está na agência 13:00/14:00 tem q estar na agência e não ir almoçar, se o banco já abre as 10:00 q almoce depois q o banco feche 15:00. Se abre às 10:00 os clientes vão nesses h…",
+     "tema": "atendimento",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Bom",
+     "texto": "Ótimo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Pessimo",
+     "texto": "Estou quase a um ano tentando acessar o app e não consigo, faço reconhecimento e sempre dá erro, já entrei em contato com o suporte e nada funciona",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Gratidão ao Itaú",
+     "texto": "Me ajudou no momento mais difícil da minha vida.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 5,
+     "titulo": "Excelente",
+     "texto": "10",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Toda vez que pede pra atualizar, o app não atualiza!!! Faço toda a limpeza digo todaaa no celular e não 👎 vai Não tem como fazer limpeza de cache e dados pois não consigo instalar o app Já fiz todas as limpezas no celular",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "ótimo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "muuuito ruim eu com. dinheiro na conta e não consegui pagar a fatura",
+     "tema": "cartão e fatura",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "muito obrigado",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "modificou pela segunda vez e não encontro e nem consigo me encontrar nos saudoso , e pelo visto fui invadido sem segurança nenhuma e gostaria de entender e o extorno do dinheiro que fiz",
+     "tema": "golpe e segurança",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "a fácil é muito chato, toda hora fica dando erro, você coloca biometria, você coloca senha, é a fácil não vai, que app chato",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "HORRÍVEL!! TENTA RECONHECER FACIAL, QUANDO PRECISA VERIFICAR SENHAS ELE CAI ! CHEIO DE BUGS!!",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Banco maravilhoso, me oferece muito do que eu preciso, sempre organizando minhas finanças e meus gastos .",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "eu amei esse aplicativo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 4,
+     "titulo": null,
+     "texto": "Boa",
+     "tema": "elogio geral",
+     "reclamacao": false
+    }
+   ]
+  },
+  "Banco do Brasil": {
+   "segmento": "Bancos",
+   "lojas": {
+    "ambas": {
+     "n_total": 750,
+     "data_min": "2026-11-05",
+     "data_max": "2026-11-08",
+     "n_30": 750,
+     "nota_30": 3.54,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 29.3,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.54
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      750
+     ],
+     "n_anotadas_90": 750,
+     "pct_reclamacao_90": 43.6,
+     "n_reclamacoes_90": 327,
+     "temas_reclamacao": {
+      "app com falha": 46.5,
+      "acesso e login": 21.7,
+      "pix e pagamentos": 7.0,
+      "cartão e fatura": 1.2,
+      "crédito e limite": 0.6,
+      "golpe e segurança": 0.9,
+      "conta bloqueada ou encerrada": 0.6,
+      "tarifas e cobranças": 0.6,
+      "atendimento": 2.1,
+      "sugestão de recurso": 2.4,
+      "crítica geral": 14.1,
+      "elogio geral": 0.3,
+      "outro": 1.8
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 46.5
+    },
+    "app_store": {
+     "n_total": 250,
+     "data_min": "2026-11-05",
+     "data_max": "2026-11-08",
+     "n_30": 250,
+     "nota_30": 4.1,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 18.4,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4.1
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      250
+     ],
+     "n_anotadas_90": 250,
+     "pct_reclamacao_90": 28.8,
+     "n_reclamacoes_90": 72,
+     "temas_reclamacao": {
+      "app com falha": 36.1,
+      "acesso e login": 22.2,
+      "pix e pagamentos": 8.3,
+      "cartão e fatura": 1.4,
+      "crédito e limite": 1.4,
+      "golpe e segurança": 1.4,
+      "conta bloqueada ou encerrada": 2.8,
+      "tarifas e cobranças": 0.0,
+      "atendimento": 4.2,
+      "sugestão de recurso": 4.2,
+      "crítica geral": 13.9,
+      "elogio geral": 0.0,
+      "outro": 4.2
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 36.1,
+     "nota_loja": 4.75,
+     "n_notas_loja": 4280030
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-11-06",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 3.26,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 34.8,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.26
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 51.0,
+     "n_reclamacoes_90": 255,
+     "temas_reclamacao": {
+      "app com falha": 49.4,
+      "acesso e login": 21.6,
+      "pix e pagamentos": 6.7,
+      "cartão e fatura": 1.2,
+      "crédito e limite": 0.4,
+      "golpe e segurança": 0.8,
+      "conta bloqueada ou encerrada": 0.0,
+      "tarifas e cobranças": 0.8,
+      "atendimento": 1.6,
+      "sugestão de recurso": 2.0,
+      "crítica geral": 14.1,
+      "elogio geral": 0.4,
+      "outro": 1.2
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 49.4,
+     "nota_loja": 4.71,
+     "n_notas_loja": 8544485
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": "Liberar o telefone",
+     "texto": "Telefonemas",
+     "tema": "acesso e login",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": "Sensacional",
+     "texto": "Top",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "SOU FÃ DO BB, ELES ESCUTAM A SOCIEDADE!!!💛",
+     "texto": "Retiro maioria das coisas que comentei sobre, é um banco instável sim! Mas que quebra muito meu galho no dia a dia, hoje é meu banco favorito e mais usável para transações, o que eu acho muito bonito da parte de vocês é que sempre estão por dentro dos feedbacks aqui, sempre respondendo e dando um jeito de resolver, me desculpem por me exaltar além da conta, é um banco de respeito e responsabilidad…",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Excelente",
+     "texto": "Excelente e prático de utilização. Depois da atualização melhorou o envio de comprovantes.\nNão sei o que acontece, mas às vezes bloqueia a senha e isso causa muitos transtornos, precisa melhorar!",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Aplicativo top",
+     "texto": "Muito bom o aplicativo do Banco do Brasil, fácil de usar e prático.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Tudo de bom",
+     "texto": "Ter conta no Banco do Brasil e um previlégio",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Simples",
+     "texto": "Bem tranquilo para usar , bem esplicativo.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Péssimo",
+     "texto": "Uma conta salário que não faz 1 pix. Não consigo fazer uma transferência, não consigo fazer nada, não consigo fazer portabilidade. Deve ser pra receber o salário e o dinheiro ficar lá parado. Pq tudo q tento fazer lá dá erro",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Melhor",
+     "texto": "Muito bom ! Excelente aplicativo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Ótimo",
+     "texto": "10",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "ótimo app",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 2,
+     "titulo": null,
+     "texto": "hoje estou tendo muitas dificuldades",
+     "tema": "crítica geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "ótima sensacional",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "excelente!!!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Muita mudança, pouco funcional",
+     "tema": "crítica geral",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "bom dia, quero fazer uma reclamação, como é que um aplicativo do banco brasil não tem cartão poupança, quero depositar ou retirar dinheiro e não consigo pedir um cartão poupança, resolver esse problema",
+     "tema": "sugestão de recurso",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "nunca da certo o cadastro do reconhecimento facial",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "ótima experiência banco de credibilidade prestativos nos serviços oferecidos ao cliente",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Me atende bem, só acho que deveria ter atualização automática, ou tem e não estou sabendo aplicar. Mas funciona bem.",
+     "tema": "sugestão de recurso",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "maravilha",
+     "tema": "elogio geral",
+     "reclamacao": false
+    }
+   ]
+  },
+  "Bradesco": {
+   "segmento": "Bancos",
+   "lojas": {
+    "ambas": {
+     "n_total": 900,
+     "data_min": "2026-08-18",
+     "data_max": "2026-11-08",
+     "n_30": 629,
+     "nota_30": 2.67,
+     "nota_30_ant": 1.89,
+     "pct_1_estrela_30": 48.5,
+     "semanal": [
+      2.76,
+      3.28,
+      2.8,
+      2.17,
+      1.65,
+      2.31,
+      1.58,
+      1.84,
+      1.76,
+      1.9,
+      2.12,
+      2.81
+     ],
+     "n_semanal": [
+      41,
+      60,
+      40,
+      24,
+      43,
+      26,
+      19,
+      19,
+      38,
+      30,
+      33,
+      527
+     ],
+     "n_anotadas_90": 900,
+     "pct_reclamacao_90": 68.4,
+     "n_reclamacoes_90": 616,
+     "temas_reclamacao": {
+      "app com falha": 34.3,
+      "acesso e login": 20.1,
+      "pix e pagamentos": 11.2,
+      "cartão e fatura": 4.1,
+      "crédito e limite": 2.1,
+      "golpe e segurança": 0.5,
+      "conta bloqueada ou encerrada": 1.0,
+      "tarifas e cobranças": 2.9,
+      "atendimento": 4.5,
+      "sugestão de recurso": 3.4,
+      "crítica geral": 13.8,
+      "elogio geral": 0.2,
+      "outro": 1.9
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 34.3
+    },
+    "app_store": {
+     "n_total": 400,
+     "data_min": "2026-08-18",
+     "data_max": "2026-11-07",
+     "n_30": 129,
+     "nota_30": 1.91,
+     "nota_30_ant": 1.89,
+     "pct_1_estrela_30": 62.0,
+     "semanal": [
+      2.76,
+      3.28,
+      2.8,
+      2.17,
+      1.65,
+      2.31,
+      1.58,
+      1.84,
+      1.76,
+      1.9,
+      2.12,
+      1.85
+     ],
+     "n_semanal": [
+      41,
+      60,
+      40,
+      24,
+      43,
+      26,
+      19,
+      19,
+      38,
+      30,
+      33,
+      27
+     ],
+     "n_anotadas_90": 400,
+     "pct_reclamacao_90": 78.0,
+     "n_reclamacoes_90": 312,
+     "temas_reclamacao": {
+      "app com falha": 33.0,
+      "acesso e login": 16.7,
+      "pix e pagamentos": 15.1,
+      "cartão e fatura": 6.1,
+      "crédito e limite": 2.2,
+      "golpe e segurança": 0.3,
+      "conta bloqueada ou encerrada": 0.3,
+      "tarifas e cobranças": 2.9,
+      "atendimento": 4.8,
+      "sugestão de recurso": 4.5,
+      "crítica geral": 12.2,
+      "elogio geral": 0.3,
+      "outro": 1.6
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 33.0,
+     "nota_loja": 4.73,
+     "n_notas_loja": 3147864
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-11-04",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 2.86,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 45.0,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      2.86
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 60.8,
+     "n_reclamacoes_90": 304,
+     "temas_reclamacao": {
+      "app com falha": 35.5,
+      "acesso e login": 23.7,
+      "pix e pagamentos": 7.2,
+      "cartão e fatura": 2.0,
+      "crédito e limite": 2.0,
+      "golpe e segurança": 0.7,
+      "conta bloqueada ou encerrada": 1.6,
+      "tarifas e cobranças": 3.0,
+      "atendimento": 4.3,
+      "sugestão de recurso": 2.3,
+      "crítica geral": 15.5,
+      "elogio geral": 0.0,
+      "outro": 2.3
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 35.5,
+     "nota_loja": 4.69,
+     "n_notas_loja": 6083931
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Buga o YouTube",
+     "texto": "Abrir o aplicativo do Bradesco com o YouTube premium aberto em segundo plano, faz áudio do vídeo baixar drasticamente. Ao fechar o app, tudo volta ao normal.",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 3,
+     "titulo": "Conta salário",
+     "texto": "Muito desnecessário não ter a opção pix na conta salário, em vez de facilitar só dificulta a vida",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Pix",
+     "texto": "O serviço pix do bradesco e o unico que nao presta entre todos os bancos, so vive fora do ar dando erro, paresse que nao quer cumprir os serviços de transferência",
+     "tema": "pix e pagamentos",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 2,
+     "titulo": "Pessimo",
+     "texto": "App horrível, toda vez que vou entrar na conta fica dando sistema indisponível. Já aconteceu milhares de vezes e toda vez preciso ficar indo ao banco",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Muito loading e interface poluída",
+     "texto": "A navegação é frustrante com as telas de carregamento para cada clique. O app do Banco do Brasil consegue ser melhor que o desse banco...",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Péssimo banco!",
+     "texto": "Não tem atendimento e app é muito ruim!",
+     "tema": "atendimento",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 2,
+     "titulo": "Não localizei nos comprovantes as guias de pagamento de DARF, ao perguntar pra BIA fiquei s/ respost",
+     "texto": "No app não localizo os comprovantes dos pagamentos realizados de guias de arrecadação como DARF, DARE, SEFAZ, tendo que ligar na agência pra obter o documento, quando isso será resolvido e disponibilizado pelo app??",
+     "tema": "sugestão de recurso",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Péssimo",
+     "texto": "Um dos piores, entre os piores. 100% inseguro.",
+     "tema": "golpe e segurança",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 2,
+     "titulo": "Abertura de conta",
+     "texto": "Não consigo abrir a conta,  o app fica rodando uma tela preta pra fazer autenticação de biometria e em seguida pede pra retornar mais tarde e fica isso em looping",
+     "tema": "acesso e login",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Não funciona",
+     "texto": "Banco toda semana tem um erro diferente, sem contar que é totalmente feio sem dar vontade de encher nele, e agora tá com erro de ver a câmera pra autorizar dispositivo, vão trabalhar direito",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "banco horrivel, aplicativo todo travado, banco que cobra taxa ate aonde não existe, to a messes tentando pagar meu cartão de credito mas toda hora inventam tarifa nova, um cartao de credito de 800 reais to tendo que pagar 1500 de fatura, toda hora colocam taxa e mais um monte de coisa pra paga, pior banco que ja vi na minha vida, o aplicativo desse banco e uma depressão pra usa, demora pra carrega…",
+     "tema": "tarifas e cobranças",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "nqunené n né o pix é o que é assimjnnnnn nnnnnnn n o nnntem n n tem nnnkj o n",
+     "tema": "pix e pagamentos",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "muito ruim o aplicativo deixar a desejar.",
+     "tema": "crítica geral",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Eu coloquei dinheiro no cofrinho tentei retirar e ele fica dizendo que não tem dinheiro pra retirar, DEVOLVAM MEU DINHEIRO!",
+     "tema": "golpe e segurança",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "otima",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 2,
+     "titulo": null,
+     "texto": "muita propaganda",
+     "tema": "outro",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "É inacreditável um banco do tamanho do Bradesco ter um app tão horrendo. Eu simplesmente não consigo passar duas semanas que sejam sem ter problemas, e aí lá vou eu ter que correr atrás de suporte. Inacreditável",
+     "tema": "crítica geral",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 3,
+     "titulo": null,
+     "texto": "banco não libera crédito, movimento bastante uso para tudo pagamento Pix etc.",
+     "tema": "crédito e limite",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Raquel dos Santos",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "quero assesar minha conta mais não sei a ag e cnt",
+     "tema": "acesso e login",
+     "reclamacao": true
+    }
+   ]
+  },
+  "iFood": {
+   "segmento": "Delivery",
+   "lojas": {
+    "ambas": {
+     "n_total": 1000,
+     "data_min": "2026-10-23",
+     "data_max": "2026-11-08",
+     "n_30": 1000,
+     "nota_30": 3.77,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 25.9,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.81,
+      3.6,
+      3.81
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      85,
+      202,
+      713
+     ],
+     "n_anotadas_90": 1000,
+     "pct_reclamacao_90": 36.1,
+     "n_reclamacoes_90": 361,
+     "temas_reclamacao": {
+      "app com falha": 6.1,
+      "atraso na entrega": 10.0,
+      "pedido errado ou incompleto": 6.1,
+      "cancelamento e reembolso": 11.9,
+      "preços e taxas": 8.9,
+      "cupons e promoções": 14.1,
+      "pagamento": 8.9,
+      "conta e cadastro": 3.6,
+      "atendimento": 13.9,
+      "entregador": 1.9,
+      "qualidade da comida ou do produto": 2.8,
+      "crítica geral": 5.5,
+      "elogio geral": 0.8,
+      "outro": 5.5
+     },
+     "tema_principal": "cupons e promoções",
+     "pct_tema_principal": 14.1
+    },
+    "app_store": {
+     "n_total": 500,
+     "data_min": "2026-10-23",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 3.62,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 29.2,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.81,
+      3.6,
+      3.55
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      85,
+      202,
+      213
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 39.6,
+     "n_reclamacoes_90": 198,
+     "temas_reclamacao": {
+      "app com falha": 6.1,
+      "atraso na entrega": 9.6,
+      "pedido errado ou incompleto": 5.6,
+      "cancelamento e reembolso": 11.1,
+      "preços e taxas": 10.1,
+      "cupons e promoções": 16.7,
+      "pagamento": 6.1,
+      "conta e cadastro": 4.0,
+      "atendimento": 14.6,
+      "entregador": 1.5,
+      "qualidade da comida ou do produto": 3.0,
+      "crítica geral": 6.1,
+      "elogio geral": 0.0,
+      "outro": 5.6
+     },
+     "tema_principal": "cupons e promoções",
+     "pct_tema_principal": 16.7,
+     "nota_loja": 4.86,
+     "n_notas_loja": 8994959
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-11-06",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 3.91,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 22.6,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3.91
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 32.6,
+     "n_reclamacoes_90": 163,
+     "temas_reclamacao": {
+      "app com falha": 6.1,
+      "atraso na entrega": 10.4,
+      "pedido errado ou incompleto": 6.7,
+      "cancelamento e reembolso": 12.9,
+      "preços e taxas": 7.4,
+      "cupons e promoções": 11.0,
+      "pagamento": 12.3,
+      "conta e cadastro": 3.1,
+      "atendimento": 12.9,
+      "entregador": 2.5,
+      "qualidade da comida ou do produto": 2.5,
+      "crítica geral": 4.9,
+      "elogio geral": 1.8,
+      "outro": 5.5
+     },
+     "tema_principal": "cancelamento e reembolso",
+     "pct_tema_principal": 12.9,
+     "nota_loja": 4.71,
+     "n_notas_loja": 13495906
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": "Está regredindo",
+     "texto": "Atendimento já foi melhor, agora tem muitos problemas de atrasos e cancelamentos, e eles não respondem mais. Outros aplicativos concorrentes estão se superando!",
+     "tema": "atendimento",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": "C",
+     "texto": "C",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Excelente",
+     "texto": "Muito bom",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Avaliação I food",
+     "texto": "Super recomendo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Enganaçao",
+     "texto": "empresa tosca, cheia de promoção enganosa, produto aparece com frete gratis só na imagem, quando adicionado ao carrinho, aparece o valor, enganativo, tosquinho!!!! da muita raiva e nojo ao utilizar.",
+     "tema": "preços e taxas",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Top",
+     "texto": "Top",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Festival de atrasos",
+     "texto": "Infelizmente os prazos ofertados são frustrados sistematicamente. Mesmo com agendamentos. Seria interessante transparência com o cliente mostrando o SLA real de um restaurante.",
+     "tema": "atraso na entrega",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Elogio",
+     "texto": "Eficiente, simples e rápido.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "a fama subiu a cabeça",
+     "texto": "Perderam total a noção, colocando taxas aonde não existe, um produto tá um preço razoável mas quando vai finalizar a compra está mais que o triplo, subiu muito a cabeça.",
+     "tema": "preços e taxas",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Top demais",
+     "texto": "Já uso a anosss nunca decepciona",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "aplicativo maravilhoso",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "salvando vidas com excelentes recomendações",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "muito fácil de fazer pedido.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "excelente",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "boa",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "top",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Não está dando pra trocar as moedas? diz que estão ajustando, mas já faz muitos dias",
+     "tema": "outro",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 2,
+     "titulo": null,
+     "texto": "Funciona bem, mas acho desrespeitoso as \"promoções\" e cupons que só te devolvem o preço real do produto, entendo a mecânica por trás mas simplesmente nem quem produz ou quem consome gosta disso; É um insulto à nossa inteligência. Dito isso, cumpre a proposta.",
+     "tema": "cupons e promoções",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "preços de marmita que tem me salvando na hora do almoço no trabalho",
+     "tema": "preços e taxas",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Vou desinstalar o App, porque venho tendo muito problemas, onde tive algumas cobranças de forma indevida e agora o entregador disse que não localizou meu endereço e em seguida cancelou meu Pedido e estava com fome. Além disso liguei na casa para pedir e direto com eles o valor estava 50 reias mais barato. pelo App aguei R$ 175,00 e direto com eles ficou R$ 123,50",
+     "tema": "preços e taxas",
+     "reclamacao": true
+    }
+   ]
+  },
+  "Rappi": {
+   "segmento": "Delivery",
+   "lojas": {
+    "ambas": {
+     "n_total": 750,
+     "data_min": "2026-05-22",
+     "data_max": "2026-11-08",
+     "n_30": 123,
+     "nota_30": 2.01,
+     "nota_30_ant": 1.88,
+     "pct_1_estrela_30": 69.1,
+     "semanal": [
+      1.91,
+      1.56,
+      1.61,
+      2.03,
+      1.89,
+      1.81,
+      1.96,
+      1.83,
+      2.27,
+      2.21,
+      1.82,
+      1.78
+     ],
+     "n_semanal": [
+      23,
+      34,
+      51,
+      31,
+      35,
+      31,
+      25,
+      30,
+      33,
+      34,
+      28,
+      23
+     ],
+     "n_anotadas_90": 408,
+     "pct_reclamacao_90": 80.4,
+     "n_reclamacoes_90": 328,
+     "temas_reclamacao": {
+      "app com falha": 15.5,
+      "atraso na entrega": 15.9,
+      "pedido errado ou incompleto": 7.3,
+      "cancelamento e reembolso": 10.1,
+      "preços e taxas": 5.8,
+      "cupons e promoções": 3.4,
+      "pagamento": 10.1,
+      "conta e cadastro": 4.6,
+      "atendimento": 9.5,
+      "entregador": 3.7,
+      "qualidade da comida ou do produto": 0.6,
+      "crítica geral": 9.1,
+      "elogio geral": 0.0,
+      "outro": 4.6
+     },
+     "tema_principal": "atraso na entrega",
+     "pct_tema_principal": 15.9
+    },
+    "app_store": {
+     "n_total": 250,
+     "data_min": "2026-06-14",
+     "data_max": "2026-11-07",
+     "n_30": 47,
+     "nota_30": 1.7,
+     "nota_30_ant": 1.69,
+     "pct_1_estrela_30": 72.3,
+     "semanal": [
+      1.5,
+      1.36,
+      1.6,
+      1.79,
+      1.4,
+      1.91,
+      1.3,
+      1.8,
+      1.82,
+      2.0,
+      1.27,
+      1.62
+     ],
+     "n_semanal": [
+      8,
+      11,
+      10,
+      14,
+      10,
+      11,
+      10,
+      10,
+      11,
+      16,
+      11,
+      8
+     ],
+     "n_anotadas_90": 140,
+     "pct_reclamacao_90": 88.6,
+     "n_reclamacoes_90": 124,
+     "temas_reclamacao": {
+      "app com falha": 15.3,
+      "atraso na entrega": 16.9,
+      "pedido errado ou incompleto": 10.5,
+      "cancelamento e reembolso": 9.7,
+      "preços e taxas": 4.8,
+      "cupons e promoções": 3.2,
+      "pagamento": 8.1,
+      "conta e cadastro": 0.8,
+      "atendimento": 11.3,
+      "entregador": 4.8,
+      "qualidade da comida ou do produto": 0.8,
+      "crítica geral": 9.7,
+      "elogio geral": 0.0,
+      "outro": 4.0
+     },
+     "tema_principal": "atraso na entrega",
+     "pct_tema_principal": 16.9,
+     "nota_loja": 4.54,
+     "n_notas_loja": 448892
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-05-22",
+     "data_max": "2026-11-08",
+     "n_30": 76,
+     "nota_30": 2.2,
+     "nota_30_ant": 1.99,
+     "pct_1_estrela_30": 67.1,
+     "semanal": [
+      2.13,
+      1.65,
+      1.61,
+      2.24,
+      2.08,
+      1.75,
+      2.4,
+      1.85,
+      2.5,
+      2.39,
+      2.18,
+      1.87
+     ],
+     "n_semanal": [
+      15,
+      23,
+      41,
+      17,
+      25,
+      20,
+      15,
+      20,
+      22,
+      18,
+      17,
+      15
+     ],
+     "n_anotadas_90": 268,
+     "pct_reclamacao_90": 76.1,
+     "n_reclamacoes_90": 204,
+     "temas_reclamacao": {
+      "app com falha": 15.7,
+      "atraso na entrega": 15.2,
+      "pedido errado ou incompleto": 5.4,
+      "cancelamento e reembolso": 10.3,
+      "preços e taxas": 6.4,
+      "cupons e promoções": 3.4,
+      "pagamento": 11.3,
+      "conta e cadastro": 6.9,
+      "atendimento": 8.3,
+      "entregador": 2.9,
+      "qualidade da comida ou do produto": 0.5,
+      "crítica geral": 8.8,
+      "elogio geral": 0.0,
+      "outro": 4.9
+     },
+     "tema_principal": "app com falha",
+     "pct_tema_principal": 15.7,
+     "nota_loja": 4.05,
+     "n_notas_loja": 2383951
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "SOPORTE HORRÍVEL",
+     "texto": "O app é bugado, serve mal e o soporte não serve pra nada, não o resolvem os problemas gerados por eles mesmos nem consideram o cliente. Descaso total. Vou usar nunca mais",
+     "tema": "atendimento",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": "Não funciona em Florianópolis",
+     "texto": "Já baixei e instalei várias vezes, não aparece as lojas, nem farmácia nem mercado. Propaganda enganosa",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 2,
+     "titulo": "Bugado",
+     "texto": "Aplicativo bugado. O contador de preço não atualiza corretamente e fica voltando pra 0.00 o tempo todo. Já não consegui pedir ontem e já estou perdendo a paciência hoje",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 1,
+     "titulo": "Cancelaram a entrega",
+     "texto": "Péssimo atendimento, seja por suporte no aplicativo ou por WhatsApp. Adiaram 3 ou 4x meu pedido e no final cancelaram sem justificar e sem auxiliar. Quase 3 horas de espera. E fiquei sem nada para comer.",
+     "tema": "cancelamento e reembolso",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 1,
+     "titulo": "Reclamação",
+     "texto": "Vcs roubaram 10,23",
+     "tema": "pagamento",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 1,
+     "titulo": "Ta cada vez pior",
+     "texto": "Já faço compras no Rappi há alguns anos e cada experiência tem feito eu desistir de usar o Rappi e migrar para outro app de compra. Vocês precisam organizar melhor a logística dos supermercados, O produto aparece lá no app, mas, nunca tem o que peço, acaba vindo coisas que nem precisava pq tive que comprar pra complementar o valor da compra, não dá pra desistir de um produto que já coloquei na lis…",
+     "tema": "pedido errado ou incompleto",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 1,
+     "titulo": "Reembolso não realizado",
+     "texto": "Houve um problema com a farmacia e a rappi nao me reembolsa. Nao ha central de ajuda que eu consiga entrar em contato pelo app. Me cobraram 80 reais e nao entregaram nada!",
+     "tema": "cancelamento e reembolso",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-03",
+     "nota": 5,
+     "titulo": "Ótimo",
+     "texto": "Maravilhosa",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-10-31",
+     "nota": 2,
+     "titulo": "UX péssimo",
+     "texto": "Tive que usar na Colômbia, muito ruim. Aplicativo poluído demais visualmente, não deixa eu ler todas as avaliações do restaurante. Tanta coisa em destaque não sei o que ver, ou prestar atenção. Parte de localização de entrega funciona bem. Mas parte visual, muito pop up, anúncios, etc…",
+     "tema": "outro",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-10-31",
+     "nota": 1,
+     "titulo": "Está cada dia pior",
+     "texto": "Péssimo!",
+     "tema": "crítica geral",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "bom",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "excelente",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": null,
+     "texto": "pedi um vez para nunca mais! eles atrasam absurdamente a entrega e se recusam cancelar o pedido com a devolução do seu dinheiro.",
+     "tema": "atraso na entrega",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Se seu pedido atrasar, não fazem nada por você. Reze pra não vir nada errado Depois de atrasar de 2h. lanche veio errado e velho. app não fez nada. disse que só cancela de não tiver preparado ainda. e eu lá quero saber se ta preparado ou não? Quero comer o que paguei. só isso!",
+     "tema": "atraso na entrega",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Falido. O app nem funciona. Ifood e 99 são infinitamente melhores.",
+     "tema": "app com falha",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-07",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Péssima experiência! Sephora e Rappi trocaram meu pedido por um produto mais caro e totalmente diferente SEM MEU CONSENTIMENTO. Para piorar, o aplicativo me FORÇOU a pagar a diferença do valor do produto errado só para conseguir abrir a reclamação. Depois de pagar, o atendimento demorou de propósito até a loja fechar, justificou que ativei uma opção do \"Shopper\" (que não existia no momento da comp…",
+     "tema": "pedido errado ou incompleto",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Nunca tem parceiros próximo péssimo!!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Estou tentando há dias adicionar método de pagamento (cartão de crédito) e não consigo e o app não tem atendimento ao cliente para auxiliar nosso decepcionada, já desinstalei reiniciei o app várias vezes e nada de conseguir.",
+     "tema": "pagamento",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": null,
+     "texto": "pessoal não faço compa neste app pq se o mercado não tiver o produto este app não faz o reembolso eu perdi meu dinheiro foi roubado",
+     "tema": "cancelamento e reembolso",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-05",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Excelente!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    }
+   ]
+  },
+  "Zé Delivery": {
+   "segmento": "Delivery",
+   "lojas": {
+    "ambas": {
+     "n_total": 950,
+     "data_min": "2026-08-05",
+     "data_max": "2026-11-08",
+     "n_30": 581,
+     "nota_30": 4.14,
+     "nota_30_ant": 3.69,
+     "pct_1_estrela_30": 18.1,
+     "semanal": [
+      4.15,
+      3.0,
+      3.43,
+      3.6,
+      3.78,
+      3.27,
+      3.48,
+      4.2,
+      3.0,
+      4.35,
+      4.22,
+      4.09
+     ],
+     "n_semanal": [
+      26,
+      30,
+      21,
+      60,
+      106,
+      30,
+      27,
+      20,
+      18,
+      51,
+      238,
+      269
+     ],
+     "n_anotadas_90": 914,
+     "pct_reclamacao_90": 32.8,
+     "n_reclamacoes_90": 300,
+     "temas_reclamacao": {
+      "app com falha": 11.3,
+      "atraso na entrega": 9.3,
+      "pedido errado ou incompleto": 5.3,
+      "cancelamento e reembolso": 8.3,
+      "preços e taxas": 10.7,
+      "cupons e promoções": 15.0,
+      "pagamento": 2.3,
+      "conta e cadastro": 11.0,
+      "atendimento": 4.3,
+      "entregador": 4.0,
+      "qualidade da comida ou do produto": 4.3,
+      "crítica geral": 7.3,
+      "elogio geral": 0.3,
+      "outro": 6.3
+     },
+     "tema_principal": "cupons e promoções",
+     "pct_tema_principal": 15.0
+    },
+    "app_store": {
+     "n_total": 450,
+     "data_min": "2026-08-05",
+     "data_max": "2026-11-08",
+     "n_30": 81,
+     "nota_30": 3.83,
+     "nota_30_ant": 3.69,
+     "pct_1_estrela_30": 22.2,
+     "semanal": [
+      4.15,
+      3.0,
+      3.43,
+      3.6,
+      3.78,
+      3.27,
+      3.48,
+      4.2,
+      3.0,
+      4.31,
+      4.14,
+      3.55
+     ],
+     "n_semanal": [
+      26,
+      30,
+      21,
+      60,
+      106,
+      30,
+      27,
+      20,
+      18,
+      16,
+      22,
+      20
+     ],
+     "n_anotadas_90": 414,
+     "pct_reclamacao_90": 41.3,
+     "n_reclamacoes_90": 171,
+     "temas_reclamacao": {
+      "app com falha": 13.5,
+      "atraso na entrega": 5.8,
+      "pedido errado ou incompleto": 4.7,
+      "cancelamento e reembolso": 8.8,
+      "preços e taxas": 8.2,
+      "cupons e promoções": 21.1,
+      "pagamento": 2.3,
+      "conta e cadastro": 8.2,
+      "atendimento": 5.3,
+      "entregador": 2.3,
+      "qualidade da comida ou do produto": 4.7,
+      "crítica geral": 9.9,
+      "elogio geral": 0.6,
+      "outro": 4.7
+     },
+     "tema_principal": "cupons e promoções",
+     "pct_tema_principal": 21.1,
+     "nota_loja": 4.93,
+     "n_notas_loja": 697696
+    },
+    "play_store": {
+     "n_total": 500,
+     "data_min": "2026-10-25",
+     "data_max": "2026-11-08",
+     "n_30": 500,
+     "nota_30": 4.19,
+     "nota_30_ant": null,
+     "pct_1_estrela_30": 17.4,
+     "semanal": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4.37,
+      4.23,
+      4.14
+     ],
+     "n_semanal": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      216,
+      249
+     ],
+     "n_anotadas_90": 500,
+     "pct_reclamacao_90": 25.8,
+     "n_reclamacoes_90": 129,
+     "temas_reclamacao": {
+      "app com falha": 8.5,
+      "atraso na entrega": 14.0,
+      "pedido errado ou incompleto": 6.2,
+      "cancelamento e reembolso": 7.8,
+      "preços e taxas": 14.0,
+      "cupons e promoções": 7.0,
+      "pagamento": 2.3,
+      "conta e cadastro": 14.7,
+      "atendimento": 3.1,
+      "entregador": 6.2,
+      "qualidade da comida ou do produto": 3.9,
+      "crítica geral": 3.9,
+      "elogio geral": 0.0,
+      "outro": 8.5
+     },
+     "tema_principal": "conta e cadastro",
+     "pct_tema_principal": 14.7,
+     "nota_loja": 4.9,
+     "n_notas_loja": 1815356
+    }
+   },
+   "recentes": [
+    {
+     "loja": "app_store",
+     "data": "2026-11-08",
+     "nota": 3,
+     "titulo": "Aplicativo fica saindo do login",
+     "texto": "Os cupons",
+     "tema": "conta e cadastro",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Top",
+     "texto": "10",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "Adega Crescer tá top!",
+     "texto": "Veio muito rápido e bem gelada! Com ctz irei pedir mais vezes! Parabéns",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 3,
+     "titulo": "Aqui na minha cidade atrasa até 1h",
+     "texto": "Paraíso Do Tocantins",
+     "tema": "atraso na entrega",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-07",
+     "nota": 5,
+     "titulo": "✌️",
+     "texto": "✌️",
+     "tema": "outro",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Nao aceita minha data de nascimento",
+     "texto": "App véi podi, você não consegue cadastrar pq ele fala que sua data de nascimento está errada, comecei a duvidar se sabia mesmo minha data de nascimento",
+     "tema": "conta e cadastro",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 1,
+     "titulo": "Bebida quente, sacola rasgada e pedido atrasado!! Horrível!!",
+     "texto": "Comprei a comida pra minha família no delivery e deixei pra pedir a bebida em casa pelo app, a bebida atrasou, sacola rasgada, bebida quente, comemos a comida seco, sem a bebida e ainda tivemos que esperar gelar!! No app eu coloquei um red bul que não veio, constou no pedido que eu pedi 4 brahmas, mas foram 3 e um red bul!! Ao abrir a reclamação tem que aguardar meia hora pra falar no chat, tá de …",
+     "tema": "pedido errado ou incompleto",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-06",
+     "nota": 5,
+     "titulo": "Bom",
+     "texto": "Bom",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 4,
+     "titulo": "Gostei bastante",
+     "texto": "Falta promoções",
+     "tema": "cupons e promoções",
+     "reclamacao": true
+    },
+    {
+     "loja": "app_store",
+     "data": "2026-11-05",
+     "nota": 5,
+     "titulo": "Cerveja",
+     "texto": "Gelada",
+     "tema": "qualidade da comida ou do produto",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "satisfatório",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Um lixo e nada justo... Comentei com minha esposa que ia pedir cerveja. Ela entendeu que era pra ela pedir e abriu o app. Ao mesmo tempo, abri o app no meu celular, quando ela falou os valores e pediu qual era pra pedir. Nesse momento, percebemos que os valores para o mesmo produto e mesma quantidades eram diferentes pedindo pelo app dela ou pelo meu. Ou seja, os valores apresentados não são refer…",
+     "tema": "preços e taxas",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "fácil, rápido e chega gelado",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "melhor aplicativo de bebidas.",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 1,
+     "titulo": null,
+     "texto": "Os caras deixa mais caro na Black Friday, vai entender",
+     "tema": "preços e taxas",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "top",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "Excelente aplicativo Eu super recomendo ☺️🙂",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 2,
+     "titulo": null,
+     "texto": "Não consigo desvincular cartão cadastrado. Tive pedido cancelado, sem reembolso ate o momento.",
+     "tema": "cancelamento e reembolso",
+     "reclamacao": true
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "top!!!",
+     "tema": "elogio geral",
+     "reclamacao": false
+    },
+    {
+     "loja": "play_store",
+     "data": "2026-11-08",
+     "nota": 5,
+     "titulo": null,
+     "texto": "prático e intuitivo",
+     "tema": "elogio geral",
+     "reclamacao": false
+    }
+   ]
+  }
+ }
+}

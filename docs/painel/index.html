@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avaliações dos apps</title>
+<meta name="description" content="Painel diário das avaliações dos apps de bancos e delivery na App Store e na Play Store do Brasil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <div class="topo">
+    <div>
+      <div class="curso">Marketing Analítico com IA · Insper</div>
+      <h1>Avaliações dos apps de bancos e delivery</h1>
+    </div>
+    <div class="carimbo">
+      <div>Atualizado em <b id="atualizado">...</b></div>
+      <div><a href="https://github.com/jtrecenti/avaliacoes-apps/actions" target="_blank" rel="noopener">como atualizar</a></div>
+    </div>
+  </div>
+
+  <div class="controles">
+    <div class="grupo"><span>segmento</span><div class="pilulas" id="f-segmento"></div></div>
+    <div class="grupo"><span>loja</span><div class="pilulas" id="f-loja"></div></div>
+    <div class="grupo"><span>destaque</span><div class="apps" id="f-app"></div></div>
+  </div>
+
+  <p id="conclusao"></p>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grade">
+    <section class="card"><h2 id="t1"></h2><p class="sub">Nota média (1 a 5) das avaliações escritas nos últimos 30 dias</p><div class="grafico" id="g1"></div></section>
+    <section class="card"><h2 id="t5"></h2><p class="sub">Avaliações que reclamam de algo, em % das avaliações dos últimos 90 dias (classificação por IA)</p><div class="grafico" id="g5"></div></section>
+    <section class="card largo"><h2 id="t2"></h2><p class="sub">○ nota oficial que a loja mostra (todas as notas, com e sem texto) &nbsp;·&nbsp; ● média de quem escreveu avaliação nos últimos 30 dias</p><div class="grafico" id="g2"></div></section>
+    <section class="card"><h2 id="t3"></h2><p class="sub" id="s3"></p><div class="grafico" id="g3"></div></section>
+    <section class="card"><h2 id="t4"></h2><p class="sub">Tema de cada reclamação dos últimos 90 dias, em % das reclamações de cada app (cada coluna soma 100%)</p><div class="grafico alto" id="g4"></div></section>
+    <section class="card"><h2 id="t6"></h2><p class="sub">As mais recentes de cada loja; telefone, e-mail e CPF aparecem mascarados</p><ul class="lista" id="recentes"></ul></section>
+    <section class="card"><h2 id="t7"></h2><p class="sub">Frases que precisam ser verdade a cada atualização. Se uma que bloqueia falha, o painel não é atualizado.</p><ul class="checks" id="checks"></ul></section>
+  </div>
+
+  <footer>
+    <p id="fonte"></p>
+    <p id="contagens"></p>
+    <p>Nenhum nome, apelido ou foto de quem avaliou é guardado. Código e dados: <a href="https://github.com/jtrecenti/avaliacoes-apps">github.com/jtrecenti/avaliacoes-apps</a>.</p>
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.6.0/echarts.min.js"></script>
+<script>
+"use strict";
+const VERMELHO = "#e50505", TEXTO = "#0e171d", CINZA = "#5b5b5b", CINZA_CLARO = "#b9bec2", LINHA = "#dcdcdc";
+const BASE = { textStyle: { fontFamily: "Inter, system-ui, sans-serif", color: TEXTO }, animationDuration: 600,
+  animationDurationUpdate: 600, animationEasingUpdate: "cubicInOut" };
+const LOJAS = { ambas: "as duas", app_store: "App Store", play_store: "Play Store" };
+const fmt = (x, c = 1) => x == null ? "sem dado" : x.toLocaleString("pt-BR", { minimumFractionDigits: c, maximumFractionDigits: c });
+const pct = (x) => x == null ? "sem dado" : fmt(x, 0) + "%";
+const pontos = (d) => fmt(d) + (Math.abs(d) >= 2 ? " pontos" : " ponto");
+const dataBR = (s) => s ? s.slice(8, 10) + "/" + s.slice(5, 7) + "/" + s.slice(0, 4) : "";
+const el = (id) => document.getElementById(id);
+
+let D, estado = { segmento: null, loja: "ambas", app: null };
+const graf = {};
+
+function botoes(alvo, opcoes, atual, aoClicar) {
+  const box = el(alvo); box.innerHTML = "";
+  opcoes.forEach(([valor, rotulo]) => {
+    const b = document.createElement("button");
+    b.textContent = rotulo; b.type = "button";
+    b.className = valor === atual ? "on" : "";
+    b.setAttribute("aria-pressed", valor === atual);
+    b.onclick = () => aoClicar(valor);
+    box.appendChild(b);
+  });
+}
+
+const empresas = () => D.segmentos[estado.segmento].empresas;
+const num = (e, loja = estado.loja) => D.apps[e].lojas[loja];
+const nomeSeg = () => estado.segmento === "Bancos" ? "bancos" : "apps de delivery";
+
+function controles() {
+  botoes("f-segmento", Object.keys(D.segmentos).map((s) => [s, s]), estado.segmento, (s) => {
+    estado.segmento = s; estado.app = D.segmentos[s].empresas[0]; desenhar();
+  });
+  botoes("f-loja", Object.entries(LOJAS), estado.loja, (l) => { estado.loja = l; desenhar(); });
+  botoes("f-app", empresas().map((e) => [e, e]), estado.app, (e) => { estado.app = e; desenhar(); });
+}
+
+function frase() {
+  const e = estado.app, x = num(e);
+  const ofic = Object.keys(D.lojas).filter((l) => estado.loja === "ambas" || l === estado.loja)
+    .map((l) => [l, num(e, l).nota_loja]).filter(([, v]) => v != null);
+  const of = ofic.map(([l, v]) => `${fmt(v)} na ${LOJAS[l]}`).join(" e ");
+  let s = `No app <b>${e}</b>, quem escreveu avaliação nos últimos 30 dias deu nota média <b>${fmt(x.nota_30)}</b>`;
+  if (of) s += `, enquanto a nota oficial é ${of}`;
+  s += `. ${pct(x.pct_reclamacao_90)} das avaliações dos últimos 90 dias reclamam de algo`;
+  if (x.tema_principal) s += `, e o assunto mais citado nas reclamações é <b>${x.tema_principal}</b> (${pct(x.pct_tema_principal)})`;
+  return s + ".";
+}
+
+function kpis() {
+  const box = el("kpis"); box.innerHTML = "";
+  empresas().forEach((e) => {
+    const x = num(e), b = document.createElement("button");
+    b.type = "button"; b.className = "kpi" + (e === estado.app ? " on" : "");
+    b.innerHTML = `<h3></h3><div class="r">nota de quem escreve, 30 dias</div>
+      <div class="v">${fmt(x.nota_30)} <small>de ${x.n_30.toLocaleString("pt-BR")} avaliações</small></div>
+      <div class="t"><b>${pct(x.pct_reclamacao_90)}</b> reclamam de algo (90 dias)</div>
+      <div class="r">mais citado: ${x.tema_principal || "sem dado"}</div>`;
+    b.querySelector("h3").textContent = e;
+    b.onclick = () => { estado.app = e; desenhar(); };
+    box.appendChild(b);
+  });
+}
+
+function barras(id, tituloId, campo, formato, titulo, max) {
+  const linhas = empresas().map((e) => [e, num(e)[campo]]).filter(([, v]) => v != null).sort((a, b) => a[1] - b[1]);
+  el(tituloId).textContent = titulo(linhas);
+  graf[id].setOption({ ...BASE, grid: { left: 8, right: 56, top: 8, bottom: 24, containLabel: true },
+    tooltip: { valueFormatter: formato },
+    xAxis: { type: "value", min: 0, max, splitLine: { lineStyle: { color: "#eee" } }, axisLabel: { color: CINZA } },
+    yAxis: { type: "category", data: linhas.map((l) => l[0]), axisTick: { show: false }, axisLine: { show: false },
+      axisLabel: { color: TEXTO, fontSize: 13 } },
+    series: [{ type: "bar", barWidth: "58%", data: linhas.map(([e, v]) => ({ value: v,
+      itemStyle: { color: e === estado.app ? VERMELHO : CINZA_CLARO, borderRadius: [0, 4, 4, 0] } })),
+      label: { show: true, position: "right", formatter: (p) => formato(p.value), color: TEXTO, fontWeight: 600 } }] }, true);
+}
+
+function lugar(linhas) {
+  const ordem = [...linhas].sort((a, b) => b[1] - a[1]).map((l) => l[0]);
+  return ordem.indexOf(estado.app) + 1;
+}
+
+function g1() {
+  barras("g1", "t1", "nota_30", (v) => fmt(v), (l) => {
+    const pos = lugar(l), melhor = [...l].sort((a, b) => b[1] - a[1])[0];
+    if (pos === 1) return `${estado.app} tem a maior nota de quem escreve entre os ${nomeSeg()}: ${fmt(melhor[1])}`;
+    return `${estado.app} fica em ${pos}º lugar entre ${l.length} ${nomeSeg()} na nota de quem escreve; ${melhor[0]} lidera com ${fmt(melhor[1])}`;
+  }, 5);
+}
+
+function g5() {
+  barras("g5", "t5", "pct_reclamacao_90", (v) => pct(v), (l) => {
+    const v = num(estado.app).pct_reclamacao_90, pos = lugar(l);
+    const extremo = pos === 1 ? `, a maior proporção entre os ${nomeSeg()}` : pos === l.length ? `, a menor proporção entre os ${nomeSeg()}` : "";
+    return `${pct(v)} das avaliações de ${estado.app} reclamam de algo${extremo}`;
+  }, 100);
+}
+
+function g2() {
+  const lojas = estado.loja === "ambas" ? Object.keys(D.lojas) : [estado.loja];
+  const linhas = [];
+  empresas().forEach((e) => lojas.forEach((l) => {
+    const x = num(e, l);
+    if (x.nota_30 != null && x.nota_loja != null)
+      linhas.push({ nome: lojas.length > 1 ? `${e} · ${LOJAS[l]}` : e, e, l, escrita: x.nota_30, loja: x.nota_loja, n: x.n_30, nl: x.n_notas_loja });
+  }));
+  linhas.sort((a, b) => (a.loja - a.escrita) - (b.loja - b.escrita));
+  const abaixo = linhas.filter((x) => x.escrita < x.loja).length;
+  const maior = linhas[linhas.length - 1];
+  el("t2").textContent = !linhas.length ? "Sem nota oficial nesta coleta" :
+    (abaixo === linhas.length ? `Em todos os ${linhas.length} casos, quem escreve dá nota menor que a média oficial da loja`
+      : `Em ${abaixo} de ${linhas.length} casos, quem escreve dá nota menor que a média oficial da loja`) +
+    (maior ? `; a maior distância é ${pontos(maior.loja - maior.escrita)} (${maior.nome})` : "");
+  graf.g2.getDom().style.height = Math.max(260, 40 * linhas.length + 60) + "px";
+  graf.g2.resize();
+  graf.g2.setOption({ ...BASE, grid: { left: 8, right: 40, top: 10, bottom: 26, containLabel: true },
+    tooltip: { formatter: (p) => { const x = linhas[p.dataIndex];
+      return `<b>${x.nome}</b><br>nota oficial da loja: ${fmt(x.loja, 2)} (${x.nl.toLocaleString("pt-BR")} notas)<br>` +
+        `média de quem escreveu, 30 dias: ${fmt(x.escrita, 2)} (${x.n} avaliações)`; } },
+    xAxis: { type: "value", min: 1, max: 5, interval: 1, splitLine: { lineStyle: { color: "#eee" } }, axisLabel: { color: CINZA } },
+    yAxis: { type: "category", data: linhas.map((x) => x.nome), axisTick: { show: false }, axisLine: { show: false },
+      axisLabel: { color: TEXTO, fontSize: 12.5 } },
+    series: [{ type: "custom", data: linhas.map((x, i) => [i, x.escrita, x.loja, x.e === estado.app ? 1 : 0]),
+      encode: { x: [1, 2], y: 0 },
+      renderItem: (params, api) => {
+        const y = api.value(0), a = api.coord([api.value(1), y]), b = api.coord([api.value(2), y]);
+        const destaque = api.value(3) === 1, cor = destaque ? VERMELHO : "#8d9398";
+        return { type: "group", children: [
+          { type: "line", shape: { x1: a[0], y1: a[1], x2: b[0], y2: b[1] }, style: { stroke: destaque ? "#f3a5a5" : LINHA, lineWidth: 4 } },
+          { type: "circle", shape: { cx: b[0], cy: b[1], r: 6 }, style: { fill: "#fff", stroke: TEXTO, lineWidth: 2 } },
+          { type: "circle", shape: { cx: a[0], cy: a[1], r: 7 }, style: { fill: cor } },
+          { type: "text", style: { text: fmt(api.value(1)), x: a[0] - 10, y: a[1], align: "right", verticalAlign: "middle",
+            fill: destaque ? VERMELHO : CINZA, font: `600 12px Inter, sans-serif` } },
+          { type: "text", style: { text: fmt(api.value(2)), x: b[0] + 10, y: b[1], align: "left", verticalAlign: "middle",
+            fill: TEXTO, font: `12px Inter, sans-serif` } },
+        ] };
+      } }] }, true);
+}
+
+// rótulo com o nome do app no último ponto da linha (no lugar de legenda)
+const rotuloNoFim = (v, nome, cor, peso) => {
+  const a = [...v]; while (a.length && a[a.length - 1] == null) a.pop();
+  if (a.length) a[a.length - 1] = { value: a[a.length - 1], label: { show: true, position: "right", formatter: nome, color: cor, fontWeight: peso } };
+  return a;
+};
+
+function g3() {
+  // com "as duas", a linha usa só a App Store: a Play Store devolve só os últimos dias de cada app,
+  // e misturar as duas lojas faria a última semana mudar só porque mudou a loja
+  const lj = estado.loja === "ambas" ? "app_store" : estado.loja;
+  el("s3").textContent = "Nota média por semana (segunda a domingo); semanas com menos de 5 avaliações ficam sem ponto." +
+    (estado.loja === "ambas" ? " Aqui só a App Store: a Play Store traz poucos dias por coleta e misturaria períodos diferentes." : "");
+  const series = empresas().map((e) => {
+    const sel = e === estado.app;
+    return { name: e, type: "line", data: rotuloNoFim(num(e, lj).semanal, e, sel ? VERMELHO : CINZA, sel ? 600 : 400), connectNulls: true, symbolSize: sel ? 7 : 4, z: sel ? 3 : 2,
+      lineStyle: { width: sel ? 3 : 1.5, color: sel ? VERMELHO : CINZA_CLARO }, itemStyle: { color: sel ? VERMELHO : CINZA_CLARO },
+      emphasis: { focus: "series" }, labelLayout: { moveOverlap: "shiftY" } };
+  });
+  const s = num(estado.app, lj).semanal, idx = s.map((v, i) => v == null ? null : i).filter((i) => i != null);
+  let t;
+  if (idx.length < 2) t = `${estado.app} ainda tem só ${idx.length} semana com avaliações suficientes na ${LOJAS[lj]}; a linha cresce a cada coleta diária`;
+  else {
+    const d = s[idx[idx.length - 1]] - s[idx[0]];
+    const desde = D.semanas[idx[0]];
+    t = Math.abs(d) < 0.1 ? `Na ${LOJAS[lj]}, a nota semanal de ${estado.app} está estável desde a semana de ${desde}`
+      : `Na ${LOJAS[lj]}, a nota semanal de ${estado.app} ${d > 0 ? "subiu" : "caiu"} ${pontos(Math.abs(d))} desde a semana de ${desde}`;
+  }
+  el("t3").textContent = t;
+  graf.g3.setOption({ ...BASE, grid: { left: 8, right: 96, top: 14, bottom: 24, containLabel: true },
+    tooltip: { trigger: "axis", valueFormatter: (v) => fmt(v, 2) },
+    xAxis: { type: "category", data: D.semanas, boundaryGap: false, axisLine: { lineStyle: { color: LINHA } }, axisLabel: { color: CINZA } },
+    yAxis: { type: "value", min: 1, max: 5, interval: 1, splitLine: { lineStyle: { color: "#eee" } }, axisLabel: { color: CINZA } },
+    series }, true);
+}
+
+function g4() {
+  const es = empresas();
+  const temas = D.segmentos[estado.segmento].temas.filter((t) => es.some((e) => (num(e).temas_reclamacao[t] || 0) >= 0.5));
+  // ordem: do tema mais citado (média entre os apps) para o menos citado
+  const media = (t) => es.reduce((s, e) => s + (num(e).temas_reclamacao[t] || 0), 0) / es.length;
+  temas.sort((a, b) => media(a) - media(b));
+  const dados = [];
+  let vmax = 0;
+  es.forEach((e, i) => temas.forEach((t, j) => {
+    const v = num(e).temas_reclamacao[t]; if (v != null) { dados.push([i, j, v]); vmax = Math.max(vmax, v); }
+  }));
+  const topo = temas[temas.length - 1];
+  const lideres = es.filter((e) => { const m = num(e).temas_reclamacao; return temas.every((t) => (m[t] || 0) <= (m[topo] || 0)); });
+  el("t4").textContent = `"${topo}" é o tema mais comum das reclamações dos ${nomeSeg()}` +
+    (lideres.length ? ` e lidera em ${lideres.length} de ${es.length} apps` : "");
+  graf.g4.setOption({ ...BASE, grid: { left: 16, right: 8, top: 8, bottom: 8, containLabel: true },
+    tooltip: { formatter: (p) => `${es[p.value[0]]}<br>${temas[p.value[1]]}: <b>${pct(p.value[2])}</b> das reclamações` },
+    xAxis: { type: "category", data: es, position: "top", axisTick: { show: false }, axisLine: { show: false },
+      axisLabel: { interval: 0, color: TEXTO, fontSize: 12, width: 64, overflow: "break", formatter: (v) => v === estado.app ? `{s|${v}}` : v,
+        rich: { s: { color: VERMELHO, fontWeight: 700, fontSize: 12 } } } },
+    yAxis: { type: "category", data: temas, axisTick: { show: false }, axisLine: { show: false }, axisLabel: { color: TEXTO, fontSize: 12 } },
+    visualMap: { show: false, min: 0, max: Math.max(vmax, 1), inRange: { color: ["#f7f7f8", "#f6b3b3", VERMELHO] } },
+    series: [{ type: "heatmap", itemStyle: { borderColor: "#fff", borderWidth: 2, borderRadius: 4 },
+      label: { show: true, formatter: (p) => p.value[2] >= 0.5 ? fmt(p.value[2], 0) : "", fontSize: 11 },
+      // texto branco nas células mais escuras, para continuar legível
+      data: dados.map((d) => ({ value: d, label: { color: d[2] > 0.6 * vmax ? "#fff" : TEXTO } })) }] }, true);
+}
+
+function recentes() {
+  const e = estado.app;
+  const lista = D.apps[e].recentes.filter((r) => estado.loja === "ambas" || r.loja === estado.loja)
+    .sort((a, b) => b.data.localeCompare(a.data));
+  const nr = lista.filter((r) => r.reclamacao).length;
+  el("t6").textContent = `${nr} das ${lista.length} avaliações mais recentes de ${e} reclamam de algo`;
+  const ul = el("recentes"); ul.innerHTML = "";
+  lista.forEach((r) => {
+    const li = document.createElement("li");
+    const meta = document.createElement("div"); meta.className = "meta";
+    const est = document.createElement("span"); est.className = "estrelas";
+    est.innerHTML = "★".repeat(r.nota) + "<i>" + "★".repeat(5 - r.nota) + "</i>";
+    est.setAttribute("aria-label", `${r.nota} de 5 estrelas`);
+    meta.append(est, document.createTextNode(`${LOJAS[r.loja]} · ${dataBR(r.data)}`));
+    if (r.tema) { const c = document.createElement("span"); c.className = "chip" + (r.reclamacao ? " recl" : ""); c.textContent = r.tema; meta.append(c); }
+    li.append(meta);
+    if (r.titulo) { const t = document.createElement("div"); t.className = "titulo"; t.textContent = r.titulo; li.append(t); }
+    const x = document.createElement("div"); x.className = "texto"; x.textContent = r.texto; li.append(x);
+    ul.append(li);
+  });
+}
+
+function checagens() {
+  const c = D.checagens, falhas = c.filter((x) => !x.ok && x.nivel === "bloqueia").length;
+  const alertas = c.filter((x) => !x.ok && x.nivel === "alerta").length, ok = c.filter((x) => x.ok).length;
+  el("t7").textContent = `${ok} de ${c.length} checagens passaram` + (alertas ? `; ${alertas} ${alertas > 1 ? "alertas" : "alerta"} para olhar` : "") +
+    (falhas ? `; ${falhas} bloqueando` : "");
+  const ul = el("checks"); ul.innerHTML = "";
+  [...c].sort((a, b) => a.ok - b.ok).forEach((x) => {
+    const st = x.ok ? "ok" : x.nivel === "bloqueia" ? "falha" : "alerta";
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="ic ${st}" aria-label="${st}">${st === "ok" ? "✓" : st === "alerta" ? "!" : "×"}</span><div></div>`;
+    const d = li.querySelector("div");
+    d.append(document.createTextNode(x.frase + " "));
+    const n = document.createElement("span"); n.className = "nivel"; n.textContent = `(${x.nivel})`; d.append(n);
+    if (x.detalhe) { const det = document.createElement("div"); det.className = "det"; det.textContent = x.detalhe; li.append(det); }
+    ul.append(li);
+  });
+}
+
+function rodape() {
+  const c = D.contagens;
+  el("fonte").textContent = `Fonte: ${D.fonte} Coleta mais recente: ${dataBR(D.coleta_mais_recente)}.`;
+  el("contagens").textContent = `${c.coletas} coleta(s), ${c.linhas_coletadas.toLocaleString("pt-BR")} linhas coletadas, ` +
+    `${c.avaliacoes_unicas.toLocaleString("pt-BR")} avaliações diferentes; ${c.anotadas_90_dias.toLocaleString("pt-BR")} dos últimos 90 dias ` +
+    `classificadas, ${c.confianca_baixa_tema.toLocaleString("pt-BR")} com confiança abaixo de 60% no tema.`;
+}
+
+function desenhar() {
+  controles();
+  el("conclusao").innerHTML = frase();
+  kpis(); g1(); g5(); g2(); g3(); g4(); recentes(); checagens();
+}
+
+async function iniciar() {
+  try {
+    const r = await fetch("dados.json", { cache: "no-cache" });
+    D = await r.json();
+  } catch (e) {
+    document.querySelector("main").insertAdjacentHTML("afterbegin",
+      '<p class="erro">Não consegui ler dados.json. Abra a página pelo GitHub Pages ou por um servidor local ' +
+      '(na raiz do repositório: <code>python -m http.server</code> e depois <code>localhost:8000/docs/painel/</code>).</p>');
+    return;
+  }
+  const a = new Date(D.atualizado_em.replace(/([+-]\d{2})(\d{2})$/, "$1:$2"));
+  el("atualizado").textContent = a.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
+  estado.segmento = Object.keys(D.segmentos)[0];
+  estado.app = empresas()[0];
+  ["g1", "g2", "g3", "g4", "g5"].forEach((id) => { graf[id] = echarts.init(el(id), null, { renderer: "svg" }); });
+  rodape();
+  desenhar();
+  const ajustar = () => Object.values(graf).forEach((g) => g.resize());
+  addEventListener("resize", ajustar);
+  if (document.fonts) document.fonts.ready.then(ajustar);
+}
+iniciar();
+</script>
+</body>
+</html>

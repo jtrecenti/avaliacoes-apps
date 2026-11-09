@@ -1,0 +1,58 @@
+# Atualiza o painel: coleta as avaliações, junta, checa, anota com o Jev e grava docs/painel/dados.json.
+# Roda sozinho todo dia às 09:00 de Brasília e também pelo botão "Run workflow" da aba Actions.
+# Se uma checagem que bloqueia falhar, o job falha e nada é gravado no repositório.
+name: Atualizar painel
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # 12:00 UTC = 09:00 em Brasília
+  workflow_dispatch:
+    inputs:
+      coletar_de_novo:
+        description: "Coletar de novo mesmo que já exista coleta hoje"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-painel
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar pacotes
+        run: pip install -r requirements.txt
+
+      - name: Testes
+        run: python -m pytest testes -q
+
+      - name: Rodar o monitor
+        env:
+          # opcional: sem o segredo, o passo do Jev usa só o cache e avisa quantas ficaram sem tema
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        run: python monitor/rodar.py ${{ inputs.coletar_de_novo && '--coletar-de-novo' || '' }}
+
+      - name: Gravar no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add monitor/dados docs/painel
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git commit -m "Atualiza o painel ($(TZ=America/Sao_Paulo date +'%Y-%m-%d %H:%M'))"
+          git pull --rebase
+          git push

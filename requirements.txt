@@ -1,0 +1,6 @@
+pandas>=2.2
+requests>=2.31
+google-play-scraper==1.2.7
+typesafe-sdk==0.7.5
+python-dotenv>=1.0
+pytest>=8.0

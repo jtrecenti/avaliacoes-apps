@@ -1,0 +1,263 @@
+/* Componentes dos slides de Marketing Analítico. As cores vêm do tema (claro e escuro). */
+
+/* ---------- estados do motor de passos ---------------------------------- */
+[data-p] { visibility: hidden; opacity: 0; }
+.foco { outline: 3px solid var(--marca); outline-offset: 3px; border-radius: 6px; transition: outline-color .3s; }
+.marcado { background: var(--grifo); border-radius: 4px; box-shadow: 0 0 0 .12em var(--grifo); transition: background .4s; }
+
+/* ---------- gráficos em SVG ---------------------------------------------- */
+.cena { position: relative; }
+.cena svg { width: 100%; height: auto; overflow: visible; font-family: Inter, sans-serif; display: block; }
+.cena .eixo { stroke: var(--texto-fraco); stroke-width: 1.5; }
+.cena .grade { stroke: var(--superficie-borda); stroke-width: 1; }
+.cena .rot { fill: var(--texto-fraco); font-size: 15px; }
+.cena .rot-forte { fill: var(--texto); font-size: 17px; font-weight: 650; }
+.cena .anot { fill: var(--texto); font-size: 17px; font-weight: 600; paint-order: stroke; stroke: var(--fundo); stroke-width: 5px; }
+.cena .anot.marca { fill: var(--marca); }
+.cena .anot.verde { fill: var(--turquesa); }
+.cena .ponto { fill: var(--azul); opacity: .55; }
+:root[data-tema="escuro"] .cena .ponto { fill: #8fb4c9; }
+.cena .reta { stroke: var(--marca); stroke-width: 4; stroke-linecap: round; }
+.cena .residuo { stroke: var(--laranja); stroke-width: 2; }
+.cena .quadrado { fill: var(--laranja); opacity: .14; stroke: var(--laranja); stroke-width: 1; }
+.cena .barra { fill: var(--texto-fraco); }
+.cena .barra.destaque { fill: var(--marca); }
+.cena .no rect, .cena rect.no { fill: var(--fundo); stroke: var(--regua); stroke-width: 2; rx: 12; }
+.cena .no.ativo rect { stroke: var(--marca); stroke-width: 3; fill: color-mix(in srgb, var(--marca) 7%, var(--fundo)); }
+.cena .no text { fill: var(--texto); font-size: 18px; font-weight: 650; }
+.cena .no .sub { fill: var(--texto-fraco); font-size: 14px; font-weight: 400; }
+.cena .seta { stroke: var(--texto-fraco); stroke-width: 2.5; fill: none; }
+.cena .seta.viva { stroke: var(--marca); }
+.cena .ponta { fill: var(--texto-fraco); }
+.cena .ficha { fill: var(--marca); }
+
+/* ---------- fluxo horizontal (etapas com setas) --------------------------- */
+.fluxo { display: flex; align-items: stretch; gap: .5rem; margin: .6rem 0; }
+.fluxo > .etapa {
+  flex: 1; background: var(--superficie); border-radius: 10px; padding: .55rem .7rem;
+  border-top: 4px solid var(--regua); font-size: .7em; line-height: 1.35;
+}
+.fluxo > .etapa b { display: block; font-size: 1.12em; margin-bottom: .2rem; }
+.fluxo > .etapa.marca { border-top-color: var(--marca); }
+.fluxo > .etapa.verde { border-top-color: var(--turquesa); }
+.fluxo > .etapa.roxo { border-top-color: var(--roxo); }
+.fluxo > .etapa.laranja { border-top-color: var(--laranja); }
+.fluxo > .seta { align-self: center; color: var(--texto-fraco); font-size: 1.1em; flex: none; }
+
+/* ---------- cartões ------------------------------------------------------- */
+.cartoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-top: .4rem; }
+.cartoes.dois { grid-template-columns: repeat(2, 1fr); }
+.cartoes.quatro { grid-template-columns: repeat(4, 1fr); }
+.cartao {
+  background: var(--superficie); border-radius: 10px; padding: .6rem .8rem; font-size: .72em; line-height: 1.4;
+  border: 1px solid var(--superficie-borda);
+}
+.cartao > b:first-child, .cartao .tit { display: block; font-size: 1.15em; margin-bottom: .25rem; font-weight: 700; }
+.cartao .num { font-family: "GT Ultra Fine", Georgia, serif; font-size: 2.1em; line-height: 1; color: var(--marca); display: block; margin-bottom: .2rem; }
+.cartao.escuro { background: var(--azul); color: var(--fundo); border-color: var(--azul); }
+.cartao.escuro b { color: var(--fundo); }
+
+/* ---------- conversa (balões) -------------------------------------------- */
+.conversa { display: flex; flex-direction: column; gap: .45rem; font-size: .68em; line-height: 1.42; }
+.conversa .eu, .conversa .ia, .conversa .ferramenta {
+  max-width: 88%; padding: .5rem .8rem; border-radius: 14px;
+}
+.conversa .eu { align-self: flex-end; background: var(--superficie); border-bottom-right-radius: 4px; }
+.conversa .ia { align-self: flex-start; border: 1.5px solid var(--superficie-borda); border-bottom-left-radius: 4px; }
+.conversa .ferramenta {
+  align-self: flex-start; font-family: "Cascadia Code", Consolas, monospace; font-size: .9em;
+  background: var(--codigo-fundo); border-left: 3px solid var(--roxo); border-radius: 4px;
+}
+.conversa .quem { display: block; font-size: .8em; font-weight: 700; color: var(--texto-fraco); margin-bottom: .1rem; font-family: Inter, sans-serif; }
+
+/* ---------- antes e depois ----------------------------------------------- */
+.versus { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
+.versus > div { border-radius: 10px; padding: .6rem .9rem; font-size: .74em; line-height: 1.45; }
+.versus .antes { background: var(--superficie); }
+.versus .depois { border: 2px solid var(--turquesa); }
+.versus .antes::before, .versus .depois::before { display: block; font-weight: 700; font-size: .85em; margin-bottom: .25rem; }
+.versus .antes::before { content: attr(data-rotulo); color: var(--texto-fraco); }
+.versus .depois::before { content: attr(data-rotulo); color: var(--turquesa); }
+
+/* ---------- etiquetas ------------------------------------------------------ */
+.etiqueta {
+  display: inline-block; font-size: .62em; font-weight: 650; padding: .12em .6em; border-radius: 999px;
+  background: var(--superficie); border: 1px solid var(--superficie-borda); color: var(--texto); white-space: nowrap;
+}
+.etiqueta.marca { background: var(--marca); border-color: var(--marca); color: #fff; }
+.etiqueta.verde { background: var(--turquesa); border-color: var(--turquesa); color: #fff; }
+.etiqueta.roxo { background: var(--roxo); border-color: var(--roxo); color: #fff; }
+.etiqueta.laranja { background: var(--laranja); border-color: var(--laranja); color: #fff; }
+
+/* ---------- quiz no slide ---------------------------------------------------- */
+.quiz { display: flex; gap: 2.2rem; align-items: center; margin-top: .4rem; }
+.quiz .qr { flex: none; width: 250px; text-align: center; }
+.quiz .qr img { width: 100%; background: #fff; padding: 10px; border-radius: 10px; }
+.quiz .endereco { font-family: "Cascadia Code", Consolas, monospace; font-size: .55em; color: var(--texto-fraco); margin-top: .3rem; }
+.quiz .pergunta { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.15em; line-height: 1.22; margin-bottom: .6rem; }
+.quiz ol.alts { list-style: none; margin: 0; padding: 0; font-size: .8em; }
+.quiz ol.alts li { margin: .3rem 0; padding-left: 2.1rem; position: relative; }
+.quiz ol.alts li::before {
+  content: attr(data-l); position: absolute; left: 0; top: .05em; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--superficie); display: grid; place-items: center; font-weight: 700; font-size: .85em;
+}
+.quiz ol.alts li.certa::before { background: var(--turquesa); color: #fff; }
+.link-painel { position: absolute; right: 0; bottom: 0; font-size: .48em; }
+.link-painel a { color: var(--texto-fraco); opacity: .7; border: none; }
+
+/* ---------- linha do tempo --------------------------------------------------- */
+.tempo-tabela { font-size: .7em; }
+
+/* ---------- prompt montado por partes --------------------------------------- */
+.brief { display: grid; gap: .32rem; font-size: .7em; line-height: 1.4; }
+.brief > div { display: grid; grid-template-columns: 9.5em 1fr; gap: .8rem; align-items: start; padding: .35rem .6rem; border-radius: 8px; background: var(--superficie); }
+.brief > div > b { color: var(--marca); font-weight: 700; }
+
+/* ---------- caixa de código "explicada" -------------------------------------- */
+.cod { font-family: "Cascadia Code", Consolas, monospace; font-size: .58em; line-height: 1.55; background: var(--codigo-fundo);
+       border: 1px solid var(--superficie-borda); border-radius: 8px; padding: .6rem .9rem; white-space: pre; overflow: hidden; }
+.cod .c { color: var(--texto-fraco); }
+.cod .k { color: var(--roxo); font-weight: 700; }
+.cod .s { color: var(--turquesa); }
+.cod .ruim { background: color-mix(in srgb, var(--marca) 18%, transparent); border-radius: 3px; }
+.cod .bom { background: color-mix(in srgb, var(--turquesa) 20%, transparent); border-radius: 3px; }
+
+/* ---------- número grande ----------------------------------------------------- */
+.numerao { font-family: "GT Ultra Fine", Georgia, serif; font-size: 3.2em; line-height: 1; color: var(--marca); }
+.numerao small { display: block; font-family: Inter, sans-serif; font-size: .2em; color: var(--texto-fraco); margin-top: .4rem; line-height: 1.35; font-weight: 400; }
+
+/* ---------- tabelinha de dados ----------------------------------------------- */
+.tab-dados { font-family: "Cascadia Code", Consolas, monospace; font-size: .5em !important; }
+.tab-dados td, .tab-dados th { padding: .22rem .45rem !important; white-space: nowrap; }
+.reveal table.tab-dados th { text-transform: none; }
+.col-viva { background: color-mix(in srgb, var(--marca) 12%, transparent); }
+.col-verde { background: color-mix(in srgb, var(--turquesa) 16%, transparent); }
+
+/* ---------- lista grande (regras de bolso) ---------------------------------- */
+.grade-regras ol { font-size: .86em; line-height: 1.4; }
+.grade-regras li { margin-bottom: .55rem; padding-left: .3rem; }
+.quiz ol.alts li.marcado::before { background: var(--turquesa); color: #fff; }
+.quiz ol.alts li.marcado { background: none; box-shadow: none; font-weight: 650; }
+
+/* ---------- legendas empilhadas: todas no mesmo lugar, uma visível por vez ---- */
+.legendas { display: grid; margin-top: .4rem; }
+.legendas > * {
+  grid-area: 1 / 1; background: var(--superficie); border-left: 4px solid var(--marca);
+  padding: .5em .85em; line-height: 1.4; align-self: start; border-radius: 0 8px 8px 0;
+}
+.legendas.pequeno > * { font-size: .8em; }
+.legendas strong { color: var(--marca); }
+
+/* ---------- ajustes de leitura (revisão das capturas) --------------------------
+   Os componentes começaram pequenos demais: sobrava metade do slide e o fundo da
+   sala não lia. Aqui tudo sobe um degrau, e o título de cartão/briefing vira
+   linha própria (no markdown ele vem colado ao texto, no mesmo parágrafo). */
+.cartao { font-size: .8em; }
+.cartoes.quatro .cartao { font-size: .76em; }
+.cartao p > strong:first-child, .cartao > p:first-child > strong:first-child { display: block; font-size: 1.1em; margin-bottom: .2rem; }
+.cartao .num { display: block; }
+.brief { font-size: .8em; }
+.brief > div { display: block; padding: .38rem .7rem; }
+.brief > div p > strong:first-child { display: block; color: var(--marca); }
+.prompt { font-size: .82em; }
+.conversa { font-size: .76em; }
+.versus > div { font-size: .84em; }
+.fluxo > .etapa { font-size: .78em; }
+.grade-regras ol { font-size: 1em; }
+.legendas.pequeno > * { font-size: .9em; }
+.link-painel { right: 80px; bottom: -2px; }
+
+/* ---------- estúdio 2: a aba Rede ------------------------------------------- */
+.rede { display: grid; grid-template-columns: 1fr 1.25fr; gap: 1rem; font-size: .62em; }
+.rede-pagina { border: 1.5px solid var(--superficie-borda); border-radius: 10px; overflow: hidden; }
+.rede-barra { background: var(--superficie); padding: .35rem .7rem; font-family: Consolas, monospace; color: var(--texto-fraco); }
+.rede-corpo { padding: .7rem .9rem; }
+.rede-tit { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.5em; margin-bottom: .5rem; }
+.rede-item { display: flex; justify-content: space-between; padding: .35rem 0; border-bottom: 1px solid var(--superficie-borda); }
+.rede-item b { color: var(--marca); }
+.rede-dev { border: 1.5px solid var(--superficie-borda); border-radius: 10px; overflow: hidden; background: var(--codigo-fundo); position: relative; min-height: 15em; }
+.rede-abas { display: flex; gap: 1rem; padding: .35rem .7rem; border-bottom: 1px solid var(--superficie-borda); color: var(--texto-fraco); }
+.rede-abas .ativa { color: var(--texto); font-weight: 700; border-bottom: 2px solid var(--marca); }
+.rede-lin { display: grid; grid-template-columns: 1fr 6em 5em; gap: .5rem; padding: .28rem .7rem; font-family: Consolas, monospace; border-bottom: 1px solid var(--superficie-borda); }
+.rede-lin.cab { font-family: Inter, sans-serif; font-weight: 700; color: var(--texto-fraco); }
+.rede-lin.chave span:first-child { font-weight: 700; }
+.rede-lin.foco-lin { background: color-mix(in srgb, var(--marca) 16%, transparent); }
+.rede-resp { position: absolute; left: .6rem; right: .6rem; bottom: .6rem; margin: 0; background: var(--fundo);
+  border: 1.5px solid var(--marca); border-radius: 8px; padding: .5rem .7rem; font-size: .95em; white-space: pre; box-shadow: none !important; }
+
+/* ---------- estúdio 2: texto vira coluna ---------------------------------- */
+.texto-col { position: relative; }
+.relato { font-size: .8em; line-height: 1.6; background: var(--superficie); border-radius: 10px; padding: .7rem 1rem; }
+.relato .quem { display: block; font-size: .8em; font-weight: 700; color: var(--texto-fraco); margin-bottom: .2rem; }
+.relato [data-c] { transition: background .5s, box-shadow .5s; border-radius: 4px; }
+.relato [data-c].grifo-on { background: var(--grifo); box-shadow: 0 0 0 .12em var(--grifo); }
+.tab-codigo { margin-top: 1rem !important; font-size: .62em !important; }
+.reveal table.tab-codigo th { font-family: Consolas, monospace; color: var(--marca); }
+.tab-codigo td { height: 2.2em; }
+.tab-codigo td.cheia { background: color-mix(in srgb, var(--turquesa) 12%, transparent); }
+.fantasma { position: absolute; z-index: 5; background: var(--grifo); border-radius: 4px; padding: 0 .2em; font-size: .8em; pointer-events: none; white-space: nowrap; transform-origin: 0 0; }
+
+/* ---------- aula 3: tipos de variáveis --------------------------------------- */
+.tipos { font-size: .62em; }
+.tipos-origem { display: flex; flex-wrap: wrap; gap: .5rem; min-height: 3.2em; padding: .5rem; border: 1.5px dashed var(--regua); border-radius: 10px; margin-bottom: .9rem; }
+.tipos-caixas { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; }
+.tipos-bin { background: var(--superficie); border-radius: 10px; padding: .55rem .6rem; min-height: 11em; border-top: 5px solid var(--regua); }
+.tipos-bin.nom { border-top-color: var(--roxo); } .tipos-bin.ord { border-top-color: var(--laranja); }
+.tipos-bin.dis { border-top-color: var(--turquesa); } .tipos-bin.con { border-top-color: #1f63c6; }
+.tipos-bin b { display: block; font-size: 1.15em; } .tipos-bin small { color: var(--texto-fraco); }
+.tipos-fichas { display: flex; flex-direction: column; gap: .4rem; margin-top: .5rem; }
+.ficha-var { background: var(--fundo); border: 1.5px solid var(--superficie-borda); border-radius: 8px; padding: .25rem .5rem; display: flex; justify-content: space-between; gap: .6rem; }
+.ficha-var code { font-size: .95em; }
+.ficha-var span { color: var(--texto-fraco); }
+.ficha-var.duvida { border-color: var(--marca); border-width: 2.5px; }
+.ficha-var.duvida::after { content: "?"; color: var(--marca); font-weight: 800; }
+
+.legenda-cores { display: flex; gap: 1.6rem; justify-content: center; font-size: .66em; margin-top: .3rem; }
+.legenda-cores i { display: inline-block; width: .9em; height: .9em; border-radius: 3px; margin-right: .4em; vertical-align: -.1em; }
+
+/* ---------- aula 3: R² ----------------------------------------------------------- */
+.r2 { font-size: .8em; margin-top: 1rem; }
+.r2-rot { color: var(--texto-fraco); margin-bottom: .3rem; }
+.r2-trilho { height: 2.6em; border-radius: 8px; background: repeating-linear-gradient(135deg, var(--superficie), var(--superficie) 10px, var(--superficie-borda) 10px, var(--superficie-borda) 12px); overflow: hidden; }
+.r2-barra { height: 100%; width: 0; background: var(--marca); }
+.r2-txt { margin-top: .6rem; min-height: 3em; }
+.r2-txt b { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.6em; color: var(--marca); }
+
+/* ---------- aula 3: matriz de gráficos --------------------------------------- */
+.reveal table.matriz { font-size: .74em; border-collapse: separate; border-spacing: .5rem; }
+.reveal table.matriz th { border: none; color: var(--texto-fraco); text-align: center; font-size: .95em; }
+.reveal table.matriz tr th:first-child { text-align: right; vertical-align: middle; }
+.reveal table.matriz td { background: var(--superficie); border-radius: 10px; padding: .6rem .8rem; vertical-align: top; border: none; width: 42%; }
+.reveal table.matriz td span { color: var(--texto-fraco); font-size: .9em; }
+.reveal table.matriz td.vazio { background: none; color: var(--texto-fraco); text-align: center; vertical-align: middle; }
+.reveal table.dummies { font-size: .7em !important; }
+.reveal table.dummies td, .reveal table.dummies th { text-align: center; padding: .4rem .8rem !important; }
+
+/* ---------- estúdio 3: placar --------------------------------------------------- */
+.placar { font-size: .8em; display: grid; gap: .5rem; margin-top: .6rem; }
+.pl-lin { display: grid; grid-template-columns: 1fr 5.5em 5.5em; gap: .8rem; align-items: center; background: var(--superficie); border-radius: 10px; padding: .55rem .8rem; }
+.pl-lin.cab { background: none; font-weight: 700; color: var(--texto-fraco); padding-bottom: 0; }
+.pl-lin.cab span { text-align: center; }
+.pl-lin b { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.5em; text-align: center; }
+.pl-lin b.ing { color: var(--marca); } .pl-lin b.hon { color: var(--turquesa); }
+.pl-lin.dispo b { font-family: Inter, sans-serif; font-size: 1.05em; }
+
+/* ---------- aula 5: testes ---------------------------------------------------- */
+.testes { display: grid; gap: .45rem; font-size: .74em; }
+.teste { display: grid; grid-template-columns: 1.6em 1fr; gap: .2rem .6rem; align-items: center; background: var(--superficie); border-radius: 8px; padding: .45rem .7rem; border-left: 4px solid var(--regua); }
+.teste .marca-t { font-weight: 800; font-size: 1.2em; text-align: center; }
+.teste small { grid-column: 2; color: var(--marca); font-weight: 650; }
+.teste small:empty { display: none; }
+.teste.ok { border-left-color: var(--turquesa); } .teste.ok .marca-t { color: var(--turquesa); }
+.teste.falha { border-left-color: var(--marca); background: color-mix(in srgb, var(--marca) 9%, var(--superficie)); } .teste.falha .marca-t { color: var(--marca); }
+.reveal pre.cod { width: auto; box-shadow: none; margin: 0; font-size: .56em; }
+
+.reveal pre.cod { font-size: .7em; }
+
+
+/* estúdio 4: o painel ao vivo dentro do slide */
+.painel-vivo { width: 100%; height: 590px; border: 1px solid var(--superficie-borda); border-radius: 10px; background: #fff; }
+
+
+.fluxo > .etapa p > strong:first-child { display: block; font-size: 1.08em; margin-bottom: .15rem; }
+

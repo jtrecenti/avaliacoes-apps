@@ -1,0 +1,63 @@
+/* Cenas animadas e interativas (recursos/aulaNN.js, via Motor.cena): gráficos
+   em SVG, legendas que trocam a cada passo, controles. As cores vêm do tema,
+   então tudo funciona no claro e no escuro. Mesmo esquema das aulas de CDAD. */
+
+.cena { position: relative; }
+.grafico-svg { width: 100%; height: auto; overflow: visible; font-family: Inter, sans-serif; display: block; }
+.grafico-svg .grade-linha { stroke: var(--regua); stroke-width: 1; }
+.grafico-svg .eixo { stroke: var(--texto-fraco); stroke-width: 1.5; }
+.grafico-svg .rotulo-eixo { fill: var(--texto-fraco); font-size: 15px; }
+.grafico-svg .rotulo-eixo.forte { fill: var(--texto); font-weight: 700; font-size: 16px; }
+.grafico-svg .titulo-eixo { fill: var(--texto); font-size: 16px; }
+.grafico-svg .ponto { fill: var(--azul); opacity: .45; }
+.grafico-svg .ponto.forte { opacity: .9; }
+.grafico-svg .ponto.marca { fill: var(--marca); opacity: .85; }
+.grafico-svg .reta { stroke: var(--marca); stroke-width: 4; fill: none; }
+.grafico-svg .media { stroke: var(--texto-fraco); stroke-width: 2; stroke-dasharray: 7 6; }
+.grafico-svg .guia { stroke: var(--marca); stroke-width: 2; stroke-dasharray: 5 5; fill: none; }
+.grafico-svg .residuo { stroke: var(--laranja); stroke-width: 3; }
+.grafico-svg .barra { fill: var(--texto-fraco); }
+.grafico-svg .barra.marca { fill: var(--marca); }
+.grafico-svg .barra.azul { fill: var(--azul); }
+.grafico-svg .barra.turquesa { fill: var(--turquesa); }
+.grafico-svg .barra.laranja { fill: var(--laranja); }
+.grafico-svg .barra.roxo { fill: var(--roxo); }
+.grafico-svg .caixa { fill: var(--superficie); stroke: var(--superficie-borda); stroke-width: 1.5; }
+.grafico-svg .caixa.marca { stroke: var(--marca); stroke-width: 2.5; }
+.grafico-svg .seta { stroke: var(--texto-fraco); stroke-width: 2; fill: none; }
+.grafico-svg .seta.marca { stroke: var(--marca); }
+.grafico-svg .ponta { fill: var(--texto-fraco); }
+.grafico-svg .ponta.marca { fill: var(--marca); }
+.grafico-svg .txt { fill: var(--texto); font-size: 17px; }
+.grafico-svg .txt.fraco { fill: var(--texto-fraco); }
+.grafico-svg .txt.forte { font-weight: 700; }
+.grafico-svg .txt.marca { fill: var(--marca); font-weight: 700; }
+.grafico-svg .mono { font-family: "JetBrains Mono", Consolas, monospace; }
+.grafico-svg .anot { fill: var(--texto); font-size: 17px; font-weight: 600;
+                     paint-order: stroke; stroke: var(--fundo); stroke-width: 5px; }
+.grafico-svg .anot.fraco { fill: var(--texto-fraco); font-weight: 400; }
+.grafico-svg .anot.marca { fill: var(--marca); }
+
+/* legendas empilhadas: todas no mesmo lugar, uma visível por passo */
+.legendas { display: grid; }
+.legendas > * { grid-area: 1 / 1; background: var(--superficie); border-left: 5px solid var(--marca);
+                padding: .55em .8em; font-size: .8em; line-height: 1.35; align-self: start; }
+.legendas > * > p { margin: 0; }
+.legendas strong { color: var(--marca); }
+
+/* controles (deslizantes e botões) */
+.ctrl { background: var(--superficie); border: 1px solid var(--superficie-borda); border-radius: 6px;
+        padding: .35em .7em; font-size: .62em; margin-top: .4em; }
+.ctrl label { display: block; color: var(--texto-fraco); }
+.ctrl label b { color: var(--texto); }
+.ctrl input[type=range] { width: 100%; accent-color: var(--marca); }
+.ctrl .botoes { display: flex; gap: .5em; flex-wrap: wrap; margin-top: .3em; }
+.ctrl button { font: inherit; font-size: .95em; padding: .2em .8em; border-radius: 999px; cursor: pointer;
+               border: 1px solid var(--superficie-borda); background: var(--fundo); color: var(--texto); }
+.ctrl button.on, .ctrl button:hover { border-color: var(--marca); color: var(--marca); }
+
+/* caixas de HTML que a cena monta (fichas, tabelinhas, fluxos) */
+.cena .tab-mini { border-collapse: collapse; font-size: .62em; width: 100%; }
+.cena .tab-mini th, .cena .tab-mini td { padding: .25em .5em; border-bottom: 1px solid var(--regua); text-align: left; }
+.reveal .cena .tab-mini th { text-transform: none; letter-spacing: 0; color: var(--texto-fraco); font-weight: 600; }
+.cena .tab-mini td.on { background: var(--grifo); font-weight: 700; }

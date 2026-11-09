@@ -1,0 +1,31 @@
+{
+  "_comentario": "Fragmento das regras do Realtime Database (projeto jtrecenti) para o quiz desta aula. Vai DENTRO de rules, ao lado dos nós das outras disciplinas; use scripts/firebase_regras.py para mesclar sem apagar os outros. A chave do professor é a mesma do curso de Marketing Analítico (mkt2026/privado/chave), que ninguém lê pelo navegador. Cada sala é uma partida: para recomeçar do zero, use outra sala (?sala=nome).",
+  "aulaapps": {
+    "$sala": {
+      "estado": {
+        ".write": "newData.child('chave').val() === root.child('mkt2026/privado/chave').val() && $sala.length <= 40",
+        ".validate": "newData.hasChildren(['chave', 'pub'])",
+        "pub": {
+          ".read": true,
+          ".validate": "newData.hasChildren(['pergunta', 'aberto', 'revelado']) && newData.child('pergunta').isString() && newData.child('pergunta').val().length <= 40 && newData.child('aberto').isBoolean() && newData.child('revelado').isBoolean()"
+        }
+      },
+      "jogadores": {
+        ".read": true,
+        "$aparelho": {
+          ".write": "$aparelho.length <= 40 && root.child('aulaapps/' + $sala + '/estado/pub').exists()",
+          ".validate": "newData.hasChildren(['nome']) && newData.child('nome').isString() && newData.child('nome').val().length >= 1 && newData.child('nome').val().length <= 20"
+        }
+      },
+      "respostas": {
+        ".read": true,
+        "$pergunta": {
+          "$aparelho": {
+            ".write": "!data.exists() && $aparelho.length <= 40 && root.child('aulaapps/' + $sala + '/estado/pub/pergunta').val() === $pergunta && root.child('aulaapps/' + $sala + '/estado/pub/aberto').val() === true",
+            ".validate": "newData.hasChildren(['v', 't']) && newData.child('t').val() === now && newData.child('v').isNumber() && newData.child('v').val() >= 0 && newData.child('v').val() <= 3"
+          }
+        }
+      }
+    }
+  }
+}

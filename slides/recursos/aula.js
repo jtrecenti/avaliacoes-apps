@@ -1,0 +1,344 @@
+/*
+ * Cenas desta aula (avaliações de sete aplicativos nas duas lojas).
+ * Usa o motor de passos (recursos/motor.js) e as classes de recursos/cenas.css.
+ *
+ * Os números vêm do monitor (monitor/dados/processados e docs/painel/dados.json):
+ * scripts/dados_slides.py reescreve o bloco DADOS abaixo. Nada escrito à mão.
+ */
+/* DADOS-INICIO */
+const DADOS_AP = {"apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"nota_loja": 4.82, "n_loja": 1673353, "media_escrita": 3.32, "n": 176}, "play": {"nota_loja": 4.76, "n_loja": 6007902, "media_escrita": 4.07, "n": 500}}, {"empresa": "Itaú", "segmento": "Bancos", "ios": {"nota_loja": 4.7, "n_loja": 3283483, "media_escrita": 3.31, "n": 304}, "play": {"nota_loja": 4.77, "n_loja": 5923821, "media_escrita": 3.47, "n": 500}}, {"empresa": "Banco do Brasil", "segmento": "Bancos", "ios": {"nota_loja": 4.75, "n_loja": 4280030, "media_escrita": 4.1, "n": 250}, "play": {"nota_loja": 4.71, "n_loja": 8544485, "media_escrita": 3.26, "n": 500}}, {"empresa": "Bradesco", "segmento": "Bancos", "ios": {"nota_loja": 4.73, "n_loja": 3147864, "media_escrita": 1.91, "n": 129}, "play": {"nota_loja": 4.69, "n_loja": 6083931, "media_escrita": 2.86, "n": 500}}, {"empresa": "iFood", "segmento": "Delivery", "ios": {"nota_loja": 4.86, "n_loja": 8994959, "media_escrita": 3.62, "n": 500}, "play": {"nota_loja": 4.71, "n_loja": 13495906, "media_escrita": 3.91, "n": 500}}, {"empresa": "Rappi", "segmento": "Delivery", "ios": {"nota_loja": 4.54, "n_loja": 448892, "media_escrita": 1.7, "n": 47}, "play": {"nota_loja": 4.05, "n_loja": 2383951, "media_escrita": 2.2, "n": 76}}, {"empresa": "Zé Delivery", "segmento": "Delivery", "ios": {"nota_loja": 4.93, "n_loja": 697696, "media_escrita": 3.83, "n": 81}, "play": {"nota_loja": 4.9, "n_loja": 1815356, "media_escrita": 4.19, "n": 500}}], "temas": {"Bancos": {"apps": ["Nubank", "Itaú", "Banco do Brasil", "Bradesco"], "temas": ["app com falha", "acesso e login", "pix e pagamentos", "cartão e fatura", "crédito e limite", "atendimento", "tarifas e cobranças", "conta bloqueada ou encerrada"], "pct": {"Nubank": {"app com falha": 34.6, "acesso e login": 13.7, "pix e pagamentos": 11.6, "cartão e fatura": 3.5, "crédito e limite": 9.3, "golpe e segurança": 2.9, "conta bloqueada ou encerrada": 4.2, "tarifas e cobranças": 3.5, "atendimento": 1.4, "sugestão de recurso": 4.8, "crítica geral": 7.1, "elogio geral": 0.0, "outro": 3.5}, "Itaú": {"app com falha": 24.4, "acesso e login": 18.8, "pix e pagamentos": 11.4, "cartão e fatura": 8.2, "crédito e limite": 4.4, "golpe e segurança": 2.0, "conta bloqueada ou encerrada": 0.8, "tarifas e cobranças": 3.6, "atendimento": 5.8, "sugestão de recurso": 5.0, "crítica geral": 12.8, "elogio geral": 0.2, "outro": 2.8}, "Banco do Brasil": {"app com falha": 46.5, "acesso e login": 21.7, "pix e pagamentos": 7.0, "cartão e fatura": 1.2, "crédito e limite": 0.6, "golpe e segurança": 0.9, "conta bloqueada ou encerrada": 0.6, "tarifas e cobranças": 0.6, "atendimento": 2.1, "sugestão de recurso": 2.4, "crítica geral": 14.1, "elogio geral": 0.3, "outro": 1.8}, "Bradesco": {"app com falha": 34.3, "acesso e login": 20.1, "pix e pagamentos": 11.2, "cartão e fatura": 4.1, "crédito e limite": 2.1, "golpe e segurança": 0.5, "conta bloqueada ou encerrada": 1.0, "tarifas e cobranças": 2.9, "atendimento": 4.5, "sugestão de recurso": 3.4, "crítica geral": 13.8, "elogio geral": 0.2, "outro": 1.9}}, "top": {"Nubank": "app com falha", "Itaú": "app com falha", "Banco do Brasil": "app com falha", "Bradesco": "app com falha"}, "reclama": {"Nubank": 51.8, "Itaú": 50.1, "Banco do Brasil": 43.6, "Bradesco": 68.4}}, "Delivery": {"apps": ["iFood", "Rappi", "Zé Delivery"], "temas": ["atraso na entrega", "app com falha", "cupons e promoções", "cancelamento e reembolso", "atendimento", "preços e taxas", "pagamento", "conta e cadastro"], "pct": {"iFood": {"app com falha": 6.1, "atraso na entrega": 10.0, "pedido errado ou incompleto": 6.1, "cancelamento e reembolso": 11.9, "preços e taxas": 8.9, "cupons e promoções": 14.1, "pagamento": 8.9, "conta e cadastro": 3.6, "atendimento": 13.9, "entregador": 1.9, "qualidade da comida ou do produto": 2.8, "crítica geral": 5.5, "elogio geral": 0.8, "outro": 5.5}, "Rappi": {"app com falha": 15.5, "atraso na entrega": 15.9, "pedido errado ou incompleto": 7.3, "cancelamento e reembolso": 10.1, "preços e taxas": 5.8, "cupons e promoções": 3.4, "pagamento": 10.1, "conta e cadastro": 4.6, "atendimento": 9.5, "entregador": 3.7, "qualidade da comida ou do produto": 0.6, "crítica geral": 9.1, "elogio geral": 0.0, "outro": 4.6}, "Zé Delivery": {"app com falha": 11.3, "atraso na entrega": 9.3, "pedido errado ou incompleto": 5.3, "cancelamento e reembolso": 8.3, "preços e taxas": 10.7, "cupons e promoções": 15.0, "pagamento": 2.3, "conta e cadastro": 11.0, "atendimento": 4.3, "entregador": 4.0, "qualidade da comida ou do produto": 4.3, "crítica geral": 7.3, "elogio geral": 0.3, "outro": 6.3}}, "top": {"iFood": "cupons e promoções", "Rappi": "atraso na entrega", "Zé Delivery": "cupons e promoções"}, "reclama": {"iFood": 36.1, "Rappi": 80.4, "Zé Delivery": 32.8}}}, "linha": {"empresa": "Itaú", "loja": "Google Play", "nota": 5, "titulo": "", "texto": "Não estou conseguindo acessar a fatura do cartão de crédito", "tema": "cartão e fatura", "conf_tema": 0.98, "reclamacao": "sim", "conf_reclamacao": 0.94}, "checagens": [{"frase": "toda coleta tem exatamente as colunas esperadas", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma coleta guarda nome, apelido ou foto de quem avaliou", "nivel": "bloqueia", "ok": true}, {"frase": "todo aplicativo da lista veio nas duas lojas na coleta mais recente", "nivel": "bloqueia", "ok": true}, {"frase": "toda avaliação tem loja, empresa, identificador, data e nota", "nivel": "bloqueia", "ok": true}, {"frase": "toda nota está entre 1 e 5", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação repetida na base final", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação com data depois do dia da coleta", "nivel": "bloqueia", "ok": true}, {"frase": "nenhum texto com telefone, e-mail ou CPF sem máscara", "nivel": "bloqueia", "ok": true}, {"frase": "a coleta mais recente tem pelo menos 200 avaliações por app e loja", "nivel": "alerta", "ok": true}, {"frase": "a nota oficial da loja veio para todo app nas duas lojas", "nivel": "alerta", "ok": true}, {"frase": "cada coleta alcança a anterior (nenhuma avaliação perdida no meio)", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação mudou entre coletas", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação precisou de máscara de dado pessoal", "nivel": "alerta", "ok": false}, {"frase": "toda avaliação dos últimos 90 dias tem tema", "nivel": "alerta", "ok": true}, {"frase": "menos de 10% dos temas com confiança abaixo de 60%", "nivel": "alerta", "ok": false}], "fonte": "App Store e Google Play, coleta de 09/11/2026; média das escritas: últimos 30 dias", "fonte_temas": "% das avaliações que reclamam, por tema; últimos 90 dias, as duas lojas; coleta de 09/11/2026", "texto": {"n_avaliacoes": "6.350", "n_anotadas": "5.972", "n_textos_jev": "5.267", "seg_jev": "63", "conf_baixa": "614", "opcoes_bancos": "app com falha, acesso e login, pix e pagamentos, cartão e fatura, crédito e limite, golpe e segurança, conta bloqueada ou encerrada, tarifas e cobranças, atendimento, sugestão de recurso, crítica geral, elogio geral, outro", "leg_temas_bancos": "**Bancos:** nos quatro, o tema número 1 é **app com falha**: de 24% das reclamações (Itaú) a 46% (Banco do Brasil).", "leg_temas_delivery": "**Delivery:** no iFood, **cupons e promoções**; no Rappi, **atraso na entrega**; no Zé Delivery, **cupons e promoções**. E 80% das avaliações do Rappi reclamam de algo.", "leg_notas": "Em **14 dos 14** pares de app e loja, quem escreve dá nota menor que a média da loja. A maior distância: Rappi na App Store, 4,5 na página e 1,7 nas escritas.", "n_checagens": "15", "n_ok": "13"}};
+/* DADOS-FIM */
+(function () {
+  "use strict";
+  const { svg, html, escala, num, seta, vis, DUR } = Motor.util;
+  function txt(pai, x, y, t, attrs = {}) {
+    const a = Object.assign({}, attrs);
+    if (a["font-size"]) { a.style = (a.style ? a.style + ";" : "") + `font-size:${a["font-size"]}px`; delete a["font-size"]; }
+    return Motor.util.txt(pai, x, y, t, a);
+  }
+  const quadro = (caixa, w, h) => svg("svg", { viewBox: `0 0 ${w} ${h}`, class: "grafico-svg" }, caixa);
+  function mostra(el, on, anim, atraso = 0) {
+    if (!el) return;
+    gsap.to(el, { autoAlpha: on ? 1 : 0, duration: anim ? DUR : 0, delay: anim && on ? atraso : 0, overwrite: "auto" });
+  }
+  const esconde = (lista) => lista.forEach((e) => e && gsap.set(e, { autoAlpha: 0 }));
+  const D = DADOS_AP || { apps: [], temas: {}, linha: null, checagens: [], jev: {} };
+  const SEG_COR = { Bancos: "var(--roxo)", Delivery: "var(--laranja)" };
+  const pct = (v) => num(v, 0) + "%";
+  const mil = (v) => (v >= 1e6 ? `${num(v / 1e6, 1)} mi` : v >= 1e3 ? `${num(v / 1e3, 0)} mil` : num(v, 0));
+
+  const css = document.createElement("style");
+  css.textContent = `
+  .ap-apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin-top: .3rem; }
+  .ap-app { background: var(--superficie); border-radius: 12px; padding: .55rem .8rem .6rem; border-top: 5px solid var(--cor); }
+  .ap-app .nome { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.15em; font-weight: 700; }
+  .ap-app .seg { font-size: .55em; color: var(--texto-fraco); text-transform: uppercase; letter-spacing: .06em; }
+  .ap-app .lojas { display: grid; gap: .2rem; margin-top: .4rem; font-size: .6em; }
+  .ap-app .lojas div { display: flex; justify-content: space-between; gap: .4rem; }
+  .ap-app .lojas b { font-size: 1.15em; }
+  .ap-app.vazio { background: none; border: 2px dashed var(--superficie-borda); display: grid; place-items: center; text-align: center; color: var(--texto-fraco); font-size: .6em; }
+  .ap-linha { display: grid; grid-template-columns: 1fr 70px 1.15fr; align-items: center; gap: .6rem; margin-top: .4rem; }
+  .ap-aval { background: var(--superficie); border-radius: 12px; padding: .9rem 1rem; font-size: .82em; line-height: 1.4; border-left: 5px solid var(--marca); }
+  .ap-aval .meta { color: var(--texto-fraco); font-size: .85em; margin-bottom: .3rem; }
+  .ap-aval .estrelas { color: #d59a00; letter-spacing: .1em; }
+  .ap-seta { font-size: 2.2em; text-align: center; color: var(--texto-fraco); }
+  .ap-tab { border-collapse: collapse; width: 100%; font-size: .76em; }
+  .ap-tab th { text-align: left; color: var(--texto-fraco); font-weight: 600; padding: .25rem .4rem; border-bottom: 2px solid var(--regua); text-transform: none; letter-spacing: 0; }
+  .ap-tab td { padding: .35rem .4rem; border-bottom: 1px solid var(--regua); vertical-align: middle; }
+  .ap-tab td.v { font-weight: 700; }
+  .ap-conf { display: inline-block; width: 90px; height: 12px; background: var(--superficie); border-radius: 6px; overflow: hidden; vertical-align: middle; margin-right: .3rem; }
+  .ap-conf i { display: block; height: 100%; background: var(--turquesa); }
+  .ap-checks { display: grid; gap: .35rem; margin-top: .3rem; }
+  .ap-check { display: grid; grid-template-columns: 2.1rem 1fr 6.5rem; gap: .6rem; align-items: center; background: var(--superficie); border-radius: 10px; padding: .3rem .7rem; font-size: .62em; }
+  .ap-check .ic { width: 1.7rem; height: 1.7rem; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 800; }
+  .ap-check .ic.ok { background: var(--turquesa); }
+  .ap-check .ic.alerta { background: #d59a00; }
+  .ap-check .ic.falha { background: var(--marca); }
+  .ap-check .nv { font-size: .85em; font-weight: 700; text-align: right; }
+  .ap-check .nv.bloqueia { color: var(--marca); }
+  .ap-check .nv.alerta { color: #b07f00; }
+  `;
+  document.head.appendChild(css);
+
+  /* Números e frases calculados pelo script, nos lugares marcados com []{.dado data-k="..."} */
+  document.querySelectorAll(".dado[data-k]").forEach((e) => {
+    const v = D.texto?.[e.dataset.k];
+    if (v != null) e.innerHTML = String(v).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  });
+
+  /* Botão "copiar" nos pedidos das demonstrações: o professor clica e cola no ChatGPT. */
+  document.querySelectorAll(".prompt.prompt-estruturado").forEach((p) => {
+    const b = html("button", "copiar", p, "copiar");
+    b.type = "button";
+    b.addEventListener("click", async (e) => {
+      e.stopPropagation();
+      const clone = p.cloneNode(true);
+      clone.querySelector(".copiar")?.remove();
+      document.body.appendChild(clone); // innerText só respeita quebras em nós no documento
+      clone.style.cssText = "position:absolute;left:-9999px;white-space:normal";
+      const texto = clone.innerText.trim(); // o rótulo (data-quem) é CSS e não entra
+      clone.remove();
+      try { await navigator.clipboard.writeText(texto); b.textContent = "copiado"; b.classList.add("ok"); }
+      catch { b.textContent = "selecione e copie"; }
+      setTimeout(() => { b.textContent = "copiar"; b.classList.remove("ok"); }, 2500);
+    });
+  });
+
+  /* ======================================================================
+   * 1. Os sete aplicativos, com a nota e o volume de cada loja
+   * ==================================================================== */
+  Motor.cena("ap-apps", {
+    montar(caixa) {
+      const g = html("div", "ap-apps", caixa);
+      this.lojas = [];
+      for (const a of D.apps) {
+        const c = html("div", "ap-app", g);
+        c.style.setProperty("--cor", SEG_COR[a.segmento] || "var(--regua)");
+        html("div", "seg", c, a.segmento);
+        html("div", "nome", c, a.empresa);
+        const l = html("div", "lojas", c);
+        for (const [rot, k] of [["App Store", "ios"], ["Google Play", "play"]]) {
+          const s = a[k];
+          if (!s) continue;
+          html("div", "", l, `<span>${rot}</span><span><b>${num(s.nota_loja, 1)}</b> ★ · ${mil(s.n_loja)} notas</span>`);
+        }
+        this.lojas.push(l);
+      }
+      const v = html("div", "ap-app vazio", g, "e o app da sua empresa:<br>uma linha a mais em <code>apps.csv</code>");
+      this.vazio = v;
+      esconde([...this.lojas, v]);
+    },
+    passo(k, anim) {
+      this.lojas.forEach((l, i) => mostra(l, k >= 1, anim, i * 0.06));
+      mostra(this.vazio, k >= 2, anim);
+    },
+  });
+
+  /* ======================================================================
+   * 2. Nota da loja x nota de quem escreve, por app e loja
+   * ==================================================================== */
+  Motor.cena("ap-notas", {
+    montar(caixa) {
+      const linhas = [];
+      for (const a of D.apps) for (const [k, rot] of [["ios", "App Store"], ["play", "Google Play"]]) if (a[k]) linhas.push({ a, k, rot, s: a[k] });
+      const RH = 28, H = 46 + linhas.length * RH;
+      const s = quadro(caixa, 1100, H + 52);
+      s.style.maxHeight = "470px";
+      const sx = escala(1, 5, 350, 1060);
+      for (let v = 1; v <= 5; v++) {
+        svg("line", { x1: sx(v), x2: sx(v), y1: 26, y2: H, class: "grade-linha" }, s);
+        txt(s, sx(v), H + 22, `${v} ★`, { class: "rotulo-eixo", "text-anchor": "middle", "font-size": 17 });
+      }
+      this.pag = []; this.med = [];
+      let ant = null;
+      linhas.forEach((L, i) => {
+        const y = 48 + i * RH;
+        if (L.a.empresa !== ant) {
+          txt(s, 0, y + 6, L.a.empresa, { class: "txt forte", "font-size": 19, style: `fill:${SEG_COR[L.a.segmento]}` });
+          ant = L.a.empresa;
+        }
+        txt(s, 190, y + 6, L.rot, { class: "txt fraco", "font-size": 17 });
+        const gp = svg("g", {}, s);
+        svg("circle", { cx: sx(L.s.nota_loja), cy: y, r: 8, fill: "var(--fundo)", stroke: "var(--texto-fraco)", "stroke-width": 3 }, gp);
+        txt(gp, sx(L.s.nota_loja) + 14, y + 6, num(L.s.nota_loja, 1), { class: "anot fraco", "font-size": 17 });
+        this.pag.push(gp);
+        const gm = svg("g", {}, s);
+        svg("line", { x1: sx(L.s.media_escrita) + 9, x2: sx(L.s.nota_loja) - 9, y1: y, y2: y, class: "seta marca", "stroke-width": 3 }, gm);
+        svg("circle", { cx: sx(L.s.media_escrita), cy: y, r: 9, fill: "var(--marca)" }, gm);
+        txt(gm, sx(L.s.media_escrita) - 14, y + 6, num(L.s.media_escrita, 1), { class: "anot marca", "text-anchor": "end", "font-size": 17 });
+        this.med.push(gm);
+      });
+      const leg = svg("g", {}, s);
+      svg("circle", { cx: 340, cy: 10, r: 7, fill: "var(--fundo)", stroke: "var(--texto-fraco)", "stroke-width": 3 }, leg);
+      txt(leg, 354, 16, "nota da página da loja", { class: "txt fraco", "font-size": 17 });
+      this.leg2 = svg("g", {}, s);
+      svg("circle", { cx: 580, cy: 10, r: 7, fill: "var(--marca)" }, this.leg2);
+      txt(this.leg2, 594, 16, "média das escritas, últimos 30 dias", { class: "txt marca", "font-size": 17 });
+      txt(s, 1100, H + 48, D.fonte || "", { class: "txt fraco", "text-anchor": "end", "font-size": 13 });
+      esconde([...this.pag, ...this.med, this.leg2]);
+    },
+    passo(k, anim) {
+      this.pag.forEach((g, i) => mostra(g, true, anim && k === 0, i * 0.03));
+      this.med.forEach((g, i) => mostra(g, k >= 1, anim, i * 0.05));
+      mostra(this.leg2, k >= 1, anim);
+    },
+  });
+
+  /* ======================================================================
+   * 3. Uma avaliação vira uma linha de tabela
+   * ==================================================================== */
+  Motor.cena("ap-linha", {
+    montar(caixa) {
+      const L = D.linha;
+      if (!L) return;
+      const g = html("div", "ap-linha", caixa);
+      html("div", "ap-aval", g, `
+        <div class="meta">${L.empresa} · ${L.loja} · <span class="estrelas">${"★".repeat(L.nota)}${"☆".repeat(5 - L.nota)}</span></div>
+        ${L.titulo ? `<b>${L.titulo}</b><br>` : ""}${L.texto}`);
+      this.seta = html("div", "ap-seta", g, "→");
+      const t = html("table", "ap-tab", g, `
+        <thead><tr><th>variável</th><th>resposta</th><th>confiança</th></tr></thead>
+        <tbody>
+          <tr class="r1"><td>tema principal</td><td class="v">${L.tema}</td><td class="c"><span class="ap-conf"><i style="width:${L.conf_tema * 100}%"></i></span>${pct(L.conf_tema * 100)}</td></tr>
+          <tr class="r2"><td>reclama de algo?</td><td class="v">${L.reclamacao}</td><td class="c"><span class="ap-conf"><i style="width:${L.conf_reclamacao * 100}%"></i></span>${pct(L.conf_reclamacao * 100)}</td></tr>
+        </tbody>`);
+      this.tab = t;
+      this.perg = [...t.querySelectorAll("tbody tr td:first-child")];
+      this.resp = [...t.querySelectorAll("td.v")];
+      this.conf = [...t.querySelectorAll("td.c")];
+      this.cab = t.querySelector("thead");
+      esconde([this.seta, ...this.perg, ...this.resp, ...this.conf, this.cab]);
+    },
+    passo(k, anim) {
+      if (!this.tab) return;
+      mostra(this.seta, k >= 1, anim);
+      mostra(this.cab, k >= 1, anim);
+      this.perg.forEach((e, i) => mostra(e, k >= 1, anim, i * 0.15));
+      this.resp.forEach((e, i) => mostra(e, k >= 2, anim, i * 0.15));
+      this.conf.forEach((e, i) => mostra(e, k >= 3, anim, i * 0.15));
+    },
+  });
+
+  /* ======================================================================
+   * 4. Temas das reclamações: app x tema, em % das reclamações do app
+   * ==================================================================== */
+  Motor.cena("ap-temas", {
+    montar(caixa) {
+      const s = quadro(caixa, 1120, 410);
+      const CURTO = { "Banco do Brasil": "BB", "Zé Delivery": "Zé" };
+      this.grupos = [];
+      const segs = ["Bancos", "Delivery"];
+      segs.forEach((seg, si) => {
+        const T = D.temas[seg];
+        if (!T) return;
+        const g = svg("g", {}, s);
+        const x0 = si * 590, temas = T.temas, apps = T.apps;
+        const cw = si === 0 ? 80 : 92, ch = 36, left = x0 + (si === 0 ? 228 : 218), top = 66;
+        txt(g, x0, 24, seg, { class: "txt forte", "font-size": 22, style: `fill:${SEG_COR[seg]}` });
+        apps.forEach((a, j) => txt(g, left + j * cw + cw / 2, top - 10, CURTO[a] || a, { class: "rotulo-eixo forte", "text-anchor": "middle", "font-size": 17 }));
+        const max = Math.max(...temas.flatMap((t) => apps.map((a) => T.pct[a]?.[t] || 0)));
+        temas.forEach((t, i) => {
+          const y = top + i * ch;
+          txt(g, left - 8, y + ch / 2 + 6, t, { class: "rotulo-eixo", "text-anchor": "end", "font-size": 16 });
+          apps.forEach((a, j) => {
+            const v = T.pct[a]?.[t] || 0;
+            const top1 = T.top[a] === t;
+            svg("rect", { x: left + j * cw + 1, y: y + 1, width: cw - 2, height: ch - 2, rx: 4,
+              style: `fill:${top1 ? "var(--marca)" : "var(--texto-fraco)"};opacity:${top1 ? 0.95 : 0.06 + 0.6 * (v / max)}` }, g);
+            if (v >= 1) txt(g, left + j * cw + cw / 2, y + ch / 2 + 6, pct(v), {
+              "text-anchor": "middle", "font-size": 16, style: `fill:${top1 || v / max > 0.6 ? "#fff" : "var(--texto)"};font-weight:${top1 ? 700 : 400}` });
+          });
+        });
+        this.grupos.push(g);
+      });
+      txt(s, 1120, 404, D.fonte_temas || "", { class: "txt fraco", "text-anchor": "end", "font-size": 13 });
+      esconde(this.grupos);
+    },
+    passo(k, anim) {
+      this.grupos.forEach((g, i) => mostra(g, k >= i + 1, anim));
+    },
+  });
+
+  /* ======================================================================
+   * 5. Cinco passos e os portões de checagem
+   * ==================================================================== */
+  Motor.cena("ap-portoes", {
+    montar(caixa) {
+      const s = quadro(caixa, 1120, 330);
+      const PASSOS = [["coletar", "as duas lojas"], ["juntar", "sem repetir"], ["checar", "as frases"], ["anotar", "o tema, com o Jev"], ["painel", "dados.json + página"]];
+      const W = 170, G = 52, Y = 120;
+      this.caixas = [];
+      PASSOS.forEach(([a, b], i) => {
+        const x = 10 + i * (W + G);
+        const g = svg("g", {}, s);
+        svg("rect", { x, y: Y, width: W, height: 86, rx: 12, class: "caixa" + (i === 2 ? " marca" : "") }, g);
+        txt(g, x + W / 2, Y + 38, a, { class: "txt forte", "text-anchor": "middle", "font-size": 21 });
+        txt(g, x + W / 2, Y + 64, b, { class: "txt fraco", "text-anchor": "middle", "font-size": 15 });
+        if (i < PASSOS.length - 1) seta(g, x + W + 4, Y + 43, x + W + G - 4, Y + 43);
+        this.caixas.push(g);
+      });
+      const xc = 10 + 2 * (W + G) + W / 2;
+      // alerta: segue, com aviso
+      this.alerta = svg("g", {}, s);
+      svg("circle", { cx: xc, cy: 60, r: 26, fill: "#d59a00" }, this.alerta);
+      txt(this.alerta, xc, 69, "!", { "text-anchor": "middle", "font-size": 28, style: "fill:#fff;font-weight:800" });
+      txt(this.alerta, xc + 40, 52, "alerta: \"um app veio com menos", { class: "txt", "font-size": 16 });
+      txt(this.alerta, xc + 40, 74, "avaliações que ontem\"; o painel sai, com aviso", { class: "txt", "font-size": 16 });
+      const xp = 10 + 4 * (W + G);
+      this.aviso = svg("g", {}, s);
+      svg("rect", { x: xp + W - 34, y: Y - 14, width: 30, height: 30, rx: 15, fill: "#d59a00" }, this.aviso);
+      txt(this.aviso, xp + W - 19, Y + 7, "!", { "text-anchor": "middle", "font-size": 18, style: "fill:#fff;font-weight:800" });
+      // bloqueia: para, painel de ontem
+      this.bloq = svg("g", {}, s);
+      svg("rect", { x: xc - 30, y: Y + 110, width: 60, height: 60, rx: 10, fill: "var(--marca)" }, this.bloq);
+      txt(this.bloq, xc, Y + 152, "✕", { "text-anchor": "middle", "font-size": 34, style: "fill:#fff;font-weight:800" });
+      txt(this.bloq, xc + 44, Y + 132, "bloqueia: \"nenhum texto com telefone", { class: "txt marca", "font-size": 16 });
+      txt(this.bloq, xc + 44, Y + 154, "sem máscara\"; a linha para aqui", { class: "txt marca", "font-size": 16 });
+      this.ontem = svg("g", {}, s);
+      svg("rect", { x: xp, y: Y + 110, width: W, height: 60, rx: 10, class: "caixa" }, this.ontem);
+      txt(this.ontem, xp + W / 2, Y + 136, "no ar: o painel", { class: "txt forte", "text-anchor": "middle", "font-size": 15 });
+      txt(this.ontem, xp + W / 2, Y + 157, "de ontem, intacto", { class: "txt forte", "text-anchor": "middle", "font-size": 15 });
+      esconde([this.alerta, this.aviso, this.bloq, this.ontem]);
+    },
+    passo(k, anim) {
+      this.caixas.forEach((g, i) => gsap.to(g, { autoAlpha: k >= 3 && i > 2 ? 0.25 : 1, duration: anim ? DUR : 0, overwrite: "auto" }));
+      mostra(this.alerta, k === 2, anim);
+      mostra(this.aviso, k === 2, anim, 0.3);
+      mostra(this.bloq, k >= 3, anim);
+      mostra(this.ontem, k >= 3, anim, 0.3);
+    },
+  });
+
+  /* ======================================================================
+   * 6. As checagens reais da última rodada
+   * ==================================================================== */
+  Motor.cena("ap-checagens", {
+    montar(caixa) {
+      const g = html("div", "ap-checks", caixa);
+      const lista = (D.checagens || []).filter((c) => c.nivel === "bloqueia" || !c.ok);
+      this.itens = lista.map((c) => {
+        const st = c.ok ? "ok" : c.nivel === "bloqueia" ? "falha" : "alerta";
+        return html("div", "ap-check", g, `<span class="ic ${st}">${c.ok ? "✓" : st === "falha" ? "✕" : "!"}</span><span>${c.frase}</span><span class="nv ${c.nivel}">${c.nivel}</span>`);
+      });
+      esconde(this.itens);
+    },
+    passo(k, anim) {
+      this.itens.forEach((e, i) => mostra(e, true, anim && k === 0, i * 0.08));
+    },
+  });
+
+  /* ======================================================================
+   * 7. GitHub Actions: do relógio ao painel
+   * ==================================================================== */
+  Motor.cena("ap-acoes", {
+    montar(caixa) {
+      const s = quadro(caixa, 1120, 300);
+      const no = (g, x, y, w, l1, l2, marca) => {
+        svg("rect", { x, y, width: w, height: 84, rx: 12, class: "caixa" + (marca ? " marca" : "") }, g);
+        txt(g, x + w / 2, y + 36, l1, { class: "txt forte", "text-anchor": "middle", "font-size": 19 });
+        txt(g, x + w / 2, y + 62, l2, { class: "txt fraco", "text-anchor": "middle", "font-size": 15 });
+      };
+      this.g = [0, 1, 2, 3, 4].map(() => svg("g", {}, s));
+      no(this.g[0], 0, 100, 180, "todo dia às 9h", "ou o botão Run", false);
+      seta(this.g[1], 184, 142, 226, 142);
+      no(this.g[1], 230, 100, 230, "servidor do GitHub", "python monitor/rodar.py", true);
+      seta(this.g[2], 464, 142, 506, 142);
+      no(this.g[2], 510, 100, 170, "checagens", "passaram?", false);
+      txt(this.g[2], 595, 222, "não: para aqui", { class: "txt marca", "text-anchor": "middle", "font-size": 16 });
+      seta(this.g[2], 595, 188, 595, 204, "marca");
+      seta(this.g[3], 684, 142, 726, 142);
+      no(this.g[3], 730, 100, 170, "git commit", "dados novos", false);
+      seta(this.g[3], 904, 142, 946, 142);
+      no(this.g[3], 950, 100, 170, "GitHub Pages", "o painel no ar", true);
+      const ch = this.g[4];
+      svg("rect", { x: 230, y: 10, width: 230, height: 54, rx: 10, style: "fill:none;stroke:var(--turquesa);stroke-width:2;stroke-dasharray:6 5" }, ch);
+      txt(ch, 345, 32, "segredo JEV_API_KEY", { class: "txt forte", "text-anchor": "middle", "font-size": 16, style: "fill:var(--turquesa)" });
+      txt(ch, 345, 53, "nunca no código", { class: "txt fraco", "text-anchor": "middle", "font-size": 14 });
+      seta(ch, 345, 66, 345, 96);
+      esconde(this.g.slice(1));
+    },
+    passo(k, anim) {
+      this.g.slice(1).forEach((g, i) => mostra(g, k >= i + 1, anim));
+    },
+  });
+})();
