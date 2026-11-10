@@ -85,3 +85,4 @@
 .copiar { position: absolute; top: .45rem; right: .6rem; font: inherit; font-size: .62em; font-weight: 700; padding: .25rem .8rem; border-radius: 999px; border: 1.5px solid var(--marca); color: var(--marca); background: var(--fundo); cursor: pointer; }
 .copiar.ok { border-color: var(--turquesa); color: var(--turquesa); }
 .prompt-estruturado { position: relative; }
+.qz-prof:not(.ok) .qz-msg { color: var(--marca); }

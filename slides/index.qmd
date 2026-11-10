@@ -152,6 +152,45 @@ vale para sempre.
 []{.fragment .passo}
 []{.fragment .passo}
 
+## Estrutura da habilidade contar-termos
+
+::: {.cena data-cena="ap-skill" data-skill="contagem"}
+:::
+
+::: {.legendas}
+::: {}
+A habilidade da demonstração é uma **pasta** com um texto de instruções, o
+`SKILL.md`, e um script.
+:::
+::: {}
+**Nome e descrição:** é por eles que o ChatGPT reconhece que um pedido de
+contagem é com ela.
+:::
+::: {}
+**Passo a passo e regras:** mostrar a lista de termos antes de contar, nunca
+contar de cabeça, e devolver a tabela do script sem mudar nenhum número.
+:::
+::: {}
+**O script** faz a conta: procura cada termo como palavra inteira, fala por
+fala, e guarda cada ocorrência com o trecho, para conferir.
+:::
+::: {}
+Ela poderia ter **arquivos de apoio**, como listas de termos de outros
+projetos. Esta não tem: só o texto e o script.
+:::
+::: {}
+Na prática: o pedido chega, a descrição escolhe a habilidade, o `SKILL.md` guia
+e o script conta. O modelo volta no fim, para **interpretar**: quem fala mais de
+preço, e que trechos foram contados por engano.
+:::
+:::
+
+[]{.fragment .passo}
+[]{.fragment .passo}
+[]{.fragment .passo}
+[]{.fragment .passo}
+[]{.fragment .passo}
+
 ## Pergunta 1
 
 ::: {.quiz data-quiz="q1"}
@@ -166,7 +205,7 @@ outro: o que esses dados mostram, e o que não mostram.
 
 ## Estrutura de uma habilidade
 
-::: {.cena data-cena="ap-skill"}
+::: {.cena data-cena="ap-skill" data-skill="lojas"}
 :::
 
 ::: {.legendas}

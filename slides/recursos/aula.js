@@ -473,7 +473,7 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
   /* anatomia de uma habilidade */
   .ap-sk { display: grid; grid-template-columns: 1.05fr .95fr; gap: 1.2rem; align-items: start; margin-top: .2rem; }
   .ap-sk .pasta { position: relative; background: var(--superficie); border-radius: 4px 16px 16px 16px; padding: .7rem .8rem .7rem; margin-top: 1.1rem; }
-  .ap-sk .pasta::before { content: "avaliacoes-lojas/"; position: absolute; top: -1.3rem; left: 0; background: var(--superficie); border-radius: 10px 10px 0 0; padding: .1rem .9rem 0; font-family: "Cascadia Code", Consolas, monospace; font-size: .7em; font-weight: 700; }
+  .ap-sk .pasta::before { content: attr(data-nome); position: absolute; top: -1.3rem; left: 0; background: var(--superficie); border-radius: 10px 10px 0 0; padding: .1rem .9rem 0; font-family: "Cascadia Code", Consolas, monospace; font-size: .7em; font-weight: 700; }
   .ap-sk .arq { background: var(--fundo); border: 2px solid var(--superficie-borda); border-radius: 12px; padding: .35rem .65rem; margin-bottom: .45rem; transition: border-color .3s, box-shadow .3s, opacity .3s; }
   .ap-sk .arq:last-child { margin-bottom: 0; }
   .ap-sk .arq .nome { font-family: "Cascadia Code", Consolas, monospace; font-weight: 700; font-size: .72em; display: flex; justify-content: space-between; align-items: center; }
@@ -516,29 +516,54 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
     },
   });
 
+  const HABILIDADES = {
+    lojas: {
+      pasta: "avaliacoes-lojas/",
+      descricao: '"baixa as avaliações de um app nas duas lojas; use quando pedirem avaliações"',
+      passos: "confirme os identificadores · rode o script · mostre o resumo",
+      regras: "uma página por vez · nunca o nome de quem avaliou",
+      script: ["baixar_avaliacoes.py", "baixa, junta e resume: sempre do mesmo jeito"],
+      opc: [["referencias/", "documentação, exemplos"], ["modelos/", "modelo de relatório, listas"]],
+      fluxo: [`Você pede: "baixe as avaliações do iFood"`,
+        `O ChatGPT lê as <b>descrições</b> das habilidades instaladas e escolhe esta`,
+        `Lê o <b>SKILL.md</b> inteiro e segue o passo a passo`,
+        `Roda o <b>script</b> e consulta os arquivos de apoio, se precisar`,
+        `Mostra o resumo, sempre no mesmo formato`],
+    },
+    contagem: {
+      pasta: "contar-termos/",
+      descricao: '"conta quantas vezes temas e palavras aparecem numa transcrição, por pessoa; use quando pedirem para contar menções"',
+      passos: "confira o formato NOME: texto · combine os termos de cada tema · rode o script · mostre a tabela sem mudar números · só então interprete",
+      regras: "nunca contar de cabeça · a mesma pergunta dá a mesma tabela · moderação fora",
+      script: ["contar_termos.py", "palavra inteira, sem acento nem maiúscula; atras* pega atraso, atrasou"],
+      opc: [["referencias/", "listas de termos de outros projetos"], ["modelos/", "o modelo da tabela final"]],
+      fluxo: [`Você pede: "quantas vezes cada um falou de preço?"`,
+        `A <b>descrição</b> bate com "contar menções": o ChatGPT escolhe esta`,
+        `O <b>SKILL.md</b> manda mostrar a lista de termos antes de contar`,
+        `Roda o <b>script</b>, que salva cada ocorrência num CSV de trechos`,
+        `Mostra a tabela, a regra usada e os falsos positivos ("cara")`],
+    },
+  };
+
   Motor.cena("ap-skill", {
     montar(caixa) {
+      const H = HABILIDADES[caixa.dataset.skill] || HABILIDADES.lojas;
       const g = html("div", "ap-sk", caixa);
       const p = html("div", "pasta", g);
+      p.dataset.nome = H.pasta;
       this.skill = html("div", "arq", p, `<div class="nome">SKILL.md <i>obrigatório</i></div>
-        <div class="parte p1"><b>nome e descrição</b>"baixa as avaliações de um app nas duas lojas; use quando pedirem avaliações"</div>
-        <div class="parte p2"><b>passo a passo</b>confirme os identificadores · rode o script · mostre o resumo</div>
-        <div class="parte p3"><b>regras</b>uma página por vez · nunca o nome de quem avaliou</div>`);
+        <div class="parte p1"><b>nome e descrição</b>${H.descricao}</div>
+        <div class="parte p2"><b>passo a passo</b>${H.passos}</div>
+        <div class="parte p3"><b>regras</b>${H.regras}</div>`);
       this.scr = html("div", "arq", p, `<div class="nome">scripts/ <i>o código</i></div>
-        <div class="parte"><b>baixar_avaliacoes.py</b>baixa, junta e resume: sempre do mesmo jeito</div>`);
+        <div class="parte"><b>${H.script[0]}</b>${H.script[1]}</div>`);
       const l2 = html("div", "linha2", p);
-      this.ref = html("div", "arq opc", l2, `<div class="nome">referencias/ <i>opcional</i></div>
-        <div class="parte">documentação, exemplos</div>`);
-      this.mod = html("div", "arq opc", l2, `<div class="nome">modelos/ <i>opcional</i></div>
-        <div class="parte">modelo de relatório, listas</div>`);
+      this.ref = html("div", "arq opc", l2, `<div class="nome">${H.opc[0][0]} <i>opcional</i></div>
+        <div class="parte">${H.opc[0][1]}</div>`);
+      this.mod = html("div", "arq opc", l2, `<div class="nome">${H.opc[1][0]} <i>opcional</i></div>
+        <div class="parte">${H.opc[1][1]}</div>`);
       const f = html("div", "fluxo", g);
-      this.fl = [
-        html("div", "", f, `<b>1.</b> Você pede: "baixe as avaliações do iFood"`),
-        html("div", "", f, `<b>2.</b> O ChatGPT lê as <b>descrições</b> das habilidades instaladas e escolhe esta`),
-        html("div", "", f, `<b>3.</b> Lê o <b>SKILL.md</b> inteiro e segue o passo a passo`),
-        html("div", "", f, `<b>4.</b> Roda o <b>script</b> e consulta os arquivos de apoio, se precisar`),
-        html("div", "", f, `<b>5.</b> Mostra o resumo, sempre no mesmo formato`),
-      ];
+      this.fl = H.fluxo.map((x, n) => html("div", "", f, `<b>${n + 1}.</b> ${x}`));
       this.partes = [...this.skill.querySelectorAll(".parte")];
       esconde([this.scr, this.ref, this.mod, ...this.fl]);
     },
