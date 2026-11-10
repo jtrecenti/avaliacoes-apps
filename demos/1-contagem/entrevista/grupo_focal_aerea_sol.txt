@@ -6,7 +6,7 @@ Material fictício, criado para o curso Marketing Analítico com IA (Insper). A 
 
 MODERADORA: Bom, gente, obrigada pela presença de vocês. Pra começar bem leve, eu queria que cada um se apresentasse, dissesse de onde é, com que frequência costuma voar e, assim, por que normalmente viaja. Pode ser? Quem quer começar?
 
-CARLA: Eu posso. Eu sou Carla, tenho 34 anos, moro em Recife e viajo muito a trabalho. Muito assim, pelo menos uma vez por mês, às vezes duas. Depende dos projetos. Tem mês que eu faço Recife, São Paulo, Recife, aí na outra semana já vou pra Brasília ou Belo Horizonte. Então aeroporto pra mim virou quase extensão do escritório, né? [risos]
+CARLA: Eu posso. Eu sou Carla, tenho 34 anos, moro em Recife e viajo muito a trabalho. Muito assim, pelo menos uma vez por mês, às vezes duas. Depende dos projetos. Tem mês que eu faço Recife, São Paulo, Recife, aí na outra semana já vou pra Brasília ou Belo Horizonte. Então aeroporto pra mim virou quase exttensão do escritório, né? [risos]
 
 ROBERTO: Você já conhece todo mundo pelo nome.
 
@@ -14,7 +14,7 @@ CARLA: Quase isso. O pessoal do café, principalmente. [risos]
 
 MODERADORA: E você escolhe a companhia ou a empresa escolhe?
 
-CARLA: Então, depende. A empresa tem uma agência, mas eu tenho alguma autonomia. Eu posso olhar horário, preço, se tem voo direto. Só que não dá pra escolher simplesmente porque eu gosto mais de uma. Tem uma política, um teto de valor. Se eu quiser uma passagem muito mais cara, preciso justificar, mandar e-mail, aquela burocracia toda.
+CARLA: Então, depende. A empresa tem uma agência, mas eu tenho alguma autonomia. Eu posso olhar horário, PREÇO, se tem voo direto. Só que não dá pra escolher simplesmente poorque eu gosto mais de uma. Tem uma política, um teto de valor. Se eu quiser uma passagem muito mais cara, preciso justificar, mandar e-mail, aquela burocracia toda.
 
 MODERADORA: Tá. Então entram o horário, o preço, o voo direto e a política da empresa.
 
@@ -24,11 +24,11 @@ MARCOS: Verdade.
 
 MODERADORA: Marcos, você concordou. Conta um pouco de você.
 
-MARCOS: Eu sou o Marcos, 41 anos, de Porto Alegre. Sou representante comercial. Viajo bastante pelo Sul e Sudeste, principalmente. De avião, dá umas três, quatro viagens por mês. Tem mês que mais. Só que eu sou bem fiel à Aérea Sol, já vou dizer logo. [risos] Não tô fazendo propaganda, tá?
+MARCOS: Eu sou o Marcos, 41 anos, de Porto Alegre. Sou representante comercial. Viajo bastante pelo Sul e Sudeste, principalmente. De aviao, da umas tres, quatro viagens por mes. Tem mes que mais. So que eu sou bem fiel a Aerea Sol, ja vou dizer logo. [risos] Nao to fazendo propaganda, ta?
 
 JÉSSICA: Vai ganhar milha pela fala. [risos]
 
-MARCOS: Podia, né? Mas não. É porque eu já conheço o aplicativo, tenho cadastro, tenho meu status lá, já sei como funciona a bagagem, marcação de assento. Quando o preço não tá absurdo, eu vou neles.
+MARCOS: Podia, né? Mas não. É porque eu já conheço o aplicativo, tenho cadastro, tenho meu status lá, já sei como funciona a bagagem, marcação de assento. Quando o preço não tá absurdo, eu vou neles. Meu chefe acha caro, eu acho normal.
 
 MODERADORA: “Quando o preço não tá absurdo.”
 
@@ -44,17 +44,17 @@ JÉSSICA: Eu. Sou Jéssica, tenho 27 anos, moro em Belo Horizonte e faço mestra
 
 PATRÍCIA: Mesmo se o horário for ruim?
 
-JÉSSICA: Quase sempre. Tipo, sair às cinco e meia da manhã é horrível, mas se for trezentos reais mais barato, eu acordo às duas. Quer dizer, nem durmo. [risos] Agora, se tiver conexão muito longa, aí eu penso, porque também tem gasto de comida no aeroporto, transporte de madrugada... às vezes o barato vai ficando caro.
+JÉSSICA: Quase sempre. Tipo, sair as cinco e meia da manha e horrivel, mas se for trezentos reais mais barato, eu acordo as duas. Quer dizer, nem durmo. [risos] Agora, se tiver conexao muito longa, ai eu penso, porque tambem tem gasto de comida no aeroporto, transporte de madrugada... as vezes o barato vai ficando caro.
 
 MODERADORA: Você calcula o pacote todo.
 
-JÉSSICA: Tento, né? Mas eu não tenho apego a companhia. Aérea Sol, Gol, Azul, LATAM, eu vou na que tiver a tarifa mais baixa e não tiver uma rota muito maluca.
+JÉSSICA: Tento, ne? Mas eu nao tenho apego a companhia. Aerea Sol, Gol, Azul, LATAM, eu vou na que tiver a tarifa mais baixa e nao tiver uma rota muito maluca.
 
 THIAGO: Eu também comparo muito no aplicativo.
 
 MODERADORA: Já chego em você, Thiago. Roberto, você quer ir?
 
-ROBERTO: Eu sou Roberto, tenho 52 anos, moro em Campinas, sou empresário. Viajo a trabalho também, mas hoje eu diria que as viagens de avião mais marcantes são com a família. A gente faz umas três viagens por ano em família e eu faço mais umas quatro ou cinco sozinho, por negócio. Com família muda tudo. Não é só o valor da passagem. Tem quatro pessoas, então qualquer cinquenta reais vira duzentos, né? Bagagem também pesa muito.
+ROBERTO: Eu sou Roberto, tenho 52 anos, moro em Campinas, sou empresario. Viajo a trabalho tambem, mas hoje eu diria que as viagens de aviao mais marcantes sao com a familia. A gente faz umas tres viagens por ano em familia e eu faco mais umas quatro ou cinco sozinho, por negocio. Com familia muda tudo. Nao e so o valor da passagem. Tem quatro pessoas, entao qualquer cinquenta reais vira duzentos, ne? Bagagem tambem pesa muito.
 
 CARLA: Nossa, sim.
 
@@ -62,11 +62,11 @@ ROBERTO: Porque sozinho eu vou com uma mala pequena, enfio tudo ali, amarrota ca
 
 JÉSSICA: Eu colocaria. [risos]
 
-ROBERTO: Com 27 anos eu também colocava. Agora não. E também prefiro voo direto. Conexão com família é um desgaste.
+ROBERTO: Com 27 anos eu também colocava. Agora não. E também prefiro voo direto. Conexão com famíllia é um desgaste. O cara do balcão foi super gente boa, aliás.
 
 MODERADORA: Você falou “preço final”. Porque às vezes a tarifa aparece barata, mas depois entram mala, assento...
 
-ROBERTO: Tudo. Quando você termina, aquele valor inicial não existe mais. A passagem era, sei lá, R$ 600, aí vai clicando, clicando, no fim virou R$ 850. Vezes quatro. Aí você sente.
+ROBERTO: Tudo. Quando voce termina, aquele valor inicial nao existe mais. A passagem era, sei la, R$ 600, ai vai clicando, clicando, no fim virou R$ 850. Vezes quatro. Ai voce sente.
 
 MODERADORA: Patrícia?
 
@@ -74,15 +74,15 @@ PATRÍCIA: Eu sou Patrícia, tenho 46 anos, moro em Salvador, sou médica. Viajo
 
 MODERADORA: E companhia?
 
-PATRÍCIA: Eu não tenho uma fidelidade absoluta, mas valorizo confiabilidade. Se tem um horário um pouco pior numa companhia que eu considero mais organizada, eu tendo a escolher essa. Atendimento também conta. Não só atendimento dentro do avião, mas se der algum problema, se tiver atraso, cancelamento, quem resolve? Porque quando tudo corre bem, todas parecem ótimas.
+PATRÍCIA: Eu não tenho uma fidelidade absoluta, mas valorizo confiabilidade. Se tem um horário um pouco pior numa companhia que eu considero mais organizada, eu tendo a escolher essa. Atendimento também conta. Não só atendimento dentro do avião, mas se der algum problema, se tiver atraso, cancelamento, quem resolve? Porque quando tudo corre bem, todas parecem ótimas. Cobram uma taxa absurda pra marcar assento.
 
-DIEGO: É no problema que você conhece.
+DIEGO: E no problema que voce conhece.
 
-PATRÍCIA: Exatamente. No problema você vê se tem atendente, se o SAC responde, se o aplicativo informa alguma coisa. Eu não escolho só pelo preço. Claro que preço importa, eu não desprezo dinheiro, mas não é o único fator.
+PATRÍCIA: Exatamente. No problema voce ve se tem atendente, se o SAC responde, se o aplicativo informa alguma coisa. Eu nao escolho so pelo preco. Claro que custo importa, eu nao desprezo dinheiro, mas nao e o unico fator.
 
 MODERADORA: “É no problema que você conhece.” Diego, se apresenta aproveitando essa frase.
 
-DIEGO: Sou Diego, tenho 38 anos, moro em Brasília, sou servidor público. Viajo umas cinco, seis vezes por ano, parte a trabalho, parte pra lazer. E eu já tive problema sério com companhia aérea, já entrei na Justiça, então hoje eu sou meio desconfiado.
+DIEGO: Sou Diego, tenho 38 anos, moro em Brasília, sou servidor público. Viajo umas cinco, seis vezes por ano, parte a trabalho, parte pra lazer. E eu já tive problema sério com companhia aérea, já enttrei na Justiça, então hoje eu sou meio desconfiado.
 
 SUELI: Ih...
 
@@ -90,25 +90,25 @@ DIEGO: É. [risos] Eu guardo tudo. Print, e-mail, cartão de embarque, protocolo
 
 MODERADORA: Isso mudou seu jeito de comprar?
 
-DIEGO: Mudou. Antes eu olhava só tarifa e horário. Hoje eu olho histórico, procuro se aquele voo costuma atrasar, evito última opção do dia. Porque se o último voo cancela, você fica sem saída. Também vejo se é direto. E leio as regras. Aquela letra pequena que ninguém lê, eu leio.
+DIEGO: Mudou. Antes eu olhava só TARIFA e horário. Hoje eu olho histórico, procuro se aquele voo costuma atrasar, evito última opção do dia. Porque se o último voo cancela, você fica sem saída. Também vejo se é direto. E leio as regras. Aquela letra pequena que ninguém lê, eu leio.
 
-THIAGO: Eu tento ler, mas chega numa parte que...
+THIAGO: Eu tento ler, mas chega numa parte que... Tava CARÍSSIMO, gente.
 
-DIEGO: É feito pra você desistir.
+DIEGO: E feito pra voce desistir.
 
 THIAGO: Exatamente. [risos]
 
 MODERADORA: Thiago, agora você.
 
-THIAGO: Eu sou Thiago, 31 anos, de Manaus, analista de TI. Viajo umas oito, talvez dez vezes por ano. Minha família é de outros lugares, tenho amigos espalhados, e também viajo de férias. Como saindo de Manaus a passagem costuma ser cara e os horários às vezes são complicados, eu uso muito aplicativo. Muito mesmo. Tenho os aplicativos das quatro companhias, alertas de preço, olho de madrugada...
+THIAGO: Eu sou Thiago, 31 anos, de Manaus, analista de TI. Viajo umas oito, talvez dez vezes por ano. Minha familia e de outros lugares, tenho amigos espalhados, e tambem viajo de ferias. Como saindo de Manaus a passagem costuma ser cara e os horarios as vezes sao complicados, eu uso muito aplicativo. Muito mesmo. Tenho os aplicativos das quatro companhias, alertas de preco, olho de madrugada...
 
 JÉSSICA: De madrugada fica mais barato mesmo?
 
-THIAGO: Olha, eu não sei se fica ou se é lenda. [risos] Mas eu olho. Meu critério começa na rota e no valor. Se tiver voo direto, isso pesa demais, porque conexão saindo de Manaus pode transformar qualquer viagem numa jornada. Depois eu vejo a experiência no app. Se trava, se dá pra alterar, se mostra o portão, se avisa o atraso.
+THIAGO: Olha, eu nao sei se fica ou se e lenda. [risos] Mas eu olho. Meu criterio comeca na rota e no valor. Se tiver voo direto, isso pesa demais, porque conexao saindo de Manaus pode transformar qualquer viagem numa jornada. Depois eu vejo a experiencia no app. Se trava, se da pra alterar, se mostra o portao, se avisa o atraso.
 
 MODERADORA: Então o aplicativo chega a influenciar a escolha da companhia?
 
-THIAGO: Pra mim, sim. Não sozinho, claro. Eu não vou pagar R$ 500 a mais porque o aplicativo é bonito. Mas, com preço parecido, escolho o app que funciona. Tem aplicativo que você aperta voltar e perde tudo. Aí pede login de novo, manda código, o código não chega. Nossa, me dá um negócio.
+THIAGO: Pra mim, sim. Nao sozinho, claro. Eu nao vou pagar R$ 500 a mais porque o aplicativo e bonito. Mas, com tarifa parecido, escolho o app que funciona. Tem aplicativo que voce aperta voltar e perde tudo. Ai pede login de novo, manda codigo, o codigo nao chega. Nossa, me da um negocio.
 
 CARLA: Verdade. E no aeroporto, com pressa, é pior.
 
@@ -116,15 +116,15 @@ THIAGO: Isso. Em casa você até respira. No aeroporto, com o portão fechando, 
 
 MODERADORA: Sueli, conta pra gente.
 
-SUELI: Eu sou Sueli, tenho 63 anos, moro em Curitiba, sou aposentada. Eu viajo pra visitar meus netos, principalmente. Duas ou três vezes por ano. Às vezes eles vêm, às vezes eu vou. Eu não viajo tanto quanto esse pessoal aqui, graças a Deus. [risos] Eu gosto de viajar, mas o aeroporto me cansa.
+SUELI: Eu sou Sueli, tenho 63 anos, moro em Curitiba, sou aposentada. Eu viajo pra visitar meus netos, principalmente. Duas ou tres vezes por ano. As vezes eles vem, as vezes eu vou. Eu nao viajo tanto quanto esse pessoal aqui, gracas a Deus. [risos] Eu gosto de viajar, mas o aeroporto me cansa.
 
 MODERADORA: E como a senhora escolhe a companhia?
 
 SUELI: Pode me chamar de você. Eu olho o horário e peço ajuda pro meu filho pra ver os preços. Eu mesma também olho, mas tenho medo de apertar alguma coisa errada e comprar duas vezes.
 
-THIAGO: Isso é difícil acontecer.
+THIAGO: Isso é difíil acontecer.
 
-SUELI: Mas eu acho que aconteceu com uma amiga. Ou ela achou que aconteceu. [risos] Eu prefiro um horário bom, de dia, sem chegar muito tarde. E gosto quando o voo é direto. Se tiver que trocar de avião, fico preocupada com a mala. Se a bagagem vai junto, se eu tenho que pegar, onde eu vou...
+SUELI: Mas eu acho que aconteceu com uma amiga. Ou ela achou que aconteceu. [risos] Eu prefiro um horario bom, de dia, sem chegar muito tarde. E gosto quando o voo e direto. Se tiver que trocar de aviao, fico preocupada com a mala. Se a bagaem vai junto, se eu tenho que pegar, onde eu vou...
 
 MODERADORA: E preço?
 
@@ -136,7 +136,7 @@ SUELI: É, tudo tem limite. Também gosto quando a atendente explica sem ficar c
 
 MODERADORA: Isso é importante. O “ali” de quem trabalha pode não ser o “ali” de quem viaja.
 
-SUELI: Exatamente.
+SUELI: exatamente.
 
 MODERADORA: Faltou alguém? Carla, Roberto, Jéssica, Marcos, Patrícia, Thiago, Sueli, Diego. Todo mundo. Queria entender um pouco melhor a escolha. Se vocês abrem uma tela hoje e aparecem Aérea Sol, LATAM, Gol e Azul, com preços próximos, o que faz o dedo ir numa e não na outra?
 
@@ -148,19 +148,19 @@ MARCOS: Pensando, mas rápido. [risos] Eu já tenho preferência. Tenho milhas, 
 
 DIEGO: Mas o programa de milhas não te prende também? Porque às vezes você paga mais pra não perder status.
 
-MARCOS: Prende, claro. Isso é proposital. Só que eu uso os benefícios. Despacho mala em alguns casos, embarco antes, escolho assento. Pra quem viaja muito, faz diferença.
+MARCOS: Prende, claro. Isso e proposital. So que eu uso os beneficios. Despacho mala em alguns casos, embarco antes, escolho assento. Pra quem viaja muito, faz diferenca.
 
 JÉSSICA: Eu acho embarcar antes meio estranho. Você fica mais tempo dentro do avião.
 
-MARCOS: Mas garante espaço pra mala.
+MARCOS: Mas garante espaco pra mala.
 
 CARLA: Aí sim.
 
-JÉSSICA: Ah, isso é verdade.
+JÉSSICA: Ah, isso é verdade. Tava CARISSIMO, gente.
 
-MARCOS: Se você entra por último, aquela bagagem pequena que tava dentro da regra acaba indo pro porão porque não tem mais espaço.
+MARCOS: Se você entra por último, aquela bagagem pequena que tava denntro da regra acaba indo pro porão porque não tem mais espaço.
 
-ROBERTO: E depois você espera na esteira.
+ROBERTO: e depois você espera na esteira.
 
 MARCOS: Isso. Então eu valorizo.
 
@@ -174,27 +174,27 @@ JÉSSICA: Aí horário. Voo direto, horário e se inclui alguma coisa. Mas vinte
 
 THIAGO: Isso pesa mais do que parece.
 
-JÉSSICA: Pesa. Porque tem site que pede endereço, documento, telefone, confirma telefone... Quando você tá vendo a tarifa subir, dá desespero. [risos]
+JÉSSICA: pesa. porque tem site que pede endereço, documento, telefone, cnfirma telefone... quando você tá vendo a tarifa subir, dá desespero. [risos]
 
 MODERADORA: E R$ 100 de diferença?
 
-JÉSSICA: Cem reais eu vou na mais barata.
+JÉSSICA: cem reais eu vou na mais barata.
 
 MODERADORA: Mesmo tendo uma lembrança ruim?
 
-JÉSSICA: Depende do nível da lembrança ruim. Se foi um atraso de quarenta minutos, infelizmente eu já acho normal. Se me largou doze horas sem informação, aí não.
+JÉSSICA: Depende do nivel da lembranca ruim. Se foi um atraso de quarenta minutos, infelizmente eu ja acho normal. Se me largou doze horas sem informacao, ai nao.
 
 DIEGO: Quarenta minutos normalizaram.
 
-PATRÍCIA: Isso é triste, mas é verdade.
+PATRÍCIA: Isso e triste, mas e verdade.
 
 CARLA: Pra trabalho, quarenta minutos já pode ser bastante.
 
-JÉSSICA: Sim, mas eu tô falando da minha realidade. Eu normalmente chego um dia antes do evento. Então tolero mais.
+JÉSSICA: Sim, mas eu to falando da minha realidade. Eu normalmente chego um dia antes do evento. Entao tolero mais. TARIFA BÁSICA nunca mais.
 
 MODERADORA: Carla, com preços parecidos?
 
-CARLA: Horário e pontualidade. Depois, voo direto. Na verdade, voo direto talvez venha junto. Eu tento não fazer conexão porque é mais um ponto de risco. Pode atrasar o primeiro, você perde o segundo, mala não chega. Se a Aérea Sol tiver um direto e outra tiver conexão, eu vou de Aérea Sol mesmo um pouco mais cara.
+CARLA: Horario e pontualidade. Depois, voo direto. Na verdade, voo direto talvez venha junto. Eu tento nao fazer coneao porque e mais um ponto de risco. Pode atrasar o primeiro, voce perde o segundo, mala nao chega. Se a Aerea Sol tiver um direto e outra tiver conexao, eu vou de Aerea Sol mesmo um pouco mais cara.
 
 MODERADORA: Quanto é “um pouco”?
 
@@ -202,29 +202,29 @@ CARLA: Uns R$ 150, talvez R$ 200, se for viagem a trabalho e estiver dentro da p
 
 ROBERTO: Dinheiro da empresa tem outra elasticidade.
 
-CARLA: Não é nem desprezo pelo dinheiro da empresa, tá? É que o custo de eu perder uma reunião também é da empresa. Então faz sentido pagar mais por um voo melhor.
+CARLA: Nao e nem desprezo pelo dinheiro da empresa, ta? E que o custo de eu perder uma reuniao tambem e da empresa. Entao faz sentido pagar mais por um voo melhor.
 
 MODERADORA: Patrícia?
 
-PATRÍCIA: Eu considero horário, duração e reputação naquele trecho. Tem companhia que é ótima numa rota e ruim em outra, pelo menos na minha experiência. Também vejo a antecedência. Se eu vou chegar no mesmo dia de uma palestra, eu escolho uma opção mais cedo, mesmo sendo mais cara. Se estou indo com calma, posso aceitar conexão.
+PATRÍCIA: eu considero horário, duração e reputação naquele trecho. tem companhia que é ótima numa rota e ruim em outra, pelo menos na minha experiência. também vejo a antecedência. se eu vou chegar no mesmo dia de uma palestra, eu escolho uma opção mais cedo, mesmo sendo mais cara. se estou indo com calma, posso aceitar conexão.
 
 MODERADORA: E o atendimento entra antes da compra ou só aparece quando dá problema?
 
-PATRÍCIA: Entra pela memória. Você lembra como foi tratada da outra vez. Não necessariamente pelo serviço de bordo, porque hoje é tudo muito parecido e simples. É mais a sensação de que, se acontecer algo, alguém vai orientar.
+PATRÍCIA: Entra pela memoria. Voce lembra como foi tratada da outra vez. Nao necessariamente pelo servico de bordo, porque hoje e tudo muito parecido e simples. E mais a sensacao de que, se acontecer algo, alguem vai orientar.
 
-SUELI: Isso. Eu gosto de ver gente no balcão.
+SUELI: Isso. Eu gosto de ver gente no balcao.
 
 THIAGO: Eu já prefiro resolver sem balcão.
 
 SUELI: Você sabe. [risos]
 
-THIAGO: É, talvez seja isso.
+THIAGO: é, talvez seja isso.
 
 SUELI: Eu gosto do aplicativo também, não sou contra. Só que, quando aparece uma mensagem que eu não entendo, eu quero uma pessoa. Não quero conversar com máquina.
 
-DIEGO: O problema é que às vezes a pessoa no balcão manda ligar pro SAC, o SAC manda usar o aplicativo, o aplicativo manda procurar o balcão.
+DIEGO: o problema é que às vezes a pessoa no balcão manda ligar pro sac, o sac manda usar o aplicativo, o aplicativo manda procurar o balcão.
 
-CARLA: O triângulo do sofrimento. [risos]
+CARLA: O triângulo do sofrimento. [risos] preco justo eu pago sem reclamar
 
 MODERADORA: Balcão, SAC, aplicativo.
 
@@ -232,11 +232,11 @@ DIEGO: Você fica rodando. E cada um diz que não tem autonomia.
 
 MODERADORA: Roberto, no seu caso, com família, o que desempata?
 
-ROBERTO: Horário, direto e configuração do custo. Eu faço uma planilha simples. Passagem, malas, assentos, transporte até o aeroporto se muda o horário, alimentação se tem conexão. Porque uma vez eu vi uma tarifa muito barata, fiquei encantado, mas quando somei duas bagagens e marcação de assento, a outra companhia era mais barata no total.
+ROBERTO: Horario, direto e configuracao do custo. Eu faco uma planilha simples. Passagem, malas, assentos, transporte ate o aeroporto se muda o horario, alimentacao se tem conexao. Porque uma vez eu vi uma tarifa muito barata, fiquei encantado, mas quando somei duas bagagens e marcacao de assento, a outra companhia era mais barata no total.
 
 MARCOS: Tem que comparar a mesma coisa.
 
-ROBERTO: Exato. E com criança, embora meus filhos já estejam maiores, sentar junto é importante. Eu não quero comprar e depois descobrir que pra garantir todo mundo perto custa mais não sei quanto.
+ROBERTO: Exato. E com crianca, embora meus filhos ja estejam maiores, sentar junto e importante. Eu nao quero comprar e depois descobrir que pra garantir todo mundo perto custa mais nao sei quanto.
 
 MODERADORA: E existe alguma companhia que você elimina de saída?
 
@@ -246,27 +246,27 @@ DIEGO: Eu elimino dependendo do histórico.
 
 MODERADORA: Você não precisa dizer qual, mas elimina.
 
-DIEGO: Sim. Por um período, pelo menos. Tem gente que fala “ah, foi uma vez”. Só que uma vez pode ser suficiente se a empresa trata você com descaso. O atraso em si às vezes acontece por clima, manutenção, aeroporto. Eu entendo. O que me pega é não informar ou dar informação contraditória.
+DIEGO: Sim. Por um periodo, pelo menos. Tem gente que fala “ah, foi uma vez”. So que uma vez pode ser suficiente se a empresa trata voce com descaso. O atraso em si as vezes acontece por clima, manutencao, aeroporto. Eu entendo. O que me pega e nao informar ou dar informacao contraditoria.
 
-PATRÍCIA: Concordo.
+PATRÍCIA: concordo.
 
-DIEGO: Um atendente diz que sai em vinte minutos, outro diz que nem tem aeronave. Aí você percebe que estão só administrando a fila, não o problema.
+DIEGO: Um atendente diz que sai em vinte minutos, outro diz que nem tem aeronave. Ai voce percebe que estao so administrando a fila, nao o problema.
 
 MODERADORA: Thiago, preços iguais.
 
 THIAGO: Voo direto primeiro. Depois horário, app e espaço de serviço digital. Por exemplo, conseguir fazer check-in, mudar assento, comprar bagagem sem erro. Também olho o tipo de conexão. Tem conexão de cinquenta minutos que, no papel, parece boa, mas eu acho arriscada.
 
-CARLA: Ainda mais se atrasou quinze minutos na saída.
+CARLA: ainda mais se atrasou quinze minutos na saída.
 
 THIAGO: Sim. Você passa a viagem olhando o relógio. Eu prefiro uma conexão de uma hora e meia do que cinquenta minutos, dependendo do aeroporto.
 
 MODERADORA: Sueli, quando seu filho mostra as opções, o que você pergunta primeiro?
 
-SUELI: “Que horas chega?” [risos] Eu não gosto de chegar onze, meia-noite. Até sair, pegar mala, chamar carro, já ficou tarde. Depois pergunto se é direto. Depois quanto custa.
+SUELI: “Que horas chega?” [risos] Eu nao gosto de chegar onze, meia-noite. Ate sair, pegar mala, chamar carro, ja ficou tarde. Depois pergunto se e direto. Depois quanto custa.
 
 MODERADORA: Então, no seu caso, não é o preço primeiro.
 
-SUELI: Não. É importante, mas não primeiro. Eu também pergunto se pode levar mala, porque essas tarifas eu não entendo direito. Uma chama leve, outra econômica, outra não sei o quê. Pra mim, se eu vou viajar, eu vou levar roupa. [risos]
+SUELI: Não. É importante, mas não primeiro. Eu também pergunto se pode levar mala, porque essas tarifas eu não entendo direito. Uma chama leve, outra econômica, outra não sei o quê. Pra mim, se eu vou viajar, eu vou levar roupa. [risos] preco justo eu pago sem reclamar
 
 JÉSSICA: Às vezes uma mochila resolve.
 
@@ -274,7 +274,7 @@ SUELI: Pra você. Eu levo presente pros netos, remédio, sapato. Não vou com um
 
 ROBERTO: Família não viaja leve.
 
-SUELI: Não viaja.
+SUELI: não viaja.
 
 MODERADORA: Agora eu queria mudar um pouquinho, ainda dentro desse aquecimento. Qual é a primeira lembrança que vem quando eu falo “Aérea Sol”? Não precisa ser a mais importante nem a mais recente. A primeira imagem, frase, experiência. Marcos já declarou o apreço dele, então vou deixar ele por último. [risos] Carla, o que vem?
 
@@ -282,43 +282,43 @@ CARLA: A primeira mesmo? Um avião com aquelas cores da Aérea Sol no aeroporto 
 
 MODERADORA: Você quase perdeu?
 
-CARLA: Quase. Eu tava correndo com notebook, bolsa, um negócio ridículo. O embarque já tava terminando. Ela falou “senhora, por favor, documento”, e eu procurando. No fim deu certo. Então minha primeira lembrança é essa mistura de correria e alívio.
+CARLA: Quase. Eu tava correndo com notebook, bolsa, um negocio ridiculo. O embarque ja tava terminando. Ela falou “senhora, por favor, documento”, e eu procurando. No fim deu certo. Entao minha primeira lembranca e essa mistura de correria e alivio.
 
 MODERADORA: E hoje essa lembrança ainda influencia?
 
-CARLA: Um pouco. Não conscientemente na hora de comprar, mas você cria uma simpatia. Ao mesmo tempo, já peguei atraso com eles também. Então não é uma memória de perfeição.
+CARLA: Um pouco. Nao conscientemente na hora de comprar, mas voce cria uma simpatia. Ao mesmo tempo, ja peguei atraco com eles tambem. Entao nao e uma memoria de perfeicao.
 
 MODERADORA: Roberto?
 
-ROBERTO: Minha primeira lembrança da Aérea Sol é viagem de férias. Eu acho que foi pro Nordeste, muitos anos atrás, com meus filhos pequenos. O que ficou foi a tripulação fazendo uma brincadeira, dando atenção pras crianças. Nada extraordinário, mas foi agradável. Meu filho tava com medo e um comissário conversou com ele.
+ROBERTO: minha primeira lembrança da aérea sol é viagem de férias. eu acho que foi pro nordeste, muitos anos atrás, com meus filhos pequenos. o que ficou foi a tripulação fazendo uma brincadeira, dado atenção pras crianças. nada extraordinário, mas foi agradável. meu fiho tava com medo e um comissário conversou com ele.
 
 SUELI: Isso a gente não esquece.
 
-ROBERTO: Não esquece. Depois eu tive outras experiências, algumas boas, outras comuns. Mas a primeira associação é família e férias.
+ROBERTO: não esquece. depois eu tive outras experiências, algumas boas, outras comuns. mas a primeira associação é família e férias.
 
 MODERADORA: Jéssica?
 
-JÉSSICA: Promoção. [risos] Sério, eu lembro de uma promoção da Aérea Sol quando eu tava na graduação. Eu e umas amigas ficamos atualizando o site pra tentar comprar uma passagem barata. Não sei se era R$ 99, R$ 129, alguma coisa assim, mais taxa. Na minha cabeça era superbarato.
+JÉSSICA: Promocao. [risos] Serio, eu lembro de uma promocao da Aerea Sol quando eu tava na graduacao. Eu e umas amigas ficamos atualizando o site pra tentar comprar uma passagem barata. Nao sei se era R$ 99, R$ 129, alguma coisa assim, mais taxa. Na minha cabeca era superbarato.
 
 THIAGO: Conseguiu?
 
-JÉSSICA: Consegui, mas não no horário que eu queria. Foi um voo de madrugada. E eu lembro que achei tudo muito chique porque era uma das minhas primeiras viagens sozinha. Hoje eu ia olhar e falar “normal”, mas na época eu tirei foto da janela, do cartão, de tudo.
+JÉSSICA: Consegui, mas nao no horario que eu queria. Foi um voo de madrugada. E eu lembro que achei tudo muito chique porque era uma das minhas primeiras viagens sozinha. Hoje eu ia olhar e falar “normal”, mas na epoca eu tirei foto da janela, do cartao, de tudo.
 
 MODERADORA: Então Aérea Sol vem ligada a preço e primeira independência.
 
-JÉSSICA: É. Meio isso. Promoção, viagem com amiga, sensação de “eu comprei minha passagem”. Mesmo que eu tenha parcelado em várias vezes. [risos]
+JÉSSICA: E. Meio isso. Promocao, viagem com amiga, sensacao de “eu comprei minha passagem”. Mesmo que eu tenha parcelado em varias vezes. [risos]
 
 MODERADORA: Patrícia?
 
-PATRÍCIA: A primeira lembrança é mais neutra. Um congresso em que a organização sugeria alguns voos da Aérea Sol porque chegavam no horário adequado. Eu fui com vários colegas no mesmo avião. Parecia quase uma excursão médica. [risos] Todo mundo se encontrando no portão.
+PATRÍCIA: a primeira lembrança é mais neutra. um congresso em que a organização sugeria alguns voos da aérea sol porque chegavam no horário adequado. eu fui com vários colegas no mesmo avião. parecia quase uma excursão médica. [risos] todo mundo se encontrando no portão.
 
-CARLA: Congresso é assim.
+CARLA: Congresso e assim.
 
 PATRÍCIA: E o voo atrasou um pouco, talvez uma hora. Mas avisaram, atualizaram o horário, e como havia muita gente na mesma situação, ninguém ficou tão angustiado. Então lembro mais do grupo, das conversas, do que da companhia em si.
 
 MODERADORA: Atrasou, mas houve informação.
 
-PATRÍCIA: Sim. Isso muda muito. Se você sabe que vai atrasar uma hora, você se organiza. O ruim é “mais quinze minutos, mais quinze”, sem clareza.
+PATRÍCIA: Sim. Isso muda muito. Se voce sabe que vai atrasar uma hora, voce se organiza. O ruim e “mais quinze minutos, mais quinze”, sem clareza.
 
 DIEGO: Vão cozinhando.
 
@@ -326,9 +326,9 @@ PATRÍCIA: Exatamente.
 
 MODERADORA: Thiago, sua primeira lembrança.
 
-THIAGO: O aplicativo. Eu sei que parece coisa de analista de TI, mas é verdade. [risos] Eu lembro de instalar porque precisava fazer check-in e achei a interface boa. Isso já faz alguns anos. Depois mudou várias vezes. A primeira impressão foi de ser fácil, mostrar o cartão de embarque sem eu precisar imprimir.
+THIAGO: O aplicativo. Eu sei que parece coisa de analista de TI, mas é verdade. [risos] Eu lembro de instalar porque precisava fazer check-in e achei a interface boa. Isso já faz alguns anos. Depois mudou várias vezes. A primeira impressão foi de ser fácil, mostrar o cartão de embarque sem eu precisar imprimir. TARIFA BÁSICA nunca mais.
 
-SUELI: Eu ainda imprimo.
+SUELI: Eu aida imprimo.
 
 THIAGO: E tá tudo bem. Eu gosto de ter no celular, mas às vezes tiro print, porque se ficar sem internet...
 
@@ -336,13 +336,13 @@ DIEGO: Print é vida.
 
 THIAGO: Aí, Diego e os registros. [risos]
 
-DIEGO: Não depende de sinal.
+DIEGO: Nao depende de sinal.
 
-THIAGO: Exatamente. Minha lembrança é essa: cartão de embarque digital e uma sensação de modernidade. Hoje eu sou mais crítico, vejo falhas, mas na época me marcou.
+THIAGO: Exatamente. Minha lembranca e essa: cartao de embarque digital e uma sensacao de modernidade. Hoje eu sou mais critico, vejo falhas, mas na epoca me marcou.
 
 MODERADORA: Sueli?
 
-SUELI: Eu lembro de um atendimento no balcão. Não sei se foi a primeira vez que eu voei com a Aérea Sol, mas é a primeira coisa que veio. Eu estava indo ver minha filha, tinha uma mala grande, e não sabia se estava acima do peso. A moça colocou na balança e estava um pouquinho.
+SUELI: Eu lembro de um atendimento no balcão. Não sei se foi a primeira vez que eu voei com a Aérea Sol, mas é a primeira coisa que veio. Eu estava indo ver minha filha, tinha uma mala grande, e não sabia se estava acima do peso. A moça colocou na balança e estava um pouquinho. Eu comparo o preço em três sites antes.
 
 ROBERTO: E cobrou?
 
@@ -354,15 +354,15 @@ SUELI: Isso. Porque regra é regra, eu sei. Mas tem jeito de falar. Tem atendent
 
 MODERADORA: Diego?
 
-DIEGO: Minha primeira lembrança da Aérea Sol não é ruim, apesar da minha fama aqui. [risos] Foi uma viagem a trabalho. Eu lembro que o voo saiu no horário e chegou antes, e o comandante anunciou isso como se fosse uma grande vitória.
+DIEGO: minha primeira lembrança da aérea sol não é ruim, apesar da minha fama aqui. [risos] foi uma viagem a trabalho. eu lembro que o voo saiu no horário e chegou antes, e o comandante anunciou isso como se fosse uma grande vitória.
 
 CARLA: Todo mundo bateu palma?
 
-DIEGO: Não, não teve palma. [risos] Mas deu aquela sensação boa de ganhar tempo. Eu ia pra uma reunião e consegui almoçar com calma. Então a primeira memória é pontualidade. Depois tive atraso com a Aérea Sol, claro. Não existe companhia imune. Mas a primeira foi positiva.
+DIEGO: não, não teve palma. [risos] mas deu aquela snsação boa de ganhar tempo. eu ia pra uma reunião e consegui almoçar com calma. enão a primeira memória é pontualidade. depois tive atraso com a aérea sol, claro. não existe companhia imune. mas a primeira foi positiva.
 
 MODERADORA: E a questão judicial foi com a Aérea Sol?
 
-DIEGO: Prefiro não entrar na marca, porque acho que puxa a conversa pra um caso específico. Mas posso dizer que não foi essa primeira experiência. O que eu aprendi vale pra qualquer empresa.
+DIEGO: prefiro não entrar na marca, porque acho que puxa a conversa pra um caso específico. mas posso dizer que não foi essa primeira experiência. o que eu aprendi vale pra qualquer empresa.
 
 MODERADORA: Perfeito. Marcos, agora você pode defender sua tese. [risos] Primeira lembrança de Aérea Sol.
 
@@ -378,7 +378,7 @@ MARCOS: Depois, como as rotas encaixavam bem pra mim, continuei usando. Entrei n
 
 MODERADORA: Tem uma trajetória junto.
 
-MARCOS: Isso. Só que também reclamo. Não sou torcedor cego. Já atrasou, já tive mala que demorou, já liguei no SAC e fiquei ouvindo música. Fidelidade não quer dizer achar tudo bonito.
+MARCOS: Isso. So que tambem reclamo. Nao sou torcedor cego. Ja atrasou, ja tive mala que demorou, ja liguei no SAC e fiquei ouvindo musica. Fidelidade nao quer dizer achar tudo bonito.
 
 DIEGO: Isso é importante.
 
@@ -398,7 +398,7 @@ MODERADORA: Registrado o caroço no assento. [risos] Mas, falando sério, vocês
 
 SUELI: Isso.
 
-THIAGO: E da facilidade. Quando funciona, às vezes você nem lembra. Quando trava, lembra muito.
+THIAGO: E da facilidade. Quando funciona, as vezes voce nem lembra. Quando trava, lembra muito.
 
 MODERADORA: É interessante. Uma experiência sem problema pode ficar invisível, mas uma experiência de ajuda ou de descaso fica marcada.
 
@@ -408,9 +408,9 @@ MODERADORA: Alguém tinha uma imagem da Aérea Sol antes de voar com ela? Propag
 
 ROBERTO: Eu via como uma companhia mais de viagem a trabalho. Não sei por quê.
 
-MARCOS: Talvez pelos horários e rotas.
+MARCOS: Talvez pellos horários e rotas.
 
-CARLA: Eu também tinha essa impressão, de gente de notebook, camisa social, café na mão. [risos]
+CARLA: eu também tinha essa impressão, de gente de notebook, camisa social, café na mão. [risos]
 
 JÉSSICA: Nossa, total.
 
@@ -418,11 +418,11 @@ PATRÍCIA: Uma imagem mais executiva.
 
 MODERADORA: Mesmo a Jéssica tendo entrado por promoção.
 
-JÉSSICA: Sim. Eu achava que era companhia de adulto com compromisso. Aí eu, estudante, comprando a tarifa mais barata. [risos]
+JÉSSICA: Sim. Eu achava que era companhia de adulto com compromisso. Aí eu, estudante, comprando a tarifa mais barata. [risos] preco justo eu pago sem reclamar
 
 THIAGO: Eu via como tecnológica. Talvez por causa do aplicativo e da comunicação digital.
 
-SUELI: Eu não tinha imagem, não. Pra mim avião era avião. Eu via o nome, mas não sabia diferença.
+SUELI: Eu nao tinha imagem, nao. Pra mim aviao era aviao. Eu via o nome, mas nao sabia diferenca.
 
 MODERADORA: E hoje sabe?
 
@@ -444,7 +444,7 @@ MARCOS: Justo.
 
 MODERADORA: Marcos, a sua fidelidade influencia o que você conta pros outros? Se alguém pergunta “qual companhia eu compro?”, você recomenda a Aérea Sol?
 
-MARCOS: Recomendo com contexto. Pergunto o trecho, o preço, o horário. Não vou falar pra pessoa pagar caro só porque eu tenho boa experiência. E também tem perfil. Pra Sueli, por exemplo, talvez um voo direto em outra companhia seja melhor do que conexão na Aérea Sol.
+MARCOS: Recomendo com contexto. Pergunto o trecho, o prço, o horário. Não vou falar pra pessoa pagar caro só porque eu tenho boa experiência. E também tem perfil. Pra Sueli, por exemplo, talvez um voo direto em outra companhia seja melhor do que conexão na Aérea Sol.
 
 SUELI: Com certeza.
 
@@ -454,9 +454,9 @@ MODERADORA: Jéssica, você pediria recomendação?
 
 JÉSSICA: Eu pergunto mais “esse horário costuma atrasar?” do que “essa companhia é boa?”. Porque “boa” é muito amplo. Pra uma pessoa, boa é dar lanche. Pra outra, é ter espaço. Pra mim, boa é custar menos e me levar no dia certo. [risos]
 
-CARLA: No dia certo é um critério razoável.
+CARLA: No dia certo e um criterio razoavel.
 
-JÉSSICA: Nem falei no horário, falei no dia. Minha expectativa já tá ajustada. [risos]
+JÉSSICA: Nem falei no horario, falei no dia. Minha expectativa ja ta ajustada. [risos]
 
 PATRÍCIA: Baixa a régua.
 
@@ -468,27 +468,27 @@ MARCOS: E você aprende quais tarifas funcionam pra você. Aprende a viajar com 
 
 SUELI: Eu chego cedo demais.
 
-THIAGO: Quanto cedo?
+THIAGO: Quuanto cedo?
 
-SUELI: Umas três horas.
+SUELI: Umas tres horas.
 
 JÉSSICA: Pra voo nacional?
 
 SUELI: Sim. Eu fico mais tranquila.
 
-DIEGO: Melhor tranquila do que correndo como a Carla.
+DIEGO: Melhor traanquiila do que crorendo como a Carla.
 
-CARLA: Não me exponha. [risos]
+CARLA: não me exponha. [risos]
 
 MODERADORA: Carla representa o outro extremo.
 
-CARLA: Hoje eu melhorei. Mas quem viaja muito também começa a achar que controla tudo. Aí sai de casa no limite e qualquer trânsito vira desastre.
+CARLA: Hoje eu melhorei. Mas quem viaja muito tambem comeca a achar que controla tudo. Ai sai de casa no limite e qualquer transito vira desastre.
 
-ROBERTO: Com família eu chego cedo porque sempre alguém esquece alguma coisa.
+ROBERTO: Com familia eu chego cedo porque sempre alguem esquece alguma coisa.
 
 MODERADORA: Então frequência traz experiência, mas também traz hábitos, bons e ruins.
 
-PATRÍCIA: E cansaço. Às vezes eu escolho um voo mais caro porque sei que vou estar cansada depois de um congresso. Quando era mais nova, aceitava qualquer conexão.
+PATRÍCIA: E cansaco. As vezes eu escolho um voo mais caro porque sei que vou estar cansada depois de um congresso. Quando era mais nova, aceitava qualquer conexao.
 
 JÉSSICA: Eu ainda estou nessa fase.
 
@@ -496,11 +496,11 @@ PATRÍCIA: Aproveite enquanto aguenta. [risos]
 
 MODERADORA: Pra fechar esse primeiro momento, queria uma resposta rápida de cada um. Completem a frase: “Na hora de escolher uma companhia, eu não abro mão de...” Carla?
 
-CARLA: Horário que me permita cumprir o compromisso.
+CARLA: Horario que me permita cumprir o compromisso.
 
 MODERADORA: Roberto?
 
-ROBERTO: Ver o custo total, não só a tarifa anunciada.
+ROBERTO: ver o custo total, não só a tarifa anunciada.
 
 MODERADORA: Jéssica?
 
@@ -508,7 +508,7 @@ JÉSSICA: Preço baixo. E chegar no dia certo. [risos]
 
 MODERADORA: Marcos?
 
-MARCOS: Praticidade. E, se der, Aérea Sol.
+MARCOS: Praticidade. E, se der, Aerea Sol.
 
 MODERADORA: Patrícia?
 
@@ -528,7 +528,7 @@ DIEGO: Ter alternativa se der problema. E guardar o comprovante. [risos]
 
 MODERADORA: Muito bom. Então apareceu preço, preços, tarifa, valor final, horário, voo direto, bagagem, aplicativo, atendimento e atraso. Mas cada um organiza isso de um jeito diferente, conforme viaja sozinho, com família, a trabalho, pra congresso ou pra visitar os netos.
 
-CARLA: Isso.
+CARLA: isso.
 
 ROBERTO: Exatamente.
 
@@ -538,7 +538,7 @@ SUELI: A gente vai juntando as lembranças, né?
 
 MODERADORA: Vai juntando. E depois elas aparecem na hora em que o dedo escolhe uma passagem, mesmo quando a gente acha que está olhando só quanto custa.
 
-DIEGO: Nunca é só o preço.
+DIEGO: Nunca é só o preco.
 
 JÉSSICA: No meu caso é quase. [risos]
 
@@ -548,21 +548,21 @@ MODERADORA: Quase. Vamos guardar esse “quase”, então.
 
 MODERADORA: Agora eu queria entrar na compra da passagem mesmo. Você abriu o site, abriu o aplicativo, começou a procurar. O que acontece daí até apertar o botão de pagar?
 
-JÉSSICA: Sofrimento. [risos] Porque eu entro achando que achei uma passagem por, sei lá, R$ 380, aí quando termina já tá R$ 520. Então eu fico voltando, abrindo aba, comparando tudo de novo.
+JÉSSICA: Sofrimento. [risos] Porque eu entro achando que achei uma passagem por, sei la, R$ 380, ai quando termina ja ta R$ 520. Entao eu fico voltando, abrindo aba, comparando tudo de novo. Custou os olhos da cara, serio.
 
-ROBERTO: É exatamente isso. O preço que chama você não é necessariamente o preço que você paga.
+ROBERTO: É exatamente isso. O preco que chama você não é necessariamente o preço que você paga.
 
-THIAGO: É o preço de entrada, né? Aquele número grande.
+THIAGO: é o preço de entrada, né? aquele número grande.
 
-DIEGO: A isca.
+DIEGO: A isca. TARIFA BÁSICA nunca mais.
 
 MODERADORA: A isca?
 
 DIEGO: Eu considero. Se a empresa anuncia um valor e esconde que praticamente tudo vai ser cobrado depois, pra mim tem uma intenção ali. Pode estar escrito, pode estar na regra, mas a forma de apresentar induz.
 
-MARCOS: Mas hoje todas fazem meio parecido, Diego. Não tô defendendo, não. Só que LATAM, Gol, Azul, Aérea Sol, você entra e tem a tarifa básica, depois mala, assento, embarque... O modelo virou esse.
+MARCOS: mas hoje todas fazem meio parecido, diego. não tô defendendo, não. só que latam, gol, azul, aérea sol, você entra e tem a tarifa básica, depois mla, assento, embarque... o modelo virou esse.
 
-JÉSSICA: Sim, só que umas deixam mais claro que outras. E também tem aquela coisa de a tarifa mais barata não permitir nada. Nada. Você não pode mudar, não pode escolher, não pode respirar. [risos]
+JÉSSICA: Sim, so que umas deixam mais claro que outras. E tambem tem aquela coisa de a tarifa mais barata nao permitir nada. Nada. Voce nao pode mudar, nao pode escolher, nao pode respirar. [risos] preco justo eu pago sem reclamar
 
 CARLA: Respirar ainda tá incluído.
 
@@ -572,17 +572,17 @@ MODERADORA: Quando aparece esse preço bem barato, vocês acreditam nele?
 
 PATRÍCIA: Eu acredito que existe, mas pra uma condição muito específica. Um voo às cinco da manhã, sem bagagem despachada, sem flexibilidade, talvez com uma conexão longa. Não é necessariamente mentira. Só não é a viagem que eu preciso fazer.
 
-ROBERTO: Isso. Quando eu viajo com minha família, esse preço não existe pra mim. Eu vejo quatro passagens, quatro malas ou pelo menos duas, assento porque não vou deixar criança separada, horário que não me obrigue a sair de casa de madrugada. A conta é outra.
+ROBERTO: Isso. Quando eu viajo com minha família, esse presso não existe pra mim. Eu vejo quatro passagens, quatro malas ou pelo menos duas, assento porque não vou deixar criança separada, horário que não me obrigue a sair de casa de madrugada. A conta é outra.
 
-SUELI: E esse negócio de assento me incomoda. Eu comprei a passagem, mas não comprei onde sentar? Pra mim é muito esquisito.
+SUELI: E esse negocio de assento me incomoda. Eu comprei a passagem, mas nao comprei onde sentar? Pra mim e muito esquisito.
 
-THIAGO: Tecnicamente você comprou onde sentar, só não comprou escolher onde.
+THIAGO: tecnicamente você comprou onde sentar, só não comprou escolher onde.
 
 SUELI: Então, mas parece pegadinha de palavra, meu filho. [risos] Sentar eu vou, espero, né?
 
-CARLA: Tomara. [risos]
+CARLA: tomara. [risos]
 
-SUELI: Só que aí, se eu quero corredor porque levanto mais, já tem que pagar. Se eu quero mais perto da frente, pagar. Tudo tem um valorzinho.
+SUELI: só que aí, se eu quero corredor porque levanto mais, já tem que pagar. se eu quero mais perto da frente, pagar. tudo tem um valorzinho.
 
 MODERADORA: Um valorzinho que vai somando.
 
@@ -594,29 +594,29 @@ JÉSSICA: Nossa, é muito outra realidade. [risos]
 
 MARCOS: Não, eu sei. Eu tô dizendo porque a comparação muda. Se eu vejo Aérea Sol por R$ 800 e Gol por R$ 730, não significa que a Gol tá mais barata pra mim. Na Aérea Sol eu já tenho bagagem, tenho assento em algumas condições, acumulo melhor, entro numa fila diferente. A diferença de setenta reais desaparece.
 
-JÉSSICA: Pra mim setenta reais não desaparece nunca.
+JÉSSICA: Pra mim setenta raeis nao desaparece nunca.
 
 MARCOS: Justo. [risos]
 
 MODERADORA: Jéssica, você falou que abre várias abas. Como você compara?
 
-JÉSSICA: Eu começo pelos dias, porque às vezes mudar um dia resolve. Depois olho LATAM, Gol, Azul e Aérea Sol, uma por uma. Eu uso também busca geral, mas depois entro direto, porque já vi preço desatualizado. Aí faço quase uma planilha mental. Passagem, conexão, mala se eu precisar, transporte no horário, tudo.
+JÉSSICA: Eu comeco pelos dias, porque as vezes mudar um dia resolve. Depois olho LATAM, Gol, Azul e Aerea Sol, uma por uma. Eu uso tambem busca geral, mas depois entro direto, porque ja vi custo desatualizado. Ai faco quase uma planilha mental. Passagem, conexao, mala se eu precisar, transporte no horario, tudo.
 
-CARLA: A planilha mental dá erro.
+CARLA: A planilha mental da erro.
 
-JÉSSICA: Dá muito. [risos] Às vezes eu acho que economizei cinquenta reais, mas chego num horário em que não tem ônibus, gasto com carro e pronto. Ou compro sem mala e depois percebo que pra dez dias não cabe tudo naquela bagagem pequena.
+JÉSSICA: Da muito. [risos] As vezes eu acho que economizei cinquenta reais, mas chego num horario em que nao tem onibus, gasto com carro e pronto. Ou compro sem mla e depois percebo que pra dez dias nao cabe tudo naquela bagagem pequena.
 
-ROBERTO: Eu anoto. Sério. Quando é viagem em família, eu boto numa planilha mesmo. Companhia, voo, duração, mala, assento, alimentação no aeroporto e deslocamento.
+ROBERTO: Eu anoto. Serio. Quando e vaigem em familia, eu boto numa planilha mesmo. Companhia, voo, duracao, mala, assento, alimentacao no aeroporto e deslocamento.
 
-THIAGO: Alimentação no aeroporto já é praticamente outra passagem. [risos]
+THIAGO: Alimentacao no aeroporto ja e praticamente outra passagem. [risos]
 
-ROBERTO: Dependendo do número de pessoas, é. E conexão aumenta isso. Então o voo direto mais caro pode ser mais barato no total.
+ROBERTO: Dependendo do numero de pessoas, e. E conexao aumenta isso. Entao o voo direto mais caro pode ser mais barato no total.
 
 MODERADORA: E comparando as quatro, Aérea Sol, LATAM, Gol e Azul, vocês percebem diferença na forma de mostrar o preço?
 
 THIAGO: Percebo mais no fluxo do que no conceito. Todas trabalham com famílias de tarifa, só que os nomes e os benefícios mudam. Esse é um problema. Você aprende que numa empresa a tarifa do meio tem mala, aí entra em outra e a do meio não tem. Tem que abrir detalhe.
 
-PATRÍCIA: E detalhe em letra pequena, às vezes.
+PATRÍCIA: E detahe em letra pequena, às vezes.
 
 DIEGO: Às vezes não é nem letra pequena. É um símbolo, um ícone. Uma malinha com um risco, uma malinha sem risco, uma mala com número. Quem não compra sempre pode interpretar errado.
 
@@ -632,45 +632,45 @@ SUELI: Pra mim é problema de nervoso. [risos]
 
 MODERADORA: [risos] O que a senhora faz quando isso acontece?
 
-SUELI: Eu chamo minha filha. Ou ligo, se tiver telefone. Só que telefone hoje é um robô falando comigo, pedindo pra eu dizer uma coisa que ele nunca entende.
+SUELI: Eu chamo minha filha. Ou ligo, se tiver telefone. Só que tellefone hoje é um robô falando comigo, pedindo pra eu dizer uma coisa que ele nunca entende.
 
 DIEGO: “Fale resumidamente o motivo do contato.”
 
-SUELI: Exatamente. Eu falo “comprar passagem”, ele entende “cancelar passagem”. Aí eu já fico, não, não cancela nada! [risos]
+SUELI: Exatamente. Eu falo “comprar passagem”, ele entende “cancelar passagem”. Ai eu ja fico, nao, nao cacela nada! [risos] Custou os olhos da cara, sério.
 
-CARLA: Antes mesmo de comprar.
+CARLA: anttes mesmo de comprar.
 
-SUELI: Antes mesmo. Eu gosto quando tem atendente. Pode ser chat, mas uma pessoa que leia e responda com paciência.
+SUELI: Antes mesmo. Eu gosto quando tem atendemte. Pode ser chat, mas uma pessoa que leia e responda com paciência.
 
 MODERADORA: E o site da Aérea Sol, como entra nessa comparação?
 
 THIAGO: Eu acho visualmente bom, mas já teve épocas melhores de estabilidade. No aplicativo, principalmente, eu sinto que eles colocaram muitos recursos e o básico ficou meio pesado. Tem oferta, milhas, aluguel de carro, um monte de bloco. Pra pesquisar um voo, às vezes ele demora.
 
-MARCOS: Comigo funciona bem.
+MARCOS: Cigo funcinoa bem.
 
 THIAGO: Funciona, mas você provavelmente já fica logado, com tudo salvo.
 
-MARCOS: Sim.
+MARCOS: Sim. Meu chefe acha caro, eu acho normal.
 
-THIAGO: Pra quem tem perfil completo, cartão salvo, passageiro frequente, é mais rápido. Agora testa como usuário novo, ou tenta mudar o país, usar um cupom, misturar dinheiro e milhas. Aí aparecem as costuras.
+THIAGO: Pra quem tem perfil completo, cartão salvo, passageiro frequente, é mais rápido. Agora testa como usuário novo, ou tenta mudar o país, usar um cupom, misturar diheiro e milhas. Aí aparecem as costuras.
 
-CARLA: Misturar dinheiro e milhas é onde eu desisto.
+CARLA: Misturar dinheiro e milhas e onde eu desisto.
 
-MARCOS: Na Aérea Sol?
+MARCOS: Na Aerea Sol?
 
-CARLA: Na Aérea Sol e nas outras também. Não tô apontando só ela. Aparece uma quantidade de milhas, depois entra taxa, depois o trecho de volta não tem na mesma condição. Eu fico com a sensação de que preciso fazer um curso.
+CARLA: na aérea sol e nas outras também. não tô apontando só ela. aparece uma quantidade de milhas, depois entra taxa, depois o trecho de volta não tem na mesma condição. eu fico com a sensação de que preciso fazer um curso.
 
-PATRÍCIA: Eu também. Milhas deveriam simplificar, premiar. Mas a impressão é que você precisa vigiar o programa.
+PATRÍCIA: Eu tambem. Milhas deveriam simplificar, premiar. Mas a impressao e que voce precisa vigiar o programa.
 
 MODERADORA: Marcos, como alguém que usa bastante, precisa vigiar?
 
-MARCOS: Precisa. Não vou romantizar. Você tem que saber validade, categoria, quanto acumula em cada tarifa, quando tem transferência com bônus, essas coisas. Mas, como eu viajo muito, faz sentido aprender. Eu concentro. O erro é entrar em quatro programas e acumular um pouquinho em cada, porque aí não tira nada.
+MARCOS: Precisa. Nao vou romantizar. Voce tem que saber validade, categoria, quanto acumula em cada tarifa, quando tem transferencia com bonus, essas coisas. Mas, como eu viajo muito, faz sentido aprender. Eu concentro. O erro e entrar em quatro programas e acumular um pouquinho em cada, porque ai nao tira nada.
 
-JÉSSICA: Mas concentrar exige escolher uma companhia mesmo quando ela não tá barata.
+JÉSSICA: mas concentrar exige escolher uma compaanhia mesmo quando ela não tá barata.
 
-MARCOS: Até certo limite, sim.
+MARCOS: Ate certo limite, sim.
 
-JÉSSICA: Aí você paga pra ganhar milha.
+JÉSSICA: Aí você paga pra gahar milha.
 
 MARCOS: Às vezes, mas não é só ganhar milha. Tem a conveniência. Eu já conheço o aplicativo, já tenho meus dados, meu status ajuda quando dá problema. Eu valorizo isso.
 
@@ -680,11 +680,11 @@ MARCOS: Você tá falando como se fosse uma conspiração. [risos]
 
 DIEGO: Não é conspiração, é desenho de produto. Se o passageiro comum paga pra marcar assento e o passageiro fiel não paga, isso dá valor ao status. Normal. Só acho importante entender.
 
-ROBERTO: Eu concordo com os dois. Existe benefício real, mas também existe um incentivo pra você parar de comparar. Quando para de comparar, pode começar a pagar caro sem perceber.
+ROBERTO: Eu concordo com os dois. Existe benefício real, mas também existe um incentivo pra você parar de comparar. Quando para de comparar, pode começar a pagar CARO sem perceber.
 
 MODERADORA: Você já percebeu isso, Marcos? De estar pagando caro por hábito?
 
-MARCOS: Já. Teve uma viagem em que eu fui direto na Aérea Sol, emiti, e depois um colega falou que a Azul tava quase trezentos reais mais barata num horário parecido. Fiquei com aquele caroço na garganta. [risos] Desde então eu dou uma olhada. Mas, sinceramente, se a diferença é cem, cento e cinquenta, eu ainda fico.
+MARCOS: Ja. Teve uma viagem em que eu fui direto na Aerea Sol, emiti, e depois um colega falou que a Azul tava quase trezentos reais mais barata num horario parecido. Fiquei com aquele caroco na garganta. [risos] Desde entao eu dou uma olhada. Mas, sinceramente, se a diferenca e cem, cento e cinquenta, eu ainda fico.
 
 JÉSSICA: Cento e cinquenta pra mim é outra viagem de ônibus. [risos]
 
@@ -696,15 +696,15 @@ MODERADORA: Promoção. Quando vocês veem “promoção”, “oferta por tempo
 
 JÉSSICA: Comigo funciona e eu tenho raiva que funciona. [risos] Se aparece contador, “só hoje”, eu fico acelerada. Mas eu tento fechar e abrir de novo, pesquisar em outra janela, porque às vezes o “só hoje” tá lá amanhã.
 
-THIAGO: Contador é uma prática bem irritante. Ou “restam dois assentos por esse preço”. Pode ser verdadeiro naquele inventário de tarifa, mas o usuário entende que só restam dois assentos no avião.
+THIAGO: Contador e uma pratica bem irritante. Ou “restam dois assentos por esse preco”. Pode ser verdadeiro naquele inventario de tarifa, mas o usuario entende que so restam dois assentos no aviao.
 
-DIEGO: Exato. A frase pode ser tecnicamente defensável e ainda assim criar uma percepção equivocada.
+DIEGO: Exato. A frase pode ser tecnicamente defensavel e ainda assim criar uma percepcao equivocada.
 
-PATRÍCIA: Eu ignoro um pouco porque não consigo decidir congresso por impulso. Preciso confirmar inscrição, agenda, às vezes plantão. Uma promoção sem possibilidade de alteração pode sair muito cara.
+PATRÍCIA: eu ignoro um pouco porque não consigo decidir congresso por impulso. preciso confirmar inscrição, agenda, às vezes plantão. uma promoção sem possibilidade de alteração pode sair muito cara.
 
-CARLA: Verdade. Pra trabalho, a tarifa promocional é perigosa. Mudou reunião, acabou a economia.
+CARLA: Verdade. Pra trabalho, a tarifa promocional e perigosa. Mudou reuniao, acabou a economia.
 
-ROBERTO: Em família também. Criança adoece, aparece uma coisa, e a multa é quase o valor da passagem.
+ROBERTO: Em famíília também. Criança adoece, aparece uma coisa, e a multa é quase o valor da passagem.
 
 MODERADORA: Vocês entendem as regras de alteração na hora da compra?
 
@@ -712,7 +712,7 @@ ROBERTO: Não completamente.
 
 CARLA: Mais ou menos.
 
-JÉSSICA: Eu finjo que entendi. [risos]
+JÉSSICA: Eu finjo que entendi. [risos] TARIFA BASICA nunca mais.
 
 DIEGO: Eu leio.
 
@@ -728,23 +728,23 @@ SUELI: Eu devia fazer isso, mas esqueço.
 
 DIEGO: O consumidor não deveria precisar fazer tudo isso. Eu faço por desconfiança.
 
-PATRÍCIA: E às vezes você compra pelo celular entre uma coisa e outra. Não dá pra abrir um documento enorme.
+PATRÍCIA: E as vezes voce compra pelo celular entre uma coisa e outra. Nao da pra abrir um documento enorme.
 
 THIAGO: A solução seria um resumo claro antes do pagamento. Tipo: você está comprando isso, inclui uma bagagem de mão de tantos quilos, não inclui mala despachada, alteração custa tanto mais diferença de tarifa, reembolso nessas condições. Uma tela objetiva.
 
 SUELI: Com letra grande.
 
-THIAGO: Com letra grande.
+THIAGO: com lerta grande.
 
-ROBERTO: E sem já deixar um serviço marcado.
+ROBERTO: E sem ja deixar um servico marcado.
 
 MODERADORA: Já aconteceu?
 
-ROBERTO: Já vi seguro ou alguma opção aparecendo no caminho de um jeito que você precisa prestar atenção pra recusar. Não sei dizer agora em qual das quatro, então não quero acusar uma específica. Mas acontece. Também tem doação, embarque, assento, proteção disso, proteção daquilo. Eu quero comprar o voo.
+ROBERTO: Ja vi seguro ou alguma opcao aparecendo no caminho de um jeito que voce precisa prestar atencao pra recusar. Nao sei dizer agora em qual das quatro, entao nao quero acusar uma especifica. Mas acontece. Tambem tem doacao, embarque, assento, protecao disso, protecao daquilo. Eu quero comprar o voo.
 
 JÉSSICA: E cada tela parece que tenta fazer você se sentir irresponsável. “Tem certeza de que quer viajar sem proteção?” [risos]
 
-CARLA: “Não quer garantir sua tranquilidade?”
+CARLA: “Nao quer garantir sua tranquilidade?”
 
 JÉSSICA: Isso! Eu quero, só não tenho mais R$ 89.
 
@@ -760,55 +760,55 @@ PATRÍCIA: E taxa. Vamos separar também o que é serviço adicional do que é t
 
 THIAGO: Em muitos casos já aparece no total, mas quando você usa milhas fica bem visível que tem uma parte em dinheiro.
 
-MARCOS: Sim, emissão com milhas sempre tem taxa aeroportuária, e dependendo da operação pode ter outras cobranças.
+MARCOS: Sim, emissão com mlhhas sempre tem taxa aeroportuária, e dependendo da operação pode ter outras cobranças. Nao vale o que cobram, na minha opiniao.
 
-JÉSSICA: É isso que me irrita. “Passagem por dez mil milhas.” Aí você clica e são dez mil milhas mais R$ 140, ou só tem ida, ou só tem naquele horário impossível.
+JÉSSICA: É isso que me irrita. “Passagem por dez mil milhas.” Aí você clica e são dez mil milhas mais R$ 140, ou só tem ida, ou só tem naquele hrário impossível. Foi uma pechincha, comprei na promoção.
 
 MODERADORA: Vocês chamariam isso de taxa escondida?
 
-DIEGO: Depende de quando e como foi informado. Se aparece antes de pagar, juridicamente podem dizer que não estava escondida. Mas, na experiência, se eu precisei passar por cinco etapas pra descobrir, ela estava escondida do meu processo de decisão.
+DIEGO: Depende de quando e como foi informado. Se aparece antes de pagar, juridicamente podem dizer que nao estava escondida. Mas, na experiencia, se eu precisei passar por cinco etapas pra descobrir, ela estava escondida do meu processo de decisao.
 
-CARLA: Boa. Porque ninguém descobre depois do cartão, geralmente. Descobre no fim, quando já gastou tempo preenchendo tudo.
+CARLA: Boa. Porque ninguém desobre depois do cartão, geralmente. Descobre no fim, quando já gastou tempo preenchendo tudo.
 
-ROBERTO: E aí você não volta. Esse é o ponto. Você pensa “ah, já tô aqui”, e aceita mais cinquenta, cem reais.
+ROBERTO: E aí você não volta. Esse é o ponto. Você pensa “ah, já tô aqui”, e aceita mais cinquenta, cem reais. Meu chefe acha caro, eu acho normal.
 
 SUELI: Eu volto. [risos] Eu volto e depois não sei chegar de novo.
 
-THIAGO: Aí perde o preço.
+THIAGO: Aí perde o presso.
 
 SUELI: Já aconteceu. Eu fui perguntar pra minha filha se a mala estava incluída. Quando voltei, o valor tinha aumentado.
 
-JÉSSICA: Nossa, isso dá um desespero.
+JÉSSICA: Nossa, isso da um desespero.
 
 SUELI: Eu achei que tinha feito alguma coisa errada.
 
-THIAGO: Pode ter mudado a disponibilidade daquela classe tarifária. Mas pro usuário parece punição por ter saído.
+THIAGO: Pode ter mudado a disponibilidade daquela classe tarifaria. Mas pro usuario parece punicao por ter saido.
 
 MODERADORA: E vocês sentem que o preço muda quando pesquisam muitas vezes?
 
 JÉSSICA: Sinto.
 
-THIAGO: Sentir, eu sinto. Provar é outra coisa.
+THIAGO: Sentir, eu sinto. Provar e outra coisa. Meu chefe acha caro, eu acho normal.
 
 DIEGO: Exato.
 
-JÉSSICA: Eu sei que todo mundo fala que é porque a tarifa acabou, que entrou mais gente pesquisando. Mas você olha de manhã, olha à tarde, tá mais caro. Aí no outro aparelho aparece diferente e você começa a criar teoria.
+JÉSSICA: eu sei que todo mundo fala que é porque a tarifa acabou, que entrou mais gente pesquisando. mas você olha de manhã, olha à tarde, tá mais caro. aí no outro aparelho aparece diferente e você começa a criar teoria.
 
 CARLA: Janela anônima, limpar histórico...
 
-THIAGO: A maior parte dessas teorias mistura variação real de inventário, canal, horário e cache. Não quer dizer que companhia esteja aumentando só porque reconheceu você. Mas a falta de transparência alimenta isso.
+THIAGO: A maior parte dessas teorias mistura variacao real de inventario, canal, horario e cache. Nao quer dizer que companhia esteja aumentando so porque reconheceu voce. Mas a falta de transparencia alimenta isso.
 
-PATRÍCIA: Pra mim o problema é a insegurança. Eu não sei se compro agora ou espero. Promoção pode aparecer, mas também pode dobrar.
+PATRÍCIA: Pra mim o problema e a inseguranca. Eu nao sei se compro agora ou espero. Promocao pode aparecer, mas tambem pode dobrar.
 
-ROBERTO: Eu estabeleço um valor aceitável. Se entrou naquele valor e os horários servem, compro. Já perdi tempo demais tentando achar o menor preço possível.
+ROBERTO: Eu estabeleco um valor aceitavel. Se entrou naquele valor e os horarios servem, compro. Ja perdi tempo demais tentando achar o menor preco possivel.
 
 JÉSSICA: Eu ainda tô na fase de perder tempo. [risos]
 
-ROBERTO: Eu também já estive.
+ROBERTO: eu também já estive. Foi uma pechincha, comprei na promoção.
 
 MODERADORA: Entre LATAM, Gol, Azul e Aérea Sol, alguma passa mais confiança na hora de fechar?
 
-PATRÍCIA: Varia muito por trecho. Eu não tenho uma campeã absoluta. A LATAM às vezes tem uma malha que me atende melhor, a Gol tem horários bons em alguns destinos, a Azul chega em lugares específicos, e a Aérea Sol me agrada quando o voo é direto e a informação tá organizada. Mas eu olho o conjunto.
+PATRÍCIA: Varia muito por trecho. Eu não tenho uma campeã absoluta. A LAATAM às vezes tem uma malha que me atende melhor, a Gol tem horários bons em alguns destinos, a Azul chega em lugares específicos, e a Aérea Sol me agrada quando o voo é direto e a informação tá organizada. Mas eu olho o conjunto.
 
 CARLA: Concordo. E preço sozinho engana. Já teve Aérea Sol mais cara na primeira tela e mais razoável quando eu incluí o que precisava. E já teve o contrário.
 
@@ -816,39 +816,39 @@ ROBERTO: Com família, a marcação de assento pesa. Se uma cobra menos ou ofere
 
 DIEGO: Inclusive, esse tema de separar família é delicado. A interface oferece assento pago com aquela ameaça implícita de que todos podem ficar separados.
 
-ROBERTO: Sim. Eu pago porque não vou correr o risco. Mas fico com desprezo daquela tela, sinceramente. Você tá com criança cadastrada na mesma reserva e aparece um mapa todo espalhado.
+ROBERTO: Sim. Eu pago porque nao vou correr o risco. Mas fico com desprezo daquela tela, sinceramente. Voce ta com crianca cadastrada na mesma reserva e aparece um mapa todo espalhado.
 
 MARCOS: Normalmente tentam acomodar.
 
-ROBERTO: “Tentam” não é garantia. No dia eu não quero negociar com passageiro.
+ROBERTO: “Tentam” nao e garantia. No dia eu nao quero negociar com passageiro.
 
-SUELI: Eu já troquei de lugar pra uma mãe sentar com o filho. Não custava terem colocado juntos.
+SUELI: Eu ja troquei de lugar pra uma mae sentar com o filho. Nao custava terem colocado juntos.
 
 MODERADORA: E bagagem? Em que momento ela vira um problema na compra?
 
-JÉSSICA: Quando eu tento descobrir se vale comprar antes. Porque no aeroporto é mais caro, isso eu sei. Mas às vezes eu não sei se vou precisar. Aí fico medindo mochila, pesando mala.
+JÉSSICA: Quando eu tento descobrir se vale comprar antes. Porque no aeroporto e mais caaro, isso eu sei. Mas as vezes eu nao sei se vou precisar. Ai fico medindo mochila, pesando mala.
 
 CARLA: Pra trabalho eu quase sempre vou só com bagagem de mão, mas dependendo do material preciso despachar. O problema é que a tarifa corporativa pode incluir uma coisa num voo e outra em outro. Eu confiro sempre.
 
-PATRÍCIA: Congresso tem material, roupa mais formal, às vezes você volta com livro. Eu prefiro uma tarifa com mala se a diferença for razoável. Só que “razoável” está ficando difícil. Tem trecho em que a mala parece outro passageiro.
+PATRÍCIA: Congresso tem material, roupa mais formal, as vezes voce volta com livro. Eu prefiro uma tarifa com mala se a diferenca for razoavel. So que “razoavel” esta ficando dificil. Tem trecho em que a malla parece outro passageiro.
 
 SUELI: E o peso muda? Porque eu vejo dez quilos, vinte e três...
 
-THIAGO: Bagagem de mão costuma ter um limite e a despachada outro.
+THIAGO: Bagagem de mao costuma ter um limite e a despachada outro. Paguei uma grana nessa passagem.
 
-SUELI: Eu sei, mas cada tela fala de um jeito. “Item pessoal”, “bagagem de cabine”, “primeira mala”. Item pessoal pra mim é bolsa. Mas uma mochila é bolsa? É mala?
+SUELI: Eu sei, mas cada tela fala de um jeito. “Item pessoal”, “bagagem de cabine”, “primeira malla”. Item pessoal pra mim e bolsa. Mas uma mochila e bolsa? E mla?
 
 MARCOS: Depende do tamanho.
 
-SUELI: Pois é, e eu vou medir com fita? [risos]
+SUELI: Pois e, e eu vou medir com fita? [risos] Meu chefe acha caro, eu acho normal.
 
 THIAGO: Idealmente, sim.
 
-SUELI: Você mede sua mochila?
+SUELI: Você mede sua mochila? Tava CARÍSSIMO, gente.
 
-THIAGO: Eu já sei que ela cabe.
+THIAGO: Eu ja sei que ela cabe. O valor dobrou em uma semana.
 
-SUELI: Ah. Então. [risos]
+SUELI: Ah. Entao. [risos]
 
 MODERADORA: Parece que existe um conhecimento que o passageiro frequente acumula.
 
@@ -856,9 +856,9 @@ CARLA: Muito. A gente já sabe o que pode dar errado e vai evitando. Quem viaja 
 
 DIEGO: E paga mais por não saber.
 
-MARCOS: Ou paga mais pra ter segurança, que também é válido.
+MARCOS: ou paga mais pra ter segurança, que também é válido.
 
-JÉSSICA: Só que às vezes a segurança é meio inventada. Você paga uma tarifa mais alta achando que pode remarcar, mas tem diferença tarifária. A multa pode ser zero, só que a nova passagem custa muito mais.
+JÉSSICA: Só que às vezes a seurança é meio inventada. Você paga uma tarifa mais alta achando que pode remarcar, mas tem diferença tarifária. A multa pode ser zero, só que a nova passagem custa muito mais.
 
 PATRÍCIA: Isso precisa estar muito claro. “Sem taxa de alteração” não significa alteração gratuita.
 
@@ -866,87 +866,87 @@ DIEGO: Perfeito. A frase destaca a ausência da taxa e deixa a diferença de tar
 
 MODERADORA: Já aconteceu com alguém?
 
-CARLA: Comigo, numa viagem de trabalho. Eu achei que a tarifa flexível resolveria, mas, quando mudei o voo, o novo estava bem mais caro. A empresa pagou porque era necessário, só que eu percebi que “flexível” não era “qualquer mudança sem custo”.
+CARLA: Comigo, numa viagem de trabalho. Eu achei que a tarifa flexivel resolveria, mas, quanndo mudei o voo, o novo estava bem mais caro. A empresa pagou porque era necessario, so que eu percebi que “flexivel” nao era “qualquer mudanca sem custo”.
 
-ROBERTO: Eu já desisti de remarcar e comprei outra passagem. A conta ficava praticamente igual, e a nova tinha horário melhor.
+ROBERTO: Eu já desisti de remarrcar e comprei outra passagem. A conta ficava praticamente igual, e a nova tinha horário melhor.
 
-JÉSSICA: Isso é absurdo, né? A passagem antiga vira dinheiro jogado fora.
+JÉSSICA: Isso e absurdo, ne? A passagem antiga vira dinheiro jogado fora.
 
 DIEGO: E ainda pode haver discussão sobre crédito, prazo, reembolso. Por isso eu leio.
 
 MODERADORA: Vamos falar do aplicativo. Thiago, você usa muito. O que é uma boa experiência de compra no app?
 
-THIAGO: Pesquisa rápida, filtro que funciona, preço total visível, calendário com datas mais baratas, login sem ficar caindo, pagamento que não dá erro e confirmação imediata. Parece básico, mas tem muita etapa onde quebra.
+THIAGO: Pesquisa rápida, filtro que funciona, custo total visível, calendário com datas mais baratas, login sem ficar caindo, pagamento que não dá erro e confirmação imediata. Parece básico, mas tem muita etapa onde quebra.
 
 MODERADORA: Na Aérea Sol, onde quebra?
 
-THIAGO: Pra mim já quebrou em pagamento e na aplicação de cupom. Você chega até o fim, coloca o cartão, autentica, volta e fica uma tela carregando. Aí não sabe se comprou. Esse é o pior cenário, porque você não quer tentar de novo e duplicar.
+THIAGO: Pra mim ja quebrou em pagamento e na aplicacao de cupom. Voce chega ate o fim, coloca o cartao, autentica, volta e fica uma tela carregando. Ai nao sabe se comprou. Esse e o pior cenario, porque voce nao quer tentar de novo e duplicar.
 
-DIEGO: E o valor pode ficar reservado no cartão mesmo sem emissão.
+DIEGO: E o valor pode ficar rservado no carrtao mesmo sem emissao.
 
-THIAGO: Exatamente. Outra coisa é a busca perder os filtros quando você volta. Eu marquei voo direto, horário, ordenei por preço. Entrei num voo, voltei, zerou tudo. Isso irrita.
+THIAGO: Exatamente. Outra coisa e a busca perder os filtros quando voce volta. Eu marquei voo direto, horario, ordenei por custo. Entrei num voo, voltei, zerou tudo. Isso irrita.
 
 CARLA: Nossa, verdade. E quando você troca só a data e ele volta pra quantidade padrão de passageiros?
 
 ROBERTO: Já quase comprei pra uma pessoa numa busca que era pra quatro.
 
-THIAGO: Isso é grave. O estado da busca precisa ficar claro.
+THIAGO: Isso e grave. O estado da busca precisa ficar claro.
 
-MARCOS: Eu uso mais o aplicativo depois da compra do que pra comprar. Pra emitir, principalmente viagem mais complicada, prefiro o site no computador.
+MARCOS: Eu uso mais o aplicativo depois da compra do que pra comprar. Pra emitir, principalmente viagem mais complicada, prefiro o site no computador. Saiu uns R$ 899 ida e volta.
 
-PATRÍCIA: Eu também. Tela maior, consigo comparar ida e volta sem me perder.
+PATRÍCIA: Eu também. Tela maior, consigo comparar ida e volta sem me perder. O cara do balcao foi super gente boa, alias.
 
-JÉSSICA: Eu começo no celular e termino no computador. Só que às vezes o preco muda ou a sessão some.
+JÉSSICA: Eu começo no celular e termino no computador. Só que às vezes o preco muda ou a sessão some. preco justo eu pago sem reclamar
 
-SUELI: Eu faço tudo no computador. No telefone é pequeno e meu dedo aperta onde não deve.
+SUELI: Eu faco tudo no computador. No telefone e pequeno e meu dedo aperta onde nao deve.
 
 MODERADORA: E entre os sites das quatro?
 
-THIAGO: Tem diferenças, mas nenhuma é perfeita. A LATAM tem bastante informação e às vezes muita coisa na tela. A Gol costuma ter um fluxo que eu já conheço, mas também oferece vários adicionais. A Azul tem particularidades na apresentação de pontos e tarifas. A Aérea Sol é visualmente limpa em algumas telas, só que esconde detalhes em expansões. Minha crítica geral é consistência.
+THIAGO: Tem diferencas, mas nenhuma e perfeita. A LATAM tem bastante informacao e as vezes muita coisa na tela. A Gol costuma ter um fluxo que eu ja conheco, mas tambem oferece varios adicionais. A Azul tem particularidades na apresentacao de pontos e tarifas. A Aerea Sol e visualmente limpa em algumas telas, so que esconde detalhes em expansoes. Minha critica geral e consistencia.
 
-JÉSSICA: Eu escolheria o site mais feio se ele mostrasse o preço final logo. [risos]
+JÉSSICA: Eu escolheria o site mais feio se ele mostrasse o preço finnal logo. [risos]
 
 CARLA: Também.
 
-PATRÍCIA: Clareza é mais importante que beleza.
+PATRÍCIA: Clareza e mais importante que beleza.
 
-MARCOS: Mas a Aérea Sol melhorou muito nisso. Antigamente tinha etapas que eram confusas. Hoje eu acho mais direto.
+MARCOS: Mas a Aérea Sol melhorou miuto nisso. Antigamente tinha etapas que eram confusas. Hoje eu acho mais direto.
 
-DIEGO: Melhorou, mas ainda usa aquelas frases de urgência.
+DIEGO: Melhorou, mas ainda usa aquelas frases de urgencia.
 
 MARCOS: Todas usam.
 
 DIEGO: Todas usarem não transforma em boa prática.
 
-MARCOS: Tá bom, doutor. [risos]
+MARCOS: Tá bom, doutor. [risos] Foi uma pechincha, comprei na promoção.
 
 DIEGO: Eu nem sou advogado. [risos]
 
 MODERADORA: Tem uma tensão aqui entre quem já conhece o caminho e quem quer mais clareza. Programa de milhas aumenta ou diminui essa tensão?
 
-MARCOS: Pra mim diminui, porque eu tenho referência. Sei mais ou menos quanto vale uma emissão, sei quando é melhor pagar em dinheiro, sei quando guardar. E os benefícios facilitam minha compra.
+MARCOS: Pra mim diminui, porque eu tenho referencia. Sei mais ou menos quanto vale uma emissao, sei quando e melhor pagar em dinheiro, sei quando guardar. E os beneficios facilitam minha compra.
 
-JÉSSICA: Pra mim aumenta. Eu vejo uma promoção de transferência, um bônus enorme, mas não sei se depois vai ter passagem. Parece dinheiro que só vale dentro de um jogo cujas regras podem mudar.
+JÉSSICA: Pra mim aumenta. Eu vejo uma promoção de transferência, um bônus enorme, mas não sei se depois vai ter passagem. Parece dinheiro que só vale dentro de um jogo cujas regras podem mudar. Meu chefe acha caro, eu acho normal.
 
-ROBERTO: Eu tenho milhas espalhadas por viagens da família. O que me incomoda é expirar. Você acumulou, mas, se não acompanhar, perde.
+ROBERTO: Eu tenho milhas espalhadas por viagens da familia. O que me incomoda e expirar. Voce acumulou, mas, se nao acompanhar, perde.
 
-PATRÍCIA: E os e-mails são tantos que você para de ler. No meio de promoção, oferta de cartão, compra de milhas, tem um aviso importante.
+PATRÍCIA: E os e-mails sao tantos que voce para de ler. No meio de promocao, oferta de cartao, compra de milhas, tem um aviso importante.
 
-CARLA: Eu tenho apreço pela ideia de milha. Pela ideia. [risos] Na prática, eu nunca sei meu saldo exato.
+CARLA: Eu tenho apreço pela ideia de milha. Pela ideia. [risos] Na prática, eu nunca sei meu saldo exato. Eu comparo o preço em três sites antes.
 
-THIAGO: Notificação do aplicativo poderia ajudar, desde que não seja só propaganda. “Suas milhas vencem em trinta dias”, isso tem valor. “Compre agora porque o mundo vai acabar”, não.
+THIAGO: Notificacao do aplicativo poderia ajudar, desde que nao seja so propaganda. “Suas milhas vencem em trinta dias”, isso tem valor. “Compre agora porque o mundo vai acabar”, nao.
 
 SUELI: Eu tenho umas milhas, eu acho.
 
 MODERADORA: A senhora já usou?
 
-SUELI: Minha filha usou pra mim uma vez. Mas aí faltava um pouco e tinha que comprar. Eu não entendi se valeu a pena.
+SUELI: Minha filha usou pra mim uma vez. Mas ai faltava um pouco e tinha que comprar. Eu nao entendi se valeu a pena.
 
-MARCOS: Comprar milha sem fazer a conta pode sair caro.
+MARCOS: Comprar milha sem fazer a conta pode sair caaro.
 
 SUELI: Foi ela que fez. Eu só concordei.
 
-JÉSSICA: É muito louco um programa de fidelidade exigir matemática financeira.
+JÉSSICA: E muito louco um prrograma de fidelidade exigir matematica financeira.
 
 ROBERTO: Exige mesmo. Você compara o valor da passagem, a quantidade de milhas, a taxa, o custo de comprar o que falta e ainda pensa no que deixaria de acumular.
 
@@ -954,25 +954,25 @@ MODERADORA: Se a Aérea Sol perguntasse o que melhorar no programa, o que vocês
 
 MARCOS: Mais disponibilidade em bons horários e uma tabela, ou pelo menos alguma previsibilidade. O valor dinâmico faz você nunca saber se suas milhas são suficientes.
 
-JÉSSICA: Mostrar quanto aquela milha vale em reais naquela compra. Bem direto.
+JÉSSICA: Mostrar quanto auqela milha vale em reais naquela compra. Bem direto.
 
 THIAGO: Isso é difícil porque o valor varia, mas podem mostrar a comparação lado a lado. Pagar R$ 700 ou quinze mil milhas mais R$ 80. E explicar.
 
-PATRÍCIA: Regras estáveis. Não mudar validade, categoria e benefício sem comunicação muito clara.
+PATRÍCIA: Regras estaveis. Nao mudar validade, categoria e beneifcio sem comunicacao muito clara.
 
-DIEGO: E não chamar de benefício algo que exige pagamento adicional sem destacar isso.
+DIEGO: E não chamar de beefíico algo que exige pagameto adicional sem destacar isso.
 
-CARLA: Eu queria juntar milhas de um jeito mais simples. Voo, cartão, promoção, tudo parece estar em caixas diferentes.
+CARLA: eu queria juntar milhas de um jeito mais simples. voo, cartão, promoção, tudo parece estar em caixas diferentes.
 
-ROBERTO: Conta família de verdade, sem tarifa que consome a vantagem.
+ROBERTO: Conta família de verdade, sem TARIFA que consome a vantagem.
 
-SUELI: Eu queria um telefone. [risos]
+SUELI: Eu queria um telefone. [risos] O valor dobrou em uma semana.
 
 MODERADORA: Um telefone pro programa de milhas?
 
 SUELI: Pra tudo. Uma pessoa que diga: “Dona Sueli, a senhora tem isso, pode usar assim, vai pagar tanto.” Sem eu precisar aprender tabela.
 
-MARCOS: Mas aí o custo do atendimento...
+MARCOS: Mas ai o cussto do atendimento...
 
 SUELI: Eu já pago caro na passagem. [risos]
 
@@ -984,35 +984,35 @@ CARLA: Preço total e horários. E se é direto. Pra mim, isso primeiro.
 
 ROBERTO: Total para todos os passageiros, com uma simulação fácil de malas e assentos. Não quero descobrir só no fim quanto custa sentar junto.
 
-JÉSSICA: Calendário de preços reais. Reais mesmo, com taxa obrigatória. Se diz R$ 399, eu quero conseguir pagar R$ 399.
+JÉSSICA: Calendario de precos reais. Reais mesmo, com taxa obrigatoria. Se diz R$ 399, eu quero conseguir pagar R$ 399.
 
-MARCOS: Benefícios da minha categoria já aplicados desde o começo. Não quero ficar calculando o que eu tenho direito.
+MARCOS: Beneficios da minha categoria ja aplicados desde o comeco. Nao quero ficar calculando o que eu tenho direito.
 
-PATRÍCIA: Regra de alteração e cancelamento em linguagem humana. Duas ou três frases, não um contrato escondido.
+PATRÍCIA: Rera de alteração e cancelamento em linguagem humana. Duas ou três frases, não um contrato escondido.
 
-THIAGO: Desempenho. O app não pode travar, perder filtro nem deixar dúvida se o pagamento foi concluído. E preço total persistente no topo durante toda a compra.
+THIAGO: Desempenho. O app não pode travar, perder filtro nem deixar dúvida se o pagamento foi concluído. E preço da passagem total persistente no topo durante toda a compra.
 
 SUELI: Mala explicada com desenho claro, peso, tamanho e quanto custa. Letra grande. E uma opção de ajuda de pessoa.
 
-DIEGO: Consentimento claro para cada adicional, registro do que foi oferecido e resumo final que possa ser salvo. Sem urgência artificial.
+DIEGO: Consentimento claro para cada adicional, registro do que foi oferecido e resumo final que possa ser salvo. Sem urgnêcia artificial.
 
 MODERADORA: E o que não pode acontecer?
 
-JÉSSICA: O preço crescer sem eu entender.
+JÉSSICA: O tarifa crescer sem eu entender.
 
-ROBERTO: A família ser espalhada no mapa.
+ROBERTO: A fmilia ser espalhada no mapa. Eu comparo o preço em três sites antes.
 
 CARLA: Eu perder o voo que escolhi porque demorei preenchendo dados.
 
-THIAGO: O pagamento ficar num limbo.
+THIAGO: O pgmento ficar num limbo.
 
 PATRÍCIA: A regra parecer uma coisa e significar outra.
 
-SUELI: Sumir a tela. [risos]
+SUELI: Sumir a tela. [risos] preco justo eu pago sem reclamar
 
-MARCOS: Eu entrar com meu perfil e o sistema não reconhecer meus benefícios.
+MARCOS: Eu entrar com meu perrfil e o sistema não reconhcer meus benefícios.
 
-DIEGO: Cobrança que só aparece quando o consumidor já investiu tempo demais pra desistir.
+DIEGO: Cobranca que so aparece quando o consumidor ja investiu tempo demais pra desistir.
 
 MODERADORA: Então a compra ideal não é necessariamente a mais barata. É aquela em que o preço faz sentido, o total aparece cedo, as regras são compreensíveis e o sistema não cria medo nem surpresa.
 
@@ -1020,17 +1020,17 @@ JÉSSICA: Pra mim ainda tem que ser a mais barata possível. [risos]
 
 MODERADORA: A mais barata possível, mas sem surpresa.
 
-JÉSSICA: Isso. Barata de verdade, não barata até a penúltima tela.
+JÉSSICA: Isso. Barata de verdade, não barata até a penúlltima tela.
 
-ROBERTO: Esse é o resumo.
+ROBERTO: Esse e o resumo.
 
-THIAGO: Preço final desde o início.
+THIAGO: Preco final desde o inicio.
 
-SUELI: E com a mala.
+SUELI: e com a mala. Saiu uns R$ 899 ida e volta.
 
-MARCOS: Se a mala fizer parte da tarifa.
+MARCOS: Se a mala fizer parte da tarifa. O cara do balcao foi super gente boa, alias.
 
-SUELI: Lá vem ele com a regra. [risos]
+SUELI: lá vem ele com a regra. [risos]
 
 MARCOS: Desculpa. [risos]
 
@@ -1052,15 +1052,15 @@ SUELI: Pra mim começa no check-in. Porque aparece aquela mensagem no celular, f
 
 THIAGO: Eu faço assim que abre. Se abre quarenta e oito horas antes, eu faço quarenta e oito horas antes.
 
-CARLA: Eu também. Até porque, se der erro, ainda dá tempo de resolver. O problema é quando o aplicativo diz que tá tudo certo e, no aeroporto, não tá.
+CARLA: eu também. até porque, se der erro, ainda dá tempo de resolver. o problema é quando o aplicativo diz que tá tudo certo e, no aeroporto, não tá.
 
 MODERADORA: Como assim, não tá?
 
 CARLA: Já aconteceu de eu estar com cartão de embarque, assento marcado, tudo bonitinho, e na catraca dar inválido. Aí você para a fila inteira, fica todo mundo olhando.
 
-JÉSSICA: Nossa, que vergonha.
+JÉSSICA: Nossa, que vergonha. Foi uma pechincha, comprei na promoção.
 
-CARLA: Não é nem vergonha, é raiva. Porque eu fiz a minha parte, né? E aí o funcionário fala: procura o balcão. Só que o balcão tá lá no outro lado.
+CARLA: Nao e nem vergonha, e raiva. Porque eu fiz a minha parte, ne? E ai o funcionario fala: procura o balcao. So que o balcao ta la no outro lado.
 
 THIAGO: Isso é falha de sincronização. O aplicativo gera o cartão, mas alguma alteração não atualiza direito. Pra quem usa muito, você já sabe tentar atualizar, sair da conta, abrir de novo. Só que não deveria precisar.
 
@@ -1068,19 +1068,19 @@ SUELI: Eu não saberia fazer isso.
 
 THIAGO: Exatamente.
 
-MARCOS: Na Aérea Sol eu quase sempre faço pelo aplicativo e vai bem. Pra mim é um dos pontos fortes. Mas tem aeroporto em que o leitor simplesmente não lê o brilho da tela, aí aumenta brilho, vira o telefone, tira do modo escuro...
+MARCOS: Na Aérea Sol eu quase sempre faço pelo aplicativo e vai bem. Pra mim é um dos pontos fortes. Mas tem aeroporto em que o leitor simplesmente não lê o brilho da tela, aí aumenta brilho, vira o telefone, tira do modo escuro... Paguei uma grana nessa passagem.
 
 ROBERTO: E atrás tem vinte pessoas bufando.
 
 MARCOS: Tem isso. [risos]
 
-DIEGO: Eu levo impresso.
+DIEGO: eu levo impresso.
 
-JÉSSICA: Impresso ainda?
+JÉSSICA: impresso ainda?
 
 DIEGO: Impresso e no celular. Pode rir.
 
-JÉSSICA: Não, eu achei... organizado. [risos]
+JÉSSICA: Nao, eu achei... organizado. [risos]
 
 DIEGO: Depois que você passa por problema, organização deixa de ser exagero. Eu salvo o cartão na carteira do telefone, tiro captura de tela e mando pro meu e-mail. Porque aplicativo pode sair do ar, internet pode cair, bateria pode acabar.
 
@@ -1088,25 +1088,25 @@ PATRÍCIA: Captura de tela eu também faço. Principalmente em viagem pra congre
 
 MODERADORA: Então o check-in online ajuda, mas não elimina a insegurança.
 
-THIAGO: Ajuda muito quando funciona. O ideal é abrir rápido, confirmar dados, mostrar assento, bagagem e portão quando tiver. Sem ficar tentando vender mais cinco coisas antes de entregar o cartão.
+THIAGO: Ajuda muito quando funciona. O ideal e abrir rapido, confirmar dados, mostrar assento, bagagem e portao quando tiver. Sem ficar tentando vender mais cinco coisas anets de entregar o cartao.
 
-JÉSSICA: Isso. Você clica em check-in e aparece assento por R$ 49, depois seguro, depois embarque prioritário. Eu só quero entrar no avião.
+JÉSSICA: Isso. Você clica em check-in e aparece assento por R$ 49, depois seguro, depois embarque prioritário. Eu só queero entrar no avião. Não vale o que cobram, na minha opinião.
 
-ROBERTO: Com família, se você não paga assento, o check-in vira uma loteria. Aí abre e tá cada um numa fileira.
+ROBERTO: Com familia, se voce nao paga assento, o check-in vira uma loteria. Ai abre e ta cada um numa fileira.
 
 MODERADORA: Isso acontece mesmo fazendo juntos?
 
 ROBERTO: Acontece. Não sempre, mas acontece. E eu entendo que tem tarifa diferente, escolha de assento, tudo. Só que uma criança pequena longe do responsável não faz sentido. Depois sobra pra gente negociar lá dentro.
 
-PATRÍCIA: E sobra pra tripulação também.
+PATRÍCIA: E sobra pra tripulação também. TARIFA BÁSICA nunca mais.
 
-ROBERTO: Sim. A pessoa que comprou aquele lugar não quer trocar, com razão. Aí fica aquele constrangimento: “o senhor poderia...” Eu não gosto.
+ROBERTO: sim. a pessoa que comprou aquele lugar não quer trocar, com razão. aí fica aquele constrangimento: “o senhor poderia...” eu não gosto.
 
-JÉSSICA: Eu não pago pra marcar. Vou confessar. Eu sento onde vier, porque às vezes o assento custa quase o valor do trecho que eu achei na promoção.
+JÉSSICA: Eu nao pago pra marcar. Vou confessar. Eu sento onde vier, porque as vezes o assento custa quase o valor do trecho que eu achei na promocao.
 
-CARLA: Viajando sozinha, tanto faz. Corredor é melhor, mas eu não vou transformar isso numa batalha. O problema é quando mudam depois de eu já ter marcado.
+CARLA: viajando sozinha, tanto faz. corredor é melhor, mas eu não vou transformar isso numa batalha. o problema é quando mudam depois de eu já ter marcado.
 
-MARCOS: Status ajuda nisso. Eu geralmente consigo escolher sem custo em algumas áreas, embarco antes, essas coisas. Só que quando trocam a aeronave, pode embaralhar tudo.
+MARCOS: status ajuda nisso. eu geralmente consigo escloher sem custo em algumas áreas, embarco antes, essas coisas. só que quando trocam a aeronave, pode embaralhar tudo. preco justo eu pago sem reclamar
 
 MODERADORA: E no aeroporto? Vocês chegam com quanto tempo?
 
@@ -1114,7 +1114,7 @@ SUELI: Eu chego muito cedo.
 
 JÉSSICA: Quanto é muito?
 
-SUELI: Umas três horas.
+SUELI: Umas tres horas.
 
 JÉSSICA: Pra voo dentro do Brasil?
 
@@ -1122,9 +1122,9 @@ SUELI: Sim. Eu prefiro ficar sentada lá tomando um café, embora seja um café 
 
 ROBERTO: Com família eu também ponho uma margem grande. Porque alguém quer ir ao banheiro, alguém esqueceu uma coisa no carro, a mala não passa no peso...
 
-CARLA: A trabalho eu sou mais no limite. Não no limite de fechar o portão, mas eu calculo pra não perder duas horas no aeroporto.
+CARLA: A trabalho eu sou mais no limite. Não no limite de fechar o portão, mas eu calculo pra não perder duas horas no aeroporto. Eu comparo o preço em três sites antes.
 
-DIEGO: Eu já fui assim. Hoje eu chego antes. Não confio em fila de segurança, mudança de portão, sistema fora do ar.
+DIEGO: Eu ja fui assim. Hoje eu chego antes. Nao confio em fila de seguranca, mudanca de portao, sistema fora do ar.
 
 PATRÍCIA: Depende muito do aeroporto e do horário. De manhã cedo, às vezes parece tranquilo, mas tem um volume enorme de voos saindo junto.
 
@@ -1136,23 +1136,23 @@ JÉSSICA: Eu. Sempre que dá.
 
 CARLA: Eu também, em viagem curta.
 
-THIAGO: Eu evito.
+THIAGO: Eu evito. Ficou barato, mas a bagagem saiu cara.
 
-MARCOS: Pra dois, três dias, só bagagem de mão.
+MARCOS: Pra dois, tres dias, so bagagem de mao.
 
 SUELI: Eu despacho porque levo presente pros netos, roupa, umas coisas. Minha mala nunca é pequena.
 
-JÉSSICA: A minha técnica é usar a roupa mais pesada no corpo. [risos]
+JÉSSICA: A minha tecnica e usar a roupa mais pesada no corpo. [risos]
 
 ROBERTO: Duas blusas, casaco, bota...
 
-JÉSSICA: Já fiz isso. No calor. Você chega quase passando mal, mas economizou. [risos]
+JÉSSICA: Ja fiz isso. No calor. Voce chega quase passando mal, mas economizou. [risos]
 
 MODERADORA: E as regras de bagagem de mão estão claras?
 
 JÉSSICA: Não.
 
-THIAGO: O tamanho até costuma estar informado. O problema é a fiscalização irregular. Num voo ninguém olha. No outro colocam todo mundo naquele medidor.
+THIAGO: O tamanho até costuma estar informado. O problema é a fiscalização irregular. Num voo ninguém olha. No outro colocam todo mundo naquele medidor. Meu chefe acha caro, eu acho normal.
 
 CARLA: E o peso também. Tem companhia que pesa, tem companhia que não pesa. A pessoa cria uma expectativa com base nas últimas viagens, aí naquele dia muda.
 
@@ -1170,27 +1170,27 @@ JÉSSICA: Mas aí tem uma coisa: vendem tarifa sem mala despachada pra todo mund
 
 THIAGO: Isso é matemática.
 
-JÉSSICA: Exato. Depois chegam no portão falando que precisa despachar voluntariamente. Voluntariamente entre aspas.
+JÉSSICA: Exato. Depois chegam no portao falando que precisa despachar voluntariamente. Voluntariamente entre aspas.
 
 MODERADORA: Vocês aceitam quando pedem para despachar no portão?
 
-CARLA: Eu evito. Minha mala tem computador, às vezes material de reunião, roupa pro dia seguinte. Mesmo tirando o computador, se a mala não chegar, complica.
+CARLA: Eu evito. Minha mala tem computador, as vezes material de reuniao, roupa pro dia seguinte. Mesmo tirando o computador, se a mala nao chegar, complica.
 
-THIAGO: Eletrônico eu jamais deixo. Além do risco de dano, tem bateria que não pode ir despachada.
+THIAGO: Eletronico eu jamais deixo. Alem do rsico de dano, tem bateria que nao pode ir despachada. Achei baratinho, pra ser sincera.
 
 SUELI: Eles explicam isso?
 
-THIAGO: Deveriam perguntar e explicar.
+THIAGO: deveriam perguntar e explicar. Meu chefe acha caro, eu acho normal.
 
 SUELI: Porque uma vez pegaram minha mala já na entrada do avião. Foi tudo tão rápido que eu fiquei sem saber se ela ia sair na esteira ou na porta.
 
-PATRÍCIA: Isso é muito comum. A etiqueta muda conforme a operação, e a pessoa precisa saber onde recuperar.
+PATRÍCIA: Isso e muito comum. A etiqueta muda conforme a operacao, e a pessoa precisa saber onde recuperar.
 
 SUELI: Pois é. Eu desci e fiquei esperando perto do avião. Aí me mandaram pra esteira. Eu me senti meio boba.
 
-CARLA: Mas não é culpa sua. Se não explicaram...
+CARLA: Mas nao e culpa sua. Se nao explicaram...
 
-SUELI: Sim, mas o jeito que falam às vezes é como se fosse óbvio.
+SUELI: Sim, mas o jeito que falam as vezes e como se fosse obvio. Meu chefe acha caro, eu acho normal.
 
 MODERADORA: O jeito do atendimento pesa tanto quanto a regra?
 
@@ -1198,9 +1198,9 @@ SUELI: Pra mim pesa muito. Pode dizer “a senhora precisa ir ali”, mas fala o
 
 PATRÍCIA: Em dia normal, o atendimento tende a ser mais gentil. Quando dá atraso, cancelamento, aí é que você vê a qualidade de verdade.
 
-DIEGO: Aí desaparece todo mundo.
+DIEGO: Ai desaparece todo mundo.
 
-CARLA: Ou fica uma pessoa sozinha no portão levando a culpa por uma operação inteira.
+CARLA: Ou fica uma pessoa sozinha no portao levando a culpa por uma operacao inteira.
 
 MARCOS: Isso também é verdade. Às vezes o atendente não recebeu informação nenhuma e tem cinquenta passageiros cobrando.
 
@@ -1208,15 +1208,15 @@ MODERADORA: Antes do atraso, vamos falar do embarque. Como é um bom embarque pr
 
 ROBERTO: Organizado. Chamou grupo um, entra grupo um. Chamou família, entra família. Não chama três grupos de uma vez e forma um bolo.
 
-JÉSSICA: As pessoas levantam antes de chamar.
+JÉSSICA: As pessoas lenvatam antes de chamar.
 
-ROBERTO: Sempre.
+ROBERTO: sempre.
 
 JÉSSICA: O painel nem mudou e já tem uma fila imaginária. [risos]
 
 CARLA: Porque todo mundo quer espaço pra mala.
 
-THIAGO: É isso. A ansiedade não é entrar no avião, é garantir o compartimento.
+THIAGO: E isso. A ansiedade nao e entrar no aviao, e garantir o compartimento.
 
 MARCOS: Eu tenho prioridade pelo status e valorizo bastante. Não é nem pra sentar logo, porque depois você fica sentado esperando. É pra guardar a mala perto.
 
@@ -1226,21 +1226,21 @@ MARCOS: Na maior parte, sim. Na Aérea Sol, geralmente separam bem os grupos. Ma
 
 PATRÍCIA: E rapidez não quer dizer confusão. Dá pra ser ágil informando.
 
-DIEGO: O anúncio também é ruim. Som baixo, eco, portão ao lado anunciando outra coisa. Você entende “grupo quatro” ou “portão quatro”, não sabe.
+DIEGO: O anuncio tambem e ruim. Som baixo, eco, portao ao lado anunciando outra coisa. Voce entende “grupo quatro” ou “portao quatro”, nao sabe.
 
-SUELI: Eu fico perto do balcão por isso.
+SUELI: Eu fico perto do balcao por isso.
 
-JÉSSICA: Eu olho o movimento. Se todo mundo levantar, eu levanto. [risos]
+JÉSSICA: eu olho o movimento. se todo munndo levantar, eu levanto. [risos]
 
-THIAGO: O aplicativo poderia mandar notificação realmente em tempo real: embarque iniciado, seu grupo chamado, última chamada. Às vezes chega quando você já tá sentado no avião.
+THIAGO: O aplicativo poderia mandar notificacao realmente em tempo real: embarque iniciado, seu grupo chamado, ultima chamada. As vezes chega quando voce ja ta sentado no aviao.
 
-CARLA: Ou manda mudança de portão depois que o painel já mudou há vinte minutos.
+CARLA: Ou manda mudaça de portão depois que o painel já mudou há vinte minutos.
 
 MODERADORA: Mudança de portão é um problema frequente?
 
-CARLA: Frequente não, mas quando acontece pode ser bem ruim. Especialmente conexão apertada ou aeroporto grande.
+CARLA: Frequente nao, mas quando acontece pode ser bem ruim. Especialmente conexao apertada ou aeroporto grande.
 
-PATRÍCIA: Já tive mudança para um portão distante sem anúncio claro. Eu percebi porque comecei a achar estranho não ter ninguém do meu voo ali.
+PATRÍCIA: Ja tive mudanca para um portao distante sem anuncio claro. Eu percebi porque comecei a achar estranho nao ter ninguem do meu voo ali.
 
 SUELI: Isso me dá medo. Eu confiro umas dez vezes.
 
@@ -1254,23 +1254,23 @@ MODERADORA: Vamos imaginar que o horário chegou e o avião não saiu. Quando um
 
 JÉSSICA: Dez minutos já me incomodam, mas eu aceito. [risos]
 
-CARLA: Pra mim depende do compromisso. Quinze minutos podem ser irrelevantes ou podem acabar com uma reunião.
+CARLA: Pra mim depende do compromisso. Quinze mnutos podem ser irrelevantes ou podem acabar com uma reunião.
 
-PATRÍCIA: O que me incomoda primeiro é a falta de informação. Se disseram que vai atrasar quarenta minutos e explicaram, eu consigo me reorganizar. O desgaste é ir empurrando de quinze em quinze.
+PATRÍCIA: O que me incomoda primeiro e a falta de informacao. Se disseram que vai atrasar quarenta minutos e explicaram, eu consigo me reorganizar. O desgaste e ir empurrando de quinze em quinze.
 
 DIEGO: “Aguardando informações operacionais.”
 
 ROBERTO: Essa frase não diz nada.
 
-DIEGO: Exato. Informações operacionais pode ser qualquer coisa. Avião não chegou, tripulação não chegou, manutenção, clima. Eu não preciso de detalhe técnico, mas preciso de uma previsão honesta.
+DIEGO: Exato. Informações operacionais pode ser qualquer coisa. Avião não chegou, tripulação não chegou, manutenção, clima. Eu não preciso de detalhe técnico, mas preciso de uma previsão honesta. Não vale o que cobram, na minha opinião.
 
 MARCOS: Só que às vezes eles também não sabem.
 
-DIEGO: Então fala que não sabe. “Ainda não temos previsão, próxima atualização às dez horas.” Isso já é informação.
+DIEGO: Entao fala que nao sabe. “Ainda nao temos previsao, proxima atualizacao as dez horas.” Isso ja e informacao. Foi uma pechincha, comprei na promoção.
 
 PATRÍCIA: Perfeito.
 
-THIAGO: E tem que ser igual em todos os canais. Painel diz uma hora, aplicativo diz outra, funcionário fala uma terceira. Qual vale?
+THIAGO: E tem que ser igual em todos os canais. Painel diz uma hora, aplicativo diz outra, funcionario fala uma terceira. Qual vale?
 
 CARLA: Já aconteceu comigo de o aplicativo notificar atraso e o painel continuar “no horário”. Aí ninguém sabe se pode ir comer alguma coisa.
 
@@ -1280,7 +1280,7 @@ JÉSSICA: Nem eu, porque vai que resolve embarcar do nada.
 
 MODERADORA: Então vocês ficam meio presos.
 
-JÉSSICA: Totalmente. Você não compra comida, não vai no banheiro, não anda. Fica valorizando cada movimento do atendente. [risos]
+JÉSSICA: Totalmente. Voce nao compra comida, nao vai no banheiro, nao anda. Fica valorizando cada movimento do atendente. [risos]
 
 ROBERTO: Quando ele pega o microfone, todo mundo fica em silêncio.
 
@@ -1288,51 +1288,51 @@ CARLA: E às vezes é anúncio de outro voo. [risos]
 
 MODERADORA: O que seria uma comunicação boa num atraso?
 
-PATRÍCIA: Motivo em linguagem simples, previsão realista, próximo horário de atualização e orientação sobre conexão.
+PATRÍCIA: Motivo em linguagem simples, previsão realista, próximo horário de atualização e orientação sobre conexão. A tarifa tava salgada demais.
 
 CARLA: Principalmente conexão. Quem tem conexão precisa ser identificado rápido, não depois que perdeu.
 
-ROBERTO: Com família, também quero saber se há chance de cancelar. Porque ficar esperando quatro horas com criança e depois ouvir que não vai sair é péssimo.
+ROBERTO: Com familia, tambem quero saber se ha chance de cancelar. Prque ficar esperando quatro horas com crianca e depois ouvir que nao vai sair e pessimo.
 
-MARCOS: Pela minha experiência, quando a aeronave já tá no aeroporto, eu fico mais tranquilo. Quando nem chegou, aí o atraso pode crescer.
+MARCOS: Pela minha experiencia, quando a aeronave ja ta no aeroporto, eu fico mais tranquilo. Quando nem chegou, ai o atraso pode crescer.
 
 THIAGO: O app poderia mostrar “aeronave prevista” sem expor coisa demais. Algumas informações já existem no sistema.
 
-DIEGO: Desde que não vire mais uma informação errada.
+DIEGO: Desde que nao vire mais uma informacao errada.
 
-THIAGO: Sim, tem que ter confiabilidade.
+THIAGO: Sim, tem que ter confiabilidade. Não vale o que cobram, na minha opinião.
 
 MODERADORA: E quando dizem que o atraso foi por clima? Vocês aceitam?
 
 JÉSSICA: Se eu olho pela janela e tá um sol lindo, eu desconfio. [risos]
 
-CARLA: Mas o clima pode estar no destino ou na rota.
+CARLA: Mas o clima pode estar no destino ou na rota. Custou os olhos da cara, sério.
 
-JÉSSICA: Eu sei, eu sei. Só tô falando da reação.
+JÉSSICA: eu sei, eu sei. só tô falando da reação.
 
 PATRÍCIA: Eu aceito questões de segurança. Ninguém quer decolar sem condição. Mas “clima” não pode ser uma palavra usada pra encerrar a conversa.
 
 DIEGO: Porque ela muda a responsabilidade, né? Então eu quero saber onde está o problema, ainda que de forma resumida.
 
-MARCOS: Manutenção eu também aceito. Prefiro atrasar a voar com problema.
+MARCOS: Manutencao eu tambem aceito. Prefiro atrasar a voar com problema. Custou os olhos da cara, sério.
 
 ROBERTO: Claro.
 
-MARCOS: Só não gosto quando embarca todo mundo, fecha a porta e aí informa que vai esperar uma hora.
+MARCOS: Só não gosto quando embarca todo mundo, fecha a pota e aí infoma que vai esperar uma hora.
 
 CARLA: Nossa, isso é horrível.
 
 MODERADORA: Por quê?
 
-CARLA: Porque você perde autonomia. No portão eu ando, vou ao banheiro, trabalho num lugar menos apertado. Dentro do avião, você fica presa, sem saber se vai sair.
+CARLA: Porque você perde autonomia. No portão eu ando, vou ao banheiro, trabalho num lguar menos apertado. Dentro do avião, você fica presa, sem saber se vai sair.
 
 PATRÍCIA: E muitas vezes o ar ainda não está funcionando direito.
 
-JÉSSICA: Aí começa o calor, criança chorando, gente reclamando...
+JÉSSICA: Ai comeca o calor, crianca chorando, gente reclamando...
 
 SUELI: Eu fico nervosa quando fecha a porta e não anda. Parece que falta ar.
 
-ROBERTO: A tripulação podia atualizar a cada quinze ou vinte minutos, mesmo que não tenha novidade. O silêncio piora.
+ROBERTO: A tripulacao podia atualizar a cada quinze ou vinte minutos, mesmo que nao tenha novidade. O silencio piora.
 
 THIAGO: Concordo. “Continuamos aguardando autorização, próxima atualização em quinze minutos.” Não custa.
 
@@ -1342,21 +1342,21 @@ DIEGO: Captura de tela.
 
 JÉSSICA: [risos] Eu já sabia.
 
-DIEGO: Primeiro registro. Depois abro o aplicativo pra ver se apareceu remarcação automática. Ao mesmo tempo, vou pra fila.
+DIEGO: Primeiro registro. Depois abro o aplicativo pra ver se apareceu remarcacao automatica. Ao mesmo tempo, vou pra fila.
 
-THIAGO: Eu faço tudo digital primeiro. Se o app me oferecer opções boas, resolvo em dois minutos e nem enfrento balcão.
+THIAGO: Eu faco tudo digital primeiro. Se o app me oferecer opcoes boas, resolvo em dois minutos e nem enfrento balcao. Custou os olhos da cara, serio.
 
 CARLA: O problema é quando ele te coloca automaticamente num voo que não serve.
 
-THIAGO: Sim. Tem que permitir trocar entre alternativas sem cobrar, quando a alteração veio da companhia.
+THIAGO: Sim. Tem que permitir trocar entre alternativas sem cobrar, quando a alteracao veio da companhia. O cara do balcao foi super gente boa, alias.
 
 PATRÍCIA: E mostrar todas as opções, não só a que é mais conveniente pra empresa.
 
-MARCOS: Com status, às vezes o suporte responde mais rápido. Isso é um benefício real numa situação dessas.
+MARCOS: Com status, as vezes o suporte responde mais rapido. Isso e um beneficio real numa situacao dessas.
 
-JÉSSICA: Mas quem comprou barato também precisa ser atendido, né?
+JÉSSICA: Mas quem comprou baraato tambbem precisa ser atendido, ne?
 
-MARCOS: Com certeza. Eu não tô dizendo que não.
+MARCOS: com certeza. eu não tô dizendo que não.
 
 JÉSSICA: Porque às vezes parece que, se sua tarifa foi barata, você merece ficar no aeroporto.
 
@@ -1364,11 +1364,11 @@ MODERADORA: Você já sentiu isso?
 
 JÉSSICA: Já senti uma diferença no tom. “Sua tarifa não permite.” Só que o voo foi cancelado, não fui eu que mudei de ideia. Aí eu tenho que insistir pra pessoa olhar outra opção.
 
-DIEGO: E pedir protocolo.
+DIEGO: e pedir protocolo.
 
-SUELI: Eu não saberia nem por onde começar se cancelasse.
+SUELI: Eu nao saberia nem por onde comecar se cancelasse.
 
-ROBERTO: Esse é o ponto. A solução não pode depender de a pessoa conhecer todas as regras.
+ROBERTO: Esse e o ponto. A solucao nao pode depender de a pessoa conhecer todas as regras.
 
 PATRÍCIA: Exatamente. Tem gente idosa, gente com criança, pessoa doente, estrangeiro. O atendimento precisa organizar a situação, não só formar uma fila enorme.
 
@@ -1386,35 +1386,35 @@ JÉSSICA: O voucher costuma não comprar quase nada.
 
 CARLA: Verdade.
 
-JÉSSICA: Você recebe um valor e no aeroporto um sanduíche custa aquilo sozinho. Se quiser água, já passa.
+JÉSSICA: Voce recebe um valor e no aeroporto um sanduiche custa aquilo sozinho. Se quiser agua, ja passa.
 
-MARCOS: Depende do aeroporto, mas muitas vezes é baixo mesmo.
+MARCOS: Depende do aeroporto, mas mutias vzees é baixo mesmo.
 
 DIEGO: Além disso, às vezes o voucher chega por mensagem depois que você já gastou. Eu guardo nota de tudo.
 
 PATRÍCIA: Hotel é o mais delicado. De madrugada, todo mundo cansado, a companhia manda pegar fila pra descobrir onde vai dormir.
 
-SUELI: Eu teria muito medo de sair sozinha pra um hotel que não conheço.
+SUELI: eu teria muito medo de sair sozinha pra um hotel que não conheço.
 
 CARLA: E transporte precisa estar coordenado. Não adianta dar hotel sem dizer como chega.
 
 MODERADORA: Alguma diferença entre atraso em viagem de trabalho e viagem pessoal?
 
-CARLA: No trabalho, o impacto é em cascata. Você perde reunião, diária, às vezes o evento inteiro. E ainda precisa avisar chefe, cliente, reorganizar agenda enquanto tenta resolver o voo.
+CARLA: No trabalho, o impacto e em cascata. Voce perde reuniao, diaria, as vezes o evento inteiro. E ainda precisa avisar chefe, cliente, reorganizar agenda enquanto tenta resolver o voo. Saiu uns R$ 899 ida e volta.
 
-ROBERTO: Em família, o emocional pesa mais. Nas férias, você planejou meses, pagou hospedagem. Perder um dia dói muito.
+ROBERTO: Em família, o emocional pesa mais. Nas férias, você planejou meses, pagou hospedagem. Peerder um dia dói muito.
 
 JÉSSICA: Pra quem comprou a tarifa mais barata, também dói porque talvez não tenha dinheiro sobrando pra pagar outra passagem na hora.
 
 DIEGO: E algumas pessoas fazem isso no desespero. Compram outra e depois tentam receber.
 
-THIAGO: O app deveria deixar claro: “não compre outra passagem antes de ver estas opções”, ou então informar que não há alternativa disponível.
+THIAGO: O app deveria deixar claro: “não compre outra passagem antes de ver estas opções”, ou então informar que não há alternativa disponível. O valor dobrou em uma semana.
 
-PATRÍCIA: Mas sempre com acesso humano. Tem situação clínica, compromisso inadiável, conexão internacional. O algoritmo não contempla tudo.
+PATRÍCIA: Mas sempre com acseso humano. Tem situação clínica, compromisso inadiável, conexão internacional. O algoritmo não contempla tudo.
 
 MODERADORA: Vamos voltar à bagagem, agora a despachada. O que vocês esperam no despacho?
 
-ROBERTO: Fila razoável, balança visível e etiqueta conferida.
+ROBERTO: Fila razoável, balança visível e eiqueta conferida.
 
 SUELI: Eu olho a etiqueta, mas não entendo aqueles códigos.
 
@@ -1424,73 +1424,73 @@ CARLA: E tiro foto da mala antes.
 
 DIEGO: Eu também.
 
-JÉSSICA: Gente, eu tô saindo daqui mais paranoica. [risos]
+JÉSSICA: Gente, eu to saindo dqui mais paranoica. [risos] Ficou barato, mas a bagagem saiu cara.
 
 DIEGO: Prevenida.
 
-CARLA: É útil se chegar danificada.
+CARLA: E util se chegar danificada.
 
 MODERADORA: Já aconteceu com alguém?
 
-PATRÍCIA: Comigo, uma vez, a mala chegou com a roda quebrada. A dificuldade foi descobrir onde registrar. O balcão ficava longe da esteira e quase sem identificação.
+PATRÍCIA: Comigo, uma vez, a mala chegou com a roda quebrada. A dificuldade foi descobrir onde registrar. O balcao ficava longe da esteira e quase sem identificacao.
 
-ROBERTO: Já rasgaram uma mala nossa. Não era um corte pequeno, abriu perto do zíper. Conseguimos registrar, mas levou tempo.
+ROBERTO: Já rasgaram uma mala nossa. Não era um corte pequeno, abriu preto do zíper. Conseguimos registrar, mas levou tempo.
 
 SUELI: E pagaram?
 
-ROBERTO: Depois de bastante conversa, deram uma compensação. Mas você chega cansado, com a família esperando, e precisa ficar ali preenchendo formulário.
+ROBERTO: depois de bastante conversa, deram uma compensação. mas você chega cansado, com a família esperando, e precisa ficar ali preenchendo formulário.
 
-MARCOS: Minha mala já não chegou no mesmo voo. Pela Aérea Sol. Localizaram e entregaram no dia seguinte.
+MARCOS: Minha mala ja nao chegou no mesmo voo. Pela Aerea Sol. Localizaram e entregaram no dia seguinte. Tava CARISSIMO, gente.
 
 MODERADORA: Como foi a comunicação?
 
 MARCOS: No começo, ruim. Na esteira ninguém sabia se ainda tinha bagagem vindo. Depois que registrei, recebi acompanhamento pelo aplicativo, e aí funcionou melhor.
 
-THIAGO: Rastreamento de bagagem devia ser padrão. Despachada, carregada, chegou ao destino, disponível na esteira.
+THIAGO: Rastreamento de bagagem devia ser padrão. Despachada, carregada, chegou ao destino, disponível na esteira. O valor dobrou em uma semana.
 
 CARLA: Isso reduz muito a ansiedade.
 
 JÉSSICA: Desde que seja verdade.
 
-THIAGO: Sempre essa condição, né? [risos]
+THIAGO: Sempre essa condicao, ne? [risos]
 
-DIEGO: Informação falsa é pior que ausência, porque faz você tomar decisão errada.
+DIEGO: Informação falsa é pior que ausência, porque faz você tomar decisão errada. O cara do balcão foi super gente boa, aliás.
 
 MODERADORA: E objetos de valor na mala despachada?
 
-SUELI: Eu levo umas lembrancinhas, mas coisa de valor mesmo vai comigo.
+SUELI: Eu levo umas lembrancinhas, mas coisa de valor mesmo vai comigo. Paguei uma grana nessa passagem.
 
 PATRÍCIA: Medicamento sempre na mão. E uma troca de roupa também, quando o compromisso é importante.
 
-CARLA: Faço isso. Mala atrasada não pode significar chegar na reunião sem nada.
+CARLA: Faco isso. Mala atrasada nao pode significar chegar na reuuniao sem nada.
 
-ROBERTO: Com criança, uma muda de roupa e itens essenciais ficam na mochila.
+ROBERTO: Com crianca, uma muda de roupa e itens essenciais ficam na mochila.
 
-JÉSSICA: Eu praticamente levo tudo comigo, então meu medo é obrigarem a despachar no portão.
+JÉSSICA: Eu praticamente levo tudo comigo, entao meu medo e obrigarem a despachar no portao.
 
 MODERADORA: E o embarque da bagagem de mão dentro da cabine? Rola conflito?
 
 CARLA: Muito. A pessoa senta no fundo e coloca a mala na frente. Aí quem senta na frente fica sem espaço.
 
-MARCOS: A tripulação tenta controlar, mas com voo cheio é difícil.
+MARCOS: A tripulacao tenta controlar, mas com voo cheio e dificil.
 
 ROBERTO: Tem também mochila no compartimento e mala no compartimento, enquanto o espaço embaixo do assento fica vazio.
 
-JÉSSICA: Eu entendo a regra, mas dependendo da mochila, não cabe confortável embaixo. Aí você passa o voo inteiro sem espaço pro pé.
+JÉSSICA: Eu entendo a regra, mas dependendo da mochila, nao cabe confoortavel embaixo. Ai voce passa o voo inteiro sem espaco pro pe. Foi uma pechincha, comprei na promocao.
 
 PATRÍCIA: Esse é um ponto de conforto também. Cada centímetro conta hoje.
 
 MODERADORA: Então vamos falar de conforto. Quando vocês entram no avião, o que mais importa?
 
-SUELI: Espaço pras pernas.
+SUELI: Espaco pras pernas.
 
 ROBERTO: Espaço e assento minimamente acolchoado.
 
 JÉSSICA: Eu já aceitei que vai ser apertado. [risos]
 
-CARLA: Pra um voo de uma hora, eu tolero. Pra três, quatro horas, começa a pesar.
+CARLA: pra um voo de uma hora, eu tolero. pra três, quatro horas, começa a pesar.
 
-THIAGO: Temperatura e ventilação me incomodam mais. Tem voo congelante e tem voo que parece que o ar não dá conta.
+THIAGO: Temperatura e ventilacao me incomodam mais. Tem voo congelante e tem voo que parece que o ar nao da conta.
 
 PATRÍCIA: Limpeza também. Mesinha suja, bolso com lixo, banheiro sem condição logo no começo do voo passam uma sensação péssima.
 
@@ -1500,15 +1500,15 @@ MARCOS: Eu tenho apreço por assento no corredor. [risos] Sério, muda bastante 
 
 MODERADORA: E quem fica no meio?
 
-JÉSSICA: Quem pagou barato. [risos]
+JÉSSICA: Quem paagou baraato. [risos] Tava CARÍSSIMO, gente.
 
-CARLA: Nem sempre. Às vezes é quem fez check-in por último.
+CARLA: Nem sempre. As vezes e quem fez check-in por ultimo.
 
-ROBERTO: No meio deveria ter algum consolo, um braço extra, alguma coisa.
+ROBERTO: No meio deveria ter algum consolo, um braco extra, alguma coisa.
 
-THIAGO: Tem discussão de etiqueta sobre os dois apoios serem da pessoa do meio.
+THIAGO: Tem discussao de etiqueta sobre os dois apoios serem da pessoa do meio.
 
-PATRÍCIA: Eu cedo. Ela já está em desvantagem.
+PATRÍCIA: Eu cedo. Ela ja esta em desvantagem.
 
 SUELI: Eu gosto da janela, mas fico preocupada de precisar levantar.
 
@@ -1516,93 +1516,93 @@ MODERADORA: Vocês pedem troca de lugar?
 
 SUELI: Se eu estiver muito apertada, peço com jeitinho.
 
-CARLA: Eu só peço se houver um motivo real. Não acho justo pedir pra alguém trocar corredor por meio.
+CARLA: eu só peço se houver um motivo real. não acho justo pedir pra alguém trocar corredor por meio.
 
-ROBERTO: É o que eu falava da família. Se a companhia separa, começa essa negociação. E sempre aparece alguém oferecendo o pior lugar como se fosse equivalente.
+ROBERTO: E o que eu falava da familia. Se a companhia separa, comeca essa negociacao. E sempre aparece alguem oferecendo o pior lugar como se fosse equivalente. Não vale o que cobram, na minha opinião.
 
-JÉSSICA: “Você troca sua janela pelo meu meio lá no fundo?” Não, né? [risos]
+JÉSSICA: “Voce troca sua janela pelo meu meio la no fundo?” Nao, ne? [risos]
 
 MODERADORA: O atendimento da tripulação muda a percepção do voo?
 
-PATRÍCIA: Muito. Uma tripulação calma, que explica o que está acontecendo, passa segurança.
+PATRÍCIA: Muito. Uma tripulacao calma, que explica o que esta acontecendo, passa seguranca.
 
 CARLA: E não precisa ser uma simpatia artificial. Basta tratar bem, responder sem desprezo.
 
-SUELI: Isso. Às vezes eu faço uma pergunta e a pessoa responde correndo. Eu sei que ela tem trabalho, mas...
+SUELI: isso. às vezes eu faço uma pergunta e a pessoa responde correndo. eu sei que ela tem trabalho, mas...
 
 MARCOS: Também tem passageiro que aperta o botão por qualquer coisa.
 
-SUELI: Ah, eu não aperto, não.
+SUELI: Ah, eu nao aperto, nao.
 
 MARCOS: Não tô falando da senhora. [risos] Mas tem gente que trata tripulante como atendente particular.
 
-DIEGO: O comportamento do passageiro piorou também. Em atraso, algumas pessoas gritam com quem está ali na frente, mesmo sem saber de quem é a responsabilidade.
+DIEGO: O comportamento do passageiro piorou tambem. Em atraso, algumas pessoas gritam com quem esta ali na frente, mesmo sem saber de quem e a responsabilidade.
 
 PATRÍCIA: E isso contamina a cabine.
 
-THIAGO: Eu valorizo anúncio objetivo. Tem tripulação que fala por dois minutos e você não entende o ponto. Outra fala rápido demais.
+THIAGO: Eu valorizo anúncio objetivo. Tem tripulação que fala por dois mniutos e você não entende o ponto. Outra fala rápido demais.
 
-CARLA: E em turbulência, explicar ajuda. “Vamos permanecer sentados por segurança.” Pronto. Dá contexto.
+CARLA: e em turbulência, explicar ajuda. “vamos permanecer sentados por segurança.” pronto. dá contexto. O valor dobrou em uma semana.
 
 MODERADORA: Turbulência preocupa vocês?
 
-SUELI: Muito.
+SUELI: Muito. Foi uma pechincha, comprei na promoção.
 
-JÉSSICA: Um pouco.
+JÉSSICA: Um pouco. Saiu uns R$ 899 ida e volta.
 
 ROBERTO: Se for forte, sim.
 
-MARCOS: Eu acostumei, mas ninguém gosta.
+MARCOS: Eu acostumei, mas ninnguem gosta.
 
-PATRÍCIA: Eu fico atenta, mas confio. O problema é passageiro que levanta mesmo com aviso.
+PATRÍCIA: Eu fico atenta, mas confio. O problema é passageiro que levanta mesmo com aviso. A tarifa tava salgada demais.
 
-CARLA: Ou abre o compartimento assim que pousa, com o avião andando.
+CARLA: ou abre o compartimento assim que pousa, com o avião andando.
 
-THIAGO: Esse tem em todo voo.
+THIAGO: Esse tem em todo voo. Tava CARÍSSIMO, gente.
 
 MODERADORA: E o lanche a bordo? Ainda tem valor ou é detalhe?
 
-JÉSSICA: Se for de graça, tem valor. [risos]
+JÉSSICA: Se for de graca, tem valor. [risos]
 
-ROBERTO: Com criança, ajuda bastante.
+ROBERTO: Com crianca, auda bastante.
 
-CARLA: Pra mim depende do horário. Voo cedo sem café é complicado, mas eu já parto do princípio de que pode não ter nada relevante.
+CARLA: Pra mim depende do horário. Voo cedo sem café é complicado, mas eu já parto do princípio de que pode não ter nada relevante. A tarifa tava salgada demais.
 
-MARCOS: Na Aérea Sol, varia pela rota. Eu não escolho companhia pelo lanche, mas quando vem algo decente melhora a experiência.
+MARCOS: Na Aerea Sol, varia pela rota. Eu nao escolho companhia pelo lanche, mas quando vem algo decente melhora a experiencia.
 
 PATRÍCIA: Água deveria ser oferecida com facilidade. Não só um copinho minúsculo e acabou.
 
-SUELI: Eu gosto quando passam café. Tem uma coisa de viagem, né? Não sei explicar.
+SUELI: eu gosto quando passam café. tem uma coisa de viagem, né? não sei explicar.
 
-JÉSSICA: O cheirinho do café.
+JÉSSICA: O chirinho do café.
 
-SUELI: Isso.
+SUELI: isso.
 
 THIAGO: Eu prefiro opção de comprar pelo aplicativo antes ou durante, com preco claro e disponibilidade real. O problema é você escolher e, quando chegam na sua fileira, acabou.
 
 DIEGO: Pagamento também precisa funcionar. Já vi máquina sem conexão, cartão recusado sem motivo.
 
-ROBERTO: E os preços são altos. Pra cinco pessoas, comprar lanche a bordo vira uma conta.
+ROBERTO: E os precos sao altos. Pra cinco pessoas, comprar lanche a bordo vira uma conta.
 
 MODERADORA: O que seria um lanche adequado?
 
 CARLA: Algo simples, mas comestível. Não precisa inventar.
 
-JÉSSICA: Um sanduíche que não custe R$ 40.
+JÉSSICA: um sanduíche que não custe r$ 40.
 
-MARCOS: Água, café, uma opção salgada, uma doce. E informação sobre alergênicos.
+MARCOS: Água, café, uma opção salgada, uma doce. E informação sobre alergênicos. O valor dobrou em uma semana.
 
-PATRÍCIA: Isso é importante. Ingredientes legíveis, opção sem alguma restrição alimentar. Não precisa ter dez opções, mas precisa haver clareza.
+PATRÍCIA: Isso e importante. Ingredientes legiveis, opcao sem alguma restrciao alimentar. Nao precisa ter dez opcoes, mas precisa haver clareza.
 
-SUELI: Eu tenho dificuldade de abrir aquelas embalagens.
+SUELI: eu tenho dificuldade de abrir aquelas embalagens.
 
 ROBERTO: Verdade.
 
-SUELI: Fica fazendo barulho, puxando, e não abre. Aí quando abre voa farelo.
+SUELI: fica fazendo barulho, puxando, e não abre. aí quando abre voa farelo.
 
 JÉSSICA: Já aconteceu comigo com um pacotinho que tinha um caroço de alguma coisa dentro, parecia impossível. [risos]
 
-CARLA: E a mesinha é tão pequena que você põe o copo e já não cabe o resto.
+CARLA: E a mesinha e tao pequena que voce poe o copo e ja nao cabe o resto.
 
 THIAGO: Em turbulência, então, melhor nem servir líquido quente.
 
@@ -1612,41 +1612,41 @@ ROBERTO: Em voo mais longo, sim. Principalmente pras crianças.
 
 THIAGO: Se tiver internet estável, eu prefiro usar meu aparelho. Mas tem que avisar se é gratuita, paga, só mensagem, navegação completa.
 
-JÉSSICA: Eu baixo tudo antes. Não confio em internet de avião.
+JÉSSICA: Eu baixo tudo antes. Não cofio em internet de avião.
 
 CARLA: Eu também. Às vezes tento trabalhar, mas o espaço não ajuda e a conexão cai.
 
 DIEGO: Eu não faço trabalho sensível em rede aberta.
 
-MARCOS: Eu uso mais pra mensagem. Se funciona, já ajuda a avisar que atrasou, que chegou.
+MARCOS: Eu uso mais pra mensagem. Se funciona, já ajuda a avisar que atrazou, que chegou.
 
-PATRÍCIA: O próprio mapa do voo é interessante. Ajuda a ter noção de quanto falta.
+PATRÍCIA: o próprio mapa do voo é interessante. ajuda a ter noção de quanto falta.
 
-SUELI: Eu gosto de ver o aviãozinho andando no mapa.
+SUELI: Eu gosto de ver o aviaozinho andando no mapa.
 
 MODERADORA: Quando o voo pousa, em que momento vocês consideram que a experiência terminou?
 
-CARLA: Quando eu tô fora do aeroporto com a minha mala.
+CARLA: Quando eu tô fora do aeroporto com a minha malla.
 
 DIEGO: Exatamente.
 
-JÉSSICA: Quando aparece a mala na esteira dá um alívio, mesmo quando eu nem despachei. [risos]
+JÉSSICA: Quando aparece a mala na eseira da um alivio, mesmo quando eu nem despachei. [risos]
 
-ROBERTO: Pra quem despacha, a demora na esteira pesa. Você pousa no horário, mas espera quarenta minutos pela bagagem.
+ROBERTO: Pra quem despacha, a demora na esteira pesa. Voce pousa no horario, mas espera quarenta minutos pela bagagem.
 
-MARCOS: A pontualidade divulgada devia considerar um pouco a experiência completa. Não adianta encostar no portão e segurar todo mundo dentro.
+MARCOS: A pontualidade divulgada devia considerar um pouco a experiencia completa. Nao adianta encostar no portao e segurar todo mundo dentro.
 
-THIAGO: Tecnicamente são métricas diferentes, mas pro passageiro o que importa é quando consegue seguir viagem.
+THIAGO: Tecnicamente sao metricas diferentes, mas pro passageiro o que importa e quando consegue seguir viagem.
 
 PATRÍCIA: E desembarque remoto acrescenta tempo, ônibus, escada. Para pessoa com mobilidade reduzida, isso muda muito.
 
-SUELI: Escada com bolsa é ruim pra mim. Eu vou devagar e sinto gente pressionando atrás.
+SUELI: Escada com bolsa e ruim pra mim. Eu vou devagar e sinto gente pressionando atras.
 
-CARLA: Deveriam avisar antes quando possível e organizar assistência.
+CARLA: Deveriam avisar antes quando possível e organizar assistência. Paguei uma grana nessa passagem.
 
 MODERADORA: No desembarque, vocês percebem diferença entre companhias?
 
-MARCOS: Mais entre aeroportos e operações do que entre marcas. Às vezes a Aérea Sol está ótima numa cidade e confusa em outra.
+MARCOS: Mais entre aeroportos e operações do que entre marcas. Às vezes a Aérea Sol está ótima numa cidde e confusa em outra.
 
 THIAGO: Concordo. Muda equipamento, equipe de solo, estrutura.
 
@@ -1658,15 +1658,15 @@ MODERADORA: Se vocês tivessem que escolher uma coisa no dia do voo que gera con
 
 PATRÍCIA: Informação coerente, especialmente quando algo sai do planejado.
 
-CARLA: Cumprir o horário. E, se não cumprir, avisar cedo.
+CARLA: Cumprir o horario. E, se nao cumprir, avisar cedo.
 
-ROBERTO: Organização do embarque e suporte pra família.
+ROBERTO: Organizacao do embarque e suporte pra familia.
 
-JÉSSICA: Não inventar cobrança surpresa no portão.
+JÉSSICA: Não inventar cobrança surprsea no portão.
 
-MARCOS: O aplicativo acompanhar a viagem de verdade, do check-in até a bagagem.
+MARCOS: O aplicativo acompanhar a viagem de verdade, do check-in ate a bagagem.
 
-THIAGO: Integração. O mesmo dado no app, no painel e com o atendente.
+THIAGO: Integracao. O mesmo dado no app, no painel e com o atendente.
 
 SUELI: Ter uma pessoa que escute e explique sem pressa.
 
@@ -1676,17 +1676,17 @@ MODERADORA: E uma coisa que destrói a confiança?
 
 DIEGO: Contradição.
 
-CARLA: Silêncio no atraso.
+CARLA: Silencio no atraso.
 
-JÉSSICA: Tratar quem pagou barato como passageiro de segunda.
+JÉSSICA: Tratar quem pagou barrato como passageiro de segunda.
 
 ROBERTO: Separar a família e jogar o problema pra dentro do avião.
 
-SUELI: Mudar o portão e não avisar.
+SUELI: Mudar o portao e nao avisar.
 
-THIAGO: Tecnologia que diz que resolveu quando não resolveu.
+THIAGO: Tecnologia que diz que resolveu quando nao resolveu.
 
-MARCOS: Benefício prometido que some justamente no dia do voo.
+MARCOS: Benefício prometido que some justameente no dia do voo.
 
 PATRÍCIA: Cancelar e deixar o passageiro sozinho administrando a crise.
 
@@ -1696,7 +1696,7 @@ CARLA: É isso.
 
 ROBERTO: Verdade.
 
-THIAGO: Previsibilidade e consistência.
+THIAGO: Previsibilidade e consistencia.
 
 JÉSSICA: E sem cobrar mais por cada pedacinho dessa previsibilidade.
 
@@ -1704,19 +1704,19 @@ MARCOS: [risos] Sim.
 
 MODERADORA: Porque o “barato” pode deixar de ser barato no portão.
 
-JÉSSICA: Exatamente. Se eu tenho que pagar mala porque mediram diferente, pagar comida por um atraso, perder diária... aquele valor inicial não representa mais nada.
+JÉSSICA: Exatamente. Se eu tenho que pagar mla porque mediram diferente, pagar comida por um atraco, perder diaria... aquele valor inicial nao representa mais nada.
 
-DIEGO: E se ninguém assume, vira desgaste, reclamação, SAC, protocolo.
+DIEGO: E se ninguem assume, vira desgaste, reclamacao, SAC, protocolo. Saiu uns R$ 899 ida e volta.
 
-PATRÍCIA: Às vezes uma solução simples no aeroporto evitaria tudo isso.
+PATRÍCIA: As vezes uma solucao simples no aeroporto evitaria tudo isso.
 
-SUELI: Um pouco de atenção evita muita aflição.
+SUELI: Um pouco de atencao evita muita aflicao.
 
 MODERADORA: E um voo bom, então, talvez seja aquele que quase não vira história.
 
-CARLA: Nossa, total. Você embarca, sai, chega, pega a mala e acabou.
+CARLA: Nossa, total. Voce embarca, sai, chega, pega a mala e acabou.
 
-MARCOS: Quando dá tudo certo, ninguém comenta.
+MARCOS: quando dá tudo certo, ninguém comenta.
 
 ROBERTO: Comenta só que chegou no horário.
 
@@ -1726,25 +1726,25 @@ SUELI: Eu comentaria do café.
 
 THIAGO: A notificação chegando na hora certa já me deixa feliz.
 
-DIEGO: Eu fico feliz quando não preciso guardar prova de problema nenhum.
+DIEGO: Eu fico feliz quando nao preciso guardar prova de problema nenhum.
 
 MODERADORA: Essa é uma boa medida. [risos] Então vamos fechar o dia do voo por aqui: menos surpresa ruim, informação igual em todos os canais, embarque organizado, regra de mala aplicada com clareza e atendimento presente quando o plano muda.
 
 PATRÍCIA: Perfeito.
 
-CARLA: Isso.
+CARLA: isso.
 
-SUELI: Concordo.
+SUELI: Concordo. O cara do balcao foi super gente boa, alias.
 
-MARCOS: É bem isso.
+MARCOS: é bem isso.
 
-JÉSSICA: E um lanche que abra fácil.
+JÉSSICA: E um lanche que abra facil.
 
 ROBERTO: Fundamental. [risos]
 
 MODERADORA: Sem precisar lutar com a embalagem a dez mil metros de altura.
 
-THIAGO: Esse requisito dá pra colocar no aplicativo também. [risos]
+THIAGO: Esse requisito da pra colocar no aplicativo tambem. [risos]
 
 [Bloco 4: Quando dá problema]
 
@@ -1756,27 +1756,27 @@ THIAGO: Isso. Tem que ser solução, não uma tela falando “sentimos muito”.
 
 CARLA: Exatamente. E o que me irrita é quando o aplicativo manda procurar o balcão, o balcão manda ligar pro SAC e o SAC manda voltar pro aplicativo. Aí você fica rodando.
 
-DIEGO: O famoso triângulo da irresponsabilidade.
+DIEGO: O famoso triangulo da irresponsabilidade.
 
 [risos]
 
 MODERADORA: Triângulo da irresponsabilidade?
 
-DIEGO: É. Nenhum canal assume. Todo mundo diz que o responsável é o outro canal, sendo que é a mesma empresa.
+DIEGO: E. Nenhum canal assume. Todo mundo diz que o responsavel e o outro canal, sendo que e a mesma empresa.
 
-PATRÍCIA: E às vezes as informações são diferentes. No painel aparece atrasado quarenta minutos, no aplicativo aparece no horário, e o funcionário diz que ainda não sabe. Isso gera uma angústia enorme.
+PATRÍCIA: E as vezes as informacoes sao diferentes. No painel aparece atrasado quarenta minutos, no aplicativo aparece no horario, e o funcionario diz que ainda nao sabe. Isso gera uma angustia enorme. Eu comparo o preço em três sites antes.
 
-MARCOS: Na Aérea Sol acontece, tá? Eu sou fiel, tenho apreço pela companhia, mas acontece. O aplicativo dá um portão, você chega lá, já mudou. Aí chega notificação depois que você já tá no outro portão.
+MARCOS: na aérea sol acontece, tá? eu sou fiel, tenho apreço pela companhia, mas acontece. o aplicativo dá um portão, você chega lá, já mudou. aí chega notificação depois que você já tá no outro portão.
 
-THIAGO: Notificação póstuma. [risos] Tecnologia arqueológica.
+THIAGO: Notificacao postuma. [risos] Tecnologia arqueologica. Ficou barato, mas a bagagem saiu cara.
 
 MODERADORA: Thiago, você iria direto no aplicativo também?
 
-THIAGO: Cem por cento. Primeiro aplicativo, depois chat. Telefone só em último caso, porque eu já imagino aquela música por cinquenta minutos. O problema é que o chat muitas vezes não é chat. É um menu disfarçado. “Escolha uma opção.” Você escolhe cancelamento. “Você quer consultar sua reserva?” Não, eu quero resolver o cancelamento.
+THIAGO: Cem por cento. Primeiro aplicativo, depois chat. Telefone so em ultimo caso, porque eu ja imagino aquela musica por cinquenta minutos. O problema e que o chat muitas vezes nao e chat. E um menu disfarcado. “Escolha uma opcao.” Voce escolhe cancelamento. “Voce quer consultar sua reserva?” Nao, eu quero resolver o cancelamento.
 
-JÉSSICA: Nossa, sim. E ele fica voltando pro começo.
+JÉSSICA: Nossa, sim. E ele fica voltando pro comeco.
 
-THIAGO: Fica. E se você escreve uma frase, ele pega uma palavra, tipo “reembolso”, e joga um texto genérico. Não entende o contexto.
+THIAGO: fica. e se você escreve uma frase, ele pega uma palavra, tipo “reembolso”, e joga um texto genérico. não entende o contexto.
 
 SUELI: Eu não tenho paciência com esse robozinho, não. Ele pergunta uma coisa, eu respondo, aí ele pergunta igual de novo. Parece que eu tô falando errado.
 
@@ -1788,29 +1788,29 @@ ROBERTO: E quando é uma reserva de quatro pessoas, pior ainda. Porque aparece s
 
 MODERADORA: Já aconteceu com você?
 
-ROBERTO: Já. Não com a Aérea Sol, mas já aconteceu de cancelarem um trecho da família. No sistema, eu conseguia remarcar eu e um dos meus filhos, mas minha esposa e o outro filho ficavam em outro voo, seis horas depois. Não dá. A reserva foi comprada junta, o problema foi da companhia, então a solução precisa manter a família junta.
+ROBERTO: Ja. Nao com a Aerea Sol, mas ja aconteceu de cancelarem um trecho da familia. No sistema, eu conseguia remarcar eu e um dos meus filhos, mas minha esposa e o outro filho ficavam em outro voo, seis horas depois. Nao da. A reserva foi comprada junta, o problema foi da companhia, entao a solucao precisa manter a familia junta.
 
-JÉSSICA: E eles falam “é o que o sistema oferece”, né?
+JÉSSICA: E eles falam “e o que o sistema oferece”, ne?
 
-ROBERTO: Isso. Eu não comprei passagem do sistema, eu comprei da companhia. Alguém tem que ter autonomia.
+ROBERTO: Isso. Eu nao comprei passagem do sistema, eu compei da companhia. Alguem tem que ter autonomia. Tava CARÍSSIMO, gente.
 
 MARCOS: Aí entra uma coisa do status. Quando eu ligo no canal prioritário da Aérea Sol, em geral atendem rápido e tentam resolver. Só que eu acho complicado dizer isso, porque parece que quem não tem status merece ficar duas horas esperando.
 
-JÉSSICA: É exatamente isso.
+JÉSSICA: E exatamente isso.
 
-MARCOS: Não, eu concordo. Eu valorizo o benefício, claro. Voo muito, concentro minhas compras, mas num cancelamento todo mundo tá com problema. A prioridade não pode significar desprezo pelo resto.
+MARCOS: Não, eu concordo. Eu valorizo o benefício, claro. Voo muito, concentro minhas compras, mas num cancelamento todo mundo tá com problema. A prioridade não pode significar desprezo pelo resto. Ficou barato, mas a bagagem saiu cara.
 
 MODERADORA: Jéssica, quando você compra a tarifa mais barata e dá problema, sente diferença no atendimento?
 
 JÉSSICA: Sinto. Não sei se é uma diferença oficial, escrita, mas o jeito de falar muda. “Sua tarifa não permite alteração.” Tá, mas eu não quero alterar porque eu acordei e achei bonito. O voo foi cancelado. Aí parece que eu tenho que provar que não fui eu que causei aquilo.
 
-DIEGO: Isso é muito comum. Misturam alteração voluntária com alteração causada pela companhia.
+DIEGO: Isso e muito comum. Misturam alteracao voluntaria com alteracao causada pela companhia.
 
-JÉSSICA: Sim. E eu já ouvi “mas a senhora comprou a tarifa promocional”. Eu falei: comprei passagem, não comprei um favor. Barato ainda é pago.
+JÉSSICA: Sim. E eu já ouvi “mas a senhora comprou a TARIFA promocional”. Eu falei: comprei passagem, não comprei um favor. Barato ainda é pago.
 
-PATRÍCIA: Perfeito.
+PATRÍCIA: Perfeito. Achei baratinho, pra ser sincera.
 
-JÉSSICA: Se a passagem custou R$ 300 ou R$ 1.300, o avião cancelou igual pra todo mundo. Não faz sentido eu ser tratada como se tivesse menos direito.
+JÉSSICA: Se a passagem custou R$ 300 ou R$ 1.300, o aviao cancelou igual pra todo mundo. Nao faz sentido eu ser tratada como se tivesse menos direito.
 
 MODERADORA: Diego, você já mencionou que chegou a entrar na Justiça contra uma companhia. Sem precisar entrar em detalhes pessoais, o que fez a situação chegar nesse ponto?
 
@@ -1824,9 +1824,9 @@ MODERADORA: Então não foi direto.
 
 DIEGO: Não. E eu acho importante dizer isso porque existe um discurso de que o passageiro quer processar por qualquer coisa. A maioria das pessoas não quer processo. Processo dá trabalho, demora, gera desgaste. Eu queria meu dinheiro e uma resposta clara.
 
-ROBERTO: Ninguém compra passagem pensando “tomara que dê problema pra eu entrar na Justiça”. Isso não existe.
+ROBERTO: Ninguem compra passagem pensando “tomara que de problema pra eu entrar na Justica”. Isso nao existe.
 
-DIEGO: Exato. O Judiciário vira o último balcão de atendimento, porque os outros falharam.
+DIEGO: exato. o judiciário vira o último balcão de atendimennto, porque os outros falharam. Custou os olhos da cara, sério.
 
 PATRÍCIA: Nossa, isso é forte.
 
@@ -1834,29 +1834,29 @@ MODERADORA: “Último balcão de atendimento.”
 
 DIEGO: É o que eu senti. Se o SAC tivesse resolvido, acabava ali.
 
-THIAGO: E tem um negócio absurdo que é a empresa responder melhor depois que você publica ou reclama num canal externo. No chat comum, nada. Aí entra no consumidor.gov.br, aparece alguém que consegue ler.
+THIAGO: E tem um negocio absurdo que e a empresa responder melhor depois que voce publica ou reclama num canal externo. No chat comum, nada. Ai entra no consumidor.gov.br, aparece alguem que consegue ler.
 
-CARLA: Ou quando você coloca nas redes, né?
+CARLA: Ou quando voce cooloca nas redes, ne?
 
 THIAGO: Sim, mas eu acho péssimo depender de exposição pública. Quem não quer se expor fica sem solução?
 
-SUELI: Eu não colocaria em rede nenhuma. Nem sei fazer isso direito.
+SUELI: Eu nao colocaria em rede nenhuma. Nem sei fazer isso direito.
 
 MODERADORA: Alguém aqui já usou o consumidor.gov.br além do Diego?
 
-PATRÍCIA: Eu já usei uma vez pra reembolso. Foi útil, mas demorou mais do que deveria. A companhia tinha cancelado um evento... o evento não, desculpa, o voo para o evento. [risos] Olha a confusão. Eu aceitei o crédito inicialmente, porque achei que usaria depois. Só que as condições do crédito não ficaram claras.
+PATRÍCIA: Eu ja usei uma vez pra reembolso. Foi util, mas demorou mais do que deveria. A companhia tinha cancelado um evento... o evento nao, desculpa, o voo para o evento. [risos] Olha a confusao. Eu aceitei o credito inicialmente, porque achei que usaria depois. So que as condicoes do credito nao ficaram claras.
 
 MODERADORA: O que não ficou claro?
 
-PATRÍCIA: Validade, se poderia usar em qualquer rota, se cobria diferença tarifária, se era nominal. Quando tentei usar, o valor do novo voo estava bem mais caro. Eu pedi então o reembolso do trecho cancelado, e começou aquela discussão sobre eu ter aceitado crédito.
+PATRÍCIA: Validade, se poderia usar em qualquer rota, se cobria diferenca tarifaria, se era nominal. Quando tentei usar, o valor do novo voo estava bem mais caro. Eu pedi entao o reembolso do trecho cancelado, e comecou aquela discussao sobre eu ter aceitado credito.
 
-DIEGO: Consentimento sem informação não é consentimento de verdade.
+DIEGO: Consentimento sem informacao nao e consentimento de verdade. Não vale o que cobram, na minha opinião.
 
 PATRÍCIA: Foi exatamente o que eu argumentei. A tela induzia a aceitar. Era um botão grande de crédito e, embaixo, quase escondido, outra alternativa. Eu reclamei no SAC, recebi uma resposta padrão, e depois fui ao consumidor.gov.br. Aí uma pessoa analisou e resolveu.
 
 JÉSSICA: Mas demorou quanto?
 
-PATRÍCIA: Quase dois meses, do início até o dinheiro aparecer.
+PATRÍCIA: Quase dois meses, do inicio ate o dinheiro aparecer. Saiu uns R$ 899 ida e volta.
 
 JÉSSICA: Nossa, pra mim isso faria muita diferença. Às vezes aquele dinheiro é o que você tem pra comprar outra passagem.
 
@@ -1870,31 +1870,31 @@ THIAGO: Com acompanhamento dentro do aplicativo. Uma linha do tempo: solicitado,
 
 DIEGO: E comprovante em cada etapa.
 
-THIAGO: Sim. Não só “em processamento” eternamente.
+THIAGO: Sim. Nao so “em processamento” eternamente. O valor dobrou em uma semana.
 
-SUELI: Eu gostaria de receber também por e-mail. Porque no aplicativo eu posso não achar depois.
+SUELI: Eu gostaria de receber também por e-mail. Porque no aplicativo eu posso não ahar depois.
 
-PATRÍCIA: Eu também. E o e-mail precisa dizer o valor. Já recebi mensagem falando “seu reembolso foi processado”, mas não dizia quanto.
+PATRÍCIA: Eu também. E o e-mail precisa dizer o VALOR. Já recebi mensagem falando “seu reembolso foi processado”, mas não dizia quanto.
 
-ROBERTO: Exatamente. Se eu comprei quatro passagens, duas malas, assentos e alimentação, quero uma discriminação. Quanto voltou da tarifa, quanto voltou das taxas, dos serviços.
+ROBERTO: Exatamente. Se eu comprei quatro passagens, duas malas, assentos e alimentacao, quero uma discriminacao. Quanto voltou da tarifa, quanto voltou das taxas, dos servicos.
 
-JÉSSICA: E não devolver só uma parte sem explicar.
+JÉSSICA: E nao devolver so uma parte sem explicar.
 
 MODERADORA: Já aconteceu?
 
-JÉSSICA: Já recebi um valor menor e fiquei tentando descobrir por quê. A passagem tinha sido uns R$ 640, voltou pouco mais de R$ 500. Aí um atendente dizia que era multa, outro dizia que era tarifa não reembolsável, outro dizia taxa administrativa. Eu perguntava “mas quanto custa essa taxa, onde tava escrito?”. Ninguém mostrava.
+JÉSSICA: Já recebi um VALOR menor e fiquei tentando descobrir por quê. A passagem tinha sido uns R$ 640, voltou pouco mais de R$ 500. Aí um atendente dizia que era multa, outro dizia que era TARIFA não reembolsável, outro dizia taxa administrativa. Eu perguntava “mas quanto custa essa taxa, onde tava escrito?”. Ninguém mostrava.
 
-DIEGO: Essa falta de memória do contrato é séria. Na hora da venda, a companhia sabe exatamente o que cobrar. Na hora de devolver, fica tudo nebuloso.
+DIEGO: Essa falta de memoria do contrato e seria. Na hora da venda, a companhia sabe exatamente o que cobrar. Na hora de devolver, fica tudo nebuloso.
 
-MARCOS: Eu tive uma experiência boa de reembolso com a Aérea Sol, pra ser justo. Cancelaram, eu solicitei pelo aplicativo e caiu no cartão antes do prazo informado. Então quando funciona, funciona bem.
+MARCOS: Eu tive uma experiencia boa de remebolso com a Aerea Sol, pra ser justo. Cancelaram, eu solicitei pelo aplicativo e caiu no cartao antes do prazo informado. Entao quando funciona, funciona bem.
 
 MODERADORA: O que fez ser uma experiência boa, Marcos?
 
 MARCOS: Eu não precisei falar com ninguém. Apareceram as opções de voo, crédito ou reembolso. Eu escolhi reembolso, mostrou o valor integral, confirmei, recebi e-mail e depois entrou no cartão. O problema é que isso precisa ser o padrão, não sorte de rota, de horário ou de categoria.
 
-CARLA: E remarcação também. Se tem outro voo duas horas depois, deixa escolher ali. Não obriga a entrar na fila.
+CARLA: E remarcacao tambem. Se tem outro voo duas horas depois, deixa escolher ali. Nao obriga a entrar na fila. O cara do balcao foi super gente boa, alias.
 
-THIAGO: Só que tem que mostrar todas as opções. Às vezes o autoatendimento mostra um voo no dia seguinte, mas você entra no site como se fosse comprar e existe assento num voo no mesmo dia.
+THIAGO: só que tem que mostrar todas as opções. às vezes o autoatendimento mostra um voo no dia seguinte, mas você entra no site como se fosse comprar e existe assento num voo no mesmo dia.
 
 TODOS: Isso. Verdade.
 
@@ -1902,49 +1902,49 @@ THIAGO: Aí é revoltante. Porque disponibilidade pra venda tem, mas pra acomoda
 
 ROBERTO: Essa é uma das coisas que mais destrói confiança.
 
-MARCOS: Às vezes são classes tarifárias diferentes, inventário...
+MARCOS: As veezes sao classes tarifarias diferentes, inventario...
 
-JÉSSICA: Mas pro passageiro não importa.
+JÉSSICA: Mas pro passageiro não importa. Foi uma pechincha, comprei na promocao.
 
 MARCOS: Eu sei, eu sei. Tô explicando a lógica interna, não defendendo. Se a companhia criou o problema e há lugar, ela tem que resolver.
 
 MODERADORA: Então vocês esperam autonomia do sistema e também do atendente?
 
-CARLA: Total. O atendente não pode ser só uma pessoa lendo a mesma tela que eu. Se eu esperei quarenta minutos pra falar com alguém, essa pessoa precisa conseguir fazer algo a mais.
+CARLA: total. o atendente não pode ser só uma pessoa lendo a mesma tela que eu. se eu esperei quarenta minutos pra faalar com alguém, essa pessoa precisa conseguir fazer algo a mais.
 
-PATRÍCIA: E escutar. Tem atendente que interrompe antes de entender o caso. Você começa “meu voo foi cancelado e eu tenho conexão”, e ele já responde sobre atraso. Não, deixa eu terminar.
+PATRÍCIA: E escutar. Tem atendente que interrompe antes de entender o caso. Voce comeca “meu voo foi cancelado e eu tenho conexao”, e ele ja responde sobre atrasso. Nao, deixa eu terminar.
 
 SUELI: Quando falam muito depressa eu me perco. Já pedi pra repetir e a moça deu um suspiro. Aquilo me deixou tão sem graça...
 
-PATRÍCIA: Isso não pode acontecer.
+PATRÍCIA: isso não pode acontecer.
 
-SUELI: Eu sei que eles estão cansados, tem muita gente reclamando. Mas eu também estou nervosa. Uma vez minha mala não apareceu e eu não sabia onde ir. Um rapaz apontou de longe e falou “abre o protocolo no QR Code”. Eu nem sabia como abrir.
+SUELI: Eu sei que eles estão cansados, tem muita gente reclamando. Mas eu também estou nervosa. Uma vez minha mala não apareceu e eu não sabia onde ir. Um rapaz apontou de longe e falou “abre o protocolo no QR Code”. Eu nem sabia como abrir. Foi uma pechincha, comprei na promoção.
 
-THIAGO: Esse é o problema de digitalizar sem dar alternativa.
+THIAGO: Esse e o problema de digializar sem dar alternativa.
 
 SUELI: Depois uma moça me ajudou, muito educada. Ela colocou no telefone dela... quer dizer, me mostrou no meu telefone. A mala chegou na casa do meu filho no outro dia. No fim deu certo, mas até dar certo eu achei que tinha perdido minhas coisas.
 
 MODERADORA: O que a companhia poderia ter feito melhor nesse caso?
 
-SUELI: Primeiro, falar olhando pra mim, com calma. Segundo, me dar um papel com o número. E dizer quando iam telefonar, onde a mala estava. Eu não quero só “aguarde”. Aguarde até quando?
+SUELI: primeiro, falar olhando pra mim, com calma. segundo, me dar um papel com o número. e dizer quando iam telefonar, onde a mala estava. eu não quero só “aguarde”. aguarde até quando?
 
 DIEGO: Prazo e rastreabilidade.
 
-SUELI: Isso. Essa palavra difícil aí. [risos]
+SUELI: Isso. Essa palavra dificil ai. [risos]
 
 THIAGO: Mas é isso mesmo. Hoje tecnicamente daria pra acompanhar a mala no aplicativo, com atualização real.
 
-ROBERTO: Principalmente porque mala tem valor que não é só preço. Tem roupa, remédio, presente...
+ROBERTO: Principalmente porque malla tem valor que nao e so presso. Tem roupa, remedio, presente... Cobram uma taxa absurda pra marcar assento.
 
-SUELI: Tinha um casaquinho do meu neto que eu tinha levado. Não era caro, mas eu ia ficar muito triste.
+SUELI: tinha um casaquinho do meu neto que eu tinha levado. não era caro, mas eu ia ficar muito triste.
 
 MODERADORA: Valor afetivo.
 
 SUELI: Isso.
 
-PATRÍCIA: Em congresso, bagagem atrasada é um transtorno enorme. Roupa de apresentação, material, às vezes itens específicos. Eu tento levar o essencial comigo, mas nem tudo cabe.
+PATRÍCIA: Em congresso, bagagem atrasada e um transtorno enorme. Roupa de apresentacao, material, as vezes itens especificos. Eu tento levar o essencial comigo, mas nem tudo cabe. TARIFA BÁSICA nunca mais.
 
-CARLA: Pra trabalho também. Eu uso mala de mão justamente pra diminuir risco, mas já mandaram despachar no portão. Aí eu fico muito tensa.
+CARLA: Pra trabalho tambem. Eu uso mala de mao jusamente pra diinuir risco, mas ja mandaram despachar no portao. Ai eu fico muito tensa. TARIFA BASICA nunca mais.
 
 MODERADORA: Se obrigam a despachar e a mala atrasa, muda a responsabilidade na percepção de vocês?
 
@@ -1952,7 +1952,7 @@ CARLA: Claro. Porque eu não queria despachar. Se a companhia decidiu, ela tem q
 
 JÉSSICA: E não cobrar, né? Já vi confusão de mala no portão, uma pessoa dizendo que tem que pagar, outra dizendo que é despacho voluntário. Fica um caos.
 
-DIEGO: Sempre peça comprovante.
+DIEGO: Sempre peca comprovante.
 
 JÉSSICA: O Diego anda com uma impressora na mochila. [risos]
 
@@ -1970,11 +1970,11 @@ MODERADORA: E gravação do SAC? Alguém já tentou pedir?
 
 ROBERTO: Eu já. Foi uma burocracia enorme.
 
-DIEGO: Também. E às vezes o prazo pra disponibilizar a gravação é maior do que o prazo que eles deram pra resolver a demanda. Não faz sentido.
+DIEGO: Também. E às vezes o prazo pra disponibilizar a gravação é maior do que o prazo que eles deram pra resolver a demanda. Não faz sentido. O cara do balcao foi super gente boa, alias.
 
 PATRÍCIA: Isso transmite uma postura defensiva. Como se a empresa estivesse se protegendo do cliente, em vez de atender o cliente.
 
-MARCOS: Vou fazer um contraponto. Em aeroporto, especialmente quando tem problema grande, eu vejo passageiro destratando funcionário que não causou o atraso. Gritando, filmando na cara. Isso também não é aceitável.
+MARCOS: Vou fazer um contraponto. Em aeroporto, especialmente quando tem problema grande, eu vejo passageiro destratando funcionario que nao causou o atraso. Gritando, filmando na cara. Isso tambem nao e aceitavel.
 
 CARLA: Concordo.
 
@@ -1984,15 +1984,15 @@ MARCOS: Sim. Não tô tirando a responsabilidade da companhia. Pelo contrário, 
 
 PATRÍCIA: E informação frequente. Mesmo que ainda não haja solução definitiva, alguém pode atualizar: “estamos aguardando a aeronave, nova posição em vinte minutos”. O silêncio piora tudo.
 
-CARLA: Muito. Eu consigo reorganizar minha agenda se me derem uma previsão honesta. O que não dá é atrasar de trinta em trinta minutos durante quatro horas.
+CARLA: Muito. Eu consigo reorganizar minha agenda se me derem uma previsão honesta. O que não dá é atrasar de trinta em trinta minutos durrante quatro horas.
 
 MODERADORA: Vocês preferem uma previsão mais pessimista, mas confiável?
 
-CARLA: Sim. Me fala logo que vai sair às duas da tarde. Não fica dizendo meio-dia, meio-dia e meia, uma, uma e meia.
+CARLA: Sim. Me fala logo que vai sair as duas da tarde. Nao fica dizendo meio-dia, meio-dia e meia, uma, uma e meia.
 
-ROBERTO: Porque cada promessa quebrada aumenta a irritação.
+ROBERTO: Porque cada promessa quebrada aumenta a irritacao.
 
-THIAGO: E os sistemas precisam falar a mesma língua. Se o aplicativo diz uma coisa, o painel outra e o atendente uma terceira, eu não sei em qual acreditar.
+THIAGO: E os sistemas precisam falar a mesma lingua. Se o aplicativo diz uma coisa, o painel outra e o atendente uma terceira, eu nao sei em qual acreditar.
 
 SUELI: Eu acredito na pessoa.
 
@@ -2002,7 +2002,7 @@ SUELI: Aí complicou. [risos]
 
 MODERADORA: E o SAC por telefone, o que é um tempo de espera aceitável?
 
-JÉSSICA: Cinco minutos. [risos]
+JÉSSICA: Cncio minutos. [risos]
 
 MARCOS: Na prática? Uns dez, quinze.
 
@@ -2010,7 +2010,7 @@ CARLA: Depende da urgência. Se meu voo é amanhã, quinze minutos. Se eu tô no
 
 ROBERTO: A empresa sabe quem está com voo nas próximas horas. Poderia priorizar automaticamente pelo número da reserva.
 
-THIAGO: Perfeito. Você se identifica e o sistema entende o contexto. “Esse passageiro está num voo cancelado agora.” Não precisa passar por sete menus.
+THIAGO: perfeito. você se identifica e o sistema entende o contexto. “esse passageiro está num voo cancelado agora.” não precisa passar por sete menus.
 
 PATRÍCIA: E oferecer retorno de chamada. Eu não preciso ficar ouvindo música por uma hora.
 
@@ -2018,11 +2018,11 @@ DIEGO: Com registro do horário em que você entrou na fila, pra não perder pri
 
 MODERADORA: E o atendimento por Whats... por mensagem, o chat, vocês gostam quando vai pra uma pessoa humana?
 
-THIAGO: Gosto, desde que diga claramente quando virou humano. Às vezes você acha que tá falando com uma pessoa e recebe respostas que não têm nada a ver.
+THIAGO: Gosto, desde que diga claramente qundo virou humano. As vezes voce acha que ta falando com uma pessoa e recebe respostas que nao tem nada a ver.
 
 JÉSSICA: E aparece “Caroline está digitando”, aí vem o mesmo texto do robô. [risos]
 
-CARLA: Coitada da Caroline.
+CARLA: coitada da caroline.
 
 MODERADORA: Sem criar uma nova participante aqui. [risos]
 
@@ -2030,23 +2030,23 @@ THIAGO: O ideal é mostrar posição na fila, tempo estimado e manter a conversa
 
 TODOS: Nossa, sim.
 
-JÉSSICA: Isso dá muita raiva. A pessoa vai pegar um documento e quando volta: “atendimento encerrado por inatividade”.
+JÉSSICA: Isso da muita raiva. A pessoa vai pegar um documento e quando volta: “atendimento encerrado por inatividade”.
 
 DIEGO: E novo protocolo, nova explicação desde o começo.
 
 ROBERTO: O histórico deveria acompanhar. Eu não quero contar a mesma história pra cinco atendentes.
 
-PATRÍCIA: Isso é básico. Quando o profissional diz “eu li o seu caso”, você já sente um alívio.
+PATRÍCIA: isso é básico. quando o profissional diz “eu li o seu caso”, você já sente um alívio. Saiu uns R$ 899 ida e volta.
 
 MODERADORA: O tom do atendimento importa tanto quanto a solução?
 
-PATRÍCIA: Importa, mas não substitui. Empatia sem solução vira teatro.
+PATRÍCIA: Importa, mas nao substitui. Emppatia sem solucao vira teatro.
 
-CARLA: Perfeito.
+CARLA: perfeito.
 
-PATRÍCIA: “Entendo a sua frustração” repetido dez vezes, mas sem fazer nada, começa até a irritar.
+PATRÍCIA: “Entendo a sua frustracao” repetido dez vezes, mas sem fazer nada, comeca ate a irritar.
 
-MARCOS: É frase de treinamento.
+MARCOS: E frase de treinamento.
 
 JÉSSICA: “Compreendo perfeitamente.” Não compreende, porque eu ainda nem expliquei. [risos]
 
@@ -2058,7 +2058,7 @@ SUELI: Isso.
 
 MODERADORA: Vamos pensar especificamente na Aérea Sol. Marcos tem uma relação mais longa com a marca, outros talvez menos. Se vocês tivessem um problema grave com ela, o que faria vocês voltarem a voar?
 
-MARCOS: No meu caso, assumir rápido. Não tentar minimizar. Se cancelou, dizer por que cancelou dentro do que for possível, oferecer boas alternativas, preservar meus compromissos e reconhecer meu histórico. Eu não espero perfeição, mas espero consistência.
+MARCOS: No meu caso, assumir rapido. Nao tentar minimizar. Se cancelou, dizer por que cancelou dentro do que for possivel, oferecer boas alternativas, preservar meus compromissos e reconhecer meu historico. Eu nao espero perfeicao, mas espero consistencia.
 
 CARLA: Pra eu voltar, teria que resolver no mesmo dia. Se eu perco uma reunião importante por falha da Aérea Sol e depois ainda passo semanas cobrando reembolso, acabou. Agora, se ela me coloca em outro voo, mesmo que seja de outra companhia...
 
@@ -2066,25 +2066,25 @@ MODERADORA: LATAM, Gol, Azul...
 
 CARLA: Isso, qualquer opção que me leve. Se ela prioriza o meu objetivo, eu reconheço.
 
-ROBERTO: Eu voltaria se cuidasse da família inteira. Hospedagem adequada se precisar dormir, alimentação sem um voucher que não compra nem um sanduíche, transporte, remarcação conjunta. E depois uma comunicação formal explicando tudo.
+ROBERTO: Eu voltaria se cuidasse da familia inteira. Hospedagem adequada se precisar dormir, alimentacao sem um voucher que nao compra nem um sanduiche, transporte, remarcacao conjunta. E depois uma comunicacao formal explicando tudo.
 
-JÉSSICA: Eu voltaria se não me tratasse pior por ter comprado barato. Se resolver sem multa inventada, devolver o dinheiro certo e não ficar oferecendo crédito como se fosse a única opção. Talvez desse uma nova chance, dependendo do preco.
+JÉSSICA: Eu voltaria se nao me tratasse pior por ter comprado barato. Se resolver sem multa inventada, devolver o dinheiro certo e nao ficar oferecendo credito como se fosse a unica opcao. Talvez desse uma nova chance, dependendo do preco.
 
 MODERADORA: O preço ainda pesa depois de uma experiência ruim?
 
 JÉSSICA: Pesa, claro. Eu não tenho como dizer “nunca mais” e pagar o dobro sempre. Mas eu colocaria um valor no risco. Se a Aérea Sol estivesse R$ 20 mais barata e eu tivesse sofrido muito, escolheria outra. Se estivesse R$ 400 mais barata... aí eu ia pensar. [risos]
 
-DIEGO: A memória do consumidor também tem orçamento.
+DIEGO: a memória do consumidor também tem orçamento.
 
 JÉSSICA: Exatamente.
 
-PATRÍCIA: Eu precisaria perceber mudança, não só receber milhas. Às vezes a compensação é dada em pontos, mas o problema foi falta de informação. O que garante que não vai acontecer de novo?
+PATRÍCIA: Eu precisaria perceber mudanca, nao so receber milhas. As vezes a compensacao e dada em pontos, mas o problema foi falta de informacao. O que garante que nao vai acontecer de novo?
 
 MODERADORA: Então milhas não recuperam confiança?
 
-PATRÍCIA: Sozinhas, não. Podem ser um gesto adicional. Mas confiança volta quando a empresa reconhece o erro, corrige o processo e demonstra isso.
+PATRÍCIA: Sozinhas, não. Podem ser um gesto adicional. Mas confiança volta quadno a empresa rceonhece o erro, corrige o processo e demonstra isso.
 
-THIAGO: Pra mim, se o problema foi digital, eu queria ver o digital corrigido. Tipo, o aplicativo travou no pagamento, cobrou duas vezes e eu passei um mês tentando estornar. Não adianta mandar cupom de 10%. Corrige a duplicidade, mostra que o pagamento foi confirmado uma vez e me dá rastreio do estorno.
+THIAGO: Pra mim, se o problema foi digital, eu queria ver o digital corrigido. Tipo, o aplicativo travou no pagamento, cobrou duas vzes e eu passei um mes tentando estornar. Nao adianta mandar cupom de 10%. Corrrige a duplicidade, mostra que o pagamento foi confirmado uma vez e me da rastreio do estorno.
 
 DIEGO: E sem exigir renúncia de direitos pra aceitar uma solução.
 
@@ -2106,13 +2106,13 @@ THIAGO: “De zero a dez, quanto você recomendaria?” Zero, meu dinheiro sumiu
 
 MODERADORA: Pesquisa na hora errada.
 
-PATRÍCIA: Exatamente. Primeiro encerra o cuidado, depois pergunta.
+PATRÍCIA: Exatamente. Primeiro encerra o cuidado, dpeois pergunta.
 
 SUELI: Eu voltaria se tivesse confiança de que, quando eu precisasse, alguém ia me ajudar. Eu não quero vantagem. Só não quero ficar abandonada num aeroporto que eu não conheço.
 
 MODERADORA: “Não ficar abandonada” aparece bastante.
 
-SUELI: Porque é isso que dá medo. Atrasar uma hora é chato. Mas não saber pra onde ir, onde dormir, se vai ter outro voo... isso dá desespero.
+SUELI: porque é isso que dá medo. atrasar uma hora é chato. mas não saber pra onde ir, onde dormir, se vai ter outro voo... isso dá desespero.
 
 ROBERTO: Com criança também. Você não consegue improvisar do mesmo jeito.
 
@@ -2120,39 +2120,39 @@ MARCOS: E o cliente frequente, por mais acostumado que esteja, também tem limit
 
 MODERADORA: O que quebraria definitivamente a relação com a Aérea Sol?
 
-DIEGO: Mentira comprovada.
+DIEGO: Mnetria comprovada.
 
 CARLA: Falta de resposta.
 
-PATRÍCIA: Omissão num problema de segurança ou assistência.
+PATRÍCIA: Omissao num problema de seguranca ou assistencia. Eu comparo o preco em tres sites antes.
 
-ROBERTO: Separar minha família e agir como se fosse normal.
+ROBERTO: Separar minha familia e agir como se fosse normal.
 
-JÉSSICA: Ficar com meu dinheiro por meses.
+JÉSSICA: Fcar com meu dinheiro por meses.
 
-THIAGO: Cobrança duplicada sem canal que resolva.
+THIAGO: Cobrança duplicada sem canal que resolva. Custou os olhos da cara, serio.
 
 SUELI: Ser maltratada.
 
-MARCOS: Repetição. Um erro acontece. O mesmo erro várias vezes mostra que a empresa não aprendeu.
+MARCOS: Repeticao. Um erro acontece. O mesmo erro varias vezes mostra que a empresa nao aprendeu.
 
 MODERADORA: E o que seria uma recuperação exemplar? Vamos montar quase uma situação ideal. O voo da Aérea Sol foi cancelado. O que acontece?
 
-CARLA: Notificação imediata, antes de eu descobrir no painel.
+CARLA: Notificacao imediata, antes de eu descobrir no painel.
 
-THIAGO: Aplicativo mostra o motivo possível, as opções reais e um botão pra falar com humano.
+THIAGO: Aplicativo mostra o motivo possivel, as opcoes reais e um botao pra falar com humano.
 
 ROBERTO: A reserva inteira é tratada junta.
 
 JÉSSICA: Sem cobrar diferença.
 
-PATRÍCIA: Com informações sobre assistência, alimentação, hotel, transporte, tudo em linguagem simples.
+PATRÍCIA: com informações sobre assistência, alimentação, hotel, transporte, tudo em linguagem simples.
 
 SUELI: E uma pessoa no portão ajudando quem não sabe usar o telefone.
 
 DIEGO: Cada escolha gera comprovante, com valores, horários e condições.
 
-MARCOS: Se houver lugar em outro voo, inclusive de LATAM, Gol ou Azul, oferecer. Não segurar o passageiro só porque quer manter dentro da própria operação.
+MARCOS: Se houver lugar em outro voo, inclusive de LATAM, Gol ou Azul, oferecer. Nao segurar o passageiro so porque quer manter dentro da propria operacao.
 
 CARLA: Isso pra mim seria enorme. Mostrar que quer salvar minha viagem, não só proteger o caixa.
 
@@ -2160,25 +2160,25 @@ MODERADORA: Se não houver voo no mesmo dia?
 
 ROBERTO: Hotel decente, transporte e alimentação compatível. Sem mandar uma família atravessar a cidade de madrugada por conta própria.
 
-PATRÍCIA: E medicamentos, acessibilidade, necessidades individuais precisam ser perguntados.
+PATRÍCIA: E medicamentos, acessibilidade, necessidades individuais precisam ser perguntados. Cobram uma taxa absurda pra marcar assento.
 
 SUELI: Sim. Eu tomo remédio em horário certo. Se minha mala estiver despachada, preciso saber como fazer.
 
-DIEGO: Depois, canal de acompanhamento até o embarque e até qualquer reembolso ser concluído.
+DIEGO: depois, canal de acompanhamento até o embarque e até qualquer reembolso ser concluído.
 
 THIAGO: E sem obrigar a repetir tudo.
 
 MODERADORA: Essa experiência exemplar faria vocês elogiarem a marca, mesmo tendo havido cancelamento?
 
-CARLA: Faria. Eu já elogiei empresa que resolveu bem um problema. Às vezes você conhece a qualidade no problema.
+CARLA: Faria. Eu já elogiei empersa que resolveu bem um problema. Às vezes você conhece a qualidade no problema.
 
-MARCOS: Com certeza. Operação aérea tem imprevisto. O diferencial é o pós-problema.
+MARCOS: Com certeza. Operacao aerea tem imprevisto. O diferencial e o pos-problema.
 
-JÉSSICA: Eu elogiaria, mas não romantizaria, né? [risos] “Parabéns por me dar o que era devido.” Mas reconheceria se fosse ágil.
+JÉSSICA: Eu elogiaria, mas nao romantizaria, ne? [risos] “Parabens por me dar o que era devido.” Mas reconheceria se fosse agil.
 
-PATRÍCIA: Eu reconheceria a postura.
+PATRÍCIA: eu reconheceria a postura. Não vale o que cobram, na minha opinião.
 
-ROBERTO: E provavelmente voltaria.
+ROBERTO: E proovavelmente voltaria.
 
 MODERADORA: Estamos terminando. Eu queria um recado final de cada um para a Aérea Sol. Pode ser curto, pode ser direto, como se alguém da marca estivesse ouvindo agora. Carla?
 
@@ -2186,11 +2186,11 @@ CARLA: Aérea Sol, quando der problema, respeite o tempo do passageiro. Pra quem
 
 MODERADORA: Roberto?
 
-ROBERTO: Olhe a viagem completa, não só o assento. Quando eu estou com minha família, são malas, horários, crianças, hotel, transporte. Se a empresa causou o problema, não transfira pra mim o custo financeiro e emocional de organizar tudo de novo.
+ROBERTO: Olhe a viagem completa, nao so o assento. Quando eu estou com minha familia, sao malas, horarios, criancas, hotel, transporte. Se a empresa causou o problema, nao transfira pra mim o custo financeiro e emocional de organizar tudo de novo.
 
 MODERADORA: Jéssica?
 
-JÉSSICA: Quem compra a tarifa mais barata continua sendo cliente. Não use o preço que eu paguei pra justificar atendimento pior, regra confusa ou demora no reembolso. Barato não significa sem direito.
+JÉSSICA: Quem compra a tarifa mais barata continua sendo cliente. Não use o presso que eu paguei pra justificar atendimento, pior, regra confusa ou demora no reembolso. Barato não significa sem direito.
 
 MODERADORA: Marcos?
 
@@ -2198,7 +2198,7 @@ MARCOS: Eu gosto da Aérea Sol e quero continuar escolhendo a marca, mas fidelid
 
 MODERADORA: Patrícia?
 
-PATRÍCIA: Informação é cuidado. Não escondam incerteza, não deem respostas contraditórias e não substituam solução por frases de empatia. Digam o que aconteceu, o que será feito e em quanto tempo.
+PATRÍCIA: Informação é cuidado. Não escondam incerteza, não deem respostas contraditórias e não substituam solução por frases de empatia. Diam o que aconteceu, o que será feito e em quanto tempo.
 
 MODERADORA: Thiago?
 
@@ -2210,7 +2210,7 @@ SUELI: Tenham paciência. Nem todo mundo sabe usar aplicativo, QR Code, essas co
 
 MODERADORA: Diego?
 
-DIEGO: Não obriguem o passageiro a virar investigador, arquivista e advogado pra conseguir uma solução básica. Registrem tudo, cumpram os prazos e resolvam no primeiro contato sempre que possível. A Justiça não deveria ser o SAC que funciona.
+DIEGO: Nao obriguem o passageiro a virar investigador, arquivista e advogado pra conseguir uma solucao basica. Registrem tudo, cumpram os prazos e resolvam no primeiro contato sempre que possivel. A Justica nao deveria ser o SAC que funciona.
 
 MODERADORA: Se eu resumir, vocês aceitam que problema pode acontecer, mas não aceitam abandono, informação contraditória, canal que empurra pra outro canal, dinheiro preso e tratamento diferente sem justificativa. É isso?
 
@@ -2220,30 +2220,30 @@ PATRÍCIA: Perfeitamente.
 
 ROBERTO: Isso.
 
-THIAGO: E o sistema sabe muita coisa na hora de vender. Tem que saber também na hora de resolver.
+THIAGO: E o sistema sabe muita coisa na hora de vender. Tem que saber tambem na hora de resolver.
 
 JÉSSICA: Verdade.
 
 MARCOS: A marca se prova nessa hora.
 
-SUELI: E com educação.
+SUELI: E com educacao.
 
 DIEGO: Solução, prazo e prova do que foi combinado.
 
 MODERADORA: Solução, prazo, coerência e educação. Acho que fecha bem. Obrigada, gente.
 
-CARLA: Obrigada.
+CARLA: obrigada.
 
 ROBERTO: Valeu.
 
 JÉSSICA: Obrigada.
 
-MARCOS: Obrigado.
+MARCOS: obrigado.
 
-PATRÍCIA: Foi ótimo.
+PATRÍCIA: Foi otimo. O cara do balcão foi super gente boa, aliás.
 
 THIAGO: Valeu, pessoal.
 
-SUELI: Obrigada, viu?
+SUELI: obrigada, viu?
 
-DIEGO: Obrigado.
+DIEGO: obrigado.

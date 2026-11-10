@@ -22,15 +22,20 @@ slides também têm o botão "copiar").
 ## 1. Contar sem e com uma habilidade (`1-contagem/`)
 
 - `entrevista/grupo_focal_aerea_sol.txt`: a transcrição de um grupo focal
-  fictício (916 falas, uma por linha, `NOME: texto`).
+  fictício (916 falas, uma por linha, `NOME: texto`), com a bagunça de uma
+  transcrição real: falas sem acento ou em maiúsculas, erros de digitação
+  ("atrazo", "bagajem", "prço") e muitos jeitos de falar de preço ("valor",
+  "salgado", "pechincha", "o cara do balcão"). Gerada a partir da original por
+  `scripts/dificultar_entrevista.py`.
 - **Sem habilidade:** abra uma conversa nova, anexe a transcrição e cole
   `sem-habilidade/pedido.md`. Repita numa segunda conversa nova e compare as
   tabelas. A pergunta pede quatro temas por pessoa (36 números) de propósito:
   com uma pergunta só (preço), o ChatGPT chegou a repetir o mesmo total.
 - **Com habilidade:** numa conversa nova, anexe a transcrição e cole
   `com-habilidade/pedido.md`. A habilidade roda o script e dá sempre a mesma
-  tabela: preço 162, atraso 41, bagagem 89, atendimento 39 (Jéssica 69 em
-  preço, Diego 11 em atendimento...). Nos trechos, "filmando na **cara**"
+  tabela: preço 211, atraso 38, bagagem 84, atendimento 37 (Jéssica 73 em
+  preço, Diego 10 em atendimento...). Erros como "atrazo" e "bagajem" ficam de
+  fora da regra: bom assunto para a interpretação. Nos trechos, "filmando na **cara**"
   aparece contado como preço: o erro é visível, e se repete.
 
 ## 2. Baixar as avaliações dos bancos (`2-baixar-avaliacoes/`)
