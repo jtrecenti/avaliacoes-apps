@@ -1,5 +1,5 @@
 Use a habilidade contar-termos.
 
-Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço?
+Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço, de atraso, de bagagem e de atendimento?
 
-Não conte a moderadora. Quero um número por pessoa e o total.
+Não conte a moderadora. Quero uma tabela: uma linha por pessoa, uma coluna por tema, e o total de cada tema.

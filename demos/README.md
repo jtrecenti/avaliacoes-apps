@@ -24,12 +24,13 @@ slides também têm o botão "copiar").
 - `entrevista/grupo_focal_aerea_sol.txt`: a transcrição de um grupo focal
   fictício (916 falas, uma por linha, `NOME: texto`).
 - **Sem habilidade:** abra uma conversa nova, anexe a transcrição e cole
-  `sem-habilidade/pedido.md`. Repita numa segunda conversa nova e compare os
-  totais. Na preparação do curso de executivos, três conversas deram 157, 161 e
-  210 falas sobre preço.
+  `sem-habilidade/pedido.md`. Repita numa segunda conversa nova e compare as
+  tabelas. A pergunta pede quatro temas por pessoa (36 números) de propósito:
+  com uma pergunta só (preço), o ChatGPT chegou a repetir o mesmo total.
 - **Com habilidade:** numa conversa nova, anexe a transcrição e cole
-  `com-habilidade/pedido.md`. A habilidade roda o script e dá sempre 162
-  (Jéssica 69, Thiago 21, Roberto 20...). Nos trechos, "filmando na **cara**"
+  `com-habilidade/pedido.md`. A habilidade roda o script e dá sempre a mesma
+  tabela: preço 162, atraso 41, bagagem 89, atendimento 39 (Jéssica 69 em
+  preço, Diego 11 em atendimento...). Nos trechos, "filmando na **cara**"
   aparece contado como preço: o erro é visível, e se repete.
 
 ## 2. Baixar as avaliações dos bancos (`2-baixar-avaliacoes/`)

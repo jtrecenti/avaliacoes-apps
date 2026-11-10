@@ -94,28 +94,30 @@ sair igual toda vez.
 Uma agência fez um **grupo focal** com oito viajantes frequentes para a Aérea
 Sol, uma companhia aérea fictícia: quase duas horas de conversa, **916 falas**,
 18 mil palavras. Antes de ler tudo, a diretoria quer saber: **quantas vezes
-cada participante falou de preço?** Vamos perguntar ao ChatGPT do jeito
-comum, em duas conversas novas, e depois com uma habilidade que conta com um
-script.
+cada participante falou de preço, de atraso, de bagagem e de
+atendimento?** Vamos perguntar ao ChatGPT do jeito comum, em duas conversas
+novas, e depois com uma habilidade que conta com um script.
 :::
 
 ::: {.colunas style="margin-top:.5rem"}
 ::: {}
 ::: {.prompt .prompt-estruturado data-quem="Sem habilidade: duas conversas novas"}
-Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
-preço?
+Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou
+de preço, de atraso, de bagagem e de atendimento?
 
-Não conte a moderadora. Quero um número por pessoa e o total.
+Não conte a moderadora. Quero uma tabela: uma linha por pessoa, uma coluna por
+tema, e o total de cada tema.
 :::
 :::
 ::: {}
 ::: {.prompt .prompt-estruturado data-quem="Com habilidade: uma conversa nova"}
 Use a habilidade contar-termos.
 
-Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
-preço?
+Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou
+de preço, de atraso, de bagagem e de atendimento?
 
-Não conte a moderadora. Quero um número por pessoa e o total.
+Não conte a moderadora. Quero uma tabela: uma linha por pessoa, uma coluna por
+tema, e o total de cada tema.
 :::
 :::
 :::
