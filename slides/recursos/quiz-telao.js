@@ -43,7 +43,8 @@
   /* ---------- estado no banco ------------------------------------------- */
 
   async function publicar(pub) {
-    if (!Q || !chave()) throw new Error("sem chave");
+    if (!Q) throw new Error("sem banco");
+    if (!chave()) throw new Error("sem chave");
     await Q.gravar("estado", { chave: chave(), pub });
   }
 
@@ -93,11 +94,20 @@
       </div>`;
     const inp = caixa.querySelector("input"), msg = caixa.querySelector(".qz-msg");
     inp.value = chave();
-    inp.addEventListener("keydown", (e) => e.stopPropagation());
+    inp.addEventListener("keydown", (e) => {
+      e.stopPropagation();
+      if (e.key === "Enter") caixa.querySelector(".qz-prof button").click();
+    });
     caixa.querySelector("button").addEventListener("click", async () => {
       try { localStorage.setItem(CHAVE_LS, inp.value.trim()); } catch { /* só nesta sessão */ }
-      try { await abrirSala(); msg.textContent = "sala aberta"; caixa.querySelector(".qz-prof").classList.add("ok"); }
-      catch (e) { msg.textContent = e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave"; }
+      const prof = caixa.querySelector(".qz-prof");
+      msg.textContent = "abrindo…";
+      try { await abrirSala(); msg.textContent = "sala aberta ✓"; prof.classList.add("ok"); }
+      catch (e) {
+        prof.classList.remove("ok");
+        msg.textContent = e.message === "sem banco" ? "sem conexão com o banco: recarregue a página"
+          : e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave";
+      }
     });
     if (chave()) caixa.querySelector(".qz-prof").classList.add("ok");
   }

@@ -1004,7 +1004,10 @@ background: var(--turquesa);
 .qz-nome:nth-child(4n+2) { background: #1d6fd6; }
 .qz-nome:nth-child(4n+3) { background: #d59a00; }
 .qz-nome:nth-child(4n+4) { background: #e50505; }
-.qz-prof { position: absolute; right: 0; bottom: -10px; font-size: .4em; display: flex; gap: .4rem; align-items: center; opacity: .55; }
+.qz-prof { position: relative; z-index: 10; margin-top: 1.2rem; font-size: .48em; display: flex; gap: .5rem; align-items: center; opacity: .75; }
+.qz-prof:hover, .qz-prof:focus-within { opacity: 1; }
+.qz-prof .qz-msg { font-weight: 700; }
+.qz-prof.ok .qz-msg { color: var(--turquesa); }
 .qz-prof.ok input { width: 7rem; }
 .qz-prof input, .qz-prof button { font: inherit; padding: .2rem .4rem; border: 1px solid var(--superficie-borda); border-radius: 6px; background: var(--fundo); color: var(--texto); }
 
@@ -1058,7 +1061,7 @@ background: var(--marca); color: #fff;
 .qz-vazio { color: var(--texto-fraco); font-size: .7em; }
 .qz-confete { position: absolute; inset: -60px 0 0 0; pointer-events: none; overflow: hidden; z-index: 5; }
 .qz-confete i { position: absolute; top: 0; width: 12px; height: 18px; border-radius: 2px; }
-.quiz-entrada { position: relative; min-height: 470px; }.quiz[data-quiz] { display: block; gap: 0; align-items: initial; margin-top: 0; }
+.quiz-entrada { position: relative; }.quiz[data-quiz] { display: block; gap: 0; align-items: initial; margin-top: 0; }
 .qz-url { white-space: nowrap; font-size: .52em; }
 .qz-enunciado { font-size: .95em; }.qz-op { min-height: 4.6rem; font-size: .8em; }
 .qz-opcoes { gap: .9rem; margin-top: 1rem; }
@@ -5028,7 +5031,8 @@ window.QUIZ_PERGUNTAS = {
   /* ---------- estado no banco ------------------------------------------- */
 
   async function publicar(pub) {
-    if (!Q || !chave()) throw new Error("sem chave");
+    if (!Q) throw new Error("sem banco");
+    if (!chave()) throw new Error("sem chave");
     await Q.gravar("estado", { chave: chave(), pub });
   }
 
@@ -5078,11 +5082,20 @@ window.QUIZ_PERGUNTAS = {
       </div>`;
     const inp = caixa.querySelector("input"), msg = caixa.querySelector(".qz-msg");
     inp.value = chave();
-    inp.addEventListener("keydown", (e) => e.stopPropagation());
+    inp.addEventListener("keydown", (e) => {
+      e.stopPropagation();
+      if (e.key === "Enter") caixa.querySelector(".qz-prof button").click();
+    });
     caixa.querySelector("button").addEventListener("click", async () => {
       try { localStorage.setItem(CHAVE_LS, inp.value.trim()); } catch { /* só nesta sessão */ }
-      try { await abrirSala(); msg.textContent = "sala aberta"; caixa.querySelector(".qz-prof").classList.add("ok"); }
-      catch (e) { msg.textContent = e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave"; }
+      const prof = caixa.querySelector(".qz-prof");
+      msg.textContent = "abrindo…";
+      try { await abrirSala(); msg.textContent = "sala aberta ✓"; prof.classList.add("ok"); }
+      catch (e) {
+        prof.classList.remove("ok");
+        msg.textContent = e.message === "sem banco" ? "sem conexão com o banco: recarregue a página"
+          : e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave";
+      }
     });
     if (chave()) caixa.querySelector(".qz-prof").classList.add("ok");
   }
