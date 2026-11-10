@@ -5265,3 +5265,524 @@
 {"marca": "5355e0fff89676347abe95f4f5bf670646261ea5", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.97}
 {"marca": "41aa408ceeb14e7a3e572d8be60280e230dcfa7d", "tema": "elogio geral", "conf_tema": 0.96, "reclamacao": false, "conf_reclamacao": 0.97}
 {"marca": "3e4278b6143e685383cae43f9f3408976e23d3c7", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "4dc1c203b898138e18e0ea26e1455a5717743944", "tema": "app com falha", "conf_tema": 0.51, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "b8408114631a1cef5e60fc78ed0600956504c0f2", "tema": "app com falha", "conf_tema": 0.7, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "64b21439592d2cc54bcd13fc35b4694b114190f5", "tema": "app com falha", "conf_tema": 0.73, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "d60f40b24b0487f1b3b339748ce3ed156c098b56", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a38035f34a348b6fc2f2f87a4f89826989b7fa59", "tema": "app com falha", "conf_tema": 0.71, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f1625d332a97251200fc11bb880a7fd178a5ae05", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "e1ea54087c0c3484fdcc842a6b3e730f6bba3d53", "tema": "app com falha", "conf_tema": 0.6, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "615a5442565518f5b6a1c6a6414e372809186302", "tema": "app com falha", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f5ad41cf1960796d0555dbc7bc8e419edfbc1623", "tema": "app com falha", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e83fa1232f19a29675f681272f380353f10ae27d", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "75f227763391fa037964b88d4318d46993ecb961", "tema": "app com falha", "conf_tema": 0.93, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "afba95fad7f36aba34e92e4f51cd3e8ee0bfaa21", "tema": "app com falha", "conf_tema": 0.9, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "712a87ba5cbaaf84a0e87adfeb40366ca6487b51", "tema": "app com falha", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "240f59097a70e53895ad62c8225ab0461b979457", "tema": "elogio geral", "conf_tema": 0.9, "reclamacao": false, "conf_reclamacao": 0.95}
+{"marca": "7a00bbbed28f5a8b266f02af49b40d5c1473c10d", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "94826310404d3a184563dbec28d5d96c7935e851", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "4f8762ac1c3b5e9d498df7b97f51f6a15dbc8b71", "tema": "acesso e login", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ad9063a32b93e8eb63a8c7daa79cf58909536915", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "bd7e74b4abd511b1b7e1a9548e1fd9aabf6eb318", "tema": "acesso e login", "conf_tema": 0.55, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "457c7d95f6a8cdd0b5e4d1ea09394015d7dc559f", "tema": "app com falha", "conf_tema": 0.94, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "19d92e248dac7277d0eada65ef57ed25bdd4e4c4", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "57e4039bc51518bfaa80db0cf2094ce7119b19de", "tema": "acesso e login", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "793f548af2d3afeeeca7022b403cd486127dfaaf", "tema": "pix e pagamentos", "conf_tema": 0.52, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e7294e45ef90b657ffc674e0e11b5a15cc70031e", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "b1e41f80237eddd47cba47ebd3e64052ba8039c2", "tema": "app com falha", "conf_tema": 0.8, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "3a48f0c81a05216e21864a156280dca44769d2c9", "tema": "app com falha", "conf_tema": 0.56, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5bd828a7e5e8f8478fe87013976e3bd28032fe5d", "tema": "app com falha", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e822ff3608e3aa60037033adb6c60954c183aa5f", "tema": "app com falha", "conf_tema": 0.7, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "be993f523b29c978c71e211c2919e871312f5b86", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "250a79bbee70f2dab0525344dacabb2a606d0f3f", "tema": "app com falha", "conf_tema": 0.64, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "006e166cf0ce8fc8aea03cad692c2471b103aa43", "tema": "acesso e login", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "374a905736d19da604f0e57b0c354418ae46fa5d", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "3ede157576b1180089a6af1f6734be3dcc9149f4", "tema": "acesso e login", "conf_tema": 0.6, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "62de2259ae9c493341dc088ff11431dcf7e77726", "tema": "app com falha", "conf_tema": 0.71, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "dd82d21e1e8a6579490c8decbb7ee57a8641212b", "tema": "app com falha", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "acda52aab7828a4eb9cd3ef392c196f33f977836", "tema": "acesso e login", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "6ffc30e46c2c55e835e14f433b81e79f4fa0d180", "tema": "acesso e login", "conf_tema": 0.89, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "e3a88d3b80c14e615a7a9013cc06a7626afc8661", "tema": "app com falha", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "fecb7c2b0471407fb788e986c25d8c08c8e98503", "tema": "app com falha", "conf_tema": 0.64, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "8f16409e725f27c3b732565ed9f2985327de3cfa", "tema": "pix e pagamentos", "conf_tema": 0.83, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "908ebaecca4f40fbc4c953b050e0cfe34a28c880", "tema": "app com falha", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ecb77210b6eafffcc2622472e6bc7324925e0cff", "tema": "acesso e login", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "8994e5596f1c559c44a2add4365b4e42988494aa", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "9aea8a3fe7e590e10158649a6f1c27731cc5f88a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "c2eecedfbb1f92db01f3c3b04a596f43fd2635b8", "tema": "acesso e login", "conf_tema": 0.55, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "724766e3ab55ce6e41a72cdb103aedc0d3c8c39e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ebd7228ac500b88561937b538a3e1ecc7923ee59", "tema": "app com falha", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "0b526a1755150888d306495dbf60f363249e4264", "tema": "app com falha", "conf_tema": 0.74, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "a39e7a0c993252da2e1352466d828691f64f836e", "tema": "acesso e login", "conf_tema": 0.53, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "7e78c15266d547a35338559319a453253d1dbaa5", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "dc7fe0e73742d80a52110f3dd74a93d03e5a1ad8", "tema": "elogio geral", "conf_tema": 0.44, "reclamacao": true, "conf_reclamacao": 0.88}
+{"marca": "06af8536808f54ff23a0fe9d83825f9299236a64", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2827b4a84859cd5f9574163b66fd8409a8941ec1", "tema": "atendimento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "8ea7dba1d6ad686ec540de8f2b94d0fe94ea5d28", "tema": "app com falha", "conf_tema": 0.73, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "46e2a9dc45e5854e1da8bad46ba251c38b618800", "tema": "acesso e login", "conf_tema": 0.94, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "cd3bbacd3b6d6bee65832d6e7705c3fd4d81aea6", "tema": "outro", "conf_tema": 0.63, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "96f87941eb993674fb5c873aaa25f1cf4270fdf9", "tema": "app com falha", "conf_tema": 0.66, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "01e653449cf93d18bc38f1eba4fcd5a97339f259", "tema": "app com falha", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "2ebe031dd6d9f7176ec45fa6f0d6f83fa761d65d", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b826a050ab94070e30d45e74530e8cb7cf882d28", "tema": "sugestão de recurso", "conf_tema": 0.9, "reclamacao": true, "conf_reclamacao": 0.88}
+{"marca": "1563837f877cd8f65044cb2599e0cbd5093dca84", "tema": "elogio geral", "conf_tema": 0.93, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "d66fdb9129a081fb7fe52e57ddb4672a93a8c335", "tema": "atendimento", "conf_tema": 0.96, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "cdc679a4145bd8c0781e7d06e5755e2b07d61dc5", "tema": "elogio geral", "conf_tema": 0.94, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "2878d4416a0460dd1a46b27708d20c2a3a44068f", "tema": "elogio geral", "conf_tema": 0.48, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "7e2965f320195ec64840fce19d1bf5c180d81541", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8a82e49f42172dd4e3d41c8c474d1d3054f4b2c6", "tema": "outro", "conf_tema": 0.57, "reclamacao": true, "conf_reclamacao": 0.75}
+{"marca": "c9adf76ccdfdfda178bba3d21ebd27f306b18485", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "debc41999c692bd6b16f3b392cba6192ef169b5c", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "0fff9cd25c16c759d985b42a81c024ddb5311022", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "4e305e3337fd006ae14e95b4dd1a5c5813e692f2", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "374dc4d4c1ac5fc8e0679eff62d76fea2ab53da1", "tema": "cartão e fatura", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "3e939856735cb7c8b437f55d80fe2db79d5cfd84", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "e1c859e572bb6803db206eb91b5e457e7582e815", "tema": "pix e pagamentos", "conf_tema": 0.59, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "5d25f00077e810bb4efcd00dce0ef685b4f18fc9", "tema": "outro", "conf_tema": 0.62, "reclamacao": false, "conf_reclamacao": 0.87}
+{"marca": "f63964e3f74f05580a477b7021a396c853f56f95", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "11ab30470b8e60d7e8f811395a2ba59d9469b452", "tema": "outro", "conf_tema": 0.85, "reclamacao": false, "conf_reclamacao": 0.84}
+{"marca": "60d06e877fa0ac7eb823179026d5ede9c9be3dca", "tema": "outro", "conf_tema": 0.55, "reclamacao": false, "conf_reclamacao": 0.91}
+{"marca": "766ac58eca2e1350d59e21a857550bcb43a16de5", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "fc2abf971400e78e9892902acd478bbacac1caac", "tema": "elogio geral", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "b22a6a74d4bcdc926e6f1901f714c1656214a05d", "tema": "pix e pagamentos", "conf_tema": 0.59, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f2cf316c801ef61597b557b47dc1002a1b27c8db", "tema": "elogio geral", "conf_tema": 0.71, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a43fecb99c522027f0a8d23e8e816754b761f9d4", "tema": "outro", "conf_tema": 0.58, "reclamacao": false, "conf_reclamacao": 0.89}
+{"marca": "e0db9f5b91636ca7661cdb44c79b858796fcbea3", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "e1ab72d1dfac88ff421b0951b94e2a5932b443d0", "tema": "pix e pagamentos", "conf_tema": 0.79, "reclamacao": true, "conf_reclamacao": 0.71}
+{"marca": "5963d5a2178ff45eb815851aab2d81506eb30b7f", "tema": "app com falha", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5c31fe0a83cc988ec179f85761ba79b8220208de", "tema": "app com falha", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "55b42acbfe4980e0b637926edad10a3445d9a042", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b260713f33840f6b901bb40ac54b10622c5ae947", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "584603af41742697f4b1b370eeb0ef1be12d73f7", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "9ccb54411a5c2f68e1467b3bd8c1859b51e0dcaa", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "0a5d67d63ed75ad40bd9b43b74fb03d137cfbf3b", "tema": "app com falha", "conf_tema": 0.49, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "b0cd903a4e24b4962c023ddc9678a1e75d5ec323", "tema": "cartão e fatura", "conf_tema": 0.53, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "ad4e3c09d5a8278c91d418b1717cf5fedcc84a96", "tema": "crítica geral", "conf_tema": 0.71, "reclamacao": true, "conf_reclamacao": 0.95}
+{"marca": "e06c0b70e32265860fd6f05c1c8bee2609800dda", "tema": "acesso e login", "conf_tema": 0.64, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "20bbe24fdbb5730055c6bc2fce3f4462852655d3", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "48f7fd4cf4631a05823cdb28ff0aa4f0a179f230", "tema": "app com falha", "conf_tema": 0.6, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "0916803fc69f1632a3d028509688ed92946e4f3a", "tema": "pix e pagamentos", "conf_tema": 0.59, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "823c4341c8f69868fe7d4ee81bdb143f07fcd6ef", "tema": "app com falha", "conf_tema": 0.83, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "c80c204888410b093a06fdb1473e28d47907d882", "tema": "app com falha", "conf_tema": 0.78, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "2053b1fd33783f132d691562e2e827a9e8c2191d", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "a07335ce0c468a24fee42ea7d0eaa6ac068a9a1c", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "94d419a3cdc7eca268d6a5cd296e694d9335b3fd", "tema": "acesso e login", "conf_tema": 0.87, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f4c52c48eb092572b41ae01d27f5de0310961dde", "tema": "acesso e login", "conf_tema": 0.85, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "44e794672320d38c01aae685caad60ce63c83412", "tema": "app com falha", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "2a01dcb3d93b39a5871ce4fda92036d8953dceba", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5b57cf671c02423510c6256733c334bcf9cd192f", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "e6fe11e0c4aa7f5f07b205e68c043c3914199ee2", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f8b3a2b09203af7f34d59d9061ba90bfb26b237d", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "d8bbd22d9ad05ee52f0cc408de079a58b61b0d14", "tema": "atendimento", "conf_tema": 0.86, "reclamacao": true, "conf_reclamacao": 0.75}
+{"marca": "9ec2fe4de6816da12cdae835e5882ac23fd862ef", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "1a3b3d2261ec9dcf6147707f6e5e0b1bf1e7a5e8", "tema": "app com falha", "conf_tema": 0.57, "reclamacao": true, "conf_reclamacao": 0.95}
+{"marca": "35a3ce03a0a38a1f60c4285fbc3cb045fcdfe374", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5042f6cee9f3c3542c30c88fd30e842869af2fbc", "tema": "crítica geral", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "fb2baf6ba8e69d22434642a7b96b887aadc41c1f", "tema": "crédito e limite", "conf_tema": 0.76, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "db25579c066c1642780d0a39b0bacbbc03199677", "tema": "app com falha", "conf_tema": 0.57, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "3e6de0a67c32b0bc62c1a538377aa3952b09d5e5", "tema": "crítica geral", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.94}
+{"marca": "8cb0bac8982ef76842d105a297ed9e29bc3f289a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8f9181d9ef22513116dde9a178b0157becb30fd5", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ac1105164bfd5efc6c1ef3fd746f1c72e995de37", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8c30765f59d8b288043d6048a66fd36b671d3e02", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "1e291de7c6a20a3b1f1e1c0e9a2837c3b7f88f93", "tema": "atendimento", "conf_tema": 0.65, "reclamacao": true, "conf_reclamacao": 0.81}
+{"marca": "5bf4f8547fbb36306329a8702f699ee8d25f7e8a", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5caa83c6b80cc030ece7a06fc0dc1ae857ba1285", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "e7a406c8d33616a6cc40ba239cfaaa12fb4a92c8", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "feeafa44c7d9a929d475b5b1d3b54022ce4a90e2", "tema": "outro", "conf_tema": 0.59, "reclamacao": false, "conf_reclamacao": 0.9}
+{"marca": "00b142c6bb4769bea4f29797e7ed2b8305f73d35", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "0e28a02ac3ae928746da51095e45642645152375", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "dbc260d4e77245fff28e15accf2dc65ba62f9ec8", "tema": "outro", "conf_tema": 0.53, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8c0af68ee24d116d2f1a7e3deb9ded4947540a94", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5ad4794d6313bf109f6ba63c3e3bcab30c748e37", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "571dad07a531286d03ccb632e9bcd60b88d58c6d", "tema": "app com falha", "conf_tema": 0.74, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "df0bb61de919bb17d8f0bee41f8db3b44a6839a1", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "455182d4ac353464be6abc7f5fb879303c23f435", "tema": "acesso e login", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "a112f54b46a3adddca1402ef2b6acaaa913056ca", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "d7d5f971c8bc9d73b5e66d200b3ebb5de88d92c2", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d8bdca2f6ef1650490a40a7337a407d396dea322", "tema": "cartão e fatura", "conf_tema": 0.78, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "c895dd1ec58dc22aa8c9e970073406ab0310d353", "tema": "crítica geral", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "9c60619f34cdb430462f1c61a9a50c2f951b120b", "tema": "app com falha", "conf_tema": 0.74, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "c7e9b1736fd2bed06c42a355e566aa806ae51f5b", "tema": "app com falha", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "56af12fcb1327bff884b49193d886cf43284c3e8", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2ac97bb73d08d32dbf23eaebc2d57877867c5157", "tema": "elogio geral", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "454279e8ad448f142be3434155a3a6e93ee1e8ec", "tema": "elogio geral", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "3051e1cd4a6d16ec01c2a65962218dd2cecdea86", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "3a1c27787c7556d2d9cfc762a1ed7073dff7f026", "tema": "golpe e segurança", "conf_tema": 0.62, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "0490de49c626cee509a07a463e8cae7194d20556", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "943197febbf94d47be431a769e2429a90a14c736", "tema": "atendimento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.91}
+{"marca": "029c60b69f0ab237bf03f2237fb741ef4b27f292", "tema": "app com falha", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "cb3fe437ba44639ed8e71c5ff0eb9703582267a1", "tema": "elogio geral", "conf_tema": 0.65, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "e595c652022f411f948843df221a1ae5448cd678", "tema": "crítica geral", "conf_tema": 0.52, "reclamacao": true, "conf_reclamacao": 0.76}
+{"marca": "4fbe49ba1665c2baaf95e5fef5b40f1b70cb4d34", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "92a32cea9bca8db95a46ec263f0ac2d89926fe37", "tema": "pix e pagamentos", "conf_tema": 0.54, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "9a8092b577a12f029d5824e1ce84162bbda4e3a4", "tema": "atendimento", "conf_tema": 0.76, "reclamacao": true, "conf_reclamacao": 0.55}
+{"marca": "7a8ab6fc7e0fbb256b8fb53c828c6005ccbbbbc5", "tema": "app com falha", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.83}
+{"marca": "946b40808cac4a96f727ae1d510014c66c50e830", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "3d8ec0413f6bed6ee7e02f15a26a88e1cc340d51", "tema": "elogio geral", "conf_tema": 0.67, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "4a06474d2cb3c785423b3d5743a1b53cb21bb843", "tema": "app com falha", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "aa7d82b3e15d73f9e0a78d9a5ecd411f2cacc519", "tema": "outro", "conf_tema": 0.77, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "94ad324a141e8fb80150f2775618b0387d768eeb", "tema": "elogio geral", "conf_tema": 0.96, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "dddb9be3cc5e8215a36d3273b001e12a33fc7acf", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.93}
+{"marca": "aa2721753de403427744b71a37060f3b5447f388", "tema": "tarifas e cobranças", "conf_tema": 0.93, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "2357d0f4e2e11eb86a62c3893712a2e18f984681", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "7ae76989fd538a77828afd4860865b4ae218cd70", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "dd6257be8d51ddc019055782075c7f6d3671f49e", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "3f22a0912c290a5142fe4b5770de730e7a86f56c", "tema": "app com falha", "conf_tema": 0.9, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "99366cf46b3eedbb53db900422db0a72b48627b2", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "553f223b34c4ca5cc25a970fa5fc9474ac626c8b", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "fa4f3c5c435801ac30436f28948a574023762ed6", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "9f40f36dd9249da49d4b6734a65d5460c01245bb", "tema": "acesso e login", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f4b54c2d144dacf3c79b2f100d3860f699fa7c90", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2d3cddb6b32a0851945f12ab8862dbfef1a2dd6f", "tema": "elogio geral", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ba9f5722ff5aa873ca11077c21f761929b7f5439", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "38efe6b70b4ba03e3a664bc97a9bef3572b70e3e", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "14b6047a5970acfba4fdea40bb59b690ce21ec71", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "132458a506d3f9b440d442d56b33c665b0730fb2", "tema": "outro", "conf_tema": 0.59, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "9cc9459695f76ac8b8e156ca0ad6f3c96cc2097e", "tema": "atendimento", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "70a29ac90addaceaf700477ec817c8d8c9a5cf89", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "90f259ab57fa860fbbe0589fe651ce9b987d4493", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "6f02c58fffdec6ea78f2cdec48b0c01b027e8b3a", "tema": "elogio geral", "conf_tema": 0.9, "reclamacao": false, "conf_reclamacao": 0.91}
+{"marca": "ac41c4766a0e691ecd217a0f6623e99bfea59743", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "28d5029734cc78d101fce27a9298315ff3751caf", "tema": "outro", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "97c15b70ddcc250635ff244621511d38f8db5fc6", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d17f103169c215116428bcd1791d0eda46051ca2", "tema": "pix e pagamentos", "conf_tema": 0.82, "reclamacao": false, "conf_reclamacao": 0.87}
+{"marca": "184e6500d5295efcc2b80977ec847bbad68c449e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "85c129641b7534bec593478562f9ffc68c4bb9ca", "tema": "elogio geral", "conf_tema": 0.93, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "3f6c19c03efb9e82fefd7525dee5e16d9ba02ca5", "tema": "sugestão de recurso", "conf_tema": 0.76, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "6538d23b2630ad15cedf710348e61631ede39faf", "tema": "acesso e login", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "db9fc9de6917f493a62c620dc6533391d27151b0", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b7b391f71d493bb87c219faa334e70225956e197", "tema": "app com falha", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "3b5abee50827fbd7aa6e01a5a5a04dece555e64d", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2f1f7e32871a5b877c8eaad08341317189136c6e", "tema": "elogio geral", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "29451838489fed6afa22fb0bfdc03ebca4a8949f", "tema": "elogio geral", "conf_tema": 0.93, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "4fd70d0e318d32f5c14b32a558108218d113dac7", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b2c7fedbeb659d97df97b63819e21163c27a0a5b", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ac2e0a37937a2bd6c064cc213ae272a124299f1a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "4dc2852a84310d2853913868201049b534705794", "tema": "conta bloqueada ou encerrada", "conf_tema": 0.57, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "2f759461d869e996ca8fcdaf6892cf93f1b00a90", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "de4654ae1502c65d5c58f384d1b97ad61a83ef42", "tema": "atendimento", "conf_tema": 0.83, "reclamacao": false, "conf_reclamacao": 0.9}
+{"marca": "f3a779a99ed8502b63067e7780769d14b394e926", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f37753f749e6f1c4ea8914748ebf106095b1bbb4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8b08ceea6908005a67a10ca36089a5645364b2ee", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "6f7694416776255afa5fa2c908d89a61e8cbcd42", "tema": "elogio geral", "conf_tema": 0.91, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "88ea89a7f91866f360391da95eccc0266d206c7b", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "441c1d878df28f4ced5b8a9e338d2d514cea24d3", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "c3a1ee44bc2ac083aee404c3e43d168cd0b7530a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "daf3f138e97d13b742f6c8fd9b43bfa14d15a6c4", "tema": "atendimento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "7f5943fb5c938cf801240765d779ebc7ade5e25b", "tema": "pix e pagamentos", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.87}
+{"marca": "c25531d1a81a7be618543cb7b8dd84b17b517871", "tema": "elogio geral", "conf_tema": 0.61, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "0853df4e90b5bc3a26d81586c620df4cc6aaeef5", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ecf09c3982387bbefd820ee99b59588c07b1400d", "tema": "elogio geral", "conf_tema": 0.65, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "e4ce37ed36fdb509b6f6e7f7f33f83aa17979363", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "fb0bcdbd5e97d02667e7edc93c381d2b560ec71e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "7ecba0887a284f037ea5d4eee8c52b0567ebe9ef", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "8a0a294e4c699c93f065fbb0fa580d0a104f1057", "tema": "crítica geral", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "63f8ddb521d084622af3783da0e0e411a1b724b4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "01eed57b64c0e5518b1776b85f62b53225d7cf65", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "709d4ba86f165095473989618a78a2ec9ad52bee", "tema": "crítica geral", "conf_tema": 0.55, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e3326fa79e65048cae2e18b10af4e24d9854b74f", "tema": "acesso e login", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "2b7c648af9dd0a4a13be9e8ecd5088715d9ce931", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b020793d88a15d960a1d7e55f0d62fe1d51fa196", "tema": "crítica geral", "conf_tema": 0.87, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "ecb18e703747b6a568f5c102ea3583a4931a61a6", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "359a63c6d74337c394ef26331cb0e659ed07936e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "c0de4af04e140fcfbd7fb44021ac86c6486f1603", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "42b9a3258f2b312a35b2660d6fa714e06499a928", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2240fa3a5e98ee07151f811d655c82ae681923ac", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "dd10c93b0a883d94c667ebea6269acc2bc201616", "tema": "crédito e limite", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "86cd87cf33d5ed60bb5696c540e8039869cea987", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "d45aae4833bfb5a99243ef9f5cd59ba580bec45f", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "6d655dc603ad33006abfd027c5a3c1bafe950720", "tema": "elogio geral", "conf_tema": 0.58, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d656f220c03e744122366e12701a97688310914d", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "eab529e7fcba7ac7d1f70401e65793aa7553acd9", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f6895986537c27a5df09078d26f9834c2ea31e39", "tema": "elogio geral", "conf_tema": 0.57, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "23088086f8e4d31626d35f7c381878697c053bfa", "tema": "app com falha", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "c684dd748b960b26a98f363eec6b1a0791e356b8", "tema": "app com falha", "conf_tema": 0.74, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "bfa9c620d8d04f126358b182e1c2be1913905797", "tema": "elogio geral", "conf_tema": 0.89, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "df1366e8a945b0e506acb839195068e84f550e17", "tema": "pix e pagamentos", "conf_tema": 0.75, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "170a11fa0774e5feae12b0be18c37391344662c1", "tema": "outro", "conf_tema": 0.45, "reclamacao": true, "conf_reclamacao": 0.84}
+{"marca": "b71d40988ecabfd80ec0799d596b59b6347c191a", "tema": "atendimento", "conf_tema": 0.83, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "c0f3dc854f3f60e10d693f5f8bc63087689fe808", "tema": "acesso e login", "conf_tema": 0.82, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "20d29f7591714fa9466944be3ba67abdee51e1ce", "tema": "atendimento", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "d896336b1f4cd10f917c899665e671e1ef6b5059", "tema": "acesso e login", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5d5a2966304c1a967c0b830c17d2ed0c881456b4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "806b8e20fd6cc1cd2269ef68ac5c0f4b5045b54d", "tema": "elogio geral", "conf_tema": 0.5, "reclamacao": false, "conf_reclamacao": 0.89}
+{"marca": "3297bdfd5bc9aed692dc420363b0972d3347ba6f", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "1285fabc5139353244e4584a764c8285219e5cd8", "tema": "atendimento", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f81e8c8b04722392c5511b45f2577aeb27b00359", "tema": "app com falha", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "47feb205c24499add989266fd63e9acb3abad14e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "48df6812d8552c02b69909ebf7e4a5f753230f06", "tema": "crítica geral", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.91}
+{"marca": "0197887e8eb2babd341056d30c7b8577903646d2", "tema": "cartão e fatura", "conf_tema": 0.61, "reclamacao": false, "conf_reclamacao": 0.62}
+{"marca": "f88a79080295f69eb92ce450fda2777d62b9a60f", "tema": "acesso e login", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "0ade3eb82438b7411b60b65e17b574de5748a0bf", "tema": "elogio geral", "conf_tema": 0.86, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "1ebd960ca85ab55e2b2d9e48ae02a758dbe9f16d", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f69a2928cff3b822b64cb72bc13a72c2e93442ac", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f021edb01ac1e4e469f2c7ffb60cfef96949e31f", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "3f9155f571802d3cdc25a177848414fbd18ce1fa", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "d675c4bc5713d3229942eae34b165fd9966c291b", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "7926e99e2f9fc297c3d772742a5f129282977c12", "tema": "sugestão de recurso", "conf_tema": 0.63, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "e565f412fc0602ff887844d5f9572c2ccd98ed20", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f3a94b073e7a866921e8164d82f44d828b190542", "tema": "cartão e fatura", "conf_tema": 0.93, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "b5a87b2facae66494f0777ded3a0735c808afbd5", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "0b565a4b0e6ad14c068e760be31e6bb18bcba8e7", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "9e4cc6d1ecc59d51993d9367aac7175bedc7fc07", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "229a708a5d72f7d5d27c36cdf630dd72f4c932e4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "c82f6a1dc29037a3d933a0aa0aade257418ed063", "tema": "acesso e login", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "a94620bda098802219e5a86ccb8ce483266f3db4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "6a91fb99acf58bd818baaa9a8ef06642ac0fb101", "tema": "app com falha", "conf_tema": 0.9, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "17cab87c569d1e73870647a44c149b811273837e", "tema": "golpe e segurança", "conf_tema": 0.54, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "a8cd45f4474b4c76160c925b7b5e706cbebd7e60", "tema": "elogio geral", "conf_tema": 0.96, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "04af8b77db7f851f9e91eeb2e72f2a5092277bed", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "74eda3bd41fb22c8c4f6add0699d312720e894b3", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "faccc557706778667edaabcce142294d505c6cf5", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "3e88c7b0bcdb57e1e2adda9972bd67f005830138", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "db2368bf5dfc1a2f57f4cc5149e49b232253bb9e", "tema": "atendimento", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "c8bcdeca8f8943837453547f13bde836e30d60f1", "tema": "pix e pagamentos", "conf_tema": 0.65, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "475ef4010abe6247701147c713e50dd7743e2d7e", "tema": "acesso e login", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "273e9f5362576adc948ca0a899414f69ced231a3", "tema": "cartão e fatura", "conf_tema": 0.85, "reclamacao": false, "conf_reclamacao": 0.89}
+{"marca": "83195a2d71d0a5460497e9113c14f9fbe33662fd", "tema": "acesso e login", "conf_tema": 0.59, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "00eab43a5368819b8cc844ccab609bfa466f3449", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "7f6ab27f2fdd3b30d32d06b3a921c0f39c07511b", "tema": "app com falha", "conf_tema": 0.89, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "be16817ada00f06887e9844f5fee927cad542833", "tema": "sugestão de recurso", "conf_tema": 0.74, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "45abfc19e46eedf7a867b1e9c53f79f05f54dc4e", "tema": "crítica geral", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "8b261a3a6b756356e3c38f1fda37121811ea03ac", "tema": "app com falha", "conf_tema": 0.62, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "6989920aba512a235b0a7e1bfe48fd5d43a193fe", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "7f831159a959a20cd327ae2d0bdf70b1923080a6", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "1b2afd1169bff4b8e627b21eb5f563d47900d11f", "tema": "sugestão de recurso", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.85}
+{"marca": "c89d44f6bf6f254e70e938e0fbd7ed08003b8195", "tema": "app com falha", "conf_tema": 0.87, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f6d6ec04900ed2682b01335256247e5d5448e784", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "b65e40be81eecef7fefd16a968b04867e18b6d4a", "tema": "crítica geral", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.73}
+{"marca": "dfd8c1943e61e9716a2a430d505832b1db0a2640", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ba4bb32f1d65f401b12dd92fc812785375e42be4", "tema": "cartão e fatura", "conf_tema": 0.78, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "966b228dff93038c30286d10d327fcd0424b7d60", "tema": "elogio geral", "conf_tema": 0.66, "reclamacao": false, "conf_reclamacao": 0.92}
+{"marca": "e03830e2f5b8001eded4c12c71e31838d2fda286", "tema": "pix e pagamentos", "conf_tema": 0.73, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "85fe3467254962735ba0e641ccc24c452b46e611", "tema": "elogio geral", "conf_tema": 0.84, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "371929caaef0ce06a7f32b714f539df2fcde1fd8", "tema": "cartão e fatura", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "3da90063d4bcc9c34858aca096ba710a4c4d06b9", "tema": "elogio geral", "conf_tema": 0.94, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "6a2c16f3a64587e0b023c7d0a33c662dbafa9cbc", "tema": "outro", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "4b7d4070a1b64ce5b2c2a41fc256f0c968dd23ff", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "bb89b312f25d9386e5c4acb6b34c2a0826a4b6ce", "tema": "pix e pagamentos", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e6f958cdd5a536cfdddbb7c8278a753662bd1f09", "tema": "crítica geral", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.87}
+{"marca": "8ac303923e49c87fe0813ac652f6185fadd9dc50", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "785984943bc25fb698d1d6db142929c8ffc478a1", "tema": "app com falha", "conf_tema": 0.94, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "c84293b0cf1bbb46908479ff5b235d299879fdae", "tema": "crítica geral", "conf_tema": 0.79, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "d6d25e88a6ae477512797c5a146f6fa3ed957cd1", "tema": "tarifas e cobranças", "conf_tema": 0.63, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "f4747c7b47321741629ada07dfe9aea682ada4d1", "tema": "acesso e login", "conf_tema": 0.85, "reclamacao": true, "conf_reclamacao": 0.9}
+{"marca": "b7789efe6047dc1cddb3bc366060bceb84488507", "tema": "pix e pagamentos", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "f0bc542b0ba708cbbc4b83417dff407af1ffce0f", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "d80fa5b249574d11130ad8aa33514d56c6a8b405", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "35a11adfd3f285aa60ed6d17b6ba12d12d0d8748", "tema": "outro", "conf_tema": 0.87, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "6ce453d684c01ff7d33386ab7da40dd46322ef24", "tema": "app com falha", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "87b1719698687efd5f52b57b7fdc75e8561f6269", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "c31c5751bcaf28737678b93417b6e77b622a19e9", "tema": "golpe e segurança", "conf_tema": 0.94, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "10708855fb6de11338c5974432da95b19bde5a95", "tema": "crédito e limite", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.6}
+{"marca": "8b7dc583b2a05e53b6c34e6ce015e7c933fb67e7", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "1250f702373d502a6de283be9d9e31d6a20e6d6e", "tema": "atendimento", "conf_tema": 0.53, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "d261e2c869d50ea4d1334a2fe438007dd50bb7df", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "4ee03f6b28552eded06ad6e44800935c1866bb79", "tema": "acesso e login", "conf_tema": 0.71, "reclamacao": true, "conf_reclamacao": 0.63}
+{"marca": "1a0a0aa470f523ce69cd83af367c519935192238", "tema": "outro", "conf_tema": 0.5, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "0faa56b32c818babb7e63202b6d43c8edd2f53ac", "tema": "acesso e login", "conf_tema": 0.88, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "246e861cc12f772df3dce279b3ddbd68bcaaa5ea", "tema": "outro", "conf_tema": 0.44, "reclamacao": true, "conf_reclamacao": 0.75}
+{"marca": "4fab38477e1645744a89e23c31c674562e7f0a2a", "tema": "app com falha", "conf_tema": 0.62, "reclamacao": true, "conf_reclamacao": 0.75}
+{"marca": "b6e595eb0ea5546559e829c19bbe5e926c7c6409", "tema": "crítica geral", "conf_tema": 0.72, "reclamacao": true, "conf_reclamacao": 0.88}
+{"marca": "5f300f95a0551b22b5a6a20c2367a09ec60b3f64", "tema": "crédito e limite", "conf_tema": 0.83, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "d735abbed735b01af1a3de0cceb8f72bf57b26f1", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "c8bf01a739798c5e13641508d4fcc1f921358b27", "tema": "pix e pagamentos", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.91}
+{"marca": "954dfff341c56716e862aac0d6793aee949c1c62", "tema": "acesso e login", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "d477b4d06bfeb6272a42c21284ee63a8f48da741", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d5b6130c6c24d70eb02d1d78e07b5f39fd6af2ef", "tema": "acesso e login", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "b86ff2a3742625c31d30bb513d49fb54d5c23c2c", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "7c3a1a7e1aedb639969916f1ec396af05a296bca", "tema": "app com falha", "conf_tema": 0.98, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "28d5ffedd3f9ed8ca486da57904e991450e14f97", "tema": "app com falha", "conf_tema": 0.75, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "3eb4a1c14eb176353c649996a27366c52f4a4b48", "tema": "outro", "conf_tema": 0.61, "reclamacao": false, "conf_reclamacao": 0.95}
+{"marca": "0be600907ceca64f41a2bb6e665cf0c3263e830f", "tema": "app com falha", "conf_tema": 0.86, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "86df74f2cb293cd7c211f3ee6c5ad87e8baf64f8", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2af5776588775a2cd2e4c646c3ae7a6923959f7a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "320c7681252fcdd32c57c88a6d9559c23de938d1", "tema": "crédito e limite", "conf_tema": 0.76, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b8a3cf19d9bb19353eade0b2517ecc2210ee7d4e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "8df75a5bd13363cccf91aff7285d39941d1cd026", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "18f82618ff4ca9193e1a85e01bea3fb3ef40b84c", "tema": "app com falha", "conf_tema": 0.33, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "205763a0b94b75cbdfb1592a4cf824b266dad050", "tema": "cartão e fatura", "conf_tema": 0.49, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "7dd5007ffed293e38eef990e247804cddbc601e4", "tema": "acesso e login", "conf_tema": 0.69, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5c616fbbf2be85199dc49938704f20f59a342a93", "tema": "elogio geral", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "de8e319d810f97af9ed24eb7a9370d15f1711851", "tema": "crítica geral", "conf_tema": 0.55, "reclamacao": true, "conf_reclamacao": 0.95}
+{"marca": "6af0ba5a6caf8aa466851370b56611b3f9077def", "tema": "outro", "conf_tema": 0.62, "reclamacao": false, "conf_reclamacao": 0.88}
+{"marca": "962a506fd0fcfb717b3b19fd8958fde0dd403191", "tema": "outro", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "ba4910aae31aab3d97638de00c435958444c1800", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "d685b76df67397322bbdb87131fabbbf494b7c59", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a07c249e3ab8a57ef9a6ed662b819f485829f673", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "25ce86da0004f5e1c698344e8b896f1d860efdd2", "tema": "elogio geral", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "62e27794bd5af96781ec2c0cf6edcfd7857ecc87", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b3039df683052497ec029c4d3f00ae135b0f199e", "tema": "app com falha", "conf_tema": 0.51, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "a0d46c0f7dec04a79b5f4284ac36ef168bf429af", "tema": "elogio geral", "conf_tema": 0.88, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "06a55f49aa9a39269f354d484f6f8c314c89f0b8", "tema": "acesso e login", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "17af0a17e49d76aa6df167fcb7b3094701eea467", "tema": "acesso e login", "conf_tema": 0.9, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ed3c6363fbb62dc2d345001c368bc30d16aba180", "tema": "app com falha", "conf_tema": 0.85, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "7c72fcf7df782b048ad9752c5f63a493a2643665", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f5125756d5223ed5211d7c677148da2adaaced78", "tema": "outro", "conf_tema": 0.74, "reclamacao": false, "conf_reclamacao": 0.79}
+{"marca": "b7e70bfcb47cf873be65d3a5534a5a19420bf122", "tema": "crítica geral", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.84}
+{"marca": "aedda0ac9038cea2ce0dff08464c8d4f4b8a931c", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "6d056e63fa6ec4cdea91a4e56b3610d3f162daf5", "tema": "elogio geral", "conf_tema": 0.73, "reclamacao": false, "conf_reclamacao": 0.91}
+{"marca": "13f7ff9da1e8faf327c4ecb95b41c11ea25156b0", "tema": "golpe e segurança", "conf_tema": 0.69, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "c0c003be0776a8cec5df73f977b6952079003127", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5a2042c738cf76e45607f4492a9b9c8691f57461", "tema": "app com falha", "conf_tema": 0.94, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "206aafbf19e0b43c39c607e08b3a42d9a6387e25", "tema": "elogio geral", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "740e1dbd8316cb43a02986e427e8774b8c59e33b", "tema": "outro", "conf_tema": 0.91, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "eeb0f1484d35ca7ccb21de3372ffa118127cdf16", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "92280f731a92d31601e8f151ccfe176c779e1afb", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f6c928b6eef214628acc34222d1b094ba0525edd", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "073fa9ef259642329cc5ae4f75b592251d1ece36", "tema": "cartão e fatura", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5e6dd289e42c79af7e30a3f9d582cb4cd6bdaa9b", "tema": "elogio geral", "conf_tema": 0.45, "reclamacao": false, "conf_reclamacao": 0.86}
+{"marca": "ed1263f4e5bb8e4e35ee1ccead0344cb4c8c113e", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ae2191f8f495e835082097ff9d3765d50c8dc9db", "tema": "pix e pagamentos", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "0b2e58382aee3cf859df9cf7c446f8975ffd5569", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "77face4e56789790fb42897c95d92e15b8b0c960", "tema": "elogio geral", "conf_tema": 0.74, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "58ccf23126ee1128bd433d15297759bac6d3e1ea", "tema": "outro", "conf_tema": 0.72, "reclamacao": false, "conf_reclamacao": 0.81}
+{"marca": "b5822338671beae2b619070899f2af8c7cf507ad", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "15684a091236a89680cf9a861396ce2beb509e1e", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "73cf2540d9e8bd6bda57143e51448a12cc2b1d02", "tema": "outro", "conf_tema": 0.54, "reclamacao": false, "conf_reclamacao": 0.83}
+{"marca": "7ffdb82c6df09b99d1af0e7e553d3116eb4372b1", "tema": "outro", "conf_tema": 0.93, "reclamacao": false, "conf_reclamacao": 0.91}
+{"marca": "c4e5c923bf12ce5934394f63ef084999ca8820fc", "tema": "acesso e login", "conf_tema": 0.77, "reclamacao": true, "conf_reclamacao": 0.94}
+{"marca": "95db256ff523507951c5419f85433f3676e975d4", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "78ecf68e06aaacc8462ce55fde8cb920933b5f94", "tema": "sugestão de recurso", "conf_tema": 0.48, "reclamacao": true, "conf_reclamacao": 0.95}
+{"marca": "46d18ac8d10e82b416e611134c94c0461bd05198", "tema": "crédito e limite", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.85}
+{"marca": "25af7e0e6f55fedc188b694d8c1fc0a7796b0c16", "tema": "conta bloqueada ou encerrada", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "1b87d12eea52cf126e98c379a3b56c13c6087232", "tema": "crítica geral", "conf_tema": 0.62, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "68d13083050d93e99b89012a2928c53eb98f799d", "tema": "app com falha", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "c07fc78d93bba6b66798ff5097a6fdfe7fc69cc6", "tema": "crítica geral", "conf_tema": 0.44, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "1da0e74705f58dc2469685e7e6754b25d5738f99", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "33173517300bb4cc56a988d3cb2f1e2ef575d2dd", "tema": "elogio geral", "conf_tema": 0.63, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "0066ac8524891e70802b4bb16ec9f906a4199e80", "tema": "elogio geral", "conf_tema": 0.82, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d90d0b5bb722d6c976a6815e90cea533e4c69dfb", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a2b49f74765a5cf19a680ca9a69a833c9acff7df", "tema": "conta e cadastro", "conf_tema": 0.88, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "6ccc866780c2a5fbf12c69e01f57a5701a39e320", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "1cb5579788c75bf06a488bcc02ac6343b5bcbd22", "tema": "elogio geral", "conf_tema": 0.58, "reclamacao": false, "conf_reclamacao": 0.88}
+{"marca": "bdede423b5215ef6ddb44df901b252a1eec3c511", "tema": "atendimento", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "89e78aacf44eac5f99a5acd9b4dd9914550ea2bc", "tema": "app com falha", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5c80f18fb33c36b09115eaeb0d37aa60a83df78d", "tema": "elogio geral", "conf_tema": 0.91, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "4f0ad9a569e42f270aa7b690d27bc19e409b50eb", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "798fc66e622d6489ee0b4fc1e59070112e865377", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "03737e54657608eb552bfd4fe90e1ba6613de074", "tema": "cupons e promoções", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "0f91aa6b9add48b055ed26bfc31f7cc38a7e0872", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "d37828c9a91ce4262674c9f08ab1d0439e42b53c", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "43f1b6d460c5ccbce07e0df4aeb9a9cae120d3cb", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "0e6af746bfa4ac1b1a0b78b73b04cf158851bfbe", "tema": "elogio geral", "conf_tema": 0.51, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "7b8a98ef8bf3a0cda34d886f45ed10ab53be30ce", "tema": "elogio geral", "conf_tema": 0.47, "reclamacao": false, "conf_reclamacao": 0.9}
+{"marca": "3e296fc53459f448eb22f960231104a0fe4389f5", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f7662ffabe7a79b62e050b21933485ef1ba572e1", "tema": "outro", "conf_tema": 0.33, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "a1a5e08a4870b4da00db68abc34b50b68e965f24", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "2d4a7a452364912eb38387201f5dd9bdd2e44159", "tema": "atraso na entrega", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "ed85c60f4afbc76fbc34663a8c654239f2c9216b", "tema": "elogio geral", "conf_tema": 0.63, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "f596e7bb87cc9546c311e92d359f30a22fe2db39", "tema": "cupons e promoções", "conf_tema": 0.87, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "7f5e980e979fc548fb17184c00630deb2d0772e5", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "54cdbabcf625be802d041a355b3188a1e7516108", "tema": "cancelamento e reembolso", "conf_tema": 0.78, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "cacac995f671ff6c34ad352adf52fa7769697c20", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "018e20eb09dd9e51f560a0d471c286fbfb5c037d", "tema": "elogio geral", "conf_tema": 0.78, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "1a228ff53ef3877c4e539a31dc084db37f70ddeb", "tema": "elogio geral", "conf_tema": 0.67, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "dd19e27b855553dac3c8ffc17584b282df368ec9", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "89fef285b7530fc1ddfd2e616e30944ef511d474", "tema": "pagamento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "1ba680fbec2ffdc7f7b108dbfa8d616c53ba1d8c", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f0914b6e45296073f118430c17103dd220b6df61", "tema": "preços e taxas", "conf_tema": 0.38, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "bd9123c3d11c75a6cb0e7da0e94a5e4fe93486e4", "tema": "elogio geral", "conf_tema": 0.9, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "701cebad7761df1425135150aa95368adf29701b", "tema": "cupons e promoções", "conf_tema": 0.84, "reclamacao": false, "conf_reclamacao": 0.88}
+{"marca": "c221eb64e662e472a873e6749222d99de3754fca", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a4ba19673c037cd5d73c0c3c0c49735c8e3bd462", "tema": "atendimento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "d878408716524340fb3607384a1f8f5b8b53d3f3", "tema": "elogio geral", "conf_tema": 0.67, "reclamacao": false, "conf_reclamacao": 0.8}
+{"marca": "373b17d6bd541db113fb6822e8ac2bd4deae455a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a8cd005e673b30d2ecfbf4a86bcbc7e31729b556", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "8b9aee5f996445606187cc9fbb077b38c4030e20", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "43f698959e0d1263e9a5a7d1f75c1717ccf5144d", "tema": "preços e taxas", "conf_tema": 0.88, "reclamacao": true, "conf_reclamacao": 0.81}
+{"marca": "4e846f4e69b2a084daa06ba945b5209c13f7c2b9", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5eb91e04d0ee0c3d307bad85fab2c4156a97112c", "tema": "elogio geral", "conf_tema": 0.78, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "87b51fe73df2d7a4fc7e037f1c06fd1902894897", "tema": "preços e taxas", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.9}
+{"marca": "64433b14a4ecccd08fc44b9bed3cf5c7771fdd48", "tema": "elogio geral", "conf_tema": 0.84, "reclamacao": false, "conf_reclamacao": 0.95}
+{"marca": "2292812394fc67e321ee91bcd284c9b61e8a420d", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f38faf96f7983cb091c751731f8fff000b862af8", "tema": "preços e taxas", "conf_tema": 0.88, "reclamacao": true, "conf_reclamacao": 0.88}
+{"marca": "3ac1e0e38867fe0b5067fb556dfaf94bace08c75", "tema": "conta e cadastro", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "3bee64ef9980b50698a7f7875dc2bf5fd0461132", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "ef087d63305db569ea236e071e516f342ed79288", "tema": "outro", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "e355c30963558011deb38902dd3ee97be1a4cfdc", "tema": "cupons e promoções", "conf_tema": 0.52, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "d67ef46f395a6b99da0782aa4ecf92ab98d3767c", "tema": "atraso na entrega", "conf_tema": 0.48, "reclamacao": true, "conf_reclamacao": 0.92}
+{"marca": "b251e3fef058a9d077e213a5fc00603d5751f9ed", "tema": "outro", "conf_tema": 0.45, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "802a1b0769f3c739ab6df77797b8ca8ff0d4a10a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "25dcfa863b8aa822ee4b795bff10f857449d1251", "tema": "atraso na entrega", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.88}
+{"marca": "417b21d23000b8e0cf405edf79c5359cd7cf7e82", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "4ffe2a5236c8b6d09937e6b2d131ae9ff70a3ba8", "tema": "cupons e promoções", "conf_tema": 0.71, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "5009735ddfc3d92c4078b5ace63601c466b32d7a", "tema": "cupons e promoções", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.82}
+{"marca": "4985a54d68bfaf657eed797b6fb32ad6c8f78f39", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "f1d7c6e9908a2d1a435c59524e5555a57098cfb8", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "84f1327d27ea64094598cab1dd558fdb9ceae8b1", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "8cefdd62af113e37f042335133a28d8733e22954", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b57f20fc5d67de8bff8a1b56a7a6b60936035d1c", "tema": "preços e taxas", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.78}
+{"marca": "23a2761b49c8062e210464e4ada550dee823a187", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "77bb6f22881393b2b75a237a84284f65ba7af1e7", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "e9cb87545802c7c028c8330f967b64510ec23081", "tema": "conta e cadastro", "conf_tema": 0.96, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "6e62fe9718c2df33beb0aeb8c0d7daa4b039c396", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "97e7d8adeba55d5ee1040ee803ef34b18b0b6b4c", "tema": "cancelamento e reembolso", "conf_tema": 0.73, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "feac10a6b994dea477140710e2e1da9b3dcd3efb", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5ffed22063822104c54b97c51e1e36b24a30f826", "tema": "cupons e promoções", "conf_tema": 0.56, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "c761b4e74b402155cca55c9d95e812359a9fff58", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "9ad2bea0e145f177be62932c1f7d7955cebf42c6", "tema": "cancelamento e reembolso", "conf_tema": 0.64, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "2aba053da4c6663a4a44dcb9b2ed9a918ebfa609", "tema": "preços e taxas", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "9339d56a3cfd4577cbcb8c80e8ec000c7c7a1779", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "5d3d9f30d266914918df528e6c5177fb3f96f4cc", "tema": "outro", "conf_tema": 0.88, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "63216ee2d7e85d87e985632bdf7876b5285f7a69", "tema": "cupons e promoções", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "55b2bbc3ba469ee8bdec03d74ea5ccd786b312cf", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "653e8cc22e0edbe09b5235f3f51c19089524a2fd", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "da17cf14b1f453729f72311f24138a5426d1f07e", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "fc614e08ec1b24b6b9ff442731431aff34db5554", "tema": "elogio geral", "conf_tema": 0.71, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "23806017c6e0f87232a1fce3fa5472d24b13d37d", "tema": "elogio geral", "conf_tema": 0.85, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "a3fe581910112eb98341f93fe82b23d0c67e1045", "tema": "cancelamento e reembolso", "conf_tema": 0.84, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "07d27e396ee514fac72a8f013f3230650ebee81a", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f4ef3f1960c9d2ded55165ed99f941b15b910b93", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a52ffc6a486d8a5ad0b7368dfcf90330b5ce8ec7", "tema": "preços e taxas", "conf_tema": 0.97, "reclamacao": true, "conf_reclamacao": 0.83}
+{"marca": "779b1ec6338edb4ba2a17f14e2a2ba77b5fcd6bc", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "66d7195e4cee3487c0ec8b6a9efc9ea71548a678", "tema": "atendimento", "conf_tema": 0.92, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "63d1987857a254faa0c0467a5653a7c34c1e6107", "tema": "atraso na entrega", "conf_tema": 0.81, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "5c2173521e545377b3085c218228e0839249295b", "tema": "cupons e promoções", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.94}
+{"marca": "4bf9d0c291288f54033fec49bd6d26012018f996", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.99}
+{"marca": "841abf9ab6a3d250357f7c818930e0c0839587d3", "tema": "elogio geral", "conf_tema": 0.9, "reclamacao": false, "conf_reclamacao": 0.95}
+{"marca": "a945f4cfae917e820d23e8ec6efdf015686d46ab", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "878e68ed5c0c9b7aa5bfb7d1b70a4f17c3ac9ba1", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "eec1f63c1b913dde5bac829af68851b6a29e0e62", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "b1c4ceb6a4308c7c0642136f9be193876f60c158", "tema": "outro", "conf_tema": 0.6, "reclamacao": true, "conf_reclamacao": 0.96}
+{"marca": "e33d70cc2df0b8c17b9ec0cda86164478d38dbe3", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "cb667597bef53f5d627d7a5e897860559bf8a9c4", "tema": "qualidade da comida ou do produto", "conf_tema": 0.54, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "bb3c4838fb6034c4299a8bbaf8326ea8ca7328e4", "tema": "elogio geral", "conf_tema": 0.96, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "99aef9da192c70050b769a30a1180a71d12a2101", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "349ba44793f5be338c2d2234dea9af4df8d4b7cb", "tema": "cancelamento e reembolso", "conf_tema": 0.8, "reclamacao": true, "conf_reclamacao": 0.94}
+{"marca": "241cd979439089a3c865ede10e5f6d3b94927721", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "62ee01057c516e0816b208247559a58fb2ece7fe", "tema": "preços e taxas", "conf_tema": 0.99, "reclamacao": true, "conf_reclamacao": 0.9}
+{"marca": "e5f82c36fade864d3be8247f7f942bcebe46b6e4", "tema": "cancelamento e reembolso", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "5bd5168cdc0fc32a65a71ac2c4766748babdca58", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "7db754a6c246611808e0969e0a19aa8dd904dd54", "tema": "cupons e promoções", "conf_tema": 0.84, "reclamacao": false, "conf_reclamacao": 0.75}
+{"marca": "5919604743c6b817877293084637ff8ddb67db03", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "ee5b424ab31fc77ed27eafa0a55733d6bb7f5cf2", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "b8956a78958fc52caeb353fa6a122d16a035d285", "tema": "elogio geral", "conf_tema": 0.92, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "1f25beb60be029ade387d0d8cfc2bae0b16e7633", "tema": "elogio geral", "conf_tema": 0.9, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "3a275c65a6798c5755ed2cbbba1c2f2641d62345", "tema": "cancelamento e reembolso", "conf_tema": 0.54, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "123f5feca16f8054d89dd2ddedce99c01df9f198", "tema": "app com falha", "conf_tema": 0.78, "reclamacao": true, "conf_reclamacao": 0.97}
+{"marca": "a8321daa6e47b06791f089626bd301aaeca272d6", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f4437e3e73e74b082109e7664dbf6bada1a33d11", "tema": "elogio geral", "conf_tema": 0.81, "reclamacao": false, "conf_reclamacao": 0.94}
+{"marca": "694cc568def7e929dff18d85f59672fbf7828833", "tema": "pagamento", "conf_tema": 0.95, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "4349947dd839f01536eb1b9ac757cfc13cc9dead", "tema": "elogio geral", "conf_tema": 0.94, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "f7883641b54e76141ce60777c5df6fce87f4a6a0", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "39b18ac621c0bea83ab35226f9a705ec99212509", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.85}
+{"marca": "115fc33007e0430013eda521418793cb89939f5f", "tema": "pagamento", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "e0219a469c744652b397ed3fd4a55ad37337d826", "tema": "cupons e promoções", "conf_tema": 0.87, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "35f6fa16212dc4975f299365b82321b181036dd0", "tema": "pagamento", "conf_tema": 0.91, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "38b82e2316fb1fa128c544ea0127fe8d2f16eacd", "tema": "elogio geral", "conf_tema": 0.95, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "fc459a5af0e02b9c877c81f6d9b630656032e75b", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "104408196e43e77cc2b1b571e3f664cf607e4907", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.93}
+{"marca": "f09e841f15cf3aef7d1e4f47853f7480c591bf78", "tema": "cupons e promoções", "conf_tema": 0.97, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "0acee88f29b471e48e98d5a6cfeb09e90b8d6b8b", "tema": "outro", "conf_tema": 0.78, "reclamacao": false, "conf_reclamacao": 0.86}
+{"marca": "87cd41094d646fec4d426d4c714fc17203a3229d", "tema": "cupons e promoções", "conf_tema": 0.82, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "8b57cff24545764a2aa558c6f4c511132c73e7f9", "tema": "atraso na entrega", "conf_tema": 0.93, "reclamacao": true, "conf_reclamacao": 0.98}
+{"marca": "e316971aa3e974b5c6336192c981446932eb6d59", "tema": "elogio geral", "conf_tema": 0.98, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "2fa23288b53e9940c3d4ba91eb7e4f49910562a5", "tema": "crítica geral", "conf_tema": 0.62, "reclamacao": true, "conf_reclamacao": 0.69}
+{"marca": "c54806a01be0d66ea2f302e818a3579b2a11fff8", "tema": "elogio geral", "conf_tema": 0.87, "reclamacao": false, "conf_reclamacao": 0.9}
+{"marca": "ad3a780d132afbf97d2f2741caab20fd1b0fa70f", "tema": "elogio geral", "conf_tema": 1.0, "reclamacao": false, "conf_reclamacao": 0.97}
+{"marca": "67f0f5586052c73c99890f9ffd5c0471f64c1eeb", "tema": "cancelamento e reembolso", "conf_tema": 1.0, "reclamacao": true, "conf_reclamacao": 0.99}
+{"marca": "96569584646492c513ff0644353a697cc9466b4b", "tema": "elogio geral", "conf_tema": 0.94, "reclamacao": false, "conf_reclamacao": 0.98}
+{"marca": "a1ad43d74a50972f4daadf09703b68670f76e849", "tema": "cupons e promoções", "conf_tema": 0.89, "reclamacao": false, "conf_reclamacao": 0.96}
+{"marca": "aaab754e34616c25c2cc60a7b60aba51ad2710dd", "tema": "elogio geral", "conf_tema": 0.99, "reclamacao": false, "conf_reclamacao": 0.98}
