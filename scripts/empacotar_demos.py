@@ -15,7 +15,8 @@ FORA = {".env", ".DS_Store"}
 
 DESTINO.parent.mkdir(parents=True, exist_ok=True)
 arquivos = [f for f in sorted(ORIGEM.rglob("*"))
-            if f.is_file() and f.name not in FORA and "__pycache__" not in f.parts]
+            if f.is_file() and f.name not in FORA and "__pycache__" not in f.parts and "brutos" not in f.parts
+            and not f.name.startswith(("ocorrencias", "trechos")) and f.suffix != ".xlsx"]  # saídas das demonstrações
 with zipfile.ZipFile(DESTINO, "w", zipfile.ZIP_DEFLATED) as z:
     for f in arquivos:
         z.write(f, ("demos" / f.relative_to(ORIGEM)).as_posix())
