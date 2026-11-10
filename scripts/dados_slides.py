@@ -1,9 +1,9 @@
 """Leva os números do monitor para os slides. Nada escrito à mão nas cenas.
 
 Lê docs/painel/dados.json (agregados), monitor/dados/processados (para a
-avaliação de exemplo) e o cache do Jev, e reescreve:
-  slides/recursos/aula.js       o bloco DADOS_AP (entre DADOS-INICIO e DADOS-FIM)
-  slides/recursos/perguntas.js  as perguntas 3 e 5 (entre DADOS-QUIZ-INICIO e -FIM)
+avaliação de exemplo), o cache do Jev, scripts/experimento_contagem.json e
+scripts/exemplos_jev.json, e reescreve o bloco DADOS_AP de slides/recursos/aula.js
+(entre DADOS-INICIO e DADOS-FIM).
 
 Uso: python scripts/dados_slides.py   (depois, quarto render em slides/)
 """
@@ -98,7 +98,10 @@ leg_notas = (f"Em **{abaixo} dos {len(pares)}** pares de app e loja, quem escrev
              f"{br(maior[2]['nota_loja'])} na página e {br(maior[2]['media_escrita'])} nas escritas.")
 
 c = d["contagens"]
+contagem = json.loads((RAIZ / "scripts/experimento_contagem.json").read_text(encoding="utf-8"))
+jev = json.loads((RAIZ / "scripts/exemplos_jev.json").read_text(encoding="utf-8"))
 DADOS = {
+    "contagem": contagem, "jev": {"chamadas": jev["chamadas"], "tabela": jev["tabela"]},
     "apps": apps, "temas": temas, "linha": linha_ex,
     "checagens": [{"frase": x["frase"], "nivel": x["nivel"], "ok": x["ok"]} for x in d["checagens"]],
     "fonte": f"App Store e Google Play, coleta de {data_coleta}; média das escritas: últimos 30 dias",
@@ -109,6 +112,7 @@ DADOS = {
         "n_textos_jev": f"{JEV_RODADA['textos']:,}".replace(",", "."),
         "seg_jev": str(JEV_RODADA["segundos"]),
         "conf_baixa": f"{c['confianca_baixa_tema']:,}".replace(",", "."),
+        "pct_conf_baixa": f"{100 * c['confianca_baixa_tema'] / c['anotadas_90_dias']:.0f}%",
         "opcoes_bancos": ", ".join(d["segmentos"]["Bancos"]["temas"]),
         "leg_temas_bancos": leg_b, "leg_temas_delivery": leg_d, "leg_notas": leg_notas,
         "n_checagens": str(len(d["checagens"])), "n_ok": str(sum(x["ok"] for x in d["checagens"])),
@@ -122,40 +126,5 @@ t = re.sub(r"/\* DADOS-INICIO \*/.*?/\* DADOS-FIM \*/",
            t, flags=re.S)
 js.write_text(t, encoding="utf-8")
 
-# ---- perguntas 3 e 5 -----------------------------------------------------------
-# q3: o par com a maior distância entre os que têm pelo menos 100 avaliações escritas.
-emp, k, s = max((p for p in pares if p[2]["n"] >= 100), key=lambda p: p[2]["nota_loja"] - p[2]["media_escrita"])
-loja = "App Store" if k == "ios" else "Google Play"
-certa = round(s["media_escrita"], 1)
-alts = sorted({certa, round(s["nota_loja"] - 0.1, 1), round((s["nota_loja"] + certa) / 2 + 0.3, 1), round((s["nota_loja"] + certa) / 2 - 0.4, 1)}, reverse=True)
-q3 = {
-    "enunciado": f"Na {loja}, o {emp} tem nota {br(s['nota_loja'])} na página. Qual é a média das avaliações escritas nos últimos 30 dias?",
-    "opcoes": [br(v) for v in alts], "certa": alts.index(certa), "limite": 20,
-    "porque": f"{br(certa)}, em {s['n']} avaliações escritas. Quem escreve, escreve para reclamar: em {abaixo} dos {len(pares)} pares de app e loja, a nota de quem escreve fica abaixo da página.",
-}
-if len(set(B["top"].values())) == 1:
-    t1 = next(iter(B["top"].values()))
-    outros = [x for x in ["golpe e segurança", "pix e pagamentos", "tarifas e cobranças", "acesso e login"] if x != t1][:3]
-    ops = outros[:2] + [t1] + outros[2:]
-    q5 = {"enunciado": "Nos quatro bancos, qual é o tema número 1 das reclamações nos últimos 90 dias?",
-          "opcoes": ops, "certa": ops.index(t1), "limite": 20,
-          "porque": leg_b.replace("**", "")}
-else:
-    e = B["apps"][0]
-    t1 = B["top"][e]
-    ops = sorted(set([t1] + B["temas"][:4]))[:4]
-    if t1 not in ops:
-        ops[-1] = t1
-    q5 = {"enunciado": f"Qual é o tema número 1 das reclamações do {e}?", "opcoes": ops, "certa": ops.index(t1), "limite": 20,
-          "porque": leg_b.replace("**", "")}
-
-pj = RAIZ / "slides/recursos/perguntas.js"
-t = pj.read_text(encoding="utf-8")
-bloco = "  /* DADOS-QUIZ-INICIO */\n" + "".join(f"  {k}: {json.dumps(v, ensure_ascii=False)},\n" for k, v in (("q3", q3), ("q5", q5))) + "  /* DADOS-QUIZ-FIM */"
-t = re.sub(r"  /\* DADOS-QUIZ-INICIO \*/.*?/\* DADOS-QUIZ-FIM \*/", lambda m: bloco, t, flags=re.S)
-pj.write_text(t, encoding="utf-8")
-
-print("q3:", q3["enunciado"], q3["opcoes"], "certa", q3["certa"])
-print("q5:", q5["enunciado"], q5["opcoes"], "certa", q5["certa"])
 print("legendas:\n ", leg_b, "\n ", leg_d, "\n ", leg_notas)
 print("exemplo:", linha_ex)

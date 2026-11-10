@@ -38,6 +38,24 @@
     <section class="card largo"><h2 id="t2"></h2><p class="sub">○ nota oficial que a loja mostra (todas as notas, com e sem texto) &nbsp;·&nbsp; ● média de quem escreveu avaliação nos últimos 30 dias</p><div class="grafico" id="g2"></div></section>
     <section class="card"><h2 id="t3"></h2><p class="sub" id="s3"></p><div class="grafico" id="g3"></div></section>
     <section class="card"><h2 id="t4"></h2><p class="sub">Tema de cada reclamação dos últimos 90 dias, em % das reclamações de cada app (cada coluna soma 100%)</p><div class="grafico alto" id="g4"></div></section>
+    <section class="card largo" id="b-mapa">
+      <h2 id="t8">Mapa das avaliações</h2>
+      <p class="sub" id="s8"></p>
+      <p class="sub">Como ler: cada avaliação vira uma lista de números que diz quais palavras ela usa (TF-IDF, que dá mais peso às palavras raras); essa lista é resumida e projetada num plano pelo t-SNE. Avaliações que usam palavras parecidas ficam perto. A posição e os eixos, em si, não querem dizer nada.</p>
+      <div class="mapa-ctl">
+        <div class="grupo"><span>pintar por</span><div class="pilulas" id="f-pintar"></div></div>
+        <label class="marcar"><input type="checkbox" id="f-apagar"> <span id="f-apagar-txt">apagar os outros apps</span></label>
+      </div>
+      <div class="legenda" id="leg8" aria-label="clique para mostrar ou esconder uma categoria"></div>
+      <div class="grafico mapa" id="g8"><p class="carregando">carregando o mapa...</p></div>
+      <p class="nota" id="n8"></p>
+    </section>
+    <section class="card largo" id="b-reg">
+      <h2 id="t9"></h2>
+      <p class="sub">Nota média ajustada das reclamações de cada tema (1 a 5), com o intervalo de 95%; só temas com pelo menos 30 reclamações nos últimos 90 dias</p>
+      <div class="grafico" id="g9"></div>
+      <p class="nota" id="n9"></p>
+    </section>
     <section class="card"><h2 id="t6"></h2><p class="sub">As mais recentes de cada loja; telefone, e-mail e CPF aparecem mascarados</p><ul class="lista" id="recentes"></ul></section>
     <section class="card"><h2 id="t7"></h2><p class="sub">Frases que precisam ser verdade a cada atualização. Se uma que bloqueia falha, o painel não é atualizado.</p><ul class="checks" id="checks"></ul></section>
   </div>
@@ -295,6 +313,136 @@ function checagens() {
   });
 }
 
+// ------------------------------------------------------------ mapa das avaliações (mapa.json, lido depois)
+let M = null;
+const mapaEstado = { pintar: "tema", apagar: false, escondidas: {} };
+const ESCAPA = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ESCAPA[c]);
+const mil = (n) => n.toLocaleString("pt-BR");
+// cores bem diferentes entre si para os temas específicos; os temas que não dizem o problema ficam em cinza
+const QUALI = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#17becf", "#bcbd22", "#3d3d8f", "#6b8e23", "#f0a8c8"];
+const NEUTROS = { "crítica geral": "#6e6e6e", "outro": "#a3a3a3", "elogio geral": "#cfcfcf" };
+const NOTAS = ["#d73027", "#fc8d59", "#e6c229", "#91cf60", "#1a9850"];  // 1 vermelho a 5 verde
+const PINTAR = { tema: "tema", nota: "nota", reclamacao: "reclamação", empresa: "empresa", loja: "loja" };
+
+// as categorias de cada "pintar por": [rótulo, cor, função que diz se um ponto i é dessa categoria]
+function categoriasMapa(m) {
+  const p = mapaEstado.pintar;
+  if (p === "tema") {
+    const ordem = D.segmentos[estado.segmento].temas.filter((t) => m.categorias.tema.includes(t));
+    let k = 0;
+    const cor = (t) => NEUTROS[t] || QUALI[k++ % QUALI.length];
+    return ordem.map((t) => { const c = m.categorias.tema.indexOf(t); return [t, cor(t), (i) => m.tema[i] === c]; });
+  }
+  if (p === "nota") return [1, 2, 3, 4, 5].map((n) => [`${n} ${n > 1 ? "estrelas" : "estrela"}`, NOTAS[n - 1], (i) => m.nota[i] === n]);
+  if (p === "reclamacao") return [["reclama de algo", VERMELHO, (i) => m.reclamacao[i] === 1],
+    ["não reclama", "#9aa3a9", (i) => m.reclamacao[i] === 0], ["sem resposta", "#e3e3e3", (i) => m.reclamacao[i] === -1]];
+  if (p === "empresa") return m.categorias.empresa.map((e, c) => [e, QUALI[c], (i) => m.empresa[i] === c]);
+  return m.categorias.loja.map((l, c) => [LOJAS[l] || l, ["#1f77b4", "#ff7f0e"][c], (i) => m.loja[i] === c]);
+}
+
+function legendaMapa(cats) {
+  const box = el("leg8"); box.innerHTML = "";
+  const esc8 = mapaEstado.escondidas;
+  cats.forEach(([nome, cor]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = esc8[nome] ? "off" : "";
+    b.setAttribute("aria-pressed", !esc8[nome]);
+    b.innerHTML = `<i style="background:${cor}"></i>`;
+    b.append(document.createTextNode(nome));
+    b.onclick = () => { esc8[nome] = !esc8[nome]; mapa(); };
+    box.append(b);
+  });
+}
+
+function mapa() {
+  if (!M) return;
+  const m = M.segmentos[estado.segmento];
+  botoes("f-pintar", Object.entries(PINTAR), mapaEstado.pintar, (p) => { mapaEstado.pintar = p; mapaEstado.escondidas = {}; mapa(); });
+  el("f-apagar-txt").textContent = `apagar os outros apps (destaque: ${estado.app})`;
+  if (!m) { el("t8").textContent = "Mapa das avaliações"; el("s8").textContent = "Sem mapa para este segmento nesta rodada."; graf.g8.clear(); return; }
+  el("t8").textContent = m.titulo;
+  el("s8").textContent = m.subtitulo;
+  el("n8").textContent = `${mil(m.fora)} avaliações ficaram de fora porque não têm nenhuma palavra do vocabulário (só emojis, por exemplo). ` +
+    "Textos repetidos (como \"ótimo\") caem no mesmo lugar e foram espalhados um pouco para aparecer. Clique numa categoria da legenda para escondê-la.";
+  const cats = categoriasMapa(m);
+  legendaMapa(cats);
+  const ea = m.categorias.empresa.indexOf(estado.app), apagar = mapaEstado.apagar;
+  const series = cats.filter(([nome]) => !mapaEstado.escondidas[nome]).map(([nome, cor, de]) => {
+    const data = [];
+    for (let i = 0; i < m.x.length; i++) if (de(i)) {
+      const longe = apagar && m.empresa[i] !== ea;
+      data.push(longe ? { value: [m.x[i], m.y[i], i], itemStyle: { opacity: 0.08 } } : [m.x[i], m.y[i], i]);
+    }
+    return { name: nome, type: "scatter", data, symbolSize: 5, itemStyle: { color: cor, opacity: 0.75 },
+      emphasis: { scale: 2.2, itemStyle: { opacity: 1, borderColor: TEXTO, borderWidth: 1 } } };
+  });
+  const xs = m.x, ys = m.y, folga = (a, b) => (b - a) * 0.03;
+  const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+  graf.g8.setOption({ ...BASE, animation: false, grid: { left: 4, right: 4, top: 4, bottom: 4 },
+    tooltip: { trigger: "item", confine: true, extraCssText: "max-width:300px;white-space:normal;",
+      formatter: (p) => {
+        const i = p.value[2], n = m.nota[i], t = m.tema[i];
+        const tema = t < 0 ? "sem tema" : `${esc(m.categorias.tema[t])} (confiança ${m.conf_tema[i]}%)`;
+        return `<b>${esc(m.categorias.empresa[m.empresa[i]])}</b> · ${esc(LOJAS[m.categorias.loja[m.loja[i]]] || "")}<br>` +
+          `<span style="letter-spacing:1px">${"★".repeat(n)}<span style="color:#ccc">${"★".repeat(5 - n)}</span></span><br>` +
+          `tema: ${tema}${m.reclamacao[i] === 1 ? " · reclama de algo" : ""}<br><span style="color:${CINZA}">${esc(m.texto[i])}</span>`;
+      } },
+    xAxis: { type: "value", show: false, min: x0 - folga(x0, x1), max: x1 + folga(x0, x1) },
+    yAxis: { type: "value", show: false, min: y0 - folga(y0, y1), max: y1 + folga(y0, y1) },
+    series }, true);
+}
+
+// ------------------------------------------------------------ o que explica a nota (regressão)
+function regressao() {
+  const r = D.segmentos[estado.segmento].regressao;
+  if (!r) { el("t9").textContent = "Sem reclamações suficientes para o modelo neste segmento"; graf.g9.clear(); el("n9").textContent = ""; return; }
+  el("t9").textContent = r.conclusao;
+  const linhas = r.temas;  // já vem em ordem da menor para a maior média ajustada
+  const r2 = Math.round(100 * r.r2);
+  el("n9").textContent = `Modelo: regressão linear da nota de cada reclamação pelo tema, pelo app e pela loja ` +
+    `(nota ~ tema + app + loja), com ${mil(r.n)} reclamações dos últimos 90 dias. Média ajustada: a nota que o modelo prevê ` +
+    `se todas as reclamações fossem daquele tema, com a mesma mistura de apps e lojas; o traço é o intervalo de 95%. ` +
+    `R² = ${fmt(r.r2, 2)}: tema, app e loja explicam ${r2}% da variação das notas. ` +
+    (r.n_temas_pequenos ? `${mil(r.n_temas_pequenos)} reclamações de temas com menos de 30 casos entram no modelo, mas não no gráfico.` : "");
+  graf.g9.getDom().style.height = Math.max(260, 30 * linhas.length + 50) + "px";
+  graf.g9.resize();
+  graf.g9.setOption({ ...BASE, grid: { left: 8, right: 48, top: 8, bottom: 26, containLabel: true },
+    tooltip: { formatter: (p) => { const x = linhas[p.dataIndex];
+      return `<b>${esc(x.tema)}</b><br>média ajustada: ${fmt(x.media_ajustada, 2)} (de ${fmt(x.ic_inf, 2)} a ${fmt(x.ic_sup, 2)})` +
+        `<br>média simples: ${fmt(x.media_bruta, 2)}<br>${mil(x.n)} reclamações`; } },
+    xAxis: { type: "value", min: 1, max: 5, interval: 1, splitLine: { lineStyle: { color: "#eee" } }, axisLabel: { color: CINZA } },
+    yAxis: { type: "category", inverse: true, data: linhas.map((x) => x.tema), axisTick: { show: false }, axisLine: { show: false },
+      axisLabel: { fontSize: 12.5, color: TEXTO, formatter: (v) => r.destaques.includes(v) ? `{s|${v}}` : v,
+        rich: { s: { color: VERMELHO, fontWeight: 700, fontSize: 12.5 } } } },
+    series: [{ type: "custom", data: linhas.map((x, i) => [i, x.media_ajustada, x.ic_inf, x.ic_sup, r.destaques.includes(x.tema) ? 1 : 0]),
+      encode: { x: [1, 2, 3], y: 0 },
+      renderItem: (params, api) => {
+        const y = api.value(0), c = api.coord([api.value(1), y]), a = api.coord([Math.max(1, api.value(2)), y]), b = api.coord([Math.min(5, api.value(3)), y]);
+        const destaque = api.value(4) === 1, cor = destaque ? VERMELHO : "#8d9398";
+        return { type: "group", children: [
+          { type: "line", shape: { x1: a[0], y1: a[1], x2: b[0], y2: b[1] }, style: { stroke: destaque ? "#f3a5a5" : LINHA, lineWidth: 4, lineCap: "round" } },
+          { type: "circle", shape: { cx: c[0], cy: c[1], r: 6 }, style: { fill: cor } },
+          { type: "text", style: { text: fmt(api.value(1)), x: b[0] + 8, y: b[1], align: "left", verticalAlign: "middle",
+            fill: destaque ? VERMELHO : CINZA, font: `600 12px Inter, sans-serif` } },
+        ] };
+      } }] }, true);
+}
+
+async function carregarMapa() {
+  try {
+    const r = await fetch("mapa.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    M = await r.json();
+  } catch (e) {
+    el("g8").innerHTML = '<p class="carregando">Não consegui ler mapa.json.</p>';
+    return;
+  }
+  el("g8").innerHTML = "";
+  graf.g8 = echarts.init(el("g8"), null, { renderer: "canvas" });
+  mapa();
+}
+
 function rodape() {
   const c = D.contagens;
   el("fonte").textContent = `Fonte: ${D.fonte} Coleta mais recente: ${dataBR(D.coleta_mais_recente)}.`;
@@ -306,7 +454,7 @@ function rodape() {
 function desenhar() {
   controles();
   el("conclusao").innerHTML = frase();
-  kpis(); g1(); g5(); g2(); g3(); g4(); recentes(); checagens();
+  kpis(); g1(); g5(); g2(); g3(); g4(); regressao(); mapa(); recentes(); checagens();
 }
 
 async function iniciar() {
@@ -323,12 +471,14 @@ async function iniciar() {
   el("atualizado").textContent = a.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
   estado.segmento = Object.keys(D.segmentos)[0];
   estado.app = empresas()[0];
-  ["g1", "g2", "g3", "g4", "g5"].forEach((id) => { graf[id] = echarts.init(el(id), null, { renderer: "svg" }); });
+  ["g1", "g2", "g3", "g4", "g5", "g9"].forEach((id) => { graf[id] = echarts.init(el(id), null, { renderer: "svg" }); });
+  el("f-apagar").onchange = (ev) => { mapaEstado.apagar = ev.target.checked; mapa(); };
   rodape();
   desenhar();
   const ajustar = () => Object.values(graf).forEach((g) => g.resize());
   addEventListener("resize", ajustar);
   if (document.fonts) document.fonts.ready.then(ajustar);
+  carregarMapa();  // o mapa é o arquivo maior: só depois que o resto da página está desenhado
 }
 iniciar();
 </script>

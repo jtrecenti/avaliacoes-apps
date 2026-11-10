@@ -5,7 +5,9 @@ Passos (cada um num arquivo de monitor/passos/):
   2. juntar   todas as coletas, sem repetir avaliação, com dados pessoais mascarados
   3. checar   as frases que precisam ser verdade; se uma que bloqueia falhar, para aqui
   4. anotar   tema e reclamação com o Jev (só o que não está no cache)
-  5. painel   grava docs/painel/dados.json, que a página do painel lê
+  5. modelos  o mapa das avaliações (TF-IDF + t-SNE, em docs/painel/mapa.json) e a
+              regressão do que explica a nota (vai no dados.json)
+  6. painel   grava docs/painel/dados.json, que a página do painel lê
 
 Opções:
   --coletar-de-novo  coleta mesmo que já exista coleta hoje (gera um arquivo novo)
@@ -26,14 +28,15 @@ from passos.p1_coletar import coletar, ler_coletas  # noqa: E402
 from passos.p2_juntar import juntar  # noqa: E402
 from passos.p3_checar import checar, checar_anotacao  # noqa: E402
 from passos.p4_anotar import anotar  # noqa: E402
-from passos.p5_painel import calcular, gravar  # noqa: E402
+from passos.p5_modelos import gravar_mapa, mapa, regressao  # noqa: E402
+from passos.p6_painel import calcular, gravar  # noqa: E402
 
 
 def main(args: list[str]) -> int:
     t0 = time.perf_counter()
     apps = ler_apps()
 
-    print("1/5 coletar")
+    print("1/6 coletar")
     hoje = agora().strftime("%Y-%m-%d")
     ja_tem = any((COLETAS / hoje).glob("avaliacoes_*.csv.gz"))
     if "--sem-coleta" in args:
@@ -48,10 +51,10 @@ def main(args: list[str]) -> int:
         return 1
     ultima = max(coletas)
 
-    print("2/5 juntar")
+    print("2/6 juntar")
     base, log = juntar(coletas)
 
-    print("3/5 checar")
+    print("3/6 checar")
     ch = checar(coletas, notas, base, apps)
     travas = [x for x in ch if not x["ok"] and x["nivel"] == "bloqueia"]
     if travas:
@@ -59,11 +62,15 @@ def main(args: list[str]) -> int:
               "O painel publicado continua com a última versão boa. Resolva e rode de novo.")
         return 1
 
-    print("4/5 anotar (Jev)")
+    print("4/6 anotar (Jev)")
     est, res = anotar(base, ultima[:10])
     ch += checar_anotacao(est)
 
-    print("5/5 painel")
+    print("5/6 modelos (mapa e regressão)")
+    m = mapa(est)
+    reg = regressao(est)
+
+    print("6/6 painel")
     dic = json.loads((REGRAS / "dicionario.json").read_text(encoding="utf-8"))
     temas = dic["variaveis"]["tema"]["opcoes_por_segmento"]
     temas = {seg: list(op) for seg, op in temas.items()}
@@ -79,9 +86,13 @@ def main(args: list[str]) -> int:
         "confianca_baixa_reclamacao": int(res["conf_baixa_reclamacao"]),
         "classificadas_nesta_rodada": int(res["classificadas_agora"]),
         "segundos_jev_nesta_rodada": res["segundos"],
+        "pontos_no_mapa": int(sum(s["n"] for s in m["segmentos"].values())),
+        "fora_do_mapa": int(sum(s["fora"] for s in m["segmentos"].values())),
+        "segundos_modelos": m["segundos"],
         "log": log,
     }
-    dados = calcular(base, est, notas[ultima], apps, ch, contagens, ultima, temas)
+    dados = calcular(base, est, notas[ultima], apps, ch, contagens, ultima, temas, reg)
+    gravar_mapa(m)
     gravar(dados)
     print(f"pronto em {time.perf_counter() - t0:.0f} s")
     return 0

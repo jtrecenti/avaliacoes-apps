@@ -1,4 +1,5 @@
-# Atualiza o painel: coleta as avaliações, junta, checa, anota com o Jev e grava docs/painel/dados.json.
+# Atualiza o painel: coleta as avaliações, junta, checa, anota com o Jev, roda os modelos (mapa e regressão,
+# sem API, em segundos) e grava docs/painel/dados.json e docs/painel/mapa.json.
 # Roda sozinho todo dia às 09:00 de Brasília e também pelo botão "Run workflow" da aba Actions.
 # Se uma checagem que bloqueia falhar, o job falha e nada é gravado no repositório.
 name: Atualizar painel

@@ -12,15 +12,38 @@ de cada avaliação com IA (o Jev) e publica um painel.
 
 ## Como o monitor funciona
 
-`python monitor/rodar.py` roda cinco passos, cada um num arquivo de `monitor/passos/`:
+`python monitor/rodar.py` roda seis passos, cada um num arquivo de `monitor/passos/`:
 
 1. **coletar**: as avaliações mais recentes nas duas lojas e a nota oficial de cada app.
 2. **juntar**: todas as coletas numa base só; a mesma avaliação conta uma vez.
 3. **checar**: frases que precisam ser verdade. Se uma que bloqueia falhar, o painel não é atualizado.
 4. **anotar**: o Jev classifica o tema e se a avaliação reclama de algo (últimos 90 dias).
-5. **painel**: grava `docs/painel/dados.json`, que a página do painel lê.
+5. **modelos**: o mapa das avaliações e a regressão do que explica a nota (veja abaixo).
+6. **painel**: grava `docs/painel/dados.json`, que a página do painel lê.
 
 Cada passo diz quantas linhas entraram, quantas saíram e por quê.
+
+### Os dois modelos (passo 5)
+
+Rodam no próprio computador (ou no GitHub Actions), sem API e sem chave, em uns
+15 segundos, e dão sempre o mesmo resultado com os mesmos dados.
+
+- **Mapa das avaliações.** Cada avaliação dos últimos 90 dias (título e texto)
+  vira um vetor com as palavras que ela usa (TF-IDF: minúsculas, sem acento, sem
+  palavras muito comuns e sem o nome dos apps, palavras e pares de palavras). O
+  vetor é resumido em 100 números (TruncatedSVD) e o t-SNE projeta tudo num plano:
+  avaliações que usam palavras parecidas ficam perto. Um mapa por segmento, em
+  `docs/painel/mapa.json`, que a página lê depois de desenhar o resto. O título
+  diz qual tema forma o grupo mais nítido (a % das 10 avaliações mais parecidas
+  com cada uma que têm o mesmo tema). O mapa mostra só o corpo da avaliação,
+  cortado em 140 caracteres e mascarado: o título fica de fora porque na App
+  Store muita gente escreve o próprio nome nele.
+- **O que explica a nota.** Entre as reclamações dos últimos 90 dias, uma
+  regressão linear: `nota ~ tema + app + loja` (statsmodels, erros robustos HC3).
+  Para cada tema com pelo menos 30 reclamações, a média ajustada é a nota que o
+  modelo prevê se todas as reclamações fossem daquele tema, com a mesma mistura
+  de apps e lojas, com intervalo de 95%. Vai em `dados.json`, dentro de cada
+  segmento (`regressao`), com o R² e a frase da conclusão.
 
 ```
 monitor/
@@ -32,7 +55,7 @@ monitor/
   dados/processados/     a base juntada (avaliacoes.csv.gz)
   dados/estruturado/     o cache das respostas do Jev (sem o texto)
   AGENTS.md              as regras do projeto, para pessoas e agentes
-docs/painel/             a página do painel (index.html, estilo.css, dados.json)
+docs/painel/             a página do painel (index.html, estilo.css, dados.json, mapa.json)
 testes/                  testes automáticos (pytest)
 ```
 

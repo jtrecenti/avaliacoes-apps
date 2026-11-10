@@ -6,7 +6,7 @@
  * scripts/dados_slides.py reescreve o bloco DADOS abaixo. Nada escrito à mão.
  */
 /* DADOS-INICIO */
-const DADOS_AP = {"apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"nota_loja": 4.82, "n_loja": 1673353, "media_escrita": 3.32, "n": 176}, "play": {"nota_loja": 4.76, "n_loja": 6007902, "media_escrita": 4.07, "n": 500}}, {"empresa": "Itaú", "segmento": "Bancos", "ios": {"nota_loja": 4.7, "n_loja": 3283483, "media_escrita": 3.31, "n": 304}, "play": {"nota_loja": 4.77, "n_loja": 5923821, "media_escrita": 3.47, "n": 500}}, {"empresa": "Banco do Brasil", "segmento": "Bancos", "ios": {"nota_loja": 4.75, "n_loja": 4280030, "media_escrita": 4.1, "n": 250}, "play": {"nota_loja": 4.71, "n_loja": 8544485, "media_escrita": 3.26, "n": 500}}, {"empresa": "Bradesco", "segmento": "Bancos", "ios": {"nota_loja": 4.73, "n_loja": 3147864, "media_escrita": 1.91, "n": 129}, "play": {"nota_loja": 4.69, "n_loja": 6083931, "media_escrita": 2.86, "n": 500}}, {"empresa": "iFood", "segmento": "Delivery", "ios": {"nota_loja": 4.86, "n_loja": 8994959, "media_escrita": 3.62, "n": 500}, "play": {"nota_loja": 4.71, "n_loja": 13495906, "media_escrita": 3.91, "n": 500}}, {"empresa": "Rappi", "segmento": "Delivery", "ios": {"nota_loja": 4.54, "n_loja": 448892, "media_escrita": 1.7, "n": 47}, "play": {"nota_loja": 4.05, "n_loja": 2383951, "media_escrita": 2.2, "n": 76}}, {"empresa": "Zé Delivery", "segmento": "Delivery", "ios": {"nota_loja": 4.93, "n_loja": 697696, "media_escrita": 3.83, "n": 81}, "play": {"nota_loja": 4.9, "n_loja": 1815356, "media_escrita": 4.19, "n": 500}}], "temas": {"Bancos": {"apps": ["Nubank", "Itaú", "Banco do Brasil", "Bradesco"], "temas": ["app com falha", "acesso e login", "pix e pagamentos", "cartão e fatura", "crédito e limite", "atendimento", "tarifas e cobranças", "conta bloqueada ou encerrada"], "pct": {"Nubank": {"app com falha": 34.6, "acesso e login": 13.7, "pix e pagamentos": 11.6, "cartão e fatura": 3.5, "crédito e limite": 9.3, "golpe e segurança": 2.9, "conta bloqueada ou encerrada": 4.2, "tarifas e cobranças": 3.5, "atendimento": 1.4, "sugestão de recurso": 4.8, "crítica geral": 7.1, "elogio geral": 0.0, "outro": 3.5}, "Itaú": {"app com falha": 24.4, "acesso e login": 18.8, "pix e pagamentos": 11.4, "cartão e fatura": 8.2, "crédito e limite": 4.4, "golpe e segurança": 2.0, "conta bloqueada ou encerrada": 0.8, "tarifas e cobranças": 3.6, "atendimento": 5.8, "sugestão de recurso": 5.0, "crítica geral": 12.8, "elogio geral": 0.2, "outro": 2.8}, "Banco do Brasil": {"app com falha": 46.5, "acesso e login": 21.7, "pix e pagamentos": 7.0, "cartão e fatura": 1.2, "crédito e limite": 0.6, "golpe e segurança": 0.9, "conta bloqueada ou encerrada": 0.6, "tarifas e cobranças": 0.6, "atendimento": 2.1, "sugestão de recurso": 2.4, "crítica geral": 14.1, "elogio geral": 0.3, "outro": 1.8}, "Bradesco": {"app com falha": 34.3, "acesso e login": 20.1, "pix e pagamentos": 11.2, "cartão e fatura": 4.1, "crédito e limite": 2.1, "golpe e segurança": 0.5, "conta bloqueada ou encerrada": 1.0, "tarifas e cobranças": 2.9, "atendimento": 4.5, "sugestão de recurso": 3.4, "crítica geral": 13.8, "elogio geral": 0.2, "outro": 1.9}}, "top": {"Nubank": "app com falha", "Itaú": "app com falha", "Banco do Brasil": "app com falha", "Bradesco": "app com falha"}, "reclama": {"Nubank": 51.8, "Itaú": 50.1, "Banco do Brasil": 43.6, "Bradesco": 68.4}}, "Delivery": {"apps": ["iFood", "Rappi", "Zé Delivery"], "temas": ["atraso na entrega", "app com falha", "cupons e promoções", "cancelamento e reembolso", "atendimento", "preços e taxas", "pagamento", "conta e cadastro"], "pct": {"iFood": {"app com falha": 6.1, "atraso na entrega": 10.0, "pedido errado ou incompleto": 6.1, "cancelamento e reembolso": 11.9, "preços e taxas": 8.9, "cupons e promoções": 14.1, "pagamento": 8.9, "conta e cadastro": 3.6, "atendimento": 13.9, "entregador": 1.9, "qualidade da comida ou do produto": 2.8, "crítica geral": 5.5, "elogio geral": 0.8, "outro": 5.5}, "Rappi": {"app com falha": 15.5, "atraso na entrega": 15.9, "pedido errado ou incompleto": 7.3, "cancelamento e reembolso": 10.1, "preços e taxas": 5.8, "cupons e promoções": 3.4, "pagamento": 10.1, "conta e cadastro": 4.6, "atendimento": 9.5, "entregador": 3.7, "qualidade da comida ou do produto": 0.6, "crítica geral": 9.1, "elogio geral": 0.0, "outro": 4.6}, "Zé Delivery": {"app com falha": 11.3, "atraso na entrega": 9.3, "pedido errado ou incompleto": 5.3, "cancelamento e reembolso": 8.3, "preços e taxas": 10.7, "cupons e promoções": 15.0, "pagamento": 2.3, "conta e cadastro": 11.0, "atendimento": 4.3, "entregador": 4.0, "qualidade da comida ou do produto": 4.3, "crítica geral": 7.3, "elogio geral": 0.3, "outro": 6.3}}, "top": {"iFood": "cupons e promoções", "Rappi": "atraso na entrega", "Zé Delivery": "cupons e promoções"}, "reclama": {"iFood": 36.1, "Rappi": 80.4, "Zé Delivery": 32.8}}}, "linha": {"empresa": "Itaú", "loja": "Google Play", "nota": 5, "titulo": "", "texto": "Não estou conseguindo acessar a fatura do cartão de crédito", "tema": "cartão e fatura", "conf_tema": 0.98, "reclamacao": "sim", "conf_reclamacao": 0.94}, "checagens": [{"frase": "toda coleta tem exatamente as colunas esperadas", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma coleta guarda nome, apelido ou foto de quem avaliou", "nivel": "bloqueia", "ok": true}, {"frase": "todo aplicativo da lista veio nas duas lojas na coleta mais recente", "nivel": "bloqueia", "ok": true}, {"frase": "toda avaliação tem loja, empresa, identificador, data e nota", "nivel": "bloqueia", "ok": true}, {"frase": "toda nota está entre 1 e 5", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação repetida na base final", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação com data depois do dia da coleta", "nivel": "bloqueia", "ok": true}, {"frase": "nenhum texto com telefone, e-mail ou CPF sem máscara", "nivel": "bloqueia", "ok": true}, {"frase": "a coleta mais recente tem pelo menos 200 avaliações por app e loja", "nivel": "alerta", "ok": true}, {"frase": "a nota oficial da loja veio para todo app nas duas lojas", "nivel": "alerta", "ok": true}, {"frase": "cada coleta alcança a anterior (nenhuma avaliação perdida no meio)", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação mudou entre coletas", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação precisou de máscara de dado pessoal", "nivel": "alerta", "ok": false}, {"frase": "toda avaliação dos últimos 90 dias tem tema", "nivel": "alerta", "ok": true}, {"frase": "menos de 10% dos temas com confiança abaixo de 60%", "nivel": "alerta", "ok": false}], "fonte": "App Store e Google Play, coleta de 09/11/2026; média das escritas: últimos 30 dias", "fonte_temas": "% das avaliações que reclamam, por tema; últimos 90 dias, as duas lojas; coleta de 09/11/2026", "texto": {"n_avaliacoes": "6.350", "n_anotadas": "5.972", "n_textos_jev": "5.267", "seg_jev": "63", "conf_baixa": "614", "opcoes_bancos": "app com falha, acesso e login, pix e pagamentos, cartão e fatura, crédito e limite, golpe e segurança, conta bloqueada ou encerrada, tarifas e cobranças, atendimento, sugestão de recurso, crítica geral, elogio geral, outro", "leg_temas_bancos": "**Bancos:** nos quatro, o tema número 1 é **app com falha**: de 24% das reclamações (Itaú) a 46% (Banco do Brasil).", "leg_temas_delivery": "**Delivery:** no iFood, **cupons e promoções**; no Rappi, **atraso na entrega**; no Zé Delivery, **cupons e promoções**. E 80% das avaliações do Rappi reclamam de algo.", "leg_notas": "Em **14 dos 14** pares de app e loja, quem escreve dá nota menor que a média da loja. A maior distância: Rappi na App Store, 4,5 na página e 1,7 nas escritas.", "n_checagens": "15", "n_ok": "13"}};
+const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "modelo": "gpt-5.6-luna", "pergunta": "Abaixo estão 500 avaliações do aplicativo do Itaú. Quantas delas citam o Pix? Responda só com o número.", "respostas_modelo": [32, 32, 32], "regra": "\\bpix\\b", "script": 32}, "jev": {"chamadas": [{"empresa": "Itaú", "segmento": "Bancos", "loja": "play_store", "nota": 5, "titulo": "", "texto": "Não estou conseguindo acessar a fatura do cartão de crédito", "estado": {"texto": "Não estou conseguindo acessar a fatura do cartão de crédito"}, "tema": "cartão e fatura", "probs": [["cartão e fatura", 0.98], ["acesso e login", 0.02], ["app com falha", 0.0], ["pix e pagamentos", 0.0], ["crédito e limite", 0.0]], "reclamacao": 0.95}, {"empresa": "Zé Delivery", "segmento": "Delivery", "loja": "app_store", "nota": 1, "titulo": "Taxa de entrega abusiva", "texto": "Dou apenas uma estrela. \nCerveja quente, taxa de quase R$7,00", "estado": {"titulo": "Taxa de entrega abusiva", "texto": "Dou apenas uma estrela. \nCerveja quente, taxa de quase R$7,00"}, "tema": "preços e taxas", "probs": [["preços e taxas", 0.99], ["qualidade da comida ou do produto", 0.01], ["app com falha", 0.0], ["atraso na entrega", 0.0], ["pedido errado ou incompleto", 0.0]], "reclamacao": 0.98}, {"empresa": "iFood", "segmento": "Delivery", "loja": "app_store", "nota": 5, "titulo": "Muito bom", "texto": "Praticidade e ótimos descontos", "estado": {"titulo": "Muito bom", "texto": "Praticidade e ótimos descontos"}, "tema": "elogio geral", "probs": [["elogio geral", 0.55], ["cupons e promoções", 0.44], ["preços e taxas", 0.01], ["app com falha", 0.0], ["atraso na entrega", 0.0]], "reclamacao": 0.02}], "tabela": [{"empresa": "iFood", "nota": 5, "texto": "Praticidade e ótimos descontos", "tema": "elogio geral", "conf": 0.51, "reclama": false}, {"empresa": "iFood", "nota": 4, "texto": "Muita praticidade e promoção apenas para reembolso ou troca que deveriam melhorar .", "tema": "cupons e promoções", "conf": 0.48, "reclama": true}, {"empresa": "Zé Delivery", "nota": 1, "texto": "Era um app bom, pena que agora começaram a escolher onde querem entregar", "tema": "cancelamento e reembolso", "conf": 0.35, "reclama": true}, {"empresa": "iFood", "nota": 5, "texto": "e miito bom tem desconto de 1,89 e 0,09 centavos é muito bom", "tema": "cupons e promoções", "conf": 0.59, "reclama": false}, {"empresa": "iFood", "nota": 5, "texto": "Hace lo q tiene q hacer el app \nLo hace bien q mas", "tema": "elogio geral", "conf": 1.0, "reclama": false}, {"empresa": "iFood", "nota": 5, "texto": "ótima experiência !!! muito bom o Ifood 💗", "tema": "elogio geral", "conf": 1.0, "reclama": false}, {"empresa": "iFood", "nota": 5, "texto": "foi umas das melhores coisas que já fizeram porque adianta muito a sua vida.", "tema": "elogio geral", "conf": 0.99, "reclama": false}, {"empresa": "Zé Delivery", "nota": 2, "texto": "Utilizo apenas em situação de necessidade mas não é a minha primeira nem segunda opção", "tema": "preços e taxas", "conf": 1.0, "reclama": true}]}, "apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"nota_loja": 4.82, "n_loja": 1673353, "media_escrita": 3.32, "n": 176}, "play": {"nota_loja": 4.76, "n_loja": 6007902, "media_escrita": 4.07, "n": 500}}, {"empresa": "Itaú", "segmento": "Bancos", "ios": {"nota_loja": 4.7, "n_loja": 3283483, "media_escrita": 3.31, "n": 304}, "play": {"nota_loja": 4.77, "n_loja": 5923821, "media_escrita": 3.47, "n": 500}}, {"empresa": "Banco do Brasil", "segmento": "Bancos", "ios": {"nota_loja": 4.75, "n_loja": 4280030, "media_escrita": 4.1, "n": 250}, "play": {"nota_loja": 4.71, "n_loja": 8544485, "media_escrita": 3.26, "n": 500}}, {"empresa": "Bradesco", "segmento": "Bancos", "ios": {"nota_loja": 4.73, "n_loja": 3147864, "media_escrita": 1.91, "n": 129}, "play": {"nota_loja": 4.69, "n_loja": 6083931, "media_escrita": 2.86, "n": 500}}, {"empresa": "iFood", "segmento": "Delivery", "ios": {"nota_loja": 4.86, "n_loja": 8994959, "media_escrita": 3.62, "n": 500}, "play": {"nota_loja": 4.71, "n_loja": 13495906, "media_escrita": 3.91, "n": 500}}, {"empresa": "Rappi", "segmento": "Delivery", "ios": {"nota_loja": 4.54, "n_loja": 448892, "media_escrita": 1.7, "n": 47}, "play": {"nota_loja": 4.05, "n_loja": 2383951, "media_escrita": 2.2, "n": 76}}, {"empresa": "Zé Delivery", "segmento": "Delivery", "ios": {"nota_loja": 4.93, "n_loja": 697696, "media_escrita": 3.83, "n": 81}, "play": {"nota_loja": 4.9, "n_loja": 1815356, "media_escrita": 4.19, "n": 500}}], "temas": {"Bancos": {"apps": ["Nubank", "Itaú", "Banco do Brasil", "Bradesco"], "temas": ["app com falha", "acesso e login", "pix e pagamentos", "cartão e fatura", "crédito e limite", "atendimento", "tarifas e cobranças", "conta bloqueada ou encerrada"], "pct": {"Nubank": {"app com falha": 34.6, "acesso e login": 13.7, "pix e pagamentos": 11.6, "cartão e fatura": 3.5, "crédito e limite": 9.3, "golpe e segurança": 2.9, "conta bloqueada ou encerrada": 4.2, "tarifas e cobranças": 3.5, "atendimento": 1.4, "sugestão de recurso": 4.8, "crítica geral": 7.1, "elogio geral": 0.0, "outro": 3.5}, "Itaú": {"app com falha": 24.4, "acesso e login": 18.8, "pix e pagamentos": 11.4, "cartão e fatura": 8.2, "crédito e limite": 4.4, "golpe e segurança": 2.0, "conta bloqueada ou encerrada": 0.8, "tarifas e cobranças": 3.6, "atendimento": 5.8, "sugestão de recurso": 5.0, "crítica geral": 12.8, "elogio geral": 0.2, "outro": 2.8}, "Banco do Brasil": {"app com falha": 46.5, "acesso e login": 21.7, "pix e pagamentos": 7.0, "cartão e fatura": 1.2, "crédito e limite": 0.6, "golpe e segurança": 0.9, "conta bloqueada ou encerrada": 0.6, "tarifas e cobranças": 0.6, "atendimento": 2.1, "sugestão de recurso": 2.4, "crítica geral": 14.1, "elogio geral": 0.3, "outro": 1.8}, "Bradesco": {"app com falha": 34.3, "acesso e login": 20.1, "pix e pagamentos": 11.2, "cartão e fatura": 4.1, "crédito e limite": 2.1, "golpe e segurança": 0.5, "conta bloqueada ou encerrada": 1.0, "tarifas e cobranças": 2.9, "atendimento": 4.5, "sugestão de recurso": 3.4, "crítica geral": 13.8, "elogio geral": 0.2, "outro": 1.9}}, "top": {"Nubank": "app com falha", "Itaú": "app com falha", "Banco do Brasil": "app com falha", "Bradesco": "app com falha"}, "reclama": {"Nubank": 51.8, "Itaú": 50.1, "Banco do Brasil": 43.6, "Bradesco": 68.4}}, "Delivery": {"apps": ["iFood", "Rappi", "Zé Delivery"], "temas": ["atraso na entrega", "app com falha", "cupons e promoções", "cancelamento e reembolso", "atendimento", "preços e taxas", "pagamento", "conta e cadastro"], "pct": {"iFood": {"app com falha": 6.1, "atraso na entrega": 10.0, "pedido errado ou incompleto": 6.1, "cancelamento e reembolso": 11.9, "preços e taxas": 8.9, "cupons e promoções": 14.1, "pagamento": 8.9, "conta e cadastro": 3.6, "atendimento": 13.9, "entregador": 1.9, "qualidade da comida ou do produto": 2.8, "crítica geral": 5.5, "elogio geral": 0.8, "outro": 5.5}, "Rappi": {"app com falha": 15.5, "atraso na entrega": 15.9, "pedido errado ou incompleto": 7.3, "cancelamento e reembolso": 10.1, "preços e taxas": 5.8, "cupons e promoções": 3.4, "pagamento": 10.1, "conta e cadastro": 4.6, "atendimento": 9.5, "entregador": 3.7, "qualidade da comida ou do produto": 0.6, "crítica geral": 9.1, "elogio geral": 0.0, "outro": 4.6}, "Zé Delivery": {"app com falha": 11.3, "atraso na entrega": 9.3, "pedido errado ou incompleto": 5.3, "cancelamento e reembolso": 8.3, "preços e taxas": 10.7, "cupons e promoções": 15.0, "pagamento": 2.3, "conta e cadastro": 11.0, "atendimento": 4.3, "entregador": 4.0, "qualidade da comida ou do produto": 4.3, "crítica geral": 7.3, "elogio geral": 0.3, "outro": 6.3}}, "top": {"iFood": "cupons e promoções", "Rappi": "atraso na entrega", "Zé Delivery": "cupons e promoções"}, "reclama": {"iFood": 36.1, "Rappi": 80.4, "Zé Delivery": 32.8}}}, "linha": {"empresa": "Itaú", "loja": "Google Play", "nota": 5, "titulo": "", "texto": "Não estou conseguindo acessar a fatura do cartão de crédito", "tema": "cartão e fatura", "conf_tema": 0.98, "reclamacao": "sim", "conf_reclamacao": 0.94}, "checagens": [{"frase": "toda coleta tem exatamente as colunas esperadas", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma coleta guarda nome, apelido ou foto de quem avaliou", "nivel": "bloqueia", "ok": true}, {"frase": "todo aplicativo da lista veio nas duas lojas na coleta mais recente", "nivel": "bloqueia", "ok": true}, {"frase": "toda avaliação tem loja, empresa, identificador, data e nota", "nivel": "bloqueia", "ok": true}, {"frase": "toda nota está entre 1 e 5", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação repetida na base final", "nivel": "bloqueia", "ok": true}, {"frase": "nenhuma avaliação com data depois do dia da coleta", "nivel": "bloqueia", "ok": true}, {"frase": "nenhum texto com telefone, e-mail ou CPF sem máscara", "nivel": "bloqueia", "ok": true}, {"frase": "a coleta mais recente tem pelo menos 200 avaliações por app e loja", "nivel": "alerta", "ok": true}, {"frase": "a nota oficial da loja veio para todo app nas duas lojas", "nivel": "alerta", "ok": true}, {"frase": "cada coleta alcança a anterior (nenhuma avaliação perdida no meio)", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação mudou entre coletas", "nivel": "alerta", "ok": true}, {"frase": "nenhuma avaliação precisou de máscara de dado pessoal", "nivel": "alerta", "ok": false}, {"frase": "toda avaliação dos últimos 90 dias tem tema", "nivel": "alerta", "ok": true}, {"frase": "menos de 10% dos temas com confiança abaixo de 60%", "nivel": "alerta", "ok": false}], "fonte": "App Store e Google Play, coleta de 09/11/2026; média das escritas: últimos 30 dias", "fonte_temas": "% das avaliações que reclamam, por tema; últimos 90 dias, as duas lojas; coleta de 09/11/2026", "texto": {"n_avaliacoes": "6.350", "n_anotadas": "5.972", "n_textos_jev": "5.267", "seg_jev": "63", "conf_baixa": "614", "pct_conf_baixa": "10%", "opcoes_bancos": "app com falha, acesso e login, pix e pagamentos, cartão e fatura, crédito e limite, golpe e segurança, conta bloqueada ou encerrada, tarifas e cobranças, atendimento, sugestão de recurso, crítica geral, elogio geral, outro", "leg_temas_bancos": "**Bancos:** nos quatro, o tema número 1 é **app com falha**: de 24% das reclamações (Itaú) a 46% (Banco do Brasil).", "leg_temas_delivery": "**Delivery:** no iFood, **cupons e promoções**; no Rappi, **atraso na entrega**; no Zé Delivery, **cupons e promoções**. E 80% das avaliações do Rappi reclamam de algo.", "leg_notas": "Em **14 dos 14** pares de app e loja, quem escreve dá nota menor que a média da loja. A maior distância: Rappi na App Store, 4,5 na página e 1,7 nas escritas.", "n_checagens": "15", "n_ok": "13"}};
 /* DADOS-FIM */
 (function () {
   "use strict";
@@ -245,8 +245,8 @@ const DADOS_AP = {"apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"
   Motor.cena("ap-portoes", {
     montar(caixa) {
       const s = quadro(caixa, 1120, 330);
-      const PASSOS = [["coletar", "as duas lojas"], ["juntar", "sem repetir"], ["checar", "as frases"], ["anotar", "o tema, com o Jev"], ["painel", "dados.json + página"]];
-      const W = 170, G = 52, Y = 120;
+      const PASSOS = [["coletar", "as duas lojas"], ["juntar", "sem repetir"], ["checar", "as frases"], ["anotar", "tema, com o Jev"], ["modelos", "mapa e regressão"], ["painel", "dados.json + página"]];
+      const W = 150, G = 40, Y = 120;
       this.caixas = [];
       PASSOS.forEach(([a, b], i) => {
         const x = 10 + i * (W + G);
@@ -264,7 +264,7 @@ const DADOS_AP = {"apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"
       txt(this.alerta, xc, 69, "!", { "text-anchor": "middle", "font-size": 28, style: "fill:#fff;font-weight:800" });
       txt(this.alerta, xc + 40, 52, "alerta: \"um app veio com menos", { class: "txt", "font-size": 16 });
       txt(this.alerta, xc + 40, 74, "avaliações que ontem\"; o painel sai, com aviso", { class: "txt", "font-size": 16 });
-      const xp = 10 + 4 * (W + G);
+      const xp = 10 + 5 * (W + G);
       this.aviso = svg("g", {}, s);
       svg("rect", { x: xp + W - 34, y: Y - 14, width: 30, height: 30, rx: 15, fill: "#d59a00" }, this.aviso);
       txt(this.aviso, xp + W - 19, Y + 7, "!", { "text-anchor": "middle", "font-size": 18, style: "fill:#fff;font-weight:800" });
@@ -339,6 +339,115 @@ const DADOS_AP = {"apps": [{"empresa": "Nubank", "segmento": "Bancos", "ios": {"
     },
     passo(k, anim) {
       this.g.slice(1).forEach((g, i) => mostra(g, k >= i + 1, anim));
+    },
+  });
+
+  /* ======================================================================
+   * 8. Contar com o modelo e contar com um script (experimento real)
+   * ==================================================================== */
+  const css2 = document.createElement("style");
+  css2.textContent = `
+  .ap-cont { display: grid; gap: .9rem; margin-top: .2rem; }
+  .ap-cont .linha { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .ap-cont .perg { grid-column: 1 / -1; font-size: .72em; font-weight: 700; background: var(--superficie); border-left: 5px solid var(--azul); padding: .45rem .8rem; border-radius: 0 8px 8px 0; }
+  .ap-cont .perg small { display: block; font-weight: 400; color: var(--texto-fraco); font-size: .85em; }
+  .ap-cont .lado { border: 1.5px solid var(--superficie-borda); border-radius: 12px; padding: .5rem .8rem; font-size: .62em; }
+  .ap-cont .lado b.rot { display: block; margin-bottom: .35rem; }
+  .ap-cont .chips { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+  .ap-cont .chip-n { font-family: "GT Ultra Fine", Georgia, serif; font-size: 2em; font-weight: 700; min-width: 2.4em; text-align: center; border-radius: 10px; padding: .05em .3em; background: color-mix(in srgb, var(--roxo) 14%, transparent); color: var(--roxo); }
+  .ap-cont .chip-n.scr { background: color-mix(in srgb, var(--turquesa) 16%, transparent); color: var(--turquesa); }
+  .ap-cont .chip-n.ruim { background: color-mix(in srgb, var(--marca) 14%, transparent); color: var(--marca); }
+  .ap-cont code { font-size: .95em; }
+  .ap-probs { display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; margin-top: .3rem; }
+  .ap-prob { background: var(--superficie); border-radius: 12px; padding: .6rem .8rem; font-size: .66em; line-height: 1.35; display: flex; flex-direction: column; gap: .45rem; }
+  .ap-prob .meta { color: var(--texto-fraco); font-size: .9em; }
+  .ap-prob .meta .estrelas { color: #d59a00; }
+  .ap-prob .txt { font-weight: 600; min-height: 3.6em; }
+  .ap-prob .op { display: grid; grid-template-columns: 1fr 80px 3em; gap: .4rem; align-items: center; font-size: .95em; }
+  .ap-prob .op i { display: block; height: 12px; border-radius: 6px; background: var(--regua); }
+  .ap-prob .op.top i { background: var(--turquesa); }
+  .ap-prob .op.top span:first-child { font-weight: 700; }
+  .ap-prob .op .pv { text-align: right; font-variant-numeric: tabular-nums; }
+  .ap-prob .rec { border-top: 1px solid var(--regua); padding-top: .35rem; }
+  .ap-teste { border-collapse: collapse; width: 100%; font-size: .56em; margin-top: .2rem; }
+  .ap-teste th { text-align: left; color: var(--texto-fraco); font-weight: 600; padding: .2rem .4rem; border-bottom: 2px solid var(--regua); text-transform: none; letter-spacing: 0; }
+  .ap-teste td { padding: .28rem .4rem; border-bottom: 1px solid var(--regua); vertical-align: middle; }
+  .ap-teste td.cf { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .ap-teste .barra { display: inline-block; width: 60px; height: 10px; border-radius: 5px; background: var(--superficie); overflow: hidden; vertical-align: middle; margin-right: .3rem; }
+  .ap-teste .barra i { display: block; height: 100%; background: var(--turquesa); }
+  .ap-teste tr.baixa.marcar td { background: color-mix(in srgb, var(--marca) 10%, transparent); }
+  .ap-teste tr.baixa.marcar .barra i { background: var(--marca); }
+  `;
+  document.head.appendChild(css2);
+
+  Motor.cena("ap-contagem", {
+    montar(caixa) {
+      const C = D.contagem;
+      if (!C) return;
+      const g = html("div", "ap-cont", caixa);
+      const l1 = html("div", "linha", g);
+      html("div", "perg", l1, `Quantas das ${C.n} avaliações mais recentes do ${C.app} na ${C.loja} citam o Pix?
+        <small>com os dados de hoje</small>`);
+      this.m1 = html("div", "lado", l1, `<b class="rot">O modelo, em três pedidos independentes</b>
+        <div class="chips">${C.respostas_modelo.map((v) => `<span class="chip-n">${v}</span>`).join("")}</div>`);
+      this.s1 = html("div", "lado", l1, `<b class="rot">Um script, com uma regra escrita</b>
+        <div class="chips"><code>re.search(r"\\bpix\\b", texto, re.I)</code><span class="chip-n scr">${C.script}</span></div>`);
+      const l2 = html("div", "linha", g);
+      this.l2 = l2;
+      html("div", "perg", l2, `Num grupo focal de 916 falas, quantas vezes o participante Diego falou de preço?
+        <small>no curso de executivos, com o ChatGPT</small>`);
+      html("div", "lado", l2, `<b class="rot">Três conversas no ChatGPT</b>
+        <div class="chips"><span class="chip-n ruim">13</span><span class="chip-n ruim">12</span><span class="chip-n ruim">25</span></div>`);
+      html("div", "lado", l2, `<b class="rot">O script da habilidade, três vezes</b>
+        <div class="chips"><span class="chip-n scr">5</span><span class="chip-n scr">5</span><span class="chip-n scr">5</span></div>`);
+      esconde([this.m1, this.s1, l2]);
+    },
+    passo(k, anim) {
+      if (!this.m1) return;
+      mostra(this.m1, k >= 1, anim);
+      mostra(this.s1, k >= 2, anim);
+      mostra(this.l2, k >= 3, anim);
+    },
+  });
+
+  /* ======================================================================
+   * 9. As respostas do Jev, com a probabilidade de cada opção
+   * ==================================================================== */
+  Motor.cena("ap-probs", {
+    montar(caixa) {
+      const g = html("div", "ap-probs", caixa);
+      this.cards = (D.jev?.chamadas || []).map((c) => {
+        const ops = c.probs.slice(0, 3).map(([k, v], i) => `
+          <div class="op${i === 0 ? " top" : ""}"><span>${k}</span><span><i style="width:${Math.max(2, v * 100)}%"></i></span><span class="pv">${pct(v * 100)}</span></div>`).join("");
+        return html("div", "ap-prob", g, `
+          <div class="meta">${c.empresa} · ${c.loja === "app_store" ? "App Store" : "Google Play"} · <span class="estrelas">${"★".repeat(c.nota)}${"☆".repeat(5 - c.nota)}</span></div>
+          <div class="txt">${(c.titulo ? c.titulo + ". " : "") + c.texto}</div>
+          <div><b>tema</b> (3 opções mais prováveis)</div>${ops}
+          <div class="rec"><b>reclama de algo?</b> sim, com ${pct(c.reclamacao * 100)}</div>`);
+      });
+      esconde(this.cards.slice(1));
+    },
+    passo(k, anim) {
+      this.cards.forEach((c, i) => mostra(c, k >= i, anim));
+    },
+  });
+
+  /* ======================================================================
+   * 10. Teste em oito avaliações: onde a confiança é baixa
+   * ==================================================================== */
+  Motor.cena("ap-teste", {
+    montar(caixa) {
+      const linhas = D.jev?.tabela || [];
+      const t = html("table", "ap-teste", caixa, `
+        <thead><tr><th>app</th><th>★</th><th>avaliação</th><th>tema do Jev</th><th>confiança</th></tr></thead>
+        <tbody>${linhas.map((r) => `
+          <tr class="${r.conf < 0.6 ? "baixa" : ""}"><td>${r.empresa}</td><td>${r.nota}</td><td>${r.texto}</td>
+          <td><b>${r.tema}</b></td><td class="cf"><span class="barra"><i style="width:${r.conf * 100}%"></i></span>${pct(r.conf * 100)}</td></tr>`).join("")}
+        </tbody>`);
+      this.baixas = [...t.querySelectorAll("tr.baixa")];
+    },
+    passo(k) {
+      this.baixas.forEach((r) => r.classList.toggle("marcar", k >= 1));
     },
   });
 })();

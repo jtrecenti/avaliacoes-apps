@@ -1,0 +1,214 @@
+{
+ "modelo": "jev-latest",
+ "chamadas": [
+  {
+   "empresa": "Itaú",
+   "segmento": "Bancos",
+   "loja": "play_store",
+   "nota": 5,
+   "titulo": "",
+   "texto": "Não estou conseguindo acessar a fatura do cartão de crédito",
+   "estado": {
+    "texto": "Não estou conseguindo acessar a fatura do cartão de crédito"
+   },
+   "tema": "cartão e fatura",
+   "probs": [
+    [
+     "cartão e fatura",
+     0.98
+    ],
+    [
+     "acesso e login",
+     0.02
+    ],
+    [
+     "app com falha",
+     0.0
+    ],
+    [
+     "pix e pagamentos",
+     0.0
+    ],
+    [
+     "crédito e limite",
+     0.0
+    ]
+   ],
+   "reclamacao": 0.95
+  },
+  {
+   "empresa": "Zé Delivery",
+   "segmento": "Delivery",
+   "loja": "app_store",
+   "nota": 1,
+   "titulo": "Taxa de entrega abusiva",
+   "texto": "Dou apenas uma estrela. \nCerveja quente, taxa de quase R$7,00",
+   "estado": {
+    "titulo": "Taxa de entrega abusiva",
+    "texto": "Dou apenas uma estrela. \nCerveja quente, taxa de quase R$7,00"
+   },
+   "tema": "preços e taxas",
+   "probs": [
+    [
+     "preços e taxas",
+     0.99
+    ],
+    [
+     "qualidade da comida ou do produto",
+     0.01
+    ],
+    [
+     "app com falha",
+     0.0
+    ],
+    [
+     "atraso na entrega",
+     0.0
+    ],
+    [
+     "pedido errado ou incompleto",
+     0.0
+    ]
+   ],
+   "reclamacao": 0.98
+  },
+  {
+   "empresa": "iFood",
+   "segmento": "Delivery",
+   "loja": "app_store",
+   "nota": 5,
+   "titulo": "Muito bom",
+   "texto": "Praticidade e ótimos descontos",
+   "estado": {
+    "titulo": "Muito bom",
+    "texto": "Praticidade e ótimos descontos"
+   },
+   "tema": "elogio geral",
+   "probs": [
+    [
+     "elogio geral",
+     0.55
+    ],
+    [
+     "cupons e promoções",
+     0.44
+    ],
+    [
+     "preços e taxas",
+     0.01
+    ],
+    [
+     "app com falha",
+     0.0
+    ],
+    [
+     "atraso na entrega",
+     0.0
+    ]
+   ],
+   "reclamacao": 0.02
+  }
+ ],
+ "tabela": [
+  {
+   "empresa": "iFood",
+   "nota": 5,
+   "texto": "Praticidade e ótimos descontos",
+   "tema": "elogio geral",
+   "conf": 0.51,
+   "reclama": false
+  },
+  {
+   "empresa": "iFood",
+   "nota": 4,
+   "texto": "Muita praticidade e promoção apenas para reembolso ou troca que deveriam melhorar .",
+   "tema": "cupons e promoções",
+   "conf": 0.48,
+   "reclama": true
+  },
+  {
+   "empresa": "Zé Delivery",
+   "nota": 1,
+   "texto": "Era um app bom, pena que agora começaram a escolher onde querem entregar",
+   "tema": "cancelamento e reembolso",
+   "conf": 0.35,
+   "reclama": true
+  },
+  {
+   "empresa": "iFood",
+   "nota": 5,
+   "texto": "e miito bom tem desconto de 1,89 e 0,09 centavos é muito bom",
+   "tema": "cupons e promoções",
+   "conf": 0.59,
+   "reclama": false
+  },
+  {
+   "empresa": "iFood",
+   "nota": 5,
+   "texto": "Hace lo q tiene q hacer el app \nLo hace bien q mas",
+   "tema": "elogio geral",
+   "conf": 1.0,
+   "reclama": false
+  },
+  {
+   "empresa": "iFood",
+   "nota": 5,
+   "texto": "ótima experiência !!! muito bom o Ifood 💗",
+   "tema": "elogio geral",
+   "conf": 1.0,
+   "reclama": false
+  },
+  {
+   "empresa": "iFood",
+   "nota": 5,
+   "texto": "foi umas das melhores coisas que já fizeram porque adianta muito a sua vida.",
+   "tema": "elogio geral",
+   "conf": 0.99,
+   "reclama": false
+  },
+  {
+   "empresa": "Zé Delivery",
+   "nota": 2,
+   "texto": "Utilizo apenas em situação de necessidade mas não é a minha primeira nem segunda opção",
+   "tema": "preços e taxas",
+   "conf": 1.0,
+   "reclama": true
+  }
+ ],
+ "opcoes": {
+  "Bancos": {
+   "app com falha": "o aplicativo trava, fecha sozinho, dá erro, não abre, está lento ou piorou depois de uma atualização",
+   "acesso e login": "não consegue entrar na conta, senha, biometria, reconhecimento facial, liberar o celular, abrir conta pelo app",
+   "pix e pagamentos": "pix, transferências, TED, pagar boletos, DDA, pagamento que não sai",
+   "cartão e fatura": "cartão de crédito ou débito, fatura, compra recusada, cartão bloqueado",
+   "crédito e limite": "limite do cartão, empréstimo, financiamento, crédito negado ou reduzido",
+   "golpe e segurança": "golpe, fraude, conta invadida, dinheiro sumiu, transação que a pessoa não fez",
+   "conta bloqueada ou encerrada": "o banco bloqueou, restringiu ou encerrou a conta, ou a pessoa quer encerrar a conta",
+   "tarifas e cobranças": "tarifas, mensalidade, cobrança indevida, juros",
+   "atendimento": "SAC, chat, central telefônica, gerente, agência, demora ou falta de solução",
+   "sugestão de recurso": "pede uma função nova ou uma melhoria no aplicativo, sem relatar uma falha",
+   "crítica geral": "a avaliação critica o app ou a empresa sem dizer qual é o problema (ex.: 'horrível', 'péssimo')",
+   "elogio geral": "a avaliação elogia o app ou o banco sem apontar um problema",
+   "outro": "nenhuma das opções acima"
+  },
+  "Delivery": {
+   "app com falha": "o aplicativo trava, fecha sozinho, dá erro, não carrega, está lento ou não mostra as lojas",
+   "atraso na entrega": "o pedido demorou, atrasou ou nunca chegou, rastreamento errado",
+   "pedido errado ou incompleto": "veio item errado, faltando, violado, estragado ou diferente do pedido",
+   "cancelamento e reembolso": "pedido cancelado, estorno, reembolso que não veio, dinheiro não devolvido",
+   "preços e taxas": "preço alto, taxa de entrega, taxa de serviço, valor diferente do anunciado",
+   "cupons e promoções": "cupons, descontos, clube de assinatura, promoções que não funcionam",
+   "pagamento": "forma de pagamento recusada, cartão, pix, vale-refeição, cobrança duplicada",
+   "conta e cadastro": "não consegue entrar, criar conta, validar dados, conta bloqueada",
+   "atendimento": "suporte, chat, central de ajuda, demora ou falta de solução",
+   "entregador": "conduta do entregador, entregador pede dinheiro, não sobe, é rude",
+   "qualidade da comida ou do produto": "comida fria, ruim, de má qualidade, produto vencido ou diferente do anúncio",
+   "crítica geral": "a avaliação critica o app ou a empresa sem dizer qual é o problema (ex.: 'horrível', 'péssimo')",
+   "elogio geral": "a avaliação elogia o app ou a empresa sem apontar um problema",
+   "outro": "nenhuma das opções acima"
+  }
+ },
+ "instrucoes": "Você lê avaliações de aplicativos escritas por clientes na App Store ou na Play Store do Brasil. Responda a cada pergunta só com base no título e no texto da avaliação.",
+ "pergunta_tema": "Qual é o assunto principal da avaliação?",
+ "pergunta_rec": "A avaliação reclama de alguma coisa (um problema, uma falha ou uma insatisfação com o app ou a empresa)?"
+}

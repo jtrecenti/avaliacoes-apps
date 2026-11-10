@@ -1,47 +1,61 @@
 /*
- * As oito perguntas do quiz. certa é o índice da alternativa certa (0 a 3).
- * As que dependem dos dados (q3, q5) são reescritas por scripts/dados_slides.py
- * entre os marcadores abaixo.
+ * As cinco perguntas do quiz, uma no fim de cada parte da aula, sobre o que
+ * acabou de ser mostrado. certa é o índice da alternativa certa (0 a 3).
  */
 window.QUIZ_PERGUNTAS = {
   q1: {
-    enunciado: "Em três conversas novas, você cola as mesmas 500 avaliações e pergunta: quantas falam de Pix? O mais provável é…",
-    opcoes: ["Três números iguais", "Três números diferentes", "Ele se recusa a contar", "Ele responde 500 nas três"],
-    certa: 1, limite: 20,
-    porque: "O modelo escreve sorteando cada palavra. Para contar, ele precisa de um script, que segue a mesma receita toda vez.",
+    enunciado: "Uma habilidade com script contou 41 avaliações que citam o Pix, e deu 41 de novo na segunda vez. O que isso garante?",
+    opcoes: [
+      "Que 41 é o número certo",
+      "Que a conta se repete; se a regra estiver errada, ela erra igual toda vez",
+      "Que o modelo não vai mais errar contas",
+      "Nada: o script também sorteia",
+    ],
+    certa: 1, limite: 25,
+    porque: "Mesmo número não é número certo. A vantagem do script é que a regra está escrita: dá para conferir, e corrigir a regra vale para sempre.",
   },
   q2: {
-    enunciado: "Qual destes é o jeito mais simples (e educado) de coletar as avaliações da App Store?",
-    opcoes: ["Abrir a página no navegador e copiar à mão", "Usar o feed público que a Apple oferece", "Disfarçar o robô de navegador para não ser bloqueado", "Baixar mil páginas ao mesmo tempo"],
-    certa: 1, limite: 20,
-    porque: "Antes de raspar, procure um jeito mais simples: a Apple oferece um feed feito para programas lerem. E nunca se disfarce para passar por uma proteção.",
+    enunciado: "Por que a média das avaliações escritas fica abaixo da nota que a página da loja mostra, em todos os apps e nas duas lojas?",
+    opcoes: [
+      "A loja arredonda a nota para cima",
+      "A página soma milhões de notas sem texto, e quem escreve costuma escrever para reclamar",
+      "O feed só entrega as avaliações de 1 estrela",
+      "O script calculou a média errada",
+    ],
+    certa: 1, limite: 25,
+    porque: "As avaliações escritas recentes não são uma amostra dos clientes: são um termômetro do que está incomodando agora.",
   },
-  /* DADOS-QUIZ-INICIO */
-  q3: {"enunciado": "Na App Store, o Bradesco tem nota 4,7 na página. Qual é a média das avaliações escritas nos últimos 30 dias?", "opcoes": ["4,6", "3,6", "2,9", "1,9"], "certa": 3, "limite": 20, "porque": "1,9, em 129 avaliações escritas. Quem escreve, escreve para reclamar: em 14 dos 14 pares de app e loja, a nota de quem escreve fica abaixo da página."},
-  q5: {"enunciado": "Nos quatro bancos, qual é o tema número 1 das reclamações nos últimos 90 dias?", "opcoes": ["golpe e segurança", "pix e pagamentos", "app com falha", "tarifas e cobranças"], "certa": 2, "limite": 20, "porque": "Bancos: nos quatro, o tema número 1 é app com falha: de 24% das reclamações (Itaú) a 46% (Banco do Brasil)."},
-  /* DADOS-QUIZ-FIM */
+  q3: {
+    enunciado: "Para \"Praticidade e ótimos descontos\", o Jev deu 55% para elogio geral e 44% para cupons e promoções. O que fazer?",
+    opcoes: [
+      "Aceitar elogio geral: foi a opção mais provável",
+      "Apagar a avaliação da base",
+      "Rever o dicionário: dizer o que conta quando o texto elogia um desconto",
+      "Rodar de novo até a confiança passar de 90%",
+    ],
+    certa: 2, limite: 25,
+    porque: "Confiança baixa quase sempre aponta uma pergunta mal definida: o texto cabe em duas opções. Quem decide a regra é você, no dicionário.",
+  },
   q4: {
-    enunciado: "O Jev anotou uma avaliação como \"cartão e fatura\", com confiança de 41%. O que fazer?",
-    opcoes: ["Apagar a avaliação da base", "Ler o texto e, se for o caso, melhorar a definição das opções", "Rodar de novo até a confiança passar de 90%", "Nada: o modelo sabe mais que a gente"],
-    certa: 1, limite: 20,
-    porque: "Confiança baixa é um convite para ler. Muitas vezes o texto tem dois assuntos, ou a opção está mal definida: a pergunta é que precisa mudar.",
-  },
-  q6: {
     enunciado: "Qual destas checagens deve BLOQUEAR a publicação do painel?",
-    opcoes: ["A nota média caiu 0,1 desde ontem", "Uma avaliação ficou com um telefone sem máscara", "Um app recebeu menos avaliações que ontem", "O tema \"outro\" passou de 10%"],
+    opcoes: [
+      "A nota média caiu 0,1 desde ontem",
+      "Uma avaliação ficou com um telefone sem máscara",
+      "Um app recebeu menos avaliações que ontem",
+      "O tema \"outro\" passou de 10%",
+    ],
     certa: 1, limite: 20,
     porque: "Bloqueie o que pode expor alguém ou inverter uma conclusão. As outras três merecem um alerta: o painel sai, com um aviso.",
   },
-  q7: {
-    enunciado: "Quando o GitHub Actions atualiza o painel, onde o script roda?",
-    opcoes: ["No meu computador, que precisa estar ligado", "Num servidor do GitHub, no horário marcado", "No celular de quem abre o painel", "Dentro do ChatGPT"],
-    certa: 1, limite: 20,
-    porque: "Um servidor do GitHub liga, roda o script, grava os dados e desliga. O painel continua sendo uma página estática.",
-  },
-  q8: {
-    enunciado: "Você pede: \"faça um gráfico da nota média por app\". Qual detalhe do pedido mais melhora o resultado?",
-    opcoes: ["Pedir que seja bonito", "Dizer a conclusão no título, barras ordenadas e uma cor de destaque", "Pedir um gráfico de pizza", "Pedir 3D para impressionar"],
-    certa: 1, limite: 20,
-    porque: "Regras concretas viram gráficos melhores: título com a conclusão calculada pelo código, barras ordenadas a partir do zero, uma cor de destaque e cinza no resto.",
+  q5: {
+    enunciado: "No mapa das avaliações do painel, quando dois pontos ficam perto um do outro, é porque…",
+    opcoes: [
+      "As duas avaliações têm a mesma nota",
+      "As duas são do mesmo aplicativo",
+      "As duas usam palavras parecidas",
+      "As duas foram escritas no mesmo dia",
+    ],
+    certa: 2, limite: 20,
+    porque: "Cada avaliação vira um vetor com as palavras que usa, e o t-SNE coloca perto os vetores parecidos. A cor (tema, nota, app) vem depois, das colunas.",
   },
 };

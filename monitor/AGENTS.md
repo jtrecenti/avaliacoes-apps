@@ -7,8 +7,8 @@ Store e na Play Store do Brasil, e publica um painel em `docs/painel/`.
 ## Como rodar
 
 - Um comando refaz tudo, da raiz do repositório: `python monitor/rodar.py`.
-  Coleta hoje (se ainda não houver coleta hoje), junta, checa, anota com o Jev e
-  grava `docs/painel/dados.json`.
+  Coleta hoje (se ainda não houver coleta hoje), junta, checa, anota com o Jev,
+  roda os modelos e grava `docs/painel/dados.json` e `docs/painel/mapa.json`.
 - `--coletar-de-novo` coleta mesmo que já exista coleta hoje; `--sem-coleta` refaz
   tudo só com as coletas que já existem.
 - Cada passo fica num arquivo de `monitor/passos/` e diz quantas linhas entraram,
@@ -22,7 +22,31 @@ Store e na Play Store do Brasil, e publica um painel em `docs/painel/`.
 2. `p2_juntar.py`: junta as coletas, sem repetir avaliação, e mascara dados pessoais.
 3. `p3_checar.py`: as checagens de qualidade (frases que precisam ser verdade).
 4. `p4_anotar.py`: tema e reclamação com o Jev, com cache.
-5. `p5_painel.py`: só agregados e uma lista curta de avaliações recentes, em `docs/painel/dados.json`.
+5. `p5_modelos.py`: o mapa das avaliações (TF-IDF + TruncatedSVD + t-SNE, em
+   `docs/painel/mapa.json`) e a regressão do que explica a nota (vai no `dados.json`).
+6. `p6_painel.py`: só agregados e uma lista curta de avaliações recentes, em `docs/painel/dados.json`.
+
+## Modelos (passo 5)
+
+- Rodam sem API e sem chave, em segundos, e são refeitos a cada rodada (não há
+  cache). `random_state=42` em tudo: os mesmos dados dão o mesmo mapa.
+- **Mapa**: título + texto viram um vetor TF-IDF (minúsculas, sem acento,
+  stopwords em português escritas no código, sem o nome dos apps, palavras e
+  pares, `min_df=3`, `sublinear_tf`), resumido em 100 componentes (TruncatedSVD),
+  normalizado e projetado em 2D com t-SNE (`init="pca"`, perplexidade 30), um
+  mapa por segmento. Texto sem nenhuma palavra do vocabulário (só emoji, por
+  exemplo) fica fora do mapa, e o passo diz quantos. Textos repetidos ganham um
+  pequeno espalhamento fixo para aparecer.
+- O mapa mostra o corpo da avaliação (até 140 caracteres, mascarado), **nunca o
+  título**: na App Store muita gente escreve o próprio nome no título.
+- **Regressão**: só as reclamações (`reclamacao` verdadeiro) com tema dos últimos
+  90 dias; `nota ~ C(tema) + C(empresa) + C(loja)` com statsmodels (erros HC3).
+  Temas com menos de 30 reclamações entram juntos numa categoria só e não
+  aparecem no gráfico. A média ajustada de um tema é a previsão média trocando o
+  tema de todas as reclamações por ele (mesma mistura de apps e lojas), com
+  intervalo de 95%. A frase da conclusão fala dos temas específicos (não de
+  "outro", "crítica geral" ou "elogio geral") e, se os intervalos dos dois
+  menores se cruzam, cita os dois.
 
 ## Painel
 
@@ -32,6 +56,11 @@ Store e na Play Store do Brasil, e publica um painel em `docs/painel/`.
 - Barras ordenadas, começando no zero; uma cor de destaque (o vermelho) no app
   selecionado e cinza no resto; rótulo direto em vez de legenda.
 - Nada de pizza, 3D, dois eixos y ou boxplot.
+- Exceção às cores: no mapa das avaliações, pintar por tema usa uma paleta de
+  categorias (os temas "outro", "crítica geral" e "elogio geral" em cinza) e
+  pintar por nota vai do vermelho (1) ao verde (5). O app em destaque pode apagar
+  os outros apps.
+- `mapa.json` é lido depois que o resto da página foi desenhado.
 - Fonte e data da coleta no rodapé.
 
 ## Dados
@@ -65,7 +94,8 @@ Store e na Play Store do Brasil, e publica um painel em `docs/painel/`.
 - Telefone, e-mail e CPF dentro do texto são mascarados já na coleta, e de novo
   ao juntar.
 - O painel mostra agregados e no máximo 10 avaliações recentes por app e loja,
-  com o texto mascarado.
+  com o texto mascarado. O mapa (`mapa.json`) mostra o corpo de cada avaliação
+  dos últimos 90 dias, cortado em 140 caracteres, mascarado e sem o título.
 
 ## Checagens
 

@@ -1,4 +1,4 @@
-"""Passo 5: calcular os números do painel e gravar docs/painel/dados.json.
+"""Passo 6: calcular os números do painel e gravar docs/painel/dados.json.
 
 O Python calcula só agregados (médias, contagens, porcentagens) e uma lista curta
 de avaliações recentes por app e loja, com o texto já mascarado. A página
@@ -72,7 +72,7 @@ def recentes(x: pd.DataFrame, ex: pd.DataFrame) -> list[dict]:
         texto = "" if pd.isna(r.texto) else str(r.texto)
         out.append({
             "loja": r.loja, "data": r.data, "nota": int(r.nota),
-            "titulo": None if pd.isna(r.titulo) else str(r.titulo),
+            # sem o título: muita gente escreve o próprio nome nele
             "texto": texto[:MAX_TEXTO] + ("…" if len(texto) > MAX_TEXTO else ""),
             "tema": t.loc[k, "tema"] if k in t.index and pd.notna(t.loc[k, "tema"]) else None,
             "reclamacao": bool(t.loc[k, "reclamacao"]) if k in t.index and pd.notna(t.loc[k, "reclamacao"]) else None,
@@ -80,7 +80,8 @@ def recentes(x: pd.DataFrame, ex: pd.DataFrame) -> list[dict]:
     return out
 
 
-def calcular(base, est, notas_loja, apps, checagens, contagens, coleta, temas_por_segmento) -> dict:
+def calcular(base, est, notas_loja, apps, checagens, contagens, coleta, temas_por_segmento, regressoes=None) -> dict:
+    """regressoes: o resultado de p5_modelos.regressao (por segmento), que vai junto no dados.json."""
     fim = pd.Timestamp(coleta[:10])
     # semanas de segunda a domingo; a semana do dia da coleta fica de fora (está incompleta)
     semanas = pd.period_range(end=fim.to_period("W-SUN") - 1, periods=SEMANAS, freq="W-SUN")
@@ -90,7 +91,8 @@ def calcular(base, est, notas_loja, apps, checagens, contagens, coleta, temas_po
         "coleta_mais_recente": coleta,
         "fonte": "Feed público de avaliações da App Store do Brasil (até 500 mais recentes por app) e Play Store "
                  "do Brasil (500 mais recentes por app, via google-play-scraper). Tema e reclamação classificados "
-                 "por IA (Jev) nas avaliações dos últimos 90 dias.",
+                 "por IA (Jev) nas avaliações dos últimos 90 dias; mapa (TF-IDF e t-SNE) e regressão linear "
+                 "calculados no próprio monitor.",
         "contagens": contagens,
         "checagens": checagens,
         "semanas": [s.start_time.strftime("%d/%m") for s in semanas],
@@ -100,7 +102,8 @@ def calcular(base, est, notas_loja, apps, checagens, contagens, coleta, temas_po
     }
     for seg, d_seg in apps.groupby("segmento", sort=False):
         temas = temas_por_segmento[seg]
-        dados["segmentos"][seg] = {"empresas": list(d_seg["empresa"]), "temas": temas}
+        dados["segmentos"][seg] = {"empresas": list(d_seg["empresa"]), "temas": temas,
+                                   "regressao": (regressoes or {}).get(seg)}
         for e in d_seg["empresa"]:
             xb, xe = base[base["empresa"] == e], est[est["empresa"] == e]
             app = {"segmento": seg, "lojas": {"ambas": resumo_loja(xb, xe, fim, semanas, temas)}, "recentes": []}

@@ -1,0 +1,14 @@
+{
+ "app": "Itaú",
+ "loja": "App Store",
+ "n": 500,
+ "modelo": "gpt-5.6-luna",
+ "pergunta": "Abaixo estão 500 avaliações do aplicativo do Itaú. Quantas delas citam o Pix? Responda só com o número.",
+ "respostas_modelo": [
+  32,
+  32,
+  32
+ ],
+ "regra": "\\bpix\\b",
+ "script": 32
+}

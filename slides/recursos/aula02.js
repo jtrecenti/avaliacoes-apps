@@ -213,7 +213,7 @@ const DADOS = {"linha":{"LATAM":{"n":500,"ini":"2025-10-24","fim":"2026-10-31","
       const s = quadro(caixa, 1000, 395);
       const T = [
         ["API documentada", ["endereço feito para", "programas, com manual"], "ex.: BrasilAPI, IBGE"],
-        ["API pouco divulgada", ["endereço para programas", "que a aba Rede revela"], "ex.: App Store, Google Play"],
+        ["API pouco divulgada", ["endereço para programas", "que a aba Rede revela"], "ex.: as duas lojas"],
         ["HTML estático", ["os dados já vêm na", "página: é ler o HTML"], "ex.: tribunais, notícias"],
         ["HTML dinâmico", ["a página monta os dados", "rodando no navegador"], "lento e frágil"],
       ];
