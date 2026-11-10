@@ -1594,36 +1594,21 @@ margin-right: 0; }
 <p>Parte 1. Quando a IA precisa contar, somar ou baixar dados, a resposta tem de sair igual toda vez.</p>
 </div>
 </section>
-<section class="slide level2">
-<h2>Contagem de menções num grupo focal</h2>
-<div class="cena" data-cena="ap-grupo">
-
-</div>
-<div class="legendas">
-<div>
-<p>Uma pergunta com resposta exata, feita no curso de executivos sobre a transcrição de um grupo focal.</p>
-</div>
-<div>
-<p><strong>Sem habilidade</strong>, cada conversa escolheu um critério e contou “de olho”: três números diferentes. Qual está certo? Ninguém sabe.</p>
-</div>
-<div>
-<p><strong>Com a habilidade</strong>, um script segue uma lista de termos escrita: 162, toda vez. E erra sempre do mesmo jeito (“filmando na <strong>cara</strong>” entra como preço), mas o erro aparece nos trechos, e corrigir a lista vale para sempre.</p>
-</div>
-</div>
-<p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
-</section>
 <section class="slide level2 exercicio-capa">
-<h2>Demonstração 1: contar sem e com uma habilidade</h2>
+<h2>Demonstração 1: contar menções num grupo focal</h2>
 <p><span class="ex-num">Demonstração 1</span> <span class="chip desktop">ChatGPT para computador, modo Work</span> <span class="chip papel">pasta demos/1-contagem</span></p>
-<div class="colunas">
+<div class="caixa caso" style="font-size:.74em">
+<p><span class="rotulo">O problema</span> Uma agência fez um <strong>grupo focal</strong> com oito viajantes frequentes para a Aérea Sol, uma companhia aérea fictícia: quase duas horas de conversa, <strong>916 falas</strong>, 18 mil palavras. Antes de ler tudo, a diretoria quer saber: <strong>quantas vezes cada participante falou de preço?</strong> Vamos perguntar ao ChatGPT do jeito comum, em duas conversas novas, e depois com uma habilidade que conta com um script.</p>
+</div>
+<div class="colunas" style="margin-top:.5rem">
 <div>
-<div class="prompt prompt-estruturado" data-quem="Sem habilidade: conversa nova, anexe a entrevista">
+<div class="prompt prompt-estruturado" data-quem="Sem habilidade: duas conversas novas">
 <p>Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço?</p>
 <p>Não conte a moderadora. Quero um número por pessoa e o total.</p>
 </div>
 </div>
 <div>
-<div class="prompt prompt-estruturado" data-quem="Com habilidade: conversa nova, anexe a entrevista">
+<div class="prompt prompt-estruturado" data-quem="Com habilidade: uma conversa nova">
 <p>Use a habilidade contar-termos.</p>
 <p>Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço?</p>
 <p>Não conte a moderadora. Quero um número por pessoa e o total.</p>
@@ -1631,8 +1616,26 @@ margin-right: 0; }
 </div>
 </div>
 <div class="miudo">
-<p>A entrevista está em <code>entrevista/grupo_focal_aerea_sol.txt</code>. A habilidade <code>contar-termos</code> já está instalada (Personalizar → Habilidades). Repare: sem habilidade, a resposta é um número; com ela, vem a tabela, a regra usada e os trechos para conferir.</p>
+<p>A entrevista está em <code>entrevista/grupo_focal_aerea_sol.txt</code>, uma fala por linha (<code>NOME: texto</code>). A habilidade <code>contar-termos</code> já está instalada.</p>
 </div>
+</section>
+<section class="slide level2">
+<h2>Contagens com e sem habilidade</h2>
+<div class="cena" data-cena="ap-grupo">
+
+</div>
+<div class="legendas">
+<div>
+<p>O que deu na preparação do curso de executivos, com a mesma transcrição e a mesma pergunta. Compare com o que acabou de sair na demonstração.</p>
+</div>
+<div>
+<p><strong>Sem habilidade</strong>, três conversas, três totais. O modelo escreve uma palavra de cada vez e, a cada conversa, escolhe um critério diferente (incluiu reembolso, tirou reembolso, incluiu bagagem) e conta “de olho”. Qual está certo? Ninguém sabe.</p>
+</div>
+<div>
+<p><strong>Com a habilidade</strong>, o modelo não conta: ele roda um <strong>script</strong> que segue uma lista de termos escrita. Dá 162 toda vez. E erra sempre igual (“filmando na <strong>cara</strong>” entra como preço), mas o erro aparece nos trechos, e corrigir a lista vale para sempre.</p>
+</div>
+</div>
+<p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
 </section>
 <section class="slide level2">
 <h2>Estrutura de uma habilidade</h2>
@@ -4775,7 +4778,7 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
     montar(caixa) {
       const g = html("div", "ap-gf", caixa);
       html("div", "perg", g, `<b>"Neste grupo focal, quantas vezes cada participante falou de preço?"</b>
-        <small>a transcrição de um grupo focal com 8 viajantes: 916 falas, 18 mil palavras (curso de executivos)</small>`);
+        <small>na preparação do curso de executivos: a mesma transcrição (916 falas) e a mesma pergunta</small>`);
       this.sem = html("div", "lado", g, `<b class="rot">Sem habilidade: a mesma pergunta em três conversas novas do ChatGPT</b>
         <div class="nums"><div class="n"><span>1ª conversa</span><b>157</b></div><div class="n"><span>2ª conversa</span><b>161</b></div><div class="n"><span>3ª conversa</span><b>210</b></div></div>
         <div class="nota">Em cada conversa, um critério diferente: incluiu reembolso, tirou reembolso, incluiu bagagem.</div>`);

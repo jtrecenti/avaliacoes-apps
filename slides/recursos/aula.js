@@ -501,7 +501,7 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
     montar(caixa) {
       const g = html("div", "ap-gf", caixa);
       html("div", "perg", g, `<b>"Neste grupo focal, quantas vezes cada participante falou de preço?"</b>
-        <small>a transcrição de um grupo focal com 8 viajantes: 916 falas, 18 mil palavras (curso de executivos)</small>`);
+        <small>na preparação do curso de executivos: a mesma transcrição (916 falas) e a mesma pergunta</small>`);
       this.sem = html("div", "lado", g, `<b class="rot">Sem habilidade: a mesma pergunta em três conversas novas do ChatGPT</b>
         <div class="nums"><div class="n"><span>1ª conversa</span><b>157</b></div><div class="n"><span>2ª conversa</span><b>161</b></div><div class="n"><span>3ª conversa</span><b>210</b></div></div>
         <div class="nota">Em cada conversa, um critério diferente: incluiu reembolso, tirou reembolso, incluiu bagagem.</div>`);

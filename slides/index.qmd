@@ -84,38 +84,24 @@ Parte 1. Quando a IA precisa contar, somar ou baixar dados, a resposta tem de
 sair igual toda vez.
 :::
 
-## Contagem de menções num grupo focal
-
-::: {.cena data-cena="ap-grupo"}
-:::
-
-::: {.legendas}
-::: {}
-Uma pergunta com resposta exata, feita no curso de executivos sobre a
-transcrição de um grupo focal.
-:::
-::: {}
-**Sem habilidade**, cada conversa escolheu um critério e contou "de olho": três
-números diferentes. Qual está certo? Ninguém sabe.
-:::
-::: {}
-**Com a habilidade**, um script segue uma lista de termos escrita: 162, toda
-vez. E erra sempre do mesmo jeito ("filmando na **cara**" entra como preço),
-mas o erro aparece nos trechos, e corrigir a lista vale para sempre.
-:::
-:::
-
-[]{.fragment .passo}
-[]{.fragment .passo}
-
-## Demonstração 1: contar sem e com uma habilidade {.exercicio-capa}
+## Demonstração 1: contar menções num grupo focal {.exercicio-capa}
 
 [Demonstração 1]{.ex-num}
 [ChatGPT para computador, modo Work]{.chip .desktop} [pasta demos/1-contagem]{.chip .papel}
 
-::: {.colunas}
+::: {.caixa .caso style="font-size:.74em"}
+[O problema]{.rotulo}
+Uma agência fez um **grupo focal** com oito viajantes frequentes para a Aérea
+Sol, uma companhia aérea fictícia: quase duas horas de conversa, **916 falas**,
+18 mil palavras. Antes de ler tudo, a diretoria quer saber: **quantas vezes
+cada participante falou de preço?** Vamos perguntar ao ChatGPT do jeito
+comum, em duas conversas novas, e depois com uma habilidade que conta com um
+script.
+:::
+
+::: {.colunas style="margin-top:.5rem"}
 ::: {}
-::: {.prompt .prompt-estruturado data-quem="Sem habilidade: conversa nova, anexe a entrevista"}
+::: {.prompt .prompt-estruturado data-quem="Sem habilidade: duas conversas novas"}
 Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
 preço?
 
@@ -123,7 +109,7 @@ Não conte a moderadora. Quero um número por pessoa e o total.
 :::
 :::
 ::: {}
-::: {.prompt .prompt-estruturado data-quem="Com habilidade: conversa nova, anexe a entrevista"}
+::: {.prompt .prompt-estruturado data-quem="Com habilidade: uma conversa nova"}
 Use a habilidade contar-termos.
 
 Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
@@ -135,11 +121,36 @@ Não conte a moderadora. Quero um número por pessoa e o total.
 :::
 
 ::: {.miudo}
-A entrevista está em `entrevista/grupo_focal_aerea_sol.txt`. A habilidade
-`contar-termos` já está instalada (Personalizar → Habilidades). Repare: sem
-habilidade, a resposta é um número; com ela, vem a tabela, a regra usada e os
-trechos para conferir.
+A entrevista está em `entrevista/grupo_focal_aerea_sol.txt`, uma fala por
+linha (`NOME: texto`). A habilidade `contar-termos` já está instalada.
 :::
+
+## Contagens com e sem habilidade
+
+::: {.cena data-cena="ap-grupo"}
+:::
+
+::: {.legendas}
+::: {}
+O que deu na preparação do curso de executivos, com a mesma transcrição e a
+mesma pergunta. Compare com o que acabou de sair na demonstração.
+:::
+::: {}
+**Sem habilidade**, três conversas, três totais. O modelo escreve uma palavra
+de cada vez e, a cada conversa, escolhe um critério diferente (incluiu
+reembolso, tirou reembolso, incluiu bagagem) e conta "de olho". Qual está
+certo? Ninguém sabe.
+:::
+::: {}
+**Com a habilidade**, o modelo não conta: ele roda um **script** que segue uma
+lista de termos escrita. Dá 162 toda vez. E erra sempre igual ("filmando na
+**cara**" entra como preço), mas o erro aparece nos trechos, e corrigir a lista
+vale para sempre.
+:::
+:::
+
+[]{.fragment .passo}
+[]{.fragment .passo}
 
 ## Estrutura de uma habilidade
 
