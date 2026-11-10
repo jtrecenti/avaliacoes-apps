@@ -5,3 +5,10 @@ __pycache__/
 .pytest_cache/
 
 slides/_capturas/
+
+# saídas que o ChatGPT gera ao rodar as demonstrações
+demos/**/ocorrencias*.csv
+demos/**/trechos*.csv
+demos/**/*.xlsx
+demos/**/brutos/
+
