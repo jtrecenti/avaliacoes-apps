@@ -152,6 +152,18 @@ vale para sempre.
 []{.fragment .passo}
 []{.fragment .passo}
 
+## Pergunta 1
+
+::: {.quiz data-quiz="q1"}
+:::
+
+## Coleta de dados da web {.secao}
+
+::: {.miudo}
+Parte 2. Com uma habilidade pronta, baixar é um pedido. O cuidado passa a ser
+outro: o que esses dados mostram, e o que não mostram.
+:::
+
 ## Estrutura de uma habilidade
 
 ::: {.cena data-cena="ap-skill"}
@@ -189,18 +201,6 @@ o script executa. A habilidade completa está em `skills/avaliacoes-lojas/`.
 []{.fragment .passo}
 []{.fragment .passo}
 []{.fragment .passo}
-
-## Pergunta 1
-
-::: {.quiz data-quiz="q1"}
-:::
-
-## Coleta de dados da web {.secao}
-
-::: {.miudo}
-Parte 2. Com uma habilidade pronta, baixar é um pedido. O cuidado passa a ser
-outro: o que esses dados mostram, e o que não mostram.
-:::
 
 ## Demonstração 2: baixar as avaliações dos bancos {.exercicio-capa}
 
