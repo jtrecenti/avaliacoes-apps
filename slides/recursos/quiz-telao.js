@@ -45,7 +45,21 @@
   async function publicar(pub) {
     if (!Q) throw new Error("sem banco");
     if (!chave()) throw new Error("sem chave");
+    if (pub.rodada === undefined && st.pub?.rodada !== undefined) pub.rodada = st.pub.rodada;
     await Q.gravar("estado", { chave: chave(), pub });
+  }
+
+  /* Zerar o jogo: a limpeza (com a chave) libera, por um minuto, apagar jogadores
+     e respostas; a rodada nova faz cada celular pedir o apelido de novo. */
+  async function zerar() {
+    if (!Q) throw new Error("sem banco");
+    if (!chave()) throw new Error("sem chave");
+    await Q.gravar("limpeza", { chave: chave(), quando: { ".sv": "timestamp" } });
+    await Q.gravar("respostas", null);
+    await Q.gravar("jogadores", null);
+    await publicar({ pergunta: "", aberto: false, revelado: false, rodada: { ".sv": "timestamp" } });
+    st.revelandoLocal = {};
+    clearInterval(st.timer);
   }
 
   function historico() { return Object.assign({}, st.pub?.historico || {}); }
@@ -87,7 +101,8 @@
           <div class="qz-nomes"></div>
           <div class="qz-prof">
             <input type="password" placeholder="chave do professor" autocomplete="off">
-            <button type="button">abrir a sala</button>
+            <button type="button" class="qz-abrir">abrir a sala</button>
+            <button type="button" class="qz-zerar" title="apaga apelidos, respostas e placar">zerar o jogo</button>
             <span class="qz-msg"></span>
           </div>
         </div>
@@ -96,15 +111,38 @@
     inp.value = chave();
     inp.addEventListener("keydown", (e) => {
       e.stopPropagation();
-      if (e.key === "Enter") caixa.querySelector(".qz-prof button").click();
+      if (e.key === "Enter") caixa.querySelector(".qz-abrir").click();
     });
-    caixa.querySelector("button").addEventListener("click", async () => {
+    caixa.querySelector(".qz-abrir").addEventListener("click", async () => {
       try { localStorage.setItem(CHAVE_LS, inp.value.trim()); } catch { /* só nesta sessão */ }
       const prof = caixa.querySelector(".qz-prof");
       msg.textContent = "abrindo…";
       try { await abrirSala(); msg.textContent = "sala aberta ✓"; prof.classList.add("ok"); }
       catch (e) {
         prof.classList.remove("ok");
+        msg.textContent = e.message === "sem banco" ? "sem conexão com o banco: recarregue a página"
+          : e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave";
+      }
+    });
+    // zerar pede dois cliques (sem janelas de confirmação, que travariam a apresentação)
+    const bz = caixa.querySelector(".qz-zerar");
+    let armado = null;
+    bz.addEventListener("click", async () => {
+      try { localStorage.setItem(CHAVE_LS, inp.value.trim()); } catch { /* só nesta sessão */ }
+      if (!armado) {
+        bz.textContent = "clique de novo para apagar tudo";
+        bz.classList.add("armado");
+        armado = setTimeout(() => { armado = null; bz.textContent = "zerar o jogo"; bz.classList.remove("armado"); }, 4000);
+        return;
+      }
+      clearTimeout(armado); armado = null;
+      bz.textContent = "zerar o jogo"; bz.classList.remove("armado");
+      msg.textContent = "zerando…";
+      try {
+        await zerar();
+        caixa.querySelector(".qz-nomes").replaceChildren();
+        msg.textContent = "jogo zerado ✓";
+      } catch (e) {
         msg.textContent = e.message === "sem banco" ? "sem conexão com o banco: recarregue a página"
           : e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave";
       }
@@ -116,6 +154,8 @@
     const nomes = Object.entries(st.jogadores || {});
     caixa.querySelector(".qz-conta b").textContent = n(nomes.length);
     const lista = caixa.querySelector(".qz-nomes");
+    const ids = new Set(nomes.map(([id]) => id));
+    [...lista.children].forEach((c) => { if (!ids.has(c.dataset.id)) c.remove(); });
     const ja = new Set([...lista.children].map((c) => c.dataset.id));
     for (const [id, j] of nomes) {
       if (ja.has(id)) continue;

@@ -1,22 +1,23 @@
 # Demonstrações da aula
 
-Quatro demonstrações, todas no **aplicativo do ChatGPT para computador, no modo
+Quatro demonstrações (a 3 é opcional), todas no **aplicativo do ChatGPT para computador, no modo
 Work**. Em cada pasta, o pedido está em `pedido.md`: é copiar e colar (os
 slides também têm o botão "copiar").
 
 ## Antes da aula
 
-1. **Instale a habilidade de contagem.** No ChatGPT: Personalizar →
-   Habilidades → Adicionar → enviar arquivo, e escolha
-   `1-contagem/habilidade-contar-termos/contar-termos.zip`. Confira que
-   `contar-termos` aparece na lista.
-2. **Nenhuma outra habilidade é necessária:** a demonstração 2 cria a
-   `avaliacoes-lojas`, e a demonstração 4 traz o guia do Jev na própria pasta.
+1. **Instale as duas habilidades.** No ChatGPT: Personalizar → Habilidades →
+   Adicionar → enviar arquivo, uma de cada vez:
+   `1-contagem/habilidade-contar-termos/contar-termos.zip` e
+   `2-baixar-avaliacoes/habilidade-avaliacoes-lojas/avaliacoes-lojas.zip`.
+   Confira que `contar-termos` e `avaliacoes-lojas` aparecem na lista.
+2. **Nenhuma outra habilidade é necessária:** a demonstração 4 traz o guia do
+   Jev na própria pasta.
 3. **Confira o `.env`** em `4-anotar-com-jev/` (linha `JEV_API_KEY=...`). Ele
    não vai para o GitHub nem para o `demos.zip`: quem baixou o zip cria o
    arquivo com a própria chave.
-4. Se quiser repetir a demonstração 2 do zero, apague a habilidade
-   `avaliacoes-lojas` que a última execução criou.
+4. Se quiser repetir a demonstração 3 do zero, apague a habilidade
+   `baixar-avaliacoes` que a última execução criou.
 
 ## 1. Contar sem e com uma habilidade (`1-contagem/`)
 
@@ -31,24 +32,26 @@ slides também têm o botão "copiar").
   (Jéssica 69, Thiago 21, Roberto 20...). Nos trechos, "filmando na **cara**"
   aparece contado como preço: o erro é visível, e se repete.
 
-## 2. Criar a habilidade avaliacoes-lojas (`2-criar-habilidade/`)
+## 2. Baixar as avaliações dos bancos (`2-baixar-avaliacoes/`)
 
-Numa conversa nova, cole `pedido.md`. O skill creator do ChatGPT faz perguntas,
-escreve o `SKILL.md` e o script e testa com o Nubank. Leva alguns minutos:
-cole e siga explicando a estrutura de uma habilidade. A versão de referência
-está em `skills/avaliacoes-lojas/`.
+Numa conversa nova, cole `pedido.md`. Ele usa a habilidade `avaliacoes-lojas`
+(instalada antes da aula, a partir de `habilidade-avaliacoes-lojas/avaliacoes-lojas.zip`)
+para baixar os quatro bancos e mostra a tabela de notas.
 
-## 3. Baixar as avaliações dos bancos (`3-baixar-avaliacoes/`)
+## 3. Criar uma habilidade com o skill creator (`3-criar-habilidade-opcional/`)
 
-Na mesma conversa (ou numa nova, numa pasta de trabalho), cole `pedido.md`. Ele
-usa a habilidade criada na demonstração 2 para baixar os quatro bancos e
-mostra a tabela de notas.
+Opcional: pule se o tempo estiver curto. Numa conversa nova, cole `pedido.md`.
+O skill creator do ChatGPT faz perguntas, escreve o `SKILL.md` e o script e
+testa com o Nubank. Leva alguns minutos. Ela se chama `baixar-avaliacoes`, para
+não colidir com a `avaliacoes-lojas` já instalada; a versão de referência está
+em `skills/avaliacoes-lojas/`.
 
 ## 4. Anotar com o Jev (`4-anotar-com-jev/`)
 
 Abra **esta pasta** no modo Work (ela já tem `avaliacoes_delivery.csv`, com
 600 avaliações, o `dicionario.json`, o `como_usar_o_jev.md` e o `.env`) e cole
-`pedido.md`. Ele testa em 10, roda nas 600 (em segundos), faz o gráfico e
-mostra as de confiança mais baixa.
+`pedido.md`. Ele testa em 10 só para ver se a chamada funciona, roda nas 600
+sem parar para perguntar (em segundos), salva `avaliacoes_anotadas.xlsx`, faz
+o gráfico e mostra as de confiança mais baixa.
 
 Para refazer a pasta com dados mais novos: `python scripts/preparar_demo_jev.py`.

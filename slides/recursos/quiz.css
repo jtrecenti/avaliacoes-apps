@@ -17,6 +17,8 @@
 .qz-nome:nth-child(4n+4) { background: #e50505; }
 .qz-prof { position: relative; z-index: 10; margin-top: 1.2rem; font-size: .48em; display: flex; gap: .5rem; align-items: center; opacity: .75; }
 .qz-prof:hover, .qz-prof:focus-within { opacity: 1; }
+.qz-prof .qz-zerar { color: var(--texto-fraco); }
+.qz-prof .qz-zerar.armado { background: var(--marca); color: #fff; border-color: var(--marca); }
 .qz-prof .qz-msg { font-weight: 700; }
 .qz-prof.ok .qz-msg { color: var(--turquesa); }
 .qz-prof.ok input { width: 7rem; }

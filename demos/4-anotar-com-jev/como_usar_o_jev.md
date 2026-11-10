@@ -3,7 +3,7 @@
 O Jev responde perguntas tipadas sobre um texto: uma opção de uma lista
 (`choice`) ou sim/não (`noul`), com a probabilidade de cada resposta.
 
-Instalação: `pip install typesafe-sdk python-dotenv`
+Instalação: `pip install typesafe-sdk python-dotenv pandas openpyxl` (o openpyxl é o que salva o Excel)
 
 A chave fica no `.env` desta pasta, na linha `JEV_API_KEY=...`. O pacote lê a
 variável `TYPESAFE_API_KEY`; copie uma para a outra, sem imprimir a chave.

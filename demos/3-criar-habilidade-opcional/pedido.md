@@ -1,4 +1,4 @@
-Use o skill creator para criar uma habilidade chamada avaliacoes-lojas.
+Use o skill creator para criar uma habilidade chamada baixar-avaliacoes.
 
 Objetivo: baixar as avaliações de um aplicativo na App Store e na Google Play do Brasil, sempre do mesmo jeito, com um script em Python.
 

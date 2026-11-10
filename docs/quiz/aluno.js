@@ -12,6 +12,7 @@ const eu = aparelho();
 const st = { pub: null, respostas: {}, minhas: {}, jogadores: {}, nome: null, recebidaEm: 0, enviando: false };
 const $ = (s) => document.querySelector(s);
 const CHAVE_NOME = `aulaapps-nome-${CONFIG.sala}`;
+const CHAVE_RODADA = `aulaapps-rodada-${CONFIG.sala}`;
 
 function el(tag, attrs = {}, filhos = []) {
   const n = document.createElement(tag);
@@ -44,7 +45,10 @@ async function entrar(nome) {
   try {
     await gravar(`jogadores/${eu}`, { nome });
     st.nome = nome;
-    try { localStorage.setItem(CHAVE_NOME, nome); } catch { /* sem armazenamento */ }
+    try {
+      localStorage.setItem(CHAVE_NOME, nome);
+      localStorage.setItem(CHAVE_RODADA, String(st.pub?.rodada ?? ""));
+    } catch { /* sem armazenamento */ }
     desenhar();
   } catch (e) {
     aviso("Não consegui entrar: " + (e.message || e));
@@ -185,6 +189,14 @@ function iniciar() {
     conexao("ao vivo");
     const abriuAgora = pub?.aberto && (!st.pub?.aberto || st.pub?.pergunta !== pub?.pergunta);
     if (abriuAgora) st.recebidaEm = Date.now();
+    // o professor zerou o jogo: apelido, respostas e pontos recomeçam
+    let rodadaGuardada = null;
+    try { rodadaGuardada = localStorage.getItem(CHAVE_RODADA); } catch { /* sem armazenamento */ }
+    if (st.nome && pub?.rodada != null && rodadaGuardada !== String(pub.rodada)) {
+      st.nome = null;
+      st.minhas = {};
+      try { localStorage.removeItem(CHAVE_NOME); } catch { /* sem armazenamento */ }
+    }
     st.pub = pub;
     desenhar();
   });

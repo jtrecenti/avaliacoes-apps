@@ -141,34 +141,6 @@ habilidade, a resposta é um número; com ela, vem a tabela, a regra usada e os
 trechos para conferir.
 :::
 
-## Demonstração 2: criar a habilidade avaliacoes-lojas {.exercicio-capa}
-
-[Demonstração 2]{.ex-num}
-[ChatGPT para computador, modo Work]{.chip .desktop} [conversa nova]{.chip .papel}
-
-::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova. Ele leva alguns minutos: enquanto trabalha, vemos como uma habilidade é feita"}
-Use o skill creator para criar uma habilidade chamada avaliacoes-lojas.
-
-**Objetivo:** baixar as avaliações de um aplicativo na App Store e na Google
-Play do Brasil, sempre do mesmo jeito, com um script em Python.
-
-**Entrada:** o nome do app, o número dele na App Store e o pacote dele na
-Google Play.
-
-**Como baixar:** na App Store, o feed RSS em JSON (até 10 páginas de 50, as
-mais recentes); na Google Play, o pacote google-play-scraper (as 500 mais
-recentes).
-
-**Regras:** uma página por vez, com pausa; guarde o arquivo bruto antes de
-ler; nunca guarde o nome de quem avaliou; mascare telefone, e-mail e CPF.
-
-**Saída:** um CSV (loja, app, id, data, nota, título, texto, versão) e um
-resumo: quantas avaliações vieram de cada loja, de que data a que data e a
-nota média.
-
-**Teste:** com o Nubank (App Store 814456780, Google Play com.nu.production).
-:::
-
 ## Estrutura de uma habilidade
 
 ::: {.cena data-cena="ap-skill"}
@@ -215,16 +187,16 @@ o script executa. A habilidade completa está em `skills/avaliacoes-lojas/`.
 ## Coleta de dados da web {.secao}
 
 ::: {.miudo}
-Parte 2. Com a habilidade pronta, baixar é um pedido. O cuidado passa a ser
+Parte 2. Com uma habilidade pronta, baixar é um pedido. O cuidado passa a ser
 outro: o que esses dados mostram, e o que não mostram.
 :::
 
-## Demonstração 3: baixar as avaliações dos bancos {.exercicio-capa}
+## Demonstração 2: baixar as avaliações dos bancos {.exercicio-capa}
 
-[Demonstração 3]{.ex-num}
-[ChatGPT para computador, modo Work]{.chip .desktop} [a mesma conversa da demonstração 2]{.chip .papel}
+[Demonstração 2]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [conversa nova, com a habilidade avaliacoes-lojas instalada]{.chip .papel}
 
-::: {.prompt .prompt-estruturado data-quem="Colar na mesma conversa da demonstração 2"}
+::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova (a habilidade avaliacoes-lojas já está instalada)"}
 Use a habilidade avaliacoes-lojas para baixar as avaliações destes quatro
 bancos:
 
@@ -244,6 +216,34 @@ A App Store tem um feed público, feito para programas lerem: só as 500
 avaliações mais recentes. A Google Play não tem: o pacote faz os mesmos pedidos
 que a página faz, e as 500 mais recentes cobrem só dois a quatro dias num app
 grande.
+:::
+
+## Demonstração 3 (opcional): criar uma habilidade com o skill creator {.exercicio-capa}
+
+[Demonstração 3, se der tempo]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [conversa nova]{.chip .papel}
+
+::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova. Ele leva alguns minutos: é a mesma habilidade da demonstração 2, feita do zero"}
+Use o skill creator para criar uma habilidade chamada baixar-avaliacoes.
+
+**Objetivo:** baixar as avaliações de um aplicativo na App Store e na Google
+Play do Brasil, sempre do mesmo jeito, com um script em Python.
+
+**Entrada:** o nome do app, o número dele na App Store e o pacote dele na
+Google Play.
+
+**Como baixar:** na App Store, o feed RSS em JSON (até 10 páginas de 50, as
+mais recentes); na Google Play, o pacote google-play-scraper (as 500 mais
+recentes).
+
+**Regras:** uma página por vez, com pausa; guarde o arquivo bruto antes de
+ler; nunca guarde o nome de quem avaliou; mascare telefone, e-mail e CPF.
+
+**Saída:** um CSV (loja, app, id, data, nota, título, texto, versão) e um
+resumo: quantas avaliações vieram de cada loja, de que data a que data e a
+nota média.
+
+**Teste:** com o Nubank (App Store 814456780, Google Play com.nu.production).
 :::
 
 ## Nota da loja e nota das avaliações escritas
@@ -464,19 +464,22 @@ dicionário) e se ela reclama de algo, com a probabilidade de cada resposta.
 Como chamar o Jev está em como_usar_o_jev.md; a chave JEV_API_KEY está no .env
 (não mostre a chave).
 
-Primeiro, teste em 10 avaliações e me mostre o texto, o tema e a confiança de
-cada uma.
+Teste em 10 avaliações para conferir que a chamada funciona e, sem esperar
+por mim, rode em todas.
 
-Depois, rode em todas e me mostre: (1) um gráfico de barras ordenadas com o
-tema das reclamações de cada app, com a conclusão no título; (2) as 5
-avaliações com a confiança mais baixa no tema, com as duas opções mais
+No fim: (1) salve um Excel (avaliacoes_anotadas.xlsx) com uma linha por
+avaliação: as colunas originais, o tema, a confiança do tema, a segunda opção
+mais provável e se reclama; (2) me mostre um gráfico de barras ordenadas com o
+tema das reclamações de cada app, com a conclusão no título; (3) me mostre as
+5 avaliações com a confiança mais baixa no tema, com as duas opções mais
 prováveis.
 :::
 
 ::: {.miudo}
 A pasta já tem as 600 avaliações (100 por app e loja), o dicionário, um guia
 curto de como chamar o Jev em Python e o `.env` com a chave, que nunca entra na
-conversa nem vai para o GitHub.
+conversa nem vai para o GitHub. No fim, abra o `avaliacoes_anotadas.xlsx`: o
+texto livre virou colunas.
 :::
 
 ## Pergunta 3
