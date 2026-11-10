@@ -858,6 +858,10 @@ no [GitHub Pages](https://pages.github.com){target="_blank"}.
 **Tudo está em**
 [github.com/jtrecenti/avaliacoes-apps](https://github.com/jtrecenti/avaliacoes-apps){target="_blank"}:
 os slides, o quiz, a habilidade, o monitor, as checagens e o painel.
+
+**As demonstrações** (pedidos prontos, a entrevista, a habilidade de contagem e
+os dados): [demos.zip](https://jtrecenti.github.io/avaliacoes-apps/materiais/demos.zip){target="_blank"}.
+Para a demonstração 4, crie um `.env` com a sua `JEV_API_KEY`.
 :::
 :::
 

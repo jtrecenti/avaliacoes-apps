@@ -13,7 +13,8 @@ slides também têm o botão "copiar").
 2. **Nenhuma outra habilidade é necessária:** a demonstração 2 cria a
    `avaliacoes-lojas`, e a demonstração 4 traz o guia do Jev na própria pasta.
 3. **Confira o `.env`** em `4-anotar-com-jev/` (linha `JEV_API_KEY=...`). Ele
-   não vai para o GitHub; se a pasta vier de um clone novo, crie o arquivo.
+   não vai para o GitHub nem para o `demos.zip`: quem baixou o zip cria o
+   arquivo com a própria chave.
 4. Se quiser repetir a demonstração 2 do zero, apague a habilidade
    `avaliacoes-lojas` que a última execução criou.
 
