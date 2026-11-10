@@ -158,4 +158,5 @@ aparecem no texto são trocados por `[telefone removido]`, `[e-mail removido]` e
   regras em `firebase/`, publicadas com `python scripts/firebase_regras.py --publicar`).
   Para uma partida nova, use outra sala: `slides/?sala=outro-nome` e
   `quiz/?sala=outro-nome`.
+- **Demonstrações:** as quatro pastas, com os pedidos prontos para colar no ChatGPT, estão em `demos/` (roteiro em `demos/README.md`).
 - **Prints dos slides:** `python scripts/capturar.py index` grava em `slides/_capturas/`.

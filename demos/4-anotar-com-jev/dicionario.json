@@ -1,0 +1,29 @@
+{
+  "_instrucoes": "Você lê avaliações de aplicativos escritas por clientes na App Store ou na Play Store do Brasil. Responda a cada pergunta só com base no título e no texto da avaliação.",
+  "variaveis": {
+    "tema": {
+      "pergunta": "Qual é o assunto principal da avaliação?",
+      "tipo": "escolha",
+      "opcoes": {
+        "app com falha": "o aplicativo trava, fecha sozinho, dá erro, não carrega, está lento ou não mostra as lojas",
+        "atraso na entrega": "o pedido demorou, atrasou ou nunca chegou, rastreamento errado",
+        "pedido errado ou incompleto": "veio item errado, faltando, violado, estragado ou diferente do pedido",
+        "cancelamento e reembolso": "pedido cancelado, estorno, reembolso que não veio, dinheiro não devolvido",
+        "preços e taxas": "preço alto, taxa de entrega, taxa de serviço, valor diferente do anunciado",
+        "cupons e promoções": "cupons, descontos, clube de assinatura, promoções que não funcionam",
+        "pagamento": "forma de pagamento recusada, cartão, pix, vale-refeição, cobrança duplicada",
+        "conta e cadastro": "não consegue entrar, criar conta, validar dados, conta bloqueada",
+        "atendimento": "suporte, chat, central de ajuda, demora ou falta de solução",
+        "entregador": "conduta do entregador, entregador pede dinheiro, não sobe, é rude",
+        "qualidade da comida ou do produto": "comida fria, ruim, de má qualidade, produto vencido ou diferente do anúncio",
+        "crítica geral": "a avaliação critica o app ou a empresa sem dizer qual é o problema (ex.: 'horrível', 'péssimo')",
+        "elogio geral": "a avaliação elogia o app ou a empresa sem apontar um problema",
+        "outro": "nenhuma das opções acima"
+      }
+    },
+    "reclamacao": {
+      "pergunta": "A avaliação reclama de alguma coisa (um problema, uma falha ou uma insatisfação com o app ou a empresa)?",
+      "tipo": "sim_nao"
+    }
+  }
+}

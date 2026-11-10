@@ -288,7 +288,7 @@
   /* ====================================================================== */
   Motor.cena("rs-arquitetura", {
     montar(c) {
-      const s = svg("svg", { viewBox: "0 0 1120 490", class: "grafico-svg" }, c);
+      const s = svg("svg", { viewBox: "0 0 1120 330", class: "grafico-svg" }, c);
       const linha = (y0, rot, meio, dir, custo, marcaFront) => {
         const g = svg("g", {}, s);
         txt(g, 0, y0 + 22, rot, { class: "txt forte", style: F });
@@ -315,15 +315,14 @@
       this.L = [
         linha(0, "estático", ["servidor de arquivos", "entrega arquivos prontos"], { texto: ["nenhum backend calcula", "nada depois de publicado"] }, "custo: zero · manutenção: ninguém · atualiza quando você publica de novo"),
         linha(170, "dinâmico", ["servidor backend (API)", "login, regras e consultas"], { caixa: ["banco de dados", "os dados ao vivo"] }, "custo: servidor e licença · manutenção: alguém de TI · atualiza sozinho, a cada pedido"),
-        linha(340, "estático, com cálculo no navegador", ["servidor de arquivos", "a página e o Python, uma vez"], { texto: ["a conta roda no computador", "de quem abre (Pyodide)"] }, "custo: zero · manutenção: ninguém · os dados de quem abre não saem da máquina", "o Python calcula aqui"),
       ];
     },
     passo(k, a) {
       const [e, d, p] = this.L;
       vis(e.g, true, a); vis(e.setas, k >= 1, a);
       vis(d.g, k >= 2, a); vis(d.setas, k >= 2, a);
-      vis(p.g, k >= 3, a); vis(p.setas, k >= 3, a);
-      this.L.forEach((l) => vis(l.cus, k >= 4, a));
+      if (p) { vis(p.g, k >= 3, a); vis(p.setas, k >= 3, a); }
+      this.L.forEach((l) => vis(l.cus, k >= (p ? 4 : 3), a));
       gsap.to(d.g, { opacity: k >= 5 ? 0.35 : k >= 2 ? 1 : 0, duration: a ? 0.4 : 0, overwrite: "auto" });
       const viagem = (l) => {
         const y = l.y0, tl = gsap.timeline();
@@ -335,7 +334,7 @@
       };
       if (a && k === 1) viagem(e);
       if (a && k === 2) viagem(d);
-      if (a && k === 3) viagem(p);
+      if (a && k === 3 && p) viagem(p);
     },
   });
 

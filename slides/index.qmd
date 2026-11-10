@@ -7,7 +7,6 @@ format:
       - text: |
           <script src="recursos/js/gsap.min.js"></script>
           <script src="recursos/motor.js"></script>
-          <script src="recursos/aula02.js"></script>
           <script src="recursos/resumo.js"></script>
           <script src="recursos/aula.js"></script>
           <script src="recursos/perguntas.js"></script>
@@ -15,7 +14,7 @@ format:
 # Aula convidada de 1h30 numa eletiva de marketing analítico da graduação, em
 # quatro partes: (i) habilidades com código, (ii) coleta de dados da web,
 # (iii) estruturação de textos e (iv) painéis online com atualização diária.
-# Duas demonstrações (o professor cola um pedido no ChatGPT) e cinco perguntas
+# Quatro demonstrações (o professor cola um pedido no ChatGPT; roteiro em demos/) e cinco perguntas
 # de quiz, uma no fim de cada parte. Caso: avaliações de sete aplicativos
 # (bancos e delivery) nas duas lojas, coletadas pelo monitor deste repositório.
 # Os números das cenas vêm de scripts/dados_slides.py; o experimento de
@@ -85,152 +84,128 @@ Parte 1. Quando a IA precisa contar, somar ou baixar dados, a resposta tem de
 sair igual toda vez.
 :::
 
-## Contagem com o modelo e com um script
+## Contagem de menções num grupo focal
 
-::: {.cena data-cena="ap-contagem"}
+::: {.cena data-cena="ap-grupo"}
 :::
 
 ::: {.legendas}
 ::: {}
-Uma pergunta com resposta exata: entre as 500 avaliações mais recentes do Itaú
-na App Store, **quantas citam o Pix?**
+Uma pergunta com resposta exata, feita no curso de executivos sobre a
+transcrição de um grupo focal.
 :::
 ::: {}
-Mandamos as 500 avaliações ao modelo três vezes, em três pedidos
-independentes (como três conversas novas). Ele respondeu 32 nas três.
+**Sem habilidade**, cada conversa escolheu um critério e contou "de olho": três
+números diferentes. Qual está certo? Ninguém sabe.
 :::
 ::: {}
-Um script em Python segue uma **regra escrita**: a palavra "pix" inteira, sem
-diferenciar maiúscula e minúscula. Também deu 32. Aqui, os dois concordam.
-:::
-::: {}
-Nem sempre é assim. No curso de executivos, a pergunta era sobre um grupo
-focal: três conversas no ChatGPT deram 13, 12 e 25. O script deu 5 nas três.
-:::
-::: {}
-Por que usar o script mesmo quando o modelo acerta? **A regra fica escrita**
-(dá para conferir e corrigir), **o resultado se repete**, e ele **roda em 6
-mil ou 6 milhões de linhas**. É isso que chamamos de habilidade com código, ou
-determinística.
+**Com a habilidade**, um script segue uma lista de termos escrita: 162, toda
+vez. E erra sempre do mesmo jeito ("filmando na **cara**" entra como preço),
+mas o erro aparece nos trechos, e corrigir a lista vale para sempre.
 :::
 :::
 
 []{.fragment .passo}
 []{.fragment .passo}
-[]{.fragment .passo}
-[]{.fragment .passo}
+
+## Demonstração 1: contar sem e com uma habilidade {.exercicio-capa}
+
+[Demonstração 1]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [pasta demos/1-contagem]{.chip .papel}
+
+::: {.colunas}
+::: {}
+::: {.prompt .prompt-estruturado data-quem="Sem habilidade: conversa nova, anexe a entrevista"}
+Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
+preço?
+
+Não conte a moderadora. Quero um número por pessoa e o total.
+:::
+:::
+::: {}
+::: {.prompt .prompt-estruturado data-quem="Com habilidade: conversa nova, anexe a entrevista"}
+Use a habilidade contar-termos.
+
+Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de
+preço?
+
+Não conte a moderadora. Quero um número por pessoa e o total.
+:::
+:::
+:::
+
+::: {.miudo}
+A entrevista está em `entrevista/grupo_focal_aerea_sol.txt`. A habilidade
+`contar-termos` já está instalada (Personalizar → Habilidades). Repare: sem
+habilidade, a resposta é um número; com ela, vem a tabela, a regra usada e os
+trechos para conferir.
+:::
+
+## Demonstração 2: criar a habilidade avaliacoes-lojas {.exercicio-capa}
+
+[Demonstração 2]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [conversa nova]{.chip .papel}
+
+::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova. Ele leva alguns minutos: enquanto trabalha, vemos como uma habilidade é feita"}
+Use o skill creator para criar uma habilidade chamada avaliacoes-lojas.
+
+**Objetivo:** baixar as avaliações de um aplicativo na App Store e na Google
+Play do Brasil, sempre do mesmo jeito, com um script em Python.
+
+**Entrada:** o nome do app, o número dele na App Store e o pacote dele na
+Google Play.
+
+**Como baixar:** na App Store, o feed RSS em JSON (até 10 páginas de 50, as
+mais recentes); na Google Play, o pacote google-play-scraper (as 500 mais
+recentes).
+
+**Regras:** uma página por vez, com pausa; guarde o arquivo bruto antes de
+ler; nunca guarde o nome de quem avaliou; mascare telefone, e-mail e CPF.
+
+**Saída:** um CSV (loja, app, id, data, nota, título, texto, versão) e um
+resumo: quantas avaliações vieram de cada loja, de que data a que data e a
+nota média.
+
+**Teste:** com o Nubank (App Store 814456780, Google Play com.nu.production).
+:::
 
 ## Estrutura de uma habilidade
 
-::: {.colunas}
-::: {style="flex:0.9"}
-Uma **habilidade** (*skill*) é uma pasta que o ChatGPT (e também o Claude e o
-Codex) lê antes de trabalhar:
-
-<pre class="cod" style="font-size:.85em">avaliacoes-lojas/
-├── <b>SKILL.md</b>          o passo a passo
-└── scripts/
-    └── <b>baixar_avaliacoes.py</b></pre>
-
-::: {data-p="1"}
-**O `SKILL.md`** é texto: quando usar, os passos, as regras. O modelo lê e
-**decide** (qual app, o que perguntar ao usuário).
+::: {.cena data-cena="ap-skill"}
 :::
 
-::: {data-p="2"}
-**O script** é código: baixa, conta, junta. O computador **executa**, sempre
-igual. O modelo só chama e lê o resultado.
+::: {.legendas}
+::: {}
+Uma habilidade é uma **pasta**. A única peça obrigatória é o `SKILL.md`, um
+texto com instruções.
 :::
+::: {}
+No alto do `SKILL.md`, o **nome e a descrição**. É só isso que o ChatGPT lê para
+decidir se a habilidade serve para o seu pedido: escreva quando usar.
 :::
-::: {style="flex:1.1"}
-<pre class="cod" style="font-size:.66em;line-height:1.3">---
-name: avaliacoes-lojas
-description: Baixa as avaliações de um aplicativo na
-  App Store e na Google Play do Brasil, sempre do mesmo
-  jeito. Use quando o usuário pedir avaliações de um app.
----
-## Passo a passo
-1. Descubra os dois identificadores (o número na
-   App Store e o pacote na Google Play). Confirme
-   com o usuário antes de baixar.
-2. Rode o script, nunca conte nem copie à mão:
-   python scripts/baixar_avaliacoes.py --nome ...
-3. Mostre o resumo: quantas por loja, de que data
-   a que data, a nota média.
-## Regras
-- Uma página por vez, com pausa.
-- Nunca guarde o nome de quem avaliou.
-- Mascare telefone, e-mail e CPF no texto.</pre>
-
-::: {.miudo}
-A habilidade completa está no repositório, em `skills/avaliacoes-lojas/`.
+::: {}
+Depois, o **passo a passo** e as **regras**: o que fazer, em que ordem, e o que
+nunca fazer. O modelo lê e decide (qual app, o que perguntar).
 :::
+::: {}
+Em `scripts/`, o **código** que executa: baixa, conta, junta. O computador
+roda, sempre igual. É o que torna a habilidade determinística.
+:::
+::: {}
+E quantos **arquivos de apoio** forem úteis: documentação, exemplos, modelos de
+relatório, listas de termos. O modelo só os abre quando precisa.
+:::
+::: {}
+Na prática: o pedido chega, a descrição escolhe a habilidade, o `SKILL.md` guia,
+o script executa. A habilidade completa está em `skills/avaliacoes-lojas/`.
 :::
 :::
 
 []{.fragment .passo}
 []{.fragment .passo}
-
-## Demonstração 1: criar a habilidade avaliacoes-lojas {.exercicio-capa}
-
-[Demonstração 1]{.ex-num}
-[ChatGPT, aplicativo de desktop, modo Work]{.chip .desktop} [o professor faz, a turma acompanha]{.chip .papel}
-
-::: {.ficha}
-
-[Onde]{.r}
-
-::: {.v}
-No **aplicativo do ChatGPT para computador**, no **modo Work** (o botão no alto
-troca de Chat para Work), numa conversa nova, com uma pasta do computador
-aberta. O mesmo pedido funciona no Claude e no Codex.
-:::
-
-[O que vamos fazer]{.r}
-
-::: {.v}
-Colar um pedido (o próximo slide) que descreve a habilidade: o objetivo, a
-entrada, como baixar, as regras e a saída.
-:::
-
-[O que esperar]{.r}
-
-::: {.v}
-O ChatGPT faz perguntas, escreve o `SKILL.md` e o script em Python, instala o
-que faltar e **testa com o Nubank**. Em poucos minutos, a habilidade aparece em
-Habilidades.
-:::
-
-[O que conferir]{.r}
-
-::: {.v}
-O resumo: quantas avaliações vieram de cada loja, de que data a que data, a
-nota média. Abra o CSV: tem o nome de quem avaliou? (Não pode ter.)
-:::
-
-:::
-
-## Pedido da demonstração 1
-
-::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova do ChatGPT, no modo Work"}
-Crie uma habilidade chamada `avaliacoes-lojas` que baixa as avaliações de um
-aplicativo na App Store e na Google Play do Brasil, sempre do mesmo jeito, com
-um script em Python. **Entrada:** o nome do app, o número dele na App Store e o
-pacote na Google Play. **Como:** na App Store, o feed RSS em JSON (até 10
-páginas de 50, as mais recentes); na Google Play, o pacote
-`google-play-scraper` (as 500 mais recentes). **Regras:** uma página por vez,
-com pausa; guarde o arquivo bruto antes de ler; nunca guarde o nome de quem
-avaliou; mascare telefone, e-mail e CPF. **Saída:** um CSV (loja, app, id,
-data, nota, título, texto, versão) e um resumo: quantas vieram de cada loja, de
-que data a que data e a nota média. **Teste** com o Nubank (814456780 e
-`com.nu.production`).
-:::
-
-::: {.miudo}
-Os dois identificadores estão no endereço do app em cada loja:
-`apps.apple.com/br/app/nubank/id814456780` e
-`play.google.com/store/apps/details?id=com.nu.production`.
-:::
+[]{.fragment .passo}
+[]{.fragment .passo}
+[]{.fragment .passo}
 
 ## Pergunta 1
 
@@ -240,66 +215,36 @@ Os dois identificadores estão no endereço do app em cada loja:
 ## Coleta de dados da web {.secao}
 
 ::: {.miudo}
-Parte 2. Antes de raspar uma página, procure o jeito mais simples de pegar o
-dado. E desconfie do que o dado não mostra.
+Parte 2. Com a habilidade pronta, baixar é um pedido. O cuidado passa a ser
+outro: o que esses dados mostram, e o que não mostram.
 :::
 
-## Formas de obter dados da web
+## Demonstração 3: baixar as avaliações dos bancos {.exercicio-capa}
 
-::: {.sub}
-Do mais simples e estável ao mais trabalhoso e frágil. As avaliações das lojas
-ficam no segundo degrau.
+[Demonstração 3]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [a mesma conversa da demonstração 2]{.chip .papel}
+
+::: {.prompt .prompt-estruturado data-quem="Colar na mesma conversa da demonstração 2"}
+Use a habilidade avaliacoes-lojas para baixar as avaliações destes quatro
+bancos:
+
+- Nubank: App Store 814456780, Google Play com.nu.production
+- Itaú: App Store 474505665, Google Play com.itau
+- Banco do Brasil: App Store 330984271, Google Play br.com.bb.android
+- Bradesco: App Store 336954985, Google Play com.bradesco
+
+Junte tudo num arquivo só. Para cada banco e cada loja, me mostre numa tabela:
+quantas avaliações vieram, de que data a que data, e a nota média das
+avaliações escritas. Depois, ao lado, a nota que cada loja mostra na página do
+app.
 :::
-
-::: {.cena data-cena="a2-escada"}
-:::
-
-[]{.fragment .passo}
-[]{.fragment .passo}
-[]{.fragment .passo}
-[]{.fragment .passo}
-
-## Avaliações nas duas lojas
-
-::: {.colunas}
-::: {}
-**App Store: um feed público em JSON**
-
-<pre class="cod" style="font-size:.66em;line-height:1.3">itunes.apple.com/br/rss/customerreviews/
-  page=1/id=474505665/sortby=mostrecent/json
-
-{"updated":    {"label": "2026-11-08T02:35:04-07:00"},
- "im:rating":  {"label": "1"},
- "im:version": {"label": "7.154.1"},
- "title":      {"label": "me ajudeee!!"},
- "content":    {"label": "não consigo enviar pix,
-                pra eu comprar algo só consigo
-                se for no cartão"},
- "author":     ...}</pre>
 
 ::: {.miudo}
-10 páginas de 50: só as **500 mais recentes**. O `author` (o nome de quem
-avaliou) fica de fora.
+A App Store tem um feed público, feito para programas lerem: só as 500
+avaliações mais recentes. A Google Play não tem: o pacote faz os mesmos pedidos
+que a página faz, e as 500 mais recentes cobrem só dois a quatro dias num app
+grande.
 :::
-:::
-::: {data-p="1"}
-**Google Play: um pacote de Python**
-
-<pre class="cod" style="font-size:.66em;line-height:1.3">from google_play_scraper import reviews, Sort
-
-res, _ = reviews("com.itau", lang="pt",
-                 country="br", sort=Sort.NEWEST,
-                 count=500)
-res[0]["score"], res[0]["content"]</pre>
-
-::: {.miudo}
-Não há feed oficial: o pacote faz os mesmos pedidos que a página faz. As 500
-mais recentes, que num app grande cobrem **só dois a quatro dias**.
-:::
-:::
-:::
-
-[]{.fragment .passo}
 
 ## Nota da loja e nota das avaliações escritas
 
@@ -313,16 +258,10 @@ notas, a maioria sem texto.
 :::
 ::: {}
 O ponto vermelho é a média das avaliações **escritas** dos últimos 30 dias, as
-que coletamos.
-:::
-::: {}
-[ ]{.dado data-k="leg_notas"} Não é erro: **quem escreve, escreve para
-reclamar**. As avaliações escritas não são uma amostra dos clientes; são um
-termômetro do que está incomodando agora.
+que baixamos. Por que ele fica sempre à esquerda?
 :::
 :::
 
-[]{.fragment .passo}
 []{.fragment .passo}
 
 ## Pergunta 2
@@ -367,48 +306,61 @@ que valem a pena ler.
 ## Dicionário de variáveis
 
 ::: {.colunas}
-::: {style="flex:.8"}
-As perguntas ficam num arquivo, o **dicionário**, e não soltas na conversa.
-
-::: {data-p="1"}
-- **Lista fechada de opções.** Sem lista, cada avaliação ganha uma categoria
-  nova.
-:::
-::: {data-p="2"}
-- **Uma definição por opção.** É o que o modelo lê para decidir.
-:::
-::: {data-p="3"}
-- **Sempre um "outro"**, e opções para o que não é problema ("elogio geral",
-  "crítica geral").
-:::
-::: {data-p="4"}
-- **Opções por segmento.** Banco e delivery têm problemas diferentes.
-:::
-:::
-::: {style="flex:1.2"}
-<pre class="cod" style="font-size:.62em;line-height:1.28">{"_instrucoes": "Você lê avaliações de aplicativos escritas
+::: {.cena .ap-json data-cena="ap-json" style="flex:1.25"}
+<pre class="cod" style="font-size:.62em;line-height:1.3">{<span class="jp" data-k="1">"_instrucoes": "Você lê avaliações de aplicativos escritas
    por clientes na App Store ou na Play Store do Brasil.
    Responda a cada pergunta só com base no título e no
-   texto da avaliação.",
+   texto da avaliação.",</span>
  "variaveis": {
   "tema": {
-   "pergunta": "Qual é o assunto principal da avaliação?",
-   "tipo": "escolha",
-   "opcoes_por_segmento": {"Delivery": {
-    "atraso na entrega": "o pedido demorou, atrasou ou nunca
+   <span class="jp" data-k="2">"pergunta": "Qual é o assunto principal da avaliação?",
+   "tipo": "escolha",</span>
+   "opcoes": {
+    <span class="jp" data-k="3">"atraso na entrega": "o pedido demorou, atrasou ou nunca
        chegou, rastreamento errado",
     "cupons e promoções": "cupons, descontos, clube de
-       assinatura, promoções que não funcionam",
-    "elogio geral": "a avaliação elogia o app ou a empresa
+       assinatura, promoções que não funcionam",</span> ...
+    <span class="jp" data-k="4">"elogio geral": "a avaliação elogia o app ou a empresa
        sem apontar um problema",
-    "outro": "nenhuma das opções acima", ...}}},
-  "reclamacao": {
+    "outro": "nenhuma das opções acima"</span>}},
+  <span class="jp" data-k="5">"reclamacao": {
    "pergunta": "A avaliação reclama de alguma coisa (um
       problema, uma falha ou uma insatisfação)?",
-   "tipo": "sim_nao"}}}</pre>
+   "tipo": "sim_nao"}</span>}}</pre>
+:::
+::: {style="flex:.75"}
+::: {.legendas}
+::: {}
+O **dicionário** é um arquivo (JSON) com as perguntas que vamos fazer a cada
+avaliação. Ele fica na pasta, e não solto na conversa.
+:::
+::: {}
+**As instruções gerais** valem para todas as perguntas: quem lê, de onde vêm os
+textos, e a regra de ouro: responder só com o que está escrito.
+:::
+::: {}
+**Cada variável** tem uma pergunta e um tipo. Aqui, `escolha`: a resposta é uma
+opção de uma lista fechada. Sem lista, cada avaliação ganharia uma categoria
+nova.
+:::
+::: {}
+**Cada opção tem uma definição.** É o que o modelo lê para decidir, como
+alguém novo na equipe leria um manual. No painel, bancos e delivery têm listas
+diferentes.
+:::
+::: {}
+**Opções para o que não é problema** ("elogio geral") e um **"outro"** para o que
+não cabe em nenhuma. Sem elas, o modelo força o texto numa opção errada.
+:::
+::: {}
+**Uma segunda variável**, do tipo sim ou não: a avaliação reclama de algo?
+Cada variável vira uma coluna da tabela.
+:::
+:::
 :::
 :::
 
+[]{.fragment .passo}
 []{.fragment .passo}
 []{.fragment .passo}
 []{.fragment .passo}
@@ -472,8 +424,7 @@ preços e taxas com 99%: a pergunta pede **um** assunto principal.
 :::
 ::: {}
 iFood: "Praticidade e ótimos descontos" fica entre **elogio geral (55%)** e
-**cupons e promoções (44%)**. O texto cabe nas duas: é o dicionário que
-precisa decidir.
+**cupons e promoções (44%)**. O Jev não tem certeza, e diz isso.
 :::
 :::
 
@@ -487,9 +438,8 @@ precisa decidir.
 
 ::: {.legendas}
 ::: {}
-Antes de rodar em milhares, rode em poucas e **confira à mão**. Oito
-avaliações de delivery, sorteadas: quatro com confiança alta, quatro com
-confiança baixa.
+Antes de rodar em milhares, rode em poucas e leia. Oito avaliações de
+delivery, sorteadas: quatro com confiança alta, quatro com confiança baixa.
 :::
 ::: {}
 As de confiança abaixo de 60% são quase sempre textos com dois assuntos ou
@@ -499,6 +449,35 @@ opções mal definidas. Ajuste o dicionário e rode de novo. No painel,
 :::
 
 []{.fragment .passo}
+
+## Demonstração 4: anotar as avaliações com o Jev {.exercicio-capa}
+
+[Demonstração 4]{.ex-num}
+[ChatGPT para computador, modo Work]{.chip .desktop} [abra a pasta demos/4-anotar-com-jev]{.chip .papel}
+
+::: {.prompt .prompt-estruturado data-quem="Colar numa conversa nova, com a pasta demos/4-anotar-com-jev aberta"}
+Nesta pasta estão as avaliações recentes do iFood, do Rappi e do Zé Delivery
+(avaliacoes_delivery.csv) e um dicionário de variáveis (dicionario.json).
+
+Anote cada avaliação com o Jev: o tema principal (uma das opções do
+dicionário) e se ela reclama de algo, com a probabilidade de cada resposta.
+Como chamar o Jev está em como_usar_o_jev.md; a chave JEV_API_KEY está no .env
+(não mostre a chave).
+
+Primeiro, teste em 10 avaliações e me mostre o texto, o tema e a confiança de
+cada uma.
+
+Depois, rode em todas e me mostre: (1) um gráfico de barras ordenadas com o
+tema das reclamações de cada app, com a conclusão no título; (2) as 5
+avaliações com a confiança mais baixa no tema, com as duas opções mais
+prováveis.
+:::
+
+::: {.miudo}
+A pasta já tem as 600 avaliações (100 por app e loja), o dicionário, um guia
+curto de como chamar o Jev em Python e o `.env` com a chave, que nunca entra na
+conversa nem vai para o GitHub.
+:::
 
 ## Pergunta 3
 
@@ -526,61 +505,6 @@ de cada app.
 
 []{.fragment .passo}
 []{.fragment .passo}
-
-## Demonstração 2: anotar avaliações com o Jev {.exercicio-capa}
-
-[Demonstração 2]{.ex-num}
-[ChatGPT, aplicativo de desktop, modo Work]{.chip .desktop} [o professor faz, a turma acompanha]{.chip .papel}
-
-::: {.ficha}
-
-[Onde]{.r}
-
-::: {.v}
-Na **mesma conversa** da demonstração 1, no modo Work, na pasta que tem o
-`.env` com a chave do Jev (o ChatGPT lê a chave do arquivo; ela nunca entra na
-conversa).
-:::
-
-[O que vamos fazer]{.r}
-
-::: {.v}
-Pedir que baixe as avaliações dos três apps de delivery com a habilidade nova,
-anote o tema e a reclamação de cada uma com o Jev, e faça um gráfico.
-:::
-
-[O que esperar]{.r}
-
-::: {.v}
-Ele usa a `avaliacoes-lojas` e a `estruturar-textos`, mostra 10 avaliações
-anotadas para conferirmos, roda nas demais, e devolve o gráfico e as 5 de
-confiança mais baixa.
-:::
-
-[O que conferir]{.r}
-
-::: {.v}
-Nas 10 do teste: você concorda com o tema? E as de confiança baixa: o que o
-dicionário deveria dizer para resolvê-las?
-:::
-
-:::
-
-## Pedido da demonstração 2
-
-::: {.prompt .prompt-estruturado data-quem="Colar na mesma conversa da demonstração 1"}
-Use a habilidade `avaliacoes-lojas` para baixar as 200 avaliações mais recentes
-de cada loja do **iFood** (483017239 e `br.com.brainweb.ifood`), do **Rappi**
-(984044296 e `com.grability.rappi`) e do **Zé Delivery** (1070070438 e
-`com.cerveceriamodelo.modelonow`). Depois, com a habilidade `estruturar-textos`
-e o **Jev** (a chave `JEV_API_KEY` está no `.env`), anote o **tema principal**
-de cada avaliação (app com falha, atraso na entrega, pedido errado ou
-incompleto, cancelamento e reembolso, preços e taxas, cupons e promoções,
-atendimento, entregador, qualidade da comida, elogio geral, outro) e **se ela
-reclama de algo**. Teste em 10 e me mostre antes de rodar em todas. No fim, um
-gráfico de barras ordenadas com o tema das reclamações de cada app, com a
-conclusão no título, e as 5 avaliações de confiança mais baixa.
-:::
 
 ## Painéis online com atualização diária {.secao}
 
@@ -687,7 +611,7 @@ A página recebe os números prontos e desenha os gráficos (ECharts).
 :::
 ::: {}
 Uma página **dinâmica** tem um servidor que calcula a cada visita: mais poder,
-e mais coisa para manter.
+e mais coisa para manter (custo, login, alguém de TI).
 :::
 :::
 
@@ -806,20 +730,29 @@ painel, com as checagens no fim da página.
 
 ## Pedido para montar o painel
 
-::: {.prompt .prompt-estruturado data-quem="Para levar: o pedido de um monitor com painel, para colar no ChatGPT, no Claude ou no Codex"}
+::: {.prompt .prompt-estruturado data-quem="Para levar: o pedido de um monitor com painel, para colar no ChatGPT, no Claude ou no Codex" style="font-size:.74em"}
 Esta pasta vai ser um monitor diário das avaliações de [APPS] na App Store e na
-Google Play. Organize como um projeto que refaz tudo com um pedido: um passo
-por arquivo (coletar, juntar, checar, anotar, modelos, painel), um `rodar.py`,
-um `README.md` e um `AGENTS.md` com as regras. Cada coleta fica guardada e
-nunca é editada; a mesma avaliação conta uma vez; diga quantas linhas entraram
-e saíram em cada passo; nada de nome de quem avaliou. Antes de qualquer número,
-crie checagens escritas como frases: umas bloqueiam, outras alertam. Anote o
-tema e a reclamação com o Jev, com cache. Acrescente dois modelos: um mapa das
-avaliações (TF-IDF e t-SNE, pintado pelas colunas do Jev) e uma regressão da
-nota pelo tema, controlando por app e loja. O Python calcula só agregados num
-`dados.json`; a página estática desenha com ECharts, com a conclusão no título
-de cada gráfico. Por fim, um GitHub Actions que roda tudo todo dia e publica no
-GitHub Pages, com a chave nos segredos do repositório.
+Google Play.
+
+**Projeto:** um passo por arquivo (coletar, juntar, checar, anotar, modelos,
+painel), um `rodar.py`, um `README.md` e um `AGENTS.md` com as regras.
+
+**Dados:** cada coleta fica guardada e nunca é editada; a mesma avaliação conta
+uma vez; diga quantas linhas entraram e saíram em cada passo; nada de nome de
+quem avaliou.
+
+**Checagens:** antes de qualquer número, frases que precisam ser verdade; umas
+bloqueiam, outras alertam.
+
+**Textos e modelos:** anote o tema e a reclamação com o Jev, com cache; faça um
+mapa das avaliações (TF-IDF e t-SNE, pintado pelas colunas do Jev) e uma
+regressão da nota pelo tema, controlando por app e loja.
+
+**Painel:** o Python calcula só agregados num `dados.json`; a página estática
+desenha com ECharts, com a conclusão no título de cada gráfico.
+
+**Atualização:** um GitHub Actions que roda tudo todo dia e publica no GitHub
+Pages, com a chave nos segredos do repositório.
 :::
 
 ## Placar final

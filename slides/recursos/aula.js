@@ -450,4 +450,123 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
       this.baixas.forEach((r) => r.classList.toggle("marcar", k >= 1));
     },
   });
+
+  /* ======================================================================
+   * 11. Grupo focal: três conversas, três números; a habilidade, sempre 162
+   * ==================================================================== */
+  const css3 = document.createElement("style");
+  css3.textContent = `
+  .ap-gf { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: .4rem; }
+  .ap-gf .perg { grid-column: 1 / -1; font-size: .8em; background: var(--superficie); border-left: 6px solid var(--azul); padding: .55rem .9rem; border-radius: 0 10px 10px 0; }
+  .ap-gf .perg b { display: block; }
+  .ap-gf .perg small { color: var(--texto-fraco); font-size: .78em; }
+  .ap-gf .lado { border: 2px solid var(--superficie-borda); border-radius: 14px; padding: .6rem .9rem .8rem; }
+  .ap-gf .lado b.rot { display: block; font-size: .7em; margin-bottom: .5rem; }
+  .ap-gf .lado.com { border-color: var(--turquesa); }
+  .ap-gf .nums { display: flex; gap: .7rem; }
+  .ap-gf .n { flex: 1; text-align: center; border-radius: 12px; padding: .35rem 0 .25rem; background: color-mix(in srgb, var(--marca) 12%, transparent); }
+  .ap-gf .com .n { background: color-mix(in srgb, var(--turquesa) 14%, transparent); }
+  .ap-gf .n span { display: block; font-size: .5em; color: var(--texto-fraco); }
+  .ap-gf .n b { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.9em; color: var(--marca); line-height: 1.1; }
+  .ap-gf .com .n b { color: var(--turquesa); }
+  .ap-gf .nota { font-size: .58em; color: var(--texto-fraco); margin-top: .45rem; }
+  /* anatomia de uma habilidade */
+  .ap-sk { display: grid; grid-template-columns: 1.05fr .95fr; gap: 1.2rem; align-items: start; margin-top: .2rem; }
+  .ap-sk .pasta { position: relative; background: var(--superficie); border-radius: 4px 16px 16px 16px; padding: .7rem .8rem .7rem; margin-top: 1.1rem; }
+  .ap-sk .pasta::before { content: "avaliacoes-lojas/"; position: absolute; top: -1.3rem; left: 0; background: var(--superficie); border-radius: 10px 10px 0 0; padding: .1rem .9rem 0; font-family: "Cascadia Code", Consolas, monospace; font-size: .7em; font-weight: 700; }
+  .ap-sk .arq { background: var(--fundo); border: 2px solid var(--superficie-borda); border-radius: 12px; padding: .35rem .65rem; margin-bottom: .45rem; transition: border-color .3s, box-shadow .3s, opacity .3s; }
+  .ap-sk .arq:last-child { margin-bottom: 0; }
+  .ap-sk .arq .nome { font-family: "Cascadia Code", Consolas, monospace; font-weight: 700; font-size: .72em; display: flex; justify-content: space-between; align-items: center; }
+  .ap-sk .arq .nome i { font-style: normal; font-family: Inter, sans-serif; font-weight: 600; font-size: .85em; color: var(--texto-fraco); }
+  .ap-sk .arq.opc { border-style: dashed; }
+  .ap-sk .parte { margin-top: .25rem; border-radius: 8px; padding: .18rem .5rem; font-size: .58em; line-height: 1.25; background: var(--superficie); transition: background .3s, box-shadow .3s; }
+  .ap-sk .parte b { display: block; font-size: 1.02em; }
+  .ap-sk .on { border-color: var(--marca) !important; box-shadow: 0 0 0 4px color-mix(in srgb, var(--marca) 18%, transparent); }
+  .ap-sk .parte.on { background: color-mix(in srgb, var(--marca) 12%, var(--fundo)); box-shadow: none; }
+  .ap-sk .linha2 { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .ap-sk .fluxo { display: grid; gap: .55rem; font-size: .7em; }
+  .ap-sk .fluxo div { background: var(--superficie); border-radius: 10px; padding: .4rem .7rem; position: relative; }
+  .ap-sk .fluxo div::after { content: "↓"; position: absolute; left: 50%; bottom: -1.05em; color: var(--texto-fraco); font-weight: 700; }
+  .ap-sk .fluxo div:last-child::after { content: none; }
+  .ap-sk .fluxo b { color: var(--marca); }
+  /* dicionário: as partes do JSON acendem uma de cada vez */
+  .ap-json pre.cod .jp { border-radius: 4px; transition: background .3s, opacity .3s; }
+  .ap-json pre.cod.focando .jp { opacity: .35; }
+  .ap-json pre.cod .jp.agora { opacity: 1; background: var(--grifo); }
+  :root[data-tema="escuro"] .ap-json pre.cod .jp.agora { background: color-mix(in srgb, var(--amarelo) 35%, transparent); }
+  `;
+  document.head.appendChild(css3);
+
+  Motor.cena("ap-grupo", {
+    montar(caixa) {
+      const g = html("div", "ap-gf", caixa);
+      html("div", "perg", g, `<b>"Neste grupo focal, quantas vezes cada participante falou de preço?"</b>
+        <small>a transcrição de um grupo focal com 8 viajantes: 916 falas, 18 mil palavras (curso de executivos)</small>`);
+      this.sem = html("div", "lado", g, `<b class="rot">Sem habilidade: a mesma pergunta em três conversas novas do ChatGPT</b>
+        <div class="nums"><div class="n"><span>1ª conversa</span><b>157</b></div><div class="n"><span>2ª conversa</span><b>161</b></div><div class="n"><span>3ª conversa</span><b>210</b></div></div>
+        <div class="nota">Em cada conversa, um critério diferente: incluiu reembolso, tirou reembolso, incluiu bagagem.</div>`);
+      this.com = html("div", "lado com", g, `<b class="rot">Com a habilidade contar-termos: um script com a lista de termos</b>
+        <div class="nums"><div class="n"><span>em qualquer conversa, quantas vezes rodar</span><b>162</b></div></div>
+        <div class="nota">preço = preço, preços, caro, cara, barato, barata, tarifa*, "quanto custa", R$</div>`);
+      esconde([this.sem, this.com]);
+    },
+    passo(k, anim) {
+      mostra(this.sem, k >= 1, anim);
+      mostra(this.com, k >= 2, anim);
+    },
+  });
+
+  Motor.cena("ap-skill", {
+    montar(caixa) {
+      const g = html("div", "ap-sk", caixa);
+      const p = html("div", "pasta", g);
+      this.skill = html("div", "arq", p, `<div class="nome">SKILL.md <i>obrigatório</i></div>
+        <div class="parte p1"><b>nome e descrição</b>"baixa as avaliações de um app nas duas lojas; use quando pedirem avaliações"</div>
+        <div class="parte p2"><b>passo a passo</b>confirme os identificadores · rode o script · mostre o resumo</div>
+        <div class="parte p3"><b>regras</b>uma página por vez · nunca o nome de quem avaliou</div>`);
+      this.scr = html("div", "arq", p, `<div class="nome">scripts/ <i>o código</i></div>
+        <div class="parte"><b>baixar_avaliacoes.py</b>baixa, junta e resume: sempre do mesmo jeito</div>`);
+      const l2 = html("div", "linha2", p);
+      this.ref = html("div", "arq opc", l2, `<div class="nome">referencias/ <i>opcional</i></div>
+        <div class="parte">documentação, exemplos</div>`);
+      this.mod = html("div", "arq opc", l2, `<div class="nome">modelos/ <i>opcional</i></div>
+        <div class="parte">modelo de relatório, listas</div>`);
+      const f = html("div", "fluxo", g);
+      this.fl = [
+        html("div", "", f, `<b>1.</b> Você pede: "baixe as avaliações do iFood"`),
+        html("div", "", f, `<b>2.</b> O ChatGPT lê as <b>descrições</b> das habilidades instaladas e escolhe esta`),
+        html("div", "", f, `<b>3.</b> Lê o <b>SKILL.md</b> inteiro e segue o passo a passo`),
+        html("div", "", f, `<b>4.</b> Roda o <b>script</b> e consulta os arquivos de apoio, se precisar`),
+        html("div", "", f, `<b>5.</b> Mostra o resumo, sempre no mesmo formato`),
+      ];
+      this.partes = [...this.skill.querySelectorAll(".parte")];
+      esconde([this.scr, this.ref, this.mod, ...this.fl]);
+    },
+    passo(k, anim) {
+      // 0: o SKILL.md; 1: nome e descrição; 2: passo a passo e regras; 3: scripts; 4: opcionais; 5: o fluxo
+      this.partes[0].classList.toggle("on", k === 1);
+      this.partes[1].classList.toggle("on", k === 2);
+      this.partes[2].classList.toggle("on", k === 2);
+      this.skill.classList.toggle("on", k === 0);
+      mostra(this.scr, k >= 3, anim);
+      this.scr.classList.toggle("on", k === 3);
+      mostra(this.ref, k >= 4, anim);
+      mostra(this.mod, k >= 4, anim, 0.15);
+      this.ref.classList.toggle("on", k === 4);
+      this.mod.classList.toggle("on", k === 4);
+      this.fl.forEach((e, i) => mostra(e, k >= 5, anim, i * 0.25));
+    },
+  });
+
+  Motor.cena("ap-json", {
+    montar(caixa) {
+      this.pre = caixa.querySelector("pre.cod");
+      this.partes = this.pre ? [...this.pre.querySelectorAll(".jp")] : [];
+    },
+    passo(k) {
+      if (!this.pre) return;
+      this.pre.classList.toggle("focando", k > 0);
+      this.partes.forEach((e) => e.classList.toggle("agora", String(k) === e.dataset.k));
+    },
+  });
 })();

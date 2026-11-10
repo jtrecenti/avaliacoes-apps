@@ -1671,101 +1671,84 @@ margin-right: 0; }
 </div>
 </section>
 <section class="slide level2">
-<h2>Contagem com o modelo e com um script</h2>
-<div class="cena" data-cena="ap-contagem">
+<h2>Contagem de menções num grupo focal</h2>
+<div class="cena" data-cena="ap-grupo">
 
 </div>
 <div class="legendas">
 <div>
-<p>Uma pergunta com resposta exata: entre as 500 avaliações mais recentes do Itaú na App Store, <strong>quantas citam o Pix?</strong></p>
+<p>Uma pergunta com resposta exata, feita no curso de executivos sobre a transcrição de um grupo focal.</p>
 </div>
 <div>
-<p>Mandamos as 500 avaliações ao modelo três vezes, em três pedidos independentes (como três conversas novas). Ele respondeu 32 nas três.</p>
+<p><strong>Sem habilidade</strong>, cada conversa escolheu um critério e contou “de olho”: três números diferentes. Qual está certo? Ninguém sabe.</p>
 </div>
 <div>
-<p>Um script em Python segue uma <strong>regra escrita</strong>: a palavra “pix” inteira, sem diferenciar maiúscula e minúscula. Também deu 32. Aqui, os dois concordam.</p>
-</div>
-<div>
-<p>Nem sempre é assim. No curso de executivos, a pergunta era sobre um grupo focal: três conversas no ChatGPT deram 13, 12 e 25. O script deu 5 nas três.</p>
-</div>
-<div>
-<p>Por que usar o script mesmo quando o modelo acerta? <strong>A regra fica escrita</strong> (dá para conferir e corrigir), <strong>o resultado se repete</strong>, e ele <strong>roda em 6 mil ou 6 milhões de linhas</strong>. É isso que chamamos de habilidade com código, ou determinística.</p>
-</div>
-</div>
-<p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
-</section>
-<section class="slide level2">
-<h2>Estrutura de uma habilidade</h2>
-<div class="colunas">
-<div style="flex:0.9">
-<p>Uma <strong>habilidade</strong> (<em>skill</em>) é uma pasta que o ChatGPT (e também o Claude e o Codex) lê antes de trabalhar:</p>
-<pre class="cod" style="font-size:.85em">avaliacoes-lojas/
-├── <b>SKILL.md</b>          o passo a passo
-└── scripts/
-    └── <b>baixar_avaliacoes.py</b></pre>
-<div data-p="1">
-<p><strong>O <code>SKILL.md</code></strong> é texto: quando usar, os passos, as regras. O modelo lê e <strong>decide</strong> (qual app, o que perguntar ao usuário).</p>
-</div>
-<div data-p="2">
-<p><strong>O script</strong> é código: baixa, conta, junta. O computador <strong>executa</strong>, sempre igual. O modelo só chama e lê o resultado.</p>
-</div>
-</div>
-<div style="flex:1.1">
-<pre class="cod" style="font-size:.66em;line-height:1.3">---
-name: avaliacoes-lojas
-description: Baixa as avaliações de um aplicativo na
-  App Store e na Google Play do Brasil, sempre do mesmo
-  jeito. Use quando o usuário pedir avaliações de um app.
----
-## Passo a passo
-1. Descubra os dois identificadores (o número na
-   App Store e o pacote na Google Play). Confirme
-   com o usuário antes de baixar.
-2. Rode o script, nunca conte nem copie à mão:
-   python scripts/baixar_avaliacoes.py --nome ...
-3. Mostre o resumo: quantas por loja, de que data
-   a que data, a nota média.
-## Regras
-- Uma página por vez, com pausa.
-- Nunca guarde o nome de quem avaliou.
-- Mascare telefone, e-mail e CPF no texto.</pre>
-<div class="miudo">
-<p>A habilidade completa está no repositório, em <code>skills/avaliacoes-lojas/</code>.</p>
-</div>
+<p><strong>Com a habilidade</strong>, um script segue uma lista de termos escrita: 162, toda vez. E erra sempre do mesmo jeito (“filmando na <strong>cara</strong>” entra como preço), mas o erro aparece nos trechos, e corrigir a lista vale para sempre.</p>
 </div>
 </div>
 <p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
 </section>
 <section class="slide level2 exercicio-capa">
-<h2>Demonstração 1: criar a habilidade avaliacoes-lojas</h2>
-<p><span class="ex-num">Demonstração 1</span> <span class="chip desktop">ChatGPT, aplicativo de desktop, modo Work</span> <span class="chip papel">o professor faz, a turma acompanha</span></p>
-<div class="ficha">
-<p><span class="r">Onde</span></p>
-<div class="v">
-<p>No <strong>aplicativo do ChatGPT para computador</strong>, no <strong>modo Work</strong> (o botão no alto troca de Chat para Work), numa conversa nova, com uma pasta do computador aberta. O mesmo pedido funciona no Claude e no Codex.</p>
+<h2>Demonstração 1: contar sem e com uma habilidade</h2>
+<p><span class="ex-num">Demonstração 1</span> <span class="chip desktop">ChatGPT para computador, modo Work</span> <span class="chip papel">pasta demos/1-contagem</span></p>
+<div class="colunas">
+<div>
+<div class="prompt prompt-estruturado" data-quem="Sem habilidade: conversa nova, anexe a entrevista">
+<p>Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço?</p>
+<p>Não conte a moderadora. Quero um número por pessoa e o total.</p>
 </div>
-<p><span class="r">O que vamos fazer</span></p>
-<div class="v">
-<p>Colar um pedido (o próximo slide) que descreve a habilidade: o objetivo, a entrada, como baixar, as regras e a saída.</p>
 </div>
-<p><span class="r">O que esperar</span></p>
-<div class="v">
-<p>O ChatGPT faz perguntas, escreve o <code>SKILL.md</code> e o script em Python, instala o que faltar e <strong>testa com o Nubank</strong>. Em poucos minutos, a habilidade aparece em Habilidades.</p>
+<div>
+<div class="prompt prompt-estruturado" data-quem="Com habilidade: conversa nova, anexe a entrevista">
+<p>Use a habilidade contar-termos.</p>
+<p>Neste grupo focal (o arquivo anexo), quantas vezes cada participante falou de preço?</p>
+<p>Não conte a moderadora. Quero um número por pessoa e o total.</p>
 </div>
-<p><span class="r">O que conferir</span></p>
-<div class="v">
-<p>O resumo: quantas avaliações vieram de cada loja, de que data a que data, a nota média. Abra o CSV: tem o nome de quem avaliou? (Não pode ter.)</p>
 </div>
+</div>
+<div class="miudo">
+<p>A entrevista está em <code>entrevista/grupo_focal_aerea_sol.txt</code>. A habilidade <code>contar-termos</code> já está instalada (Personalizar → Habilidades). Repare: sem habilidade, a resposta é um número; com ela, vem a tabela, a regra usada e os trechos para conferir.</p>
+</div>
+</section>
+<section class="slide level2 exercicio-capa">
+<h2>Demonstração 2: criar a habilidade avaliacoes-lojas</h2>
+<p><span class="ex-num">Demonstração 2</span> <span class="chip desktop">ChatGPT para computador, modo Work</span> <span class="chip papel">conversa nova</span></p>
+<div class="prompt prompt-estruturado" data-quem="Colar numa conversa nova. Ele leva alguns minutos: enquanto trabalha, vemos como uma habilidade é feita">
+<p>Use o skill creator para criar uma habilidade chamada avaliacoes-lojas.</p>
+<p><strong>Objetivo:</strong> baixar as avaliações de um aplicativo na App Store e na Google Play do Brasil, sempre do mesmo jeito, com um script em Python.</p>
+<p><strong>Entrada:</strong> o nome do app, o número dele na App Store e o pacote dele na Google Play.</p>
+<p><strong>Como baixar:</strong> na App Store, o feed RSS em JSON (até 10 páginas de 50, as mais recentes); na Google Play, o pacote google-play-scraper (as 500 mais recentes).</p>
+<p><strong>Regras:</strong> uma página por vez, com pausa; guarde o arquivo bruto antes de ler; nunca guarde o nome de quem avaliou; mascare telefone, e-mail e CPF.</p>
+<p><strong>Saída:</strong> um CSV (loja, app, id, data, nota, título, texto, versão) e um resumo: quantas avaliações vieram de cada loja, de que data a que data e a nota média.</p>
+<p><strong>Teste:</strong> com o Nubank (App Store 814456780, Google Play com.nu.production).</p>
 </div>
 </section>
 <section class="slide level2">
-<h2>Pedido da demonstração 1</h2>
-<div class="prompt prompt-estruturado" data-quem="Colar numa conversa nova do ChatGPT, no modo Work">
-<p>Crie uma habilidade chamada <code>avaliacoes-lojas</code> que baixa as avaliações de um aplicativo na App Store e na Google Play do Brasil, sempre do mesmo jeito, com um script em Python. <strong>Entrada:</strong> o nome do app, o número dele na App Store e o pacote na Google Play. <strong>Como:</strong> na App Store, o feed RSS em JSON (até 10 páginas de 50, as mais recentes); na Google Play, o pacote <code>google-play-scraper</code> (as 500 mais recentes). <strong>Regras:</strong> uma página por vez, com pausa; guarde o arquivo bruto antes de ler; nunca guarde o nome de quem avaliou; mascare telefone, e-mail e CPF. <strong>Saída:</strong> um CSV (loja, app, id, data, nota, título, texto, versão) e um resumo: quantas vieram de cada loja, de que data a que data e a nota média. <strong>Teste</strong> com o Nubank (814456780 e <code>com.nu.production</code>).</p>
+<h2>Estrutura de uma habilidade</h2>
+<div class="cena" data-cena="ap-skill">
+
 </div>
-<div class="miudo">
-<p>Os dois identificadores estão no endereço do app em cada loja: <code>apps.apple.com/br/app/nubank/id814456780</code> e <code>play.google.com/store/apps/details?id=com.nu.production</code>.</p>
+<div class="legendas">
+<div>
+<p>Uma habilidade é uma <strong>pasta</strong>. A única peça obrigatória é o <code>SKILL.md</code>, um texto com instruções.</p>
 </div>
+<div>
+<p>No alto do <code>SKILL.md</code>, o <strong>nome e a descrição</strong>. É só isso que o ChatGPT lê para decidir se a habilidade serve para o seu pedido: escreva quando usar.</p>
+</div>
+<div>
+<p>Depois, o <strong>passo a passo</strong> e as <strong>regras</strong>: o que fazer, em que ordem, e o que nunca fazer. O modelo lê e decide (qual app, o que perguntar).</p>
+</div>
+<div>
+<p>Em <code>scripts/</code>, o <strong>código</strong> que executa: baixa, conta, junta. O computador roda, sempre igual. É o que torna a habilidade determinística.</p>
+</div>
+<div>
+<p>E quantos <strong>arquivos de apoio</strong> forem úteis: documentação, exemplos, modelos de relatório, listas de termos. O modelo só os abre quando precisa.</p>
+</div>
+<div>
+<p>Na prática: o pedido chega, a descrição escolhe a habilidade, o <code>SKILL.md</code> guia, o script executa. A habilidade completa está em <code>skills/avaliacoes-lojas/</code>.</p>
+</div>
+</div>
+<p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
 </section>
 <section class="slide level2">
 <h2>Pergunta 1</h2>
@@ -1776,53 +1759,25 @@ description: Baixa as avaliações de um aplicativo na
 <section class="slide level2 secao">
 <h2>Coleta de dados da web</h2>
 <div class="miudo">
-<p>Parte 2. Antes de raspar uma página, procure o jeito mais simples de pegar o dado. E desconfie do que o dado não mostra.</p>
+<p>Parte 2. Com a habilidade pronta, baixar é um pedido. O cuidado passa a ser outro: o que esses dados mostram, e o que não mostram.</p>
 </div>
 </section>
-<section class="slide level2">
-<h2>Formas de obter dados da web</h2>
-<div class="sub">
-<p>Do mais simples e estável ao mais trabalhoso e frágil. As avaliações das lojas ficam no segundo degrau.</p>
+<section class="slide level2 exercicio-capa">
+<h2>Demonstração 3: baixar as avaliações dos bancos</h2>
+<p><span class="ex-num">Demonstração 3</span> <span class="chip desktop">ChatGPT para computador, modo Work</span> <span class="chip papel">a mesma conversa da demonstração 2</span></p>
+<div class="prompt prompt-estruturado" data-quem="Colar na mesma conversa da demonstração 2">
+<p>Use a habilidade avaliacoes-lojas para baixar as avaliações destes quatro bancos:</p>
+<ul>
+<li>Nubank: App Store 814456780, Google Play com.nu.production</li>
+<li>Itaú: App Store 474505665, Google Play com.itau</li>
+<li>Banco do Brasil: App Store 330984271, Google Play br.com.bb.android</li>
+<li>Bradesco: App Store 336954985, Google Play com.bradesco</li>
+</ul>
+<p>Junte tudo num arquivo só. Para cada banco e cada loja, me mostre numa tabela: quantas avaliações vieram, de que data a que data, e a nota média das avaliações escritas. Depois, ao lado, a nota que cada loja mostra na página do app.</p>
 </div>
-<div class="cena" data-cena="a2-escada">
-
-</div>
-<p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
-</section>
-<section class="slide level2">
-<h2>Avaliações nas duas lojas</h2>
-<div class="colunas">
-<div>
-<p><strong>App Store: um feed público em JSON</strong></p>
-<pre class="cod" style="font-size:.66em;line-height:1.3">itunes.apple.com/br/rss/customerreviews/
-  page=1/id=474505665/sortby=mostrecent/json
-
-{&quot;updated&quot;:    {&quot;label&quot;: &quot;2026-11-08T02:35:04-07:00&quot;},
- &quot;im:rating&quot;:  {&quot;label&quot;: &quot;1&quot;},
- &quot;im:version&quot;: {&quot;label&quot;: &quot;7.154.1&quot;},
- &quot;title&quot;:      {&quot;label&quot;: &quot;me ajudeee!!&quot;},
- &quot;content&quot;:    {&quot;label&quot;: &quot;não consigo enviar pix,
-                pra eu comprar algo só consigo
-                se for no cartão&quot;},
- &quot;author&quot;:     ...}</pre>
 <div class="miudo">
-<p>10 páginas de 50: só as <strong>500 mais recentes</strong>. O <code>author</code> (o nome de quem avaliou) fica de fora.</p>
+<p>A App Store tem um feed público, feito para programas lerem: só as 500 avaliações mais recentes. A Google Play não tem: o pacote faz os mesmos pedidos que a página faz, e as 500 mais recentes cobrem só dois a quatro dias num app grande.</p>
 </div>
-</div>
-<div data-p="1">
-<p><strong>Google Play: um pacote de Python</strong></p>
-<pre class="cod" style="font-size:.66em;line-height:1.3">from google_play_scraper import reviews, Sort
-
-res, _ = reviews(&quot;com.itau&quot;, lang=&quot;pt&quot;,
-                 country=&quot;br&quot;, sort=Sort.NEWEST,
-                 count=500)
-res[0][&quot;score&quot;], res[0][&quot;content&quot;]</pre>
-<div class="miudo">
-<p>Não há feed oficial: o pacote faz os mesmos pedidos que a página faz. As 500 mais recentes, que num app grande cobrem <strong>só dois a quatro dias</strong>.</p>
-</div>
-</div>
-</div>
-<p><span class="fragment passo"></span></p>
 </section>
 <section class="slide level2">
 <h2>Nota da loja e nota das avaliações escritas</h2>
@@ -1834,13 +1789,10 @@ res[0][&quot;score&quot;], res[0][&quot;content&quot;]</pre>
 <p>O círculo vazio é a nota que a página da loja mostra: a média de milhões de notas, a maioria sem texto.</p>
 </div>
 <div>
-<p>O ponto vermelho é a média das avaliações <strong>escritas</strong> dos últimos 30 dias, as que coletamos.</p>
-</div>
-<div>
-<p><span class="dado" data-k="leg_notas"></span> Não é erro: <strong>quem escreve, escreve para reclamar</strong>. As avaliações escritas não são uma amostra dos clientes; são um termômetro do que está incomodando agora.</p>
+<p>O ponto vermelho é a média das avaliações <strong>escritas</strong> dos últimos 30 dias, as que baixamos. Por que ele fica sempre à esquerda?</p>
 </div>
 </div>
-<p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
+<p><span class="fragment passo"></span></p>
 </section>
 <section class="slide level2">
 <h2>Pergunta 2</h2>
@@ -1878,53 +1830,52 @@ res[0][&quot;score&quot;], res[0][&quot;content&quot;]</pre>
 <section class="slide level2">
 <h2>Dicionário de variáveis</h2>
 <div class="colunas">
-<div style="flex:.8">
-<p>As perguntas ficam num arquivo, o <strong>dicionário</strong>, e não soltas na conversa.</p>
-<div data-p="1">
-<ul>
-<li><strong>Lista fechada de opções.</strong> Sem lista, cada avaliação ganha uma categoria nova.</li>
-</ul>
-</div>
-<div data-p="2">
-<ul>
-<li><strong>Uma definição por opção.</strong> É o que o modelo lê para decidir.</li>
-</ul>
-</div>
-<div data-p="3">
-<ul>
-<li><strong>Sempre um “outro”</strong>, e opções para o que não é problema (“elogio geral”, “crítica geral”).</li>
-</ul>
-</div>
-<div data-p="4">
-<ul>
-<li><strong>Opções por segmento.</strong> Banco e delivery têm problemas diferentes.</li>
-</ul>
-</div>
-</div>
-<div style="flex:1.2">
-<pre class="cod" style="font-size:.62em;line-height:1.28">{&quot;_instrucoes&quot;: &quot;Você lê avaliações de aplicativos escritas
+<div class="cena ap-json" data-cena="ap-json" style="flex:1.25">
+<pre class="cod" style="font-size:.62em;line-height:1.3">{<span class="jp" data-k="1">&quot;_instrucoes&quot;: &quot;Você lê avaliações de aplicativos escritas
    por clientes na App Store ou na Play Store do Brasil.
    Responda a cada pergunta só com base no título e no
-   texto da avaliação.&quot;,
+   texto da avaliação.&quot;,</span>
  &quot;variaveis&quot;: {
   &quot;tema&quot;: {
-   &quot;pergunta&quot;: &quot;Qual é o assunto principal da avaliação?&quot;,
-   &quot;tipo&quot;: &quot;escolha&quot;,
-   &quot;opcoes_por_segmento&quot;: {&quot;Delivery&quot;: {
-    &quot;atraso na entrega&quot;: &quot;o pedido demorou, atrasou ou nunca
+   <span class="jp" data-k="2">&quot;pergunta&quot;: &quot;Qual é o assunto principal da avaliação?&quot;,
+   &quot;tipo&quot;: &quot;escolha&quot;,</span>
+   &quot;opcoes&quot;: {
+    <span class="jp" data-k="3">&quot;atraso na entrega&quot;: &quot;o pedido demorou, atrasou ou nunca
        chegou, rastreamento errado&quot;,
     &quot;cupons e promoções&quot;: &quot;cupons, descontos, clube de
-       assinatura, promoções que não funcionam&quot;,
-    &quot;elogio geral&quot;: &quot;a avaliação elogia o app ou a empresa
+       assinatura, promoções que não funcionam&quot;,</span> ...
+    <span class="jp" data-k="4">&quot;elogio geral&quot;: &quot;a avaliação elogia o app ou a empresa
        sem apontar um problema&quot;,
-    &quot;outro&quot;: &quot;nenhuma das opções acima&quot;, ...}}},
-  &quot;reclamacao&quot;: {
+    &quot;outro&quot;: &quot;nenhuma das opções acima&quot;</span>}},
+  <span class="jp" data-k="5">&quot;reclamacao&quot;: {
    &quot;pergunta&quot;: &quot;A avaliação reclama de alguma coisa (um
       problema, uma falha ou uma insatisfação)?&quot;,
-   &quot;tipo&quot;: &quot;sim_nao&quot;}}}</pre>
+   &quot;tipo&quot;: &quot;sim_nao&quot;}</span>}}</pre>
+</div>
+<div style="flex:.75">
+<div class="legendas">
+<div>
+<p>O <strong>dicionário</strong> é um arquivo (JSON) com as perguntas que vamos fazer a cada avaliação. Ele fica na pasta, e não solto na conversa.</p>
+</div>
+<div>
+<p><strong>As instruções gerais</strong> valem para todas as perguntas: quem lê, de onde vêm os textos, e a regra de ouro: responder só com o que está escrito.</p>
+</div>
+<div>
+<p><strong>Cada variável</strong> tem uma pergunta e um tipo. Aqui, <code>escolha</code>: a resposta é uma opção de uma lista fechada. Sem lista, cada avaliação ganharia uma categoria nova.</p>
+</div>
+<div>
+<p><strong>Cada opção tem uma definição.</strong> É o que o modelo lê para decidir, como alguém novo na equipe leria um manual. No painel, bancos e delivery têm listas diferentes.</p>
+</div>
+<div>
+<p><strong>Opções para o que não é problema</strong> (“elogio geral”) e um <strong>“outro”</strong> para o que não cabe em nenhuma. Sem elas, o modelo força o texto numa opção errada.</p>
+</div>
+<div>
+<p><strong>Uma segunda variável</strong>, do tipo sim ou não: a avaliação reclama de algo? Cada variável vira uma coluna da tabela.</p>
 </div>
 </div>
-<p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
+</div>
+</div>
+<p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
 </section>
 <section class="slide level2">
 <h2>Chamada ao Jev em Python</h2>
@@ -1974,7 +1925,7 @@ r.answers[&quot;reclamacao&quot;].noul     <span class="c"># 0.98 (sim)</span></
 <p>Zé Delivery: o texto fala de cerveja quente <strong>e</strong> de taxa. O Jev escolheu preços e taxas com 99%: a pergunta pede <strong>um</strong> assunto principal.</p>
 </div>
 <div>
-<p>iFood: “Praticidade e ótimos descontos” fica entre <strong>elogio geral (55%)</strong> e <strong>cupons e promoções (44%)</strong>. O texto cabe nas duas: é o dicionário que precisa decidir.</p>
+<p>iFood: “Praticidade e ótimos descontos” fica entre <strong>elogio geral (55%)</strong> e <strong>cupons e promoções (44%)</strong>. O Jev não tem certeza, e diz isso.</p>
 </div>
 </div>
 <p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
@@ -1986,13 +1937,26 @@ r.answers[&quot;reclamacao&quot;].noul     <span class="c"># 0.98 (sim)</span></
 </div>
 <div class="legendas">
 <div>
-<p>Antes de rodar em milhares, rode em poucas e <strong>confira à mão</strong>. Oito avaliações de delivery, sorteadas: quatro com confiança alta, quatro com confiança baixa.</p>
+<p>Antes de rodar em milhares, rode em poucas e leia. Oito avaliações de delivery, sorteadas: quatro com confiança alta, quatro com confiança baixa.</p>
 </div>
 <div>
 <p>As de confiança abaixo de 60% são quase sempre textos com dois assuntos ou opções mal definidas. Ajuste o dicionário e rode de novo. No painel, <span class="dado" data-k="conf_baixa"></span> temas (<span class="dado" data-k="pct_conf_baixa"></span>) ficaram abaixo de 60%.</p>
 </div>
 </div>
 <p><span class="fragment passo"></span></p>
+</section>
+<section class="slide level2 exercicio-capa">
+<h2>Demonstração 4: anotar as avaliações com o Jev</h2>
+<p><span class="ex-num">Demonstração 4</span> <span class="chip desktop">ChatGPT para computador, modo Work</span> <span class="chip papel">abra a pasta demos/4-anotar-com-jev</span></p>
+<div class="prompt prompt-estruturado" data-quem="Colar numa conversa nova, com a pasta demos/4-anotar-com-jev aberta">
+<p>Nesta pasta estão as avaliações recentes do iFood, do Rappi e do Zé Delivery (avaliacoes_delivery.csv) e um dicionário de variáveis (dicionario.json).</p>
+<p>Anote cada avaliação com o Jev: o tema principal (uma das opções do dicionário) e se ela reclama de algo, com a probabilidade de cada resposta. Como chamar o Jev está em como_usar_o_jev.md; a chave JEV_API_KEY está no .env (não mostre a chave).</p>
+<p>Primeiro, teste em 10 avaliações e me mostre o texto, o tema e a confiança de cada uma.</p>
+<p>Depois, rode em todas e me mostre: (1) um gráfico de barras ordenadas com o tema das reclamações de cada app, com a conclusão no título; (2) as 5 avaliações com a confiança mais baixa no tema, com as duas opções mais prováveis.</p>
+</div>
+<div class="miudo">
+<p>A pasta já tem as 600 avaliações (100 por app e loja), o dicionário, um guia curto de como chamar o Jev em Python e o <code>.env</code> com a chave, que nunca entra na conversa nem vai para o GitHub.</p>
+</div>
 </section>
 <section class="slide level2">
 <h2>Pergunta 3</h2>
@@ -2017,34 +1981,6 @@ r.answers[&quot;reclamacao&quot;].noul     <span class="c"># 0.98 (sim)</span></
 </div>
 </div>
 <p><span class="fragment passo"></span> <span class="fragment passo"></span></p>
-</section>
-<section class="slide level2 exercicio-capa">
-<h2>Demonstração 2: anotar avaliações com o Jev</h2>
-<p><span class="ex-num">Demonstração 2</span> <span class="chip desktop">ChatGPT, aplicativo de desktop, modo Work</span> <span class="chip papel">o professor faz, a turma acompanha</span></p>
-<div class="ficha">
-<p><span class="r">Onde</span></p>
-<div class="v">
-<p>Na <strong>mesma conversa</strong> da demonstração 1, no modo Work, na pasta que tem o <code>.env</code> com a chave do Jev (o ChatGPT lê a chave do arquivo; ela nunca entra na conversa).</p>
-</div>
-<p><span class="r">O que vamos fazer</span></p>
-<div class="v">
-<p>Pedir que baixe as avaliações dos três apps de delivery com a habilidade nova, anote o tema e a reclamação de cada uma com o Jev, e faça um gráfico.</p>
-</div>
-<p><span class="r">O que esperar</span></p>
-<div class="v">
-<p>Ele usa a <code>avaliacoes-lojas</code> e a <code>estruturar-textos</code>, mostra 10 avaliações anotadas para conferirmos, roda nas demais, e devolve o gráfico e as 5 de confiança mais baixa.</p>
-</div>
-<p><span class="r">O que conferir</span></p>
-<div class="v">
-<p>Nas 10 do teste: você concorda com o tema? E as de confiança baixa: o que o dicionário deveria dizer para resolvê-las?</p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-<h2>Pedido da demonstração 2</h2>
-<div class="prompt prompt-estruturado" data-quem="Colar na mesma conversa da demonstração 1">
-<p>Use a habilidade <code>avaliacoes-lojas</code> para baixar as 200 avaliações mais recentes de cada loja do <strong>iFood</strong> (483017239 e <code>br.com.brainweb.ifood</code>), do <strong>Rappi</strong> (984044296 e <code>com.grability.rappi</code>) e do <strong>Zé Delivery</strong> (1070070438 e <code>com.cerveceriamodelo.modelonow</code>). Depois, com a habilidade <code>estruturar-textos</code> e o <strong>Jev</strong> (a chave <code>JEV_API_KEY</code> está no <code>.env</code>), anote o <strong>tema principal</strong> de cada avaliação (app com falha, atraso na entrega, pedido errado ou incompleto, cancelamento e reembolso, preços e taxas, cupons e promoções, atendimento, entregador, qualidade da comida, elogio geral, outro) e <strong>se ela reclama de algo</strong>. Teste em 10 e me mostre antes de rodar em todas. No fim, um gráfico de barras ordenadas com o tema das reclamações de cada app, com a conclusão no título, e as 5 avaliações de confiança mais baixa.</p>
-</div>
 </section>
 <section class="slide level2 secao">
 <h2>Painéis online com atualização diária</h2>
@@ -2129,7 +2065,7 @@ r.answers[&quot;reclamacao&quot;].noul     <span class="c"># 0.98 (sim)</span></
 <p>A página recebe os números prontos e desenha os gráficos (ECharts).</p>
 </div>
 <div>
-<p>Uma página <strong>dinâmica</strong> tem um servidor que calcula a cada visita: mais poder, e mais coisa para manter.</p>
+<p>Uma página <strong>dinâmica</strong> tem um servidor que calcula a cada visita: mais poder, e mais coisa para manter (custo, login, alguém de TI).</p>
 </div>
 </div>
 <p><span class="fragment passo"></span> <span class="fragment passo"></span> <span class="fragment passo"></span></p>
@@ -2221,8 +2157,14 @@ r.answers[&quot;reclamacao&quot;].noul     <span class="c"># 0.98 (sim)</span></
 </section>
 <section class="slide level2">
 <h2>Pedido para montar o painel</h2>
-<div class="prompt prompt-estruturado" data-quem="Para levar: o pedido de um monitor com painel, para colar no ChatGPT, no Claude ou no Codex">
-<p>Esta pasta vai ser um monitor diário das avaliações de [APPS] na App Store e na Google Play. Organize como um projeto que refaz tudo com um pedido: um passo por arquivo (coletar, juntar, checar, anotar, modelos, painel), um <code>rodar.py</code>, um <code>README.md</code> e um <code>AGENTS.md</code> com as regras. Cada coleta fica guardada e nunca é editada; a mesma avaliação conta uma vez; diga quantas linhas entraram e saíram em cada passo; nada de nome de quem avaliou. Antes de qualquer número, crie checagens escritas como frases: umas bloqueiam, outras alertam. Anote o tema e a reclamação com o Jev, com cache. Acrescente dois modelos: um mapa das avaliações (TF-IDF e t-SNE, pintado pelas colunas do Jev) e uma regressão da nota pelo tema, controlando por app e loja. O Python calcula só agregados num <code>dados.json</code>; a página estática desenha com ECharts, com a conclusão no título de cada gráfico. Por fim, um GitHub Actions que roda tudo todo dia e publica no GitHub Pages, com a chave nos segredos do repositório.</p>
+<div class="prompt prompt-estruturado" data-quem="Para levar: o pedido de um monitor com painel, para colar no ChatGPT, no Claude ou no Codex" style="font-size:.74em">
+<p>Esta pasta vai ser um monitor diário das avaliações de [APPS] na App Store e na Google Play.</p>
+<p><strong>Projeto:</strong> um passo por arquivo (coletar, juntar, checar, anotar, modelos, painel), um <code>rodar.py</code>, um <code>README.md</code> e um <code>AGENTS.md</code> com as regras.</p>
+<p><strong>Dados:</strong> cada coleta fica guardada e nunca é editada; a mesma avaliação conta uma vez; diga quantas linhas entraram e saíram em cada passo; nada de nome de quem avaliou.</p>
+<p><strong>Checagens:</strong> antes de qualquer número, frases que precisam ser verdade; umas bloqueiam, outras alertam.</p>
+<p><strong>Textos e modelos:</strong> anote o tema e a reclamação com o Jev, com cache; faça um mapa das avaliações (TF-IDF e t-SNE, pintado pelas colunas do Jev) e uma regressão da nota pelo tema, controlando por app e loja.</p>
+<p><strong>Painel:</strong> o Python calcula só agregados num <code>dados.json</code>; a página estática desenha com ECharts, com a conclusão no título de cada gráfico.</p>
+<p><strong>Atualização:</strong> um GitHub Actions que roda tudo todo dia e publica no GitHub Pages, com a chave nos segredos do repositório.</p>
 </div>
 </section>
 <section class="slide level2">
@@ -3822,641 +3764,6 @@ window.QuartoSupport = function () {
   else quandoPronto();
 })();
 </script>
-    <script>/*
- * Cenas animadas de 01-chatgpt-work.qmd, segunda metade (estúdio 2, 11h a 13h).
- * Usa o motor de passos (recursos/motor.js) e as classes de recursos/cenas.css.
- *
- * Os números (só agregados: contagens e proporções) vêm de
- * scripts/dados_cenas_aula02.py, que reescreve o bloco DADOS abaixo.
- */
-/* DADOS-INICIO */
-const DADOS = {"linha":{"LATAM":{"n":500,"ini":"2025-10-24","fim":"2026-10-31","meses":{"2025-10":6,"2025-11":23,"2025-12":31,"2026-01":43,"2026-02":31,"2026-03":54,"2026-04":40,"2026-05":45,"2026-06":33,"2026-07":47,"2026-08":40,"2026-09":53,"2026-10":54}},"Gol":{"n":500,"ini":"2026-05-15","fim":"2026-10-31","meses":{"2026-05":66,"2026-06":122,"2026-07":96,"2026-08":37,"2026-09":34,"2026-10":145}},"Azul":{"n":500,"ini":"2026-06-30","fim":"2026-11-01","meses":{"2026-06":4,"2026-07":120,"2026-08":123,"2026-09":123,"2026-10":128,"2026-11":2}},"TAP":{"n":500,"ini":"2021-03-10","fim":"2026-10-31","meses":{"2021-03":1,"2021-04":7,"2021-05":2,"2021-06":2,"2021-07":7,"2021-08":4,"2021-09":5,"2021-10":7,"2021-11":7,"2021-12":4,"2022-01":4,"2022-02":13,"2022-03":15,"2022-04":19,"2022-05":3,"2022-06":3,"2022-07":37,"2022-08":10,"2022-09":20,"2022-10":8,"2022-11":3,"2022-12":5,"2023-01":20,"2023-02":5,"2023-03":10,"2023-04":22,"2023-05":14,"2023-06":6,"2023-07":4,"2023-08":4,"2023-09":5,"2023-10":5,"2023-11":1,"2023-12":7,"2024-01":16,"2024-02":2,"2024-03":5,"2024-04":6,"2024-05":6,"2024-06":3,"2024-07":9,"2024-08":2,"2024-09":3,"2024-10":5,"2024-11":4,"2024-12":13,"2025-01":13,"2025-02":7,"2025-03":12,"2025-04":6,"2025-05":6,"2025-06":6,"2025-07":4,"2025-08":3,"2025-09":3,"2025-10":7,"2025-11":4,"2025-12":1,"2026-01":5,"2026-02":3,"2026-03":7,"2026-04":3,"2026-05":1,"2026-06":1,"2026-07":3,"2026-09":5,"2026-10":37}}},"notas":{"LATAM":{"n":500,"estrelas":[195,32,20,25,228],"media":3.12,"pagina":4.85,"pagina_n":519628},"Gol":{"n":500,"estrelas":[295,34,29,7,135],"media":2.31,"pagina":4.69,"pagina_n":427593},"Azul":{"n":500,"estrelas":[147,21,33,16,283],"media":3.53,"pagina":4.89,"pagina_n":723984},"TAP":{"n":500,"estrelas":[360,39,19,23,59],"media":1.76,"pagina":3.25,"pagina_n":1011}},"app":{"LATAM":{"app_falha":33.6,"atraso_canc":2.2,"fala_do_voo":13.2,"elogio":37.2},"Gol":{"app_falha":36.0,"atraso_canc":12.4,"fala_do_voo":18.2,"elogio":19.6},"Azul":{"app_falha":13.6,"atraso_canc":1.4,"fala_do_voo":7.8,"elogio":45.6},"TAP":{"app_falha":76.2,"atraso_canc":0.4,"fala_do_voo":7.0,"elogio":8.2}},"tjsp":{"LATAM":{"n":102,"cancelamento":52.0,"atraso":26.5,"bagagem":5.9,"overbooking_ou_embarque_negado":6.9,"outros":8.7},"Gol":{"n":85,"cancelamento":43.5,"atraso":36.5,"bagagem":2.4,"overbooking_ou_embarque_negado":10.6,"outros":7.0},"Azul":{"n":160,"cancelamento":50.6,"atraso":29.4,"bagagem":3.1,"overbooking_ou_embarque_negado":8.8,"outros":8.1},"TAP":{"n":119,"cancelamento":39.5,"atraso":16.8,"bagagem":21.0,"overbooking_ou_embarque_negado":15.1,"outros":7.6}},"conf":[{"de":0.35,"concordam":0,"discordam":1},{"de":0.4,"concordam":2,"discordam":0},{"de":0.45,"concordam":1,"discordam":1},{"de":0.5,"concordam":1,"discordam":1},{"de":0.55,"concordam":2,"discordam":0},{"de":0.6,"concordam":2,"discordam":3},{"de":0.65,"concordam":2,"discordam":2},{"de":0.7,"concordam":3,"discordam":2},{"de":0.75,"concordam":4,"discordam":0},{"de":0.8,"concordam":8,"discordam":2},{"de":0.85,"concordam":9,"discordam":2},{"de":0.9,"concordam":15,"discordam":5},{"de":0.95,"concordam":82,"discordam":10}]};
-/* DADOS-FIM */
-(function () {
-  "use strict";
-  const { svg, html, escala, num, gerador, seta, DUR } = Motor.util;
-  /* como o txt do motor, mas o tamanho da fonte vai no style (a classe venceria o atributo) */
-  function txt(pai, x, y, t, attrs = {}) {
-    const a = Object.assign({}, attrs);
-    if (a["font-size"]) { a.style = (a.style ? a.style + ";" : "") + `font-size:${a["font-size"]}px`; delete a["font-size"]; }
-    return Motor.util.txt(pai, x, y, t, a);
-  }
-  const EMP = ["LATAM", "Gol", "Azul", "TAP"];
-  const COR = { LATAM: "var(--roxo)", Gol: "var(--laranja)", Azul: "var(--turquesa)", TAP: "var(--marca)" };
-  const pct = (v) => num(v, 0) + "%";
-
-  /* ---------- estilos só desta parte do deck ----------------------------- */
-  const css = document.createElement("style");
-  css.textContent = `
-  .grafico-svg .a2-mono { font-family: "JetBrains Mono", Consolas, monospace; font-size: 16px; fill: var(--texto); }
-  .grafico-svg .a2-tit { font-size: 20px; font-weight: 700; fill: var(--texto); }
-  .grafico-svg .a2-sub { font-size: 16px; fill: var(--texto-fraco); }
-  .grafico-svg .a2-dentro { fill: var(--fundo); font-size: 16px; font-weight: 700; }
-  .grafico-svg .a2-voce { fill: var(--turquesa); font-weight: 700; }
-  .grafico-svg .a2-cod { fill: var(--laranja); font-weight: 700; }
-  .grafico-svg .caixa.voce { stroke: var(--turquesa); stroke-width: 3.5; }
-  .grafico-svg .caixa.cod { stroke: var(--laranja); stroke-width: 3.5; }
-  .grafico-svg .tracejada { stroke-dasharray: 7 6; }
-  .grafico-svg .a2-ph { fill: var(--regua); }
-  .grafico-svg .a2-pasta { fill: var(--superficie); stroke: var(--texto-fraco); stroke-width: 2; }
-  .grafico-svg .a2-arq rect { fill: var(--fundo); stroke: var(--texto-fraco); stroke-width: 1.5; }
-  .grafico-svg .a2-ok { fill: var(--turquesa); font-weight: 700; }
-  .grafico-svg .a2-nao { fill: var(--marca); font-weight: 700; }
-  .grafico-svg .a2-riscado { fill: var(--texto-fraco); text-decoration: line-through; }
-  .grafico-svg .a2-trilho { fill: var(--superficie); stroke: var(--superficie-borda); }
-  .grafico-svg .a2-realce { fill: none; stroke: var(--marca); stroke-width: 3; }
-  .grafico-svg .a2-ponto { fill: var(--regua); transition: fill .5s, stroke .3s; stroke: transparent; stroke-width: 0; }
-  .grafico-svg.a2-cor .a2-ponto.dis { fill: var(--laranja); }
-  .grafico-svg.a2-cor .a2-ponto.con { fill: var(--turquesa); }
-  .grafico-svg .a2-ponto.ler { stroke: var(--marca); stroke-width: 3; }
-  .grafico-svg .seta.v-tema { stroke: var(--roxo); stroke-width: 2.5; } .grafico-svg .ponta.v-tema { fill: var(--roxo); }
-  .grafico-svg .seta.v-preco { stroke: var(--laranja); stroke-width: 2.5; } .grafico-svg .ponta.v-preco { fill: var(--laranja); }
-  .grafico-svg .seta.v-tom { stroke: var(--turquesa); stroke-width: 2.5; } .grafico-svg .ponta.v-tom { fill: var(--turquesa); }
-  .a2-sobre { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
-  .grifo-p.v-tema.marcado { box-shadow: inset 0 -4px 0 var(--roxo); }
-  .grifo-p.v-preco.marcado { box-shadow: inset 0 -4px 0 var(--laranja); }
-  .grifo-p.v-tom.marcado { box-shadow: inset 0 -4px 0 var(--turquesa); }
-  td span.v-tema { color: var(--roxo); font-weight: 700; } td span.v-preco { color: var(--laranja); font-weight: 700; }
-  td span.v-tom { color: var(--turquesa); font-weight: 700; }
-  .a2-ctrl .botoes { align-items: center; }
-  .a2-ctrl .leitura { margin-top: .35em; font-size: 1.15em; color: var(--texto); }
-  .a2-ctrl .leitura b { color: var(--marca); }
-  `;
-  document.head.appendChild(css);
-
-  /* ---------- utilitários ------------------------------------------------ */
-  function quadro(caixa, w, h) { return svg("svg", { viewBox: `0 0 ${w} ${h}`, class: "grafico-svg" }, caixa); }
-  function mostra(el, on, anim, atraso = 0) {
-    if (!el) return;
-    gsap.to(el, { autoAlpha: on ? 1 : 0, duration: anim ? DUR : 0, delay: anim && on ? atraso : 0, overwrite: "auto" });
-  }
-  function esconde(lista) { lista.forEach((e) => e && gsap.set(e, { autoAlpha: 0 })); }
-  function ret(g, x, y, w, h, cls = "caixa", rx = 10) { return svg("rect", { x, y, width: w, height: h, rx, class: cls }, g); }
-  /* curva com ponta, saindo e chegando na horizontal */
-  function curva(g, x1, y1, x2, y2, cls = "") {
-    const gg = svg("g", {}, g);
-    const dx = (x2 - x1) * 0.5, dir = Math.sign(x2 - x1) || 1;
-    svg("path", { d: `M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2 - dir * 6},${y2}`, class: `seta ${cls}` }, gg);
-    svg("polygon", { points: `${x2},${y2} ${x2 - dir * 12},${y2 - 6} ${x2 - dir * 12},${y2 + 6}`, class: `ponta ${cls}` }, gg);
-    return gg;
-  }
-  /* texto com partes de estilos diferentes: [["texto", "classe"], ...] */
-  function partes(g, x, y, lista, attrs) {
-    const t = txt(g, x, y, "", attrs);
-    for (const [s, c] of lista) { const sp = svg("tspan", c ? { class: c } : {}, t); sp.textContent = s; }
-    return t;
-  }
-
-  /* ======================================================================
-   * 1. O ciclo do web scraping: seis passos, três com vocês, três de código
-   * ==================================================================== */
-  Motor.cena("a2-ciclo", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 290);
-      const P = [["Identificar", "voce"], ["Navegar", "voce"], ["Replicar", "cod"], ["Parsear", "cod"], ["Validar", "voce"], ["Iterar", "cod"]];
-      const W = 142, G = 29, X0 = 8, Y = 80, H = 82;
-      this.nos = []; this.setas = []; this.quem = [];
-      P.forEach(([nome, tipo], i) => {
-        const x = X0 + i * (W + G);
-        const g = svg("g", {}, s);
-        const r = ret(g, x, Y, W, H);
-        txt(g, x + W / 2, Y + 32, String(i + 1), { "text-anchor": "middle", class: "txt fraco", "font-size": 19 });
-        txt(g, x + W / 2, Y + 62, nome, { "text-anchor": "middle", class: "txt forte", "font-size": 21 });
-        this.nos.push({ g, r, tipo });
-        if (i) this.setas.push(seta(s, x - G + 2, Y + H / 2, x - 3, Y + H / 2));
-        this.quem.push(txt(s, x + W / 2, Y - 20, tipo === "voce" ? "vocês" : "código", { "text-anchor": "middle", class: "txt a2-" + tipo, "font-size": 19 }));
-      });
-      const xi = X0 + 5 * (W + G) + W / 2, xr = X0 + 2 * (W + G) + W / 2, yb = Y + H, yv = 232;
-      this.volta = svg("g", {}, s);
-      svg("path", { d: `M${xi},${yb + 4} V${yv} H${xr} V${yb + 16}`, class: "seta marca tracejada" }, this.volta);
-      svg("polygon", { points: `${xr},${yb + 4} ${xr - 7},${yb + 17} ${xr + 7},${yb + 17}`, class: "ponta marca" }, this.volta);
-      txt(this.volta, (xi + xr) / 2, yv + 30, "a próxima página, com pausa", { "text-anchor": "middle", class: "anot marca" });
-      esconde([...this.nos.map((n) => n.g), ...this.setas, ...this.quem, this.volta]);
-    },
-    passo(k, anim) {
-      this.nos.forEach((n, i) => {
-        mostra(n.g, k >= i + 1, anim);
-        n.r.setAttribute("class", "caixa" + (k >= 7 ? " " + n.tipo : k === i + 1 ? " marca" : ""));
-      });
-      this.setas.forEach((a, i) => mostra(a, k >= i + 2, anim));
-      mostra(this.volta, k >= 6, anim, 0.25);
-      this.quem.forEach((t) => mostra(t, k >= 7, anim));
-    },
-  });
-
-  /* ======================================================================
-   * 2. Do pedido à tabela: página do feed -> arquivo -> linhas
-   * ==================================================================== */
-  Motor.cena("a2-feed", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 420);
-      const L = DADOS.linha.TAP;
-      // o pedido
-      this.pedido = svg("g", {}, s);
-      ret(this.pedido, 4, 18, 330, 112);
-      txt(this.pedido, 20, 46, "o pedido", { class: "a2-sub" });
-      txt(this.pedido, 20, 74, "itunes.apple.com/br/rss/", { class: "a2-mono" });
-      const l2 = txt(this.pedido, 20, 97, "customerreviews/", { class: "a2-mono" });
-      this.pag = svg("tspan", { class: "a2-mono", style: "fill:var(--marca);font-weight:700" }, l2);
-      this.pag.textContent = "page=1";
-      const t3 = svg("tspan", {}, l2); t3.textContent = "/";
-      txt(this.pedido, 20, 120, "id=440497198/json", { class: "a2-mono" });
-      // a resposta
-      this.resp = svg("g", {}, s);
-      seta(this.resp, 169, 134, 169, 158);
-      ret(this.resp, 4, 164, 330, 236);
-      txt(this.resp, 20, 192, "a resposta, em JSON", { class: "a2-sub" });
-      const J = ['{"im:rating": "1",', ' "updated": "2026-10-31",', ' "im:version": "7.3.2",', ' "title": "Erro de cadastro",', ' "content": "Ruim, não…",'];
-      J.forEach((l, i) => txt(this.resp, 20, 222 + i * 26, l, { class: "a2-mono" }));
-      partes(this.resp, 20, 222 + 5 * 26, [[' "author": ', "a2-mono"], ["apelido", "a2-mono a2-riscado"], ["}", "a2-mono"]]);
-      txt(this.resp, 322, 222 + 5 * 26, "não guardar", { class: "anot marca", "text-anchor": "end", "font-size": 15 });
-      // a pasta com os arquivos brutos
-      this.pasta = svg("g", {}, s);
-      seta(this.pasta, 340, 260, 372, 260);
-      svg("path", { d: "M378,52 h70 l14,16 h150 v332 h-234 z", class: "a2-pasta" }, this.pasta);
-      txt(this.pasta, 390, 44, "brutos/", { class: "a2-mono", "font-weight": 700 });
-      this.arqs = [];
-      for (let i = 0; i < 10; i++) {
-        const c = i % 2, r = Math.floor(i / 2), x = 390 + c * 112, y = 84 + r * 50;
-        const g = svg("g", { class: "a2-arq" }, s);
-        svg("rect", { x, y, width: 98, height: 38, rx: 4 }, g);
-        txt(g, x + 49, y + 25, `p${String(i + 1).padStart(2, "0")}.json`, { class: "a2-mono", "text-anchor": "middle", "font-size": 15 });
-        this.arqs.push(g);
-      }
-      this.contaArq = txt(s, 495, 368, "10 arquivos × 50", { class: "txt", "text-anchor": "middle", "font-size": 17 });
-      // a tabela
-      this.tab = svg("g", {}, s);
-      seta(this.tab, 616, 220, 646, 220);
-      const C = [[654, "data"], [758, "nota"], [810, "versão"], [884, "título"]];
-      C.forEach(([x, t]) => txt(this.tab, x, 70, t, { class: "txt fraco forte", "font-size": 16 }));
-      svg("line", { x1: 652, x2: 996, y1: 80, y2: 80, class: "eixo" }, this.tab);
-      ["2026-10-31", "1", "7.3.2", "Erro de cad…"].forEach((t, i) => txt(this.tab, C[i][0], 104, t, { class: "txt", "font-size": 16 }));
-      this.linhas = [];
-      const g = gerador(11);
-      for (let i = 0; i < 7; i++) {
-        const gg = svg("g", {}, this.tab), y = 120 + i * 24;
-        [[654, 86], [758, 14], [810, 50], [884, 70 + g.u() * 40]].forEach(([x, w]) => ret(gg, x, y, w, 9, "a2-ph", 4));
-        this.linhas.push(gg);
-      }
-      txt(this.tab, 654, 312, "… uma avaliação por linha", { class: "txt fraco", "font-size": 16 });
-      // a validação
-      this.val = svg("g", {}, s);
-      const ini = L.ini.split("-"), fim = L.fim.split("-");
-      partes(this.val, 654, 344, [["✓ ", "a2-ok"], [`${L.n} linhas, nenhuma repetida`, ""]], { class: "txt", "font-size": 17 });
-      partes(this.val, 654, 370, [["✓ ", "a2-ok"], [`de ${ini[1]}/${ini[0]} a ${fim[1]}/${fim[0]}`, ""]], { class: "txt", "font-size": 17 });
-      partes(this.val, 654, 396, [["✗ ", "a2-nao"], ["sem o apelido", ""]], { class: "txt", "font-size": 17 });
-      esconde([this.resp, this.pasta, this.contaArq, this.tab, this.val, ...this.arqs]);
-      gsap.set(this.pedido, { autoAlpha: 0 });
-    },
-    passo(k, anim) {
-      mostra(this.pedido, k >= 1, anim);
-      mostra(this.resp, k >= 2, anim);
-      mostra(this.pasta, k >= 3, anim);
-      this.arqs.forEach((a, i) => {
-        const de = i === 0 ? 3 : 4, on = k >= de;
-        if (anim && on && k === de) {
-          gsap.fromTo(a, { autoAlpha: 0, y: -60 }, { autoAlpha: 1, y: 0, duration: 0.4, ease: "power2.in", delay: i === 0 ? 0.3 : (i - 1) * 0.2, overwrite: true });
-        } else gsap.to(a, { autoAlpha: on ? 1 : 0, y: 0, duration: anim ? 0.3 : 0, overwrite: true });
-      });
-      mostra(this.contaArq, k >= 4, anim, anim ? 1.9 : 0);
-      if (anim && k === 4) {
-        const o = { v: 1 };
-        gsap.to(o, { v: 10, duration: 1.8, ease: "none", onUpdate: () => { this.pag.textContent = "page=" + Math.round(o.v); } });
-      } else this.pag.textContent = "page=" + (k >= 4 ? 10 : 1);
-      mostra(this.tab, k >= 5, anim);
-      this.linhas.forEach((l, i) => mostra(l, k >= 5, anim, 0.2 + i * 0.08));
-      mostra(this.val, k >= 6, anim);
-    },
-  });
-
-  /* ======================================================================
-   * 3. Do mais simples ao mais difícil: a escada dos tipos de raspagem
-   * ==================================================================== */
-  Motor.cena("a2-escada", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 395);
-      const T = [
-        ["API documentada", ["endereço feito para", "programas, com manual"], "ex.: BrasilAPI, IBGE"],
-        ["API pouco divulgada", ["endereço para programas", "que a aba Rede revela"], "ex.: as duas lojas"],
-        ["HTML estático", ["os dados já vêm na", "página: é ler o HTML"], "ex.: tribunais, notícias"],
-        ["HTML dinâmico", ["a página monta os dados", "rodando no navegador"], "lento e frágil"],
-      ];
-      const W = 232, G = 12, BASE = 330;
-      this.col = T.map(([tit, desc, ex], i) => {
-        const x = 8 + i * (W + G), top = 190 - i * 52;
-        const g = svg("g", {}, s);
-        ret(g, x, top, W, BASE - top, "caixa" + (i === 1 || i === 2 ? " marca" : ""), 8);
-        txt(g, x + 14, top + 32, tit, { class: "a2-tit", "font-size": 19 });
-        desc.forEach((l, j) => txt(g, x + 14, top + 60 + j * 23, l, { class: "txt", "font-size": 17 }));
-        txt(g, x + 14, top + 118, ex, { class: i === 3 ? "txt fraco" : "txt marca", "font-size": 17 });
-        return g;
-      });
-      this.eixo = svg("g", {}, s);
-      seta(this.eixo, 20, 352, 980, 352);
-      txt(this.eixo, 20, 384, "mais simples, mais estável", { class: "anot fraco" });
-      txt(this.eixo, 980, 384, "mais trabalho, mais frágil", { class: "anot fraco", "text-anchor": "end" });
-      esconde([...this.col, this.eixo]);
-    },
-    passo(k, anim) {
-      this.col.forEach((c, i) => mostra(c, k >= i + 1, anim));
-      mostra(this.eixo, k >= 4, anim, 0.2);
-    },
-  });
-
-  /* ======================================================================
-   * 4. As 500 mais recentes cobrem períodos diferentes (linha do tempo)
-   * ==================================================================== */
-  Motor.cena("a2-periodo", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 330);
-      this.X0 = 150; this.X1 = 985;
-      const ROW = { LATAM: 40, Gol: 110, Azul: 180, TAP: 250 };
-      const ROT = { LATAM: "1 ano", Gol: "5 meses e meio", Azul: "4 meses", TAP: "5 anos e meio" };
-      const id = "a2clip" + Math.floor(Math.random() * 1e6);
-      const defs = svg("defs", {}, s);
-      const cp = svg("clipPath", { id }, defs);
-      svg("rect", { x: this.X0 - 4, y: 0, width: this.X1 - this.X0 + 8, height: 300 }, cp);
-      this.gEixo = svg("g", {}, s);
-      const plot = svg("g", { "clip-path": `url(#${id})` }, s);
-      const g = gerador(2026);
-      this.grupos = {}; this.pts = []; this.faixas = [];
-      for (const e of EMP) {
-        const L = DADOS.linha[e], y0 = ROW[e];
-        const gr = svg("g", {}, plot);
-        const ini = Date.parse(L.ini), fim = Date.parse(L.fim) + 864e5;
-        const fx = svg("rect", { y: y0 - 27, height: 54, rx: 6, fill: COR[e], opacity: 0.13 }, gr);
-        this.faixas.push({ fx, ini, fim });
-        for (const [m, c] of Object.entries(L.meses)) {
-          const [a, mm] = m.split("-").map(Number);
-          let d0 = Date.UTC(a, mm - 1, 1), d1 = Date.UTC(a, mm, 1);
-          d0 = Math.max(d0, ini); d1 = Math.min(d1, fim);
-          for (let j = 0; j < c; j++) {
-            const t = d0 + g.u() * (d1 - d0);
-            const p = svg("circle", { cy: y0 + (g.u() - 0.5) * 44, r: 3, fill: COR[e], opacity: 0.7 }, gr);
-            this.pts.push([p, t]);
-          }
-        }
-        const rot = svg("g", {}, s);
-        txt(rot, 0, y0 - 2, e, { class: "txt forte", "font-size": 20, fill: COR[e], style: `fill:${COR[e]}` });
-        txt(rot, 0, y0 + 21, ROT[e], { class: "txt fraco", "font-size": 16 });
-        this.grupos[e] = [gr, rot];
-      }
-      this.A = Date.UTC(2025, 8, 1); this.B = Date.UTC(2021, 0, 1); this.FIM = Date.UTC(2026, 10, 20);
-      this.ini = this.A;
-      this.desenha(this.A);
-      Object.values(this.grupos).flat().forEach((x) => gsap.set(x, { autoAlpha: 0 }));
-    },
-    desenha(ini) {
-      this.ini = ini;
-      const sx = escala(ini, this.FIM, this.X0, this.X1);
-      for (const [p, t] of this.pts) p.setAttribute("cx", sx(t));
-      for (const { fx, ini: a, fim: b } of this.faixas) {
-        fx.setAttribute("x", sx(a) - 4); fx.setAttribute("width", Math.max(0, sx(b) - sx(a) + 8));
-      }
-      const g = this.gEixo; g.replaceChildren();
-      svg("line", { x1: this.X0, x2: this.X1, y1: 290, y2: 290, class: "eixo" }, g);
-      const anos = this.FIM - ini > 2.5 * 365 * 864e5;
-      const MES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-      const ticks = [];
-      if (anos) for (let a = 2021; a <= 2026; a++) ticks.push([Date.UTC(a, 0, 1), String(a)]);
-      else for (let a = 2025; a <= 2026; a++) for (let m = 0; m < 12; m += 2) ticks.push([Date.UTC(a, m, 1), `${MES[m]}/${String(a).slice(2)}`]);
-      for (const [t, r] of ticks) {
-        const x = sx(t);
-        if (x < this.X0 - 1 || x > this.X1 - 20) continue;
-        svg("line", { x1: x, x2: x, y1: 8, y2: 290, class: "grade-linha" }, g);
-        txt(g, x, 314, r, { class: "rotulo-eixo", "text-anchor": "middle", "font-size": 16 });
-      }
-    },
-    passo(k, anim) {
-      const ordem = ["Azul", "Gol", "LATAM", "TAP"];
-      ordem.forEach((e, i) => this.grupos[e].forEach((x) => mostra(x, k >= i + 1, anim, e === "TAP" ? 0.9 : 0)));
-      const alvo = k >= 4 ? this.B : this.A;
-      if (alvo !== this.ini) {
-        if (anim) {
-          const o = { v: this.ini };
-          gsap.to(o, { v: alvo, duration: 1.3, ease: "power2.inOut", onUpdate: () => this.desenha(o.v) });
-        } else this.desenha(alvo);
-      }
-    },
-  });
-
-  /* ======================================================================
-   * 5. A nota da página e a nota das 500 com texto
-   * ==================================================================== */
-  Motor.cena("a2-notas", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 330);
-      const sx = escala(1, 5, 200, 640), ROW = [62, 132, 202, 272];
-      txt(s, 200, 22, "nota média, de 1 a 5 estrelas", { class: "a2-sub" });
-      svg("line", { x1: 200, x2: 640, y1: 300, y2: 300, class: "eixo" }, s);
-      for (let v = 1; v <= 5; v++) {
-        svg("line", { x1: sx(v), x2: sx(v), y1: 34, y2: 300, class: "grade-linha" }, s);
-        txt(s, sx(v), 324, `${v} ★`, { class: "rotulo-eixo", "text-anchor": "middle", "font-size": 16 });
-      }
-      this.pag = []; this.med = []; this.dist = [];
-      const ESTR = ["var(--marca)", "var(--laranja)", "var(--regua)", "var(--turquesa-claro)", "var(--turquesa)"];
-      this.cab = svg("g", {}, s);
-      txt(this.cab, 700, 22, `as ${"500"} com texto, por estrelas`, { class: "a2-sub" });
-      ESTR.forEach((c, i) => {
-        svg("rect", { x: 700 + i * 58, y: 300, width: 14, height: 14, fill: c }, this.cab);
-        txt(this.cab, 718 + i * 58, 313, `${i + 1}★`, { class: "rotulo-eixo", "font-size": 15 });
-      });
-      EMP.forEach((e, i) => {
-        const N = DADOS.notas[e], y = ROW[i];
-        txt(s, 0, y - 2, e, { class: "txt forte", "font-size": 20, style: `fill:${COR[e]}` });
-        const mil = N.pagina_n >= 1e4 ? `${num(N.pagina_n / 1e3, 0)} mil notas` : `${num(N.pagina_n, 0)} notas`;
-        txt(s, 0, y + 21, `página: ${mil}`, { class: "txt fraco", "font-size": 15 });
-        const gp = svg("g", {}, s);
-        svg("circle", { cx: sx(N.pagina), cy: y, r: 10, fill: "var(--fundo)", stroke: COR[e], "stroke-width": 3.5 }, gp);
-        txt(gp, sx(N.pagina), y - 17, num(N.pagina, 1), { class: "anot", "text-anchor": "middle" });
-        this.pag.push(gp);
-        const gm = svg("g", {}, s);
-        seta(gm, sx(N.pagina) - 14, y, sx(N.media) + 14, y, "marca");
-        svg("circle", { cx: sx(N.media), cy: y, r: 10, fill: COR[e] }, gm);
-        txt(gm, sx(N.media), y - 17, num(N.media, 1), { class: "anot", "text-anchor": "middle" });
-        txt(gm, (sx(N.pagina) + sx(N.media)) / 2, y - 10, num(N.media - N.pagina, 1), { class: "anot marca", "text-anchor": "middle", "font-size": 16 });
-        this.med.push(gm);
-        const gd = svg("g", {}, s);
-        let x = 700;
-        N.estrelas.forEach((c, j) => {
-          const w = (c / N.n) * 290;
-          svg("rect", { x, y: y - 17, width: Math.max(0, w - 1), height: 34, fill: ESTR[j] }, gd);
-          if ((j === 0 || j === 4) && c / N.n >= 0.12) txt(gd, x + w / 2, y + 6, pct((c / N.n) * 100), { class: "a2-dentro", "text-anchor": "middle" });
-          x += w;
-        });
-        this.dist.push(gd);
-      });
-      esconde([...this.pag, ...this.med, ...this.dist, this.cab]);
-    },
-    passo(k, anim) {
-      this.pag.forEach((g, i) => mostra(g, k >= 1, anim, i * 0.1));
-      this.med.forEach((g, i) => mostra(g, k >= 2, anim, i * 0.15));
-      this.dist.forEach((g, i) => mostra(g, k >= 3, anim, i * 0.1));
-      mostra(this.cab, k >= 3, anim);
-    },
-  });
-
-  /* ======================================================================
-   * 6. Uma avaliação vira uma linha: setas do grifo à variável
-   * ==================================================================== */
-  Motor.cena("a2-linha", {
-    montar(caixa) {
-      this.caixa = caixa; this.k = 0;
-      this.s = svg("svg", { class: "grafico-svg a2-sobre" }, caixa);
-    },
-    desenhar(anim) {
-      const c = this.caixa, b = c.getBoundingClientRect();
-      if (!b.width || !window.Reveal) return;
-      const esc = Reveal.getScale() || 1;
-      const W = c.offsetWidth, H = c.offsetHeight;
-      this.s.setAttribute("width", W); this.s.setAttribute("height", H);
-      this.s.setAttribute("viewBox", `0 0 ${W} ${H}`);
-      this.s.replaceChildren();
-      const rel = (r) => ({ l: (r.left - b.left) / esc, r: (r.right - b.left) / esc, t: (r.top - b.top) / esc, b: (r.bottom - b.top) / esc });
-      const caso = c.querySelector(".caixa.caso");
-      if (!caso) return;
-      const rc = rel(caso.getBoundingClientRect());
-      const linha = (nome) => { const sp = c.querySelector(`[data-var="${nome}"]`); return sp && rel(sp.closest("tr").getBoundingClientRect()); };
-      c.querySelectorAll(".grifo-p[data-liga]").forEach((gr) => {
-        const m = +gr.dataset.marca, rs = gr.getClientRects(), ult = rel(rs[rs.length - 1]);
-        const cls = [...gr.classList].find((x) => x.startsWith("v-"));
-        gr.dataset.liga.split(" ").forEach((v, j) => {
-          const t = linha(v); if (!t) return;
-          const y1 = (ult.t + ult.b) / 2;
-          const a = curva(this.s, rc.r + 2, y1, t.l - 4, (t.t + t.b) / 2 + (j ? 0 : 0), cls + (j ? " tracejada" : ""));
-          gsap.set(a, { autoAlpha: this.k >= m ? 1 : 0 });
-          if (anim && this.k === m) gsap.from(a, { autoAlpha: 0, duration: DUR, delay: 0.15 });
-        });
-      });
-      const voo = linha("fala_do_voo");
-      if (voo) {
-        const a = curva(this.s, rc.r + 2, rc.b - 12, voo.l - 4, (voo.t + voo.b) / 2, "tracejada");
-        gsap.set(a, { autoAlpha: this.k >= 4 ? 1 : 0 });
-        if (anim && this.k === 4) gsap.from(a, { autoAlpha: 0, duration: DUR, delay: 0.15 });
-      }
-    },
-    passo(k, anim) { this.k = k; this.desenhar(anim); },
-    entrou(k) { this.k = k; requestAnimationFrame(() => this.desenhar(false)); },
-  });
-
-  /* ======================================================================
-   * 7. Dois modelos lendo a mesma avaliação (A001)
-   * ==================================================================== */
-  Motor.cena("a2-modelos", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 400);
-      this.topo = svg("g", {}, s);
-      ret(this.topo, 230, 4, 540, 108);
-      txt(this.topo, 248, 32, "A001 · aplicativo da Azul · 1 estrela", { class: "a2-sub" });
-      txt(this.topo, 248, 60, "Aumento de preço durante a compra!", { class: "txt forte", "font-size": 19 });
-      txt(this.topo, 248, 90, "…o site parou de funcionar… aumento de 200 reais…", { class: "txt", "font-size": 17 });
-      const V = [["tema", "app_falha", "compra_preco", 0.94], ["preco_caro", "true", "sim", 0.84], ["tom", "negativo", "negativo", 1.0], ["fala_do_voo", "false", "não", 0.96]];
-      // OpenAI
-      this.oa = svg("g", {}, s);
-      seta(this.oa, 400, 116, 250, 160);
-      ret(this.oa, 4, 166, 466, 228);
-      txt(this.oa, 22, 198, "OpenAI, com saída estruturada", { class: "a2-tit", "font-size": 19 });
-      this.oaL = V.map(([v, o], i) => {
-        const val = o === "true" || o === "false" ? o : `"${o}"`;
-        return txt(this.oa, 22, 240 + i * 38, `${i ? " " : "{"}"${v}": ${val}${i === 3 ? "}" : ","}`, { class: "a2-mono", "font-size": 18 });
-      });
-      // Jev
-      this.jv = svg("g", {}, s);
-      seta(this.jv, 600, 116, 750, 160);
-      ret(this.jv, 530, 166, 466, 228);
-      txt(this.jv, 548, 198, "Jev, da TypeSafe", { class: "a2-tit", "font-size": 19 });
-      this.barras = V.map(([v, , j, p], i) => {
-        const y = 240 + i * 38;
-        txt(this.jv, 548, y, `${v}: ${j}`, { class: "txt", "font-size": 17 });
-        svg("rect", { x: 760, y: y - 15, width: 150, height: 18, rx: 3, class: "a2-trilho" }, this.jv);
-        const b = svg("rect", { x: 760, y: y - 15, width: 0, height: 18, rx: 3, class: "barra turquesa" }, this.jv);
-        txt(this.jv, 918, y, pct(p * 100), { class: "txt forte", "font-size": 17 });
-        return [b, 150 * p];
-      });
-      // a diferença no tema
-      this.dif = svg("g", {}, s);
-      ret(this.dif, 14, 216, 446, 34, "a2-realce", 5);
-      ret(this.dif, 540, 216, 446, 34, "a2-realce", 5);
-      this.dif2 = txt(s, 500, 244, "≠", { class: "txt marca", "text-anchor": "middle", "font-size": 40 });
-      esconde([this.topo, this.oa, this.jv, this.dif, this.dif2, ...this.oaL]);
-    },
-    passo(k, anim) {
-      mostra(this.topo, true, false);
-      mostra(this.oa, k >= 1, anim);
-      this.oaL.forEach((l, i) => mostra(l, k >= 1, anim, 0.2 + i * 0.15));
-      mostra(this.jv, k >= 2, anim);
-      this.barras.forEach(([b, w], i) => gsap.to(b, { attr: { width: k >= 2 ? w : 0 }, duration: anim ? 0.7 : 0, delay: anim && k === 2 ? 0.2 + i * 0.12 : 0, overwrite: true }));
-      mostra(this.dif, k >= 3, anim);
-      mostra(this.dif2, k >= 3, anim, 0.2);
-    },
-  });
-
-  /* ======================================================================
-   * 8. Concordância por faixa de confiança do Jev, e quantos textos ler
-   * ==================================================================== */
-  Motor.cena("a2-confianca", {
-    montar(caixa, slide) {
-      const s = this.s = quadro(caixa, 1000, 330);
-      const FX = [["abaixo de 60%", 0.6], ["60% a 80%", 0.8], ["80% a 95%", 0.95], ["95% ou mais", 9]];
-      const faixa = (de) => FX.findIndex(([, ate]) => de < ate - 1e-9);
-      this.pts = []; const cont = FX.map(() => ({ n: 0, con: 0 }));
-      for (const b of DADOS.conf) {
-        const f = faixa(b.de);
-        for (let i = 0; i < b.discordam + b.concordam; i++) {
-          const dis = i < b.discordam, j = cont[f].n++;
-          if (!dis) cont[f].con++;
-          const cx = 125 + f * 250 - 85.5 + (j % 10) * 19, cy = 92 + Math.floor(j / 10) * 19;
-          this.pts.push({ c: svg("circle", { cx, cy, r: 7.5, class: "a2-ponto " + (dis ? "dis" : "con") }, s), f, dis });
-        }
-      }
-      this.cont = cont; this.total = this.pts.length; this.totalDis = this.pts.filter((p) => p.dis).length;
-      this.pcts = FX.map(([rot], f) => {
-        const x = 125 + f * 250;
-        txt(s, x, 32, rot, { class: "a2-tit", "text-anchor": "middle", "font-size": 19 });
-        txt(s, x, 58, `${cont[f].n} avaliações`, { class: "a2-sub", "text-anchor": "middle" });
-        return txt(s, x, 300, `${pct((cont[f].con / cont[f].n) * 100)} concordam`, { class: "txt forte", "text-anchor": "middle", "font-size": 19 });
-      });
-      this.leg = svg("g", {}, s);
-      svg("circle", { cx: 380, cy: 322, r: 7, fill: "var(--turquesa)" }, this.leg);
-      txt(this.leg, 394, 328, "OpenAI e Jev concordam", { class: "txt", "font-size": 16 });
-      svg("circle", { cx: 610, cy: 322, r: 7, fill: "var(--laranja)" }, this.leg);
-      txt(this.leg, 624, 328, "discordam", { class: "txt", "font-size": 16 });
-      esconde([...this.pcts, this.leg]);
-      // botões: ler à mão os de confiança abaixo de ...
-      const ctrl = slide.querySelector(".a2-ctrl");
-      this.lim = 0;
-      if (ctrl) {
-        ctrl.replaceChildren();
-        const bt = html("div", "botoes", ctrl, "<span>Ler à mão os de confiança abaixo de</span>");
-        this.bts = [[0.6, "60%"], [0.8, "80%"], [0.95, "95%"]].map(([v, r]) => {
-          const b = html("button", "", bt, r);
-          b.addEventListener("click", (e) => { e.stopPropagation(); this.lim = this.lim === v ? 0 : v; this.marca(); });
-          return [b, v];
-        });
-        this.leitura = html("div", "leitura", ctrl, "Escolha um limite.");
-      }
-    },
-    marca() {
-      const LIM = [0.6, 0.8, 0.95];
-      let n = 0, d = 0;
-      for (const p of this.pts) {
-        const ler = this.lim > 0 && LIM[p.f] !== undefined && LIM[p.f] <= this.lim + 1e-9;
-        p.c.classList.toggle("ler", ler);
-        if (ler) { n++; if (p.dis) d++; }
-      }
-      (this.bts || []).forEach(([b, v]) => b.classList.toggle("on", v === this.lim));
-      if (this.leitura) this.leitura.innerHTML = this.lim
-        ? `Ler <b>${n}</b> de ${this.total} textos (${pct((n / this.total) * 100)}) encontra <b>${d}</b> das ${this.totalDis} discordâncias (${pct((d / this.totalDis) * 100)}).`
-        : "Escolha um limite.";
-    },
-    passo(k, anim) {
-      this.s.classList.toggle("a2-cor", k >= 1);
-      this.pcts.forEach((t, i) => mostra(t, k >= 1, anim, 0.3 + i * 0.1));
-      mostra(this.leg, k >= 1, anim);
-      if (k < 2 && this.lim) { this.lim = 0; this.marca(); }
-    },
-  });
-
-  /* ======================================================================
-   * 9. App Store x TJSP: o que cada fonte enxerga
-   * ==================================================================== */
-  Motor.cena("a2-fontes", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 394);
-      const ROW = [114, 182, 250, 318];
-      const sa = escala(0, 100, 100, 400);
-      const TJ = [["cancelamento", "var(--roxo)"], ["atraso", "var(--laranja)"], ["bagagem", "var(--marca)"], ["overbooking_ou_embarque_negado", "var(--turquesa)"], ["outros", "var(--regua)"]];
-      const ROTJ = { overbooking_ou_embarque_negado: "overbooking" };
-      txt(s, 100, 24, "App Store", { class: "a2-tit" });
-      txt(s, 100, 48, "do que falam as avaliações", { class: "a2-sub" });
-      this.cabT = svg("g", {}, s);
-      txt(this.cabT, 480, 24, "TJSP", { class: "a2-tit" });
-      txt(this.cabT, 480, 48, "por que processaram a companhia", { class: "a2-sub" });
-      this.af = []; this.fv = []; this.tj = []; this.linhas = { app: [], tj: [] };
-      const legA = svg("g", {}, s), legV = svg("g", {}, s);
-      svg("rect", { x: 100, y: 64, width: 14, height: 14, fill: "var(--azul)" }, legA);
-      txt(legA, 120, 77, "o aplicativo falha", { class: "txt", "font-size": 15 });
-      svg("rect", { x: 262, y: 66, width: 14, height: 10, fill: "var(--turquesa)" }, legV);
-      txt(legV, 282, 77, "fala do voo", { class: "txt", "font-size": 15 });
-      this.legA = legA; this.legV = legV;
-      EMP.forEach((e, i) => {
-        const y = ROW[i], A = DADOS.app[e], T = DADOS.tjsp[e];
-        const ga = svg("g", {}, s);
-        txt(ga, 0, y + 6, e, { class: "txt forte", "font-size": 20, style: `fill:${COR[e]}` });
-        const a = svg("g", {}, ga);
-        svg("rect", { x: 100, y: y - 20, width: sa(A.app_falha) - 100, height: 24, fill: "var(--azul)" }, a);
-        txt(a, sa(A.app_falha) + 6, y - 2, pct(A.app_falha), { class: "txt forte", "font-size": 17 });
-        const v = svg("g", {}, ga);
-        svg("rect", { x: 100, y: y + 8, width: sa(A.fala_do_voo) - 100, height: 13, fill: "var(--turquesa)" }, v);
-        txt(v, sa(A.fala_do_voo) + 6, y + 20, pct(A.fala_do_voo), { class: "txt", "font-size": 16 });
-        this.af.push(a); this.fv.push(v); this.linhas.app.push(ga);
-        const fora = svg("g", {}, s), gt = svg("g", {}, fora);
-        let x = 480;
-        TJ.forEach(([c, cor]) => {
-          const w = (T[c] / 100) * 510;
-          svg("rect", { x, y: y - 18, width: Math.max(0, w - 1.5), height: 36, fill: cor }, gt);
-          if (T[c] >= 8 && c !== "outros") txt(gt, x + w / 2, y + 6, pct(T[c]), { class: "a2-dentro", "text-anchor": "middle" });
-          x += w;
-        });
-        this.tj.push(gt); this.linhas.tj.push(fora);
-      });
-      this.legT = svg("g", {}, s);
-      TJ.forEach(([c, cor], i) => {
-        const x = 480 + (i % 3) * 170, y = 362 + Math.floor(i / 3) * 24;
-        svg("rect", { x, y: y - 12, width: 14, height: 14, fill: cor }, this.legT);
-        txt(this.legT, x + 20, y + 1, ROTJ[c] || c, { class: "txt", "font-size": 15 });
-      });
-      esconde([...this.af, ...this.fv, ...this.tj, this.cabT, this.legT, legA, legV]);
-    },
-    passo(k, anim) {
-      this.af.forEach((g, i) => mostra(g, k >= 1, anim, i * 0.1));
-      mostra(this.legA, k >= 1, anim);
-      this.fv.forEach((g, i) => mostra(g, k >= 2, anim, i * 0.1));
-      mostra(this.legV, k >= 2, anim);
-      mostra(this.cabT, k >= 3, anim); mostra(this.legT, k >= 3, anim);
-      this.tj.forEach((g, i) => mostra(g, k >= 3, anim, i * 0.12));
-      [...this.linhas.app, ...this.linhas.tj].forEach((g, i) => {
-        const tap = i % 4 === 3;
-        gsap.to(g, { opacity: k >= 4 && !tap ? 0.25 : 1, duration: anim ? DUR : 0, overwrite: false });
-      });
-    },
-  });
-
-  /* ======================================================================
-   * 10. As colunas da base de voos, no tempo
-   * ==================================================================== */
-  Motor.cena("a2-momentos", {
-    montar(caixa) {
-      const s = quadro(caixa, 1000, 200);
-      const B = [
-        [8, 316, "antes do voo", ["rota, horário, preço, ocupação,", "idade do avião, check-in pelo", "aplicativo, passageiros em conexão"], "var(--turquesa)"],
-        [342, 316, "no dia do voo", ["atraso e motivo, reacomodação,", "assistência, falha no check-in,", "conexões perdidas, malas extraviadas"], "var(--laranja)"],
-        [676, 316, "pesquisa e atendimento", ["a nota média, respondentes,", "comentários negativos, reclamações", "em 7 dias, compensação paga"], "var(--roxo)"],
-      ];
-      svg("line", { x1: 8, x2: 975, y1: 70, y2: 70, class: "eixo" }, s);
-      svg("polygon", { points: "992,70 976,63 976,77", fill: "var(--texto-fraco)" }, s);
-      txt(s, 992, 100, "tempo", { class: "a2-sub", "text-anchor": "end" });
-      this.bl = B.map(([x, w, tit, l, cor]) => {
-        const g = svg("g", {}, s);
-        svg("rect", { x, y: 8, width: w, height: 46, rx: 8, fill: cor, opacity: 0.18 }, g);
-        svg("rect", { x, y: 8, width: 6, height: 46, fill: cor }, g);
-        txt(g, x + 18, 38, tit, { class: "a2-tit", "font-size": 19 });
-        l.forEach((t, i) => txt(g, x + 8, 118 + i * 24, t, { class: "txt", "font-size": 16 }));
-        return g;
-      });
-      this.nota = svg("g", {}, s);
-      svg("line", { x1: 668, x2: 668, y1: 2, y2: 190, class: "guia" }, this.nota);
-      svg("circle", { cx: 668, cy: 70, r: 9, fill: "var(--marca)" }, this.nota);
-      txt(this.nota, 660, 100, "a nota", { class: "anot marca", "text-anchor": "end" });
-      esconde([...this.bl, this.nota]);
-    },
-    passo(k, anim) {
-      this.bl.forEach((g, i) => mostra(g, k >= i + 1, anim));
-      mostra(this.nota, k >= 4, anim);
-    },
-  });
-})();
-</script>
     <script>/* Cenas do resumo da semana (aula 5, quinta de manhã).
  * Diagramas ilustrativos: os números marcados como "ilustrativos" não vêm de
  * uma base; os de concordância vêm da extração do exercício 3 (OpenAI x Jev,
@@ -4747,7 +4054,7 @@ const DADOS = {"linha":{"LATAM":{"n":500,"ini":"2025-10-24","fim":"2026-10-31","
   /* ====================================================================== */
   Motor.cena("rs-arquitetura", {
     montar(c) {
-      const s = svg("svg", { viewBox: "0 0 1120 490", class: "grafico-svg" }, c);
+      const s = svg("svg", { viewBox: "0 0 1120 330", class: "grafico-svg" }, c);
       const linha = (y0, rot, meio, dir, custo, marcaFront) => {
         const g = svg("g", {}, s);
         txt(g, 0, y0 + 22, rot, { class: "txt forte", style: F });
@@ -4774,15 +4081,14 @@ const DADOS = {"linha":{"LATAM":{"n":500,"ini":"2025-10-24","fim":"2026-10-31","
       this.L = [
         linha(0, "estático", ["servidor de arquivos", "entrega arquivos prontos"], { texto: ["nenhum backend calcula", "nada depois de publicado"] }, "custo: zero · manutenção: ninguém · atualiza quando você publica de novo"),
         linha(170, "dinâmico", ["servidor backend (API)", "login, regras e consultas"], { caixa: ["banco de dados", "os dados ao vivo"] }, "custo: servidor e licença · manutenção: alguém de TI · atualiza sozinho, a cada pedido"),
-        linha(340, "estático, com cálculo no navegador", ["servidor de arquivos", "a página e o Python, uma vez"], { texto: ["a conta roda no computador", "de quem abre (Pyodide)"] }, "custo: zero · manutenção: ninguém · os dados de quem abre não saem da máquina", "o Python calcula aqui"),
       ];
     },
     passo(k, a) {
       const [e, d, p] = this.L;
       vis(e.g, true, a); vis(e.setas, k >= 1, a);
       vis(d.g, k >= 2, a); vis(d.setas, k >= 2, a);
-      vis(p.g, k >= 3, a); vis(p.setas, k >= 3, a);
-      this.L.forEach((l) => vis(l.cus, k >= 4, a));
+      if (p) { vis(p.g, k >= 3, a); vis(p.setas, k >= 3, a); }
+      this.L.forEach((l) => vis(l.cus, k >= (p ? 4 : 3), a));
       gsap.to(d.g, { opacity: k >= 5 ? 0.35 : k >= 2 ? 1 : 0, duration: a ? 0.4 : 0, overwrite: "auto" });
       const viagem = (l) => {
         const y = l.y0, tl = gsap.timeline();
@@ -4794,7 +4100,7 @@ const DADOS = {"linha":{"LATAM":{"n":500,"ini":"2025-10-24","fim":"2026-10-31","
       };
       if (a && k === 1) viagem(e);
       if (a && k === 2) viagem(d);
-      if (a && k === 3) viagem(p);
+      if (a && k === 3 && p) viagem(p);
     },
   });
 
@@ -5493,6 +4799,125 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
       this.baixas.forEach((r) => r.classList.toggle("marcar", k >= 1));
     },
   });
+
+  /* ======================================================================
+   * 11. Grupo focal: três conversas, três números; a habilidade, sempre 162
+   * ==================================================================== */
+  const css3 = document.createElement("style");
+  css3.textContent = `
+  .ap-gf { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: .4rem; }
+  .ap-gf .perg { grid-column: 1 / -1; font-size: .8em; background: var(--superficie); border-left: 6px solid var(--azul); padding: .55rem .9rem; border-radius: 0 10px 10px 0; }
+  .ap-gf .perg b { display: block; }
+  .ap-gf .perg small { color: var(--texto-fraco); font-size: .78em; }
+  .ap-gf .lado { border: 2px solid var(--superficie-borda); border-radius: 14px; padding: .6rem .9rem .8rem; }
+  .ap-gf .lado b.rot { display: block; font-size: .7em; margin-bottom: .5rem; }
+  .ap-gf .lado.com { border-color: var(--turquesa); }
+  .ap-gf .nums { display: flex; gap: .7rem; }
+  .ap-gf .n { flex: 1; text-align: center; border-radius: 12px; padding: .35rem 0 .25rem; background: color-mix(in srgb, var(--marca) 12%, transparent); }
+  .ap-gf .com .n { background: color-mix(in srgb, var(--turquesa) 14%, transparent); }
+  .ap-gf .n span { display: block; font-size: .5em; color: var(--texto-fraco); }
+  .ap-gf .n b { font-family: "GT Ultra Fine", Georgia, serif; font-size: 1.9em; color: var(--marca); line-height: 1.1; }
+  .ap-gf .com .n b { color: var(--turquesa); }
+  .ap-gf .nota { font-size: .58em; color: var(--texto-fraco); margin-top: .45rem; }
+  /* anatomia de uma habilidade */
+  .ap-sk { display: grid; grid-template-columns: 1.05fr .95fr; gap: 1.2rem; align-items: start; margin-top: .2rem; }
+  .ap-sk .pasta { position: relative; background: var(--superficie); border-radius: 4px 16px 16px 16px; padding: .7rem .8rem .7rem; margin-top: 1.1rem; }
+  .ap-sk .pasta::before { content: "avaliacoes-lojas/"; position: absolute; top: -1.3rem; left: 0; background: var(--superficie); border-radius: 10px 10px 0 0; padding: .1rem .9rem 0; font-family: "Cascadia Code", Consolas, monospace; font-size: .7em; font-weight: 700; }
+  .ap-sk .arq { background: var(--fundo); border: 2px solid var(--superficie-borda); border-radius: 12px; padding: .35rem .65rem; margin-bottom: .45rem; transition: border-color .3s, box-shadow .3s, opacity .3s; }
+  .ap-sk .arq:last-child { margin-bottom: 0; }
+  .ap-sk .arq .nome { font-family: "Cascadia Code", Consolas, monospace; font-weight: 700; font-size: .72em; display: flex; justify-content: space-between; align-items: center; }
+  .ap-sk .arq .nome i { font-style: normal; font-family: Inter, sans-serif; font-weight: 600; font-size: .85em; color: var(--texto-fraco); }
+  .ap-sk .arq.opc { border-style: dashed; }
+  .ap-sk .parte { margin-top: .25rem; border-radius: 8px; padding: .18rem .5rem; font-size: .58em; line-height: 1.25; background: var(--superficie); transition: background .3s, box-shadow .3s; }
+  .ap-sk .parte b { display: block; font-size: 1.02em; }
+  .ap-sk .on { border-color: var(--marca) !important; box-shadow: 0 0 0 4px color-mix(in srgb, var(--marca) 18%, transparent); }
+  .ap-sk .parte.on { background: color-mix(in srgb, var(--marca) 12%, var(--fundo)); box-shadow: none; }
+  .ap-sk .linha2 { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .ap-sk .fluxo { display: grid; gap: .55rem; font-size: .7em; }
+  .ap-sk .fluxo div { background: var(--superficie); border-radius: 10px; padding: .4rem .7rem; position: relative; }
+  .ap-sk .fluxo div::after { content: "↓"; position: absolute; left: 50%; bottom: -1.05em; color: var(--texto-fraco); font-weight: 700; }
+  .ap-sk .fluxo div:last-child::after { content: none; }
+  .ap-sk .fluxo b { color: var(--marca); }
+  /* dicionário: as partes do JSON acendem uma de cada vez */
+  .ap-json pre.cod .jp { border-radius: 4px; transition: background .3s, opacity .3s; }
+  .ap-json pre.cod.focando .jp { opacity: .35; }
+  .ap-json pre.cod .jp.agora { opacity: 1; background: var(--grifo); }
+  :root[data-tema="escuro"] .ap-json pre.cod .jp.agora { background: color-mix(in srgb, var(--amarelo) 35%, transparent); }
+  `;
+  document.head.appendChild(css3);
+
+  Motor.cena("ap-grupo", {
+    montar(caixa) {
+      const g = html("div", "ap-gf", caixa);
+      html("div", "perg", g, `<b>"Neste grupo focal, quantas vezes cada participante falou de preço?"</b>
+        <small>a transcrição de um grupo focal com 8 viajantes: 916 falas, 18 mil palavras (curso de executivos)</small>`);
+      this.sem = html("div", "lado", g, `<b class="rot">Sem habilidade: a mesma pergunta em três conversas novas do ChatGPT</b>
+        <div class="nums"><div class="n"><span>1ª conversa</span><b>157</b></div><div class="n"><span>2ª conversa</span><b>161</b></div><div class="n"><span>3ª conversa</span><b>210</b></div></div>
+        <div class="nota">Em cada conversa, um critério diferente: incluiu reembolso, tirou reembolso, incluiu bagagem.</div>`);
+      this.com = html("div", "lado com", g, `<b class="rot">Com a habilidade contar-termos: um script com a lista de termos</b>
+        <div class="nums"><div class="n"><span>em qualquer conversa, quantas vezes rodar</span><b>162</b></div></div>
+        <div class="nota">preço = preço, preços, caro, cara, barato, barata, tarifa*, "quanto custa", R$</div>`);
+      esconde([this.sem, this.com]);
+    },
+    passo(k, anim) {
+      mostra(this.sem, k >= 1, anim);
+      mostra(this.com, k >= 2, anim);
+    },
+  });
+
+  Motor.cena("ap-skill", {
+    montar(caixa) {
+      const g = html("div", "ap-sk", caixa);
+      const p = html("div", "pasta", g);
+      this.skill = html("div", "arq", p, `<div class="nome">SKILL.md <i>obrigatório</i></div>
+        <div class="parte p1"><b>nome e descrição</b>"baixa as avaliações de um app nas duas lojas; use quando pedirem avaliações"</div>
+        <div class="parte p2"><b>passo a passo</b>confirme os identificadores · rode o script · mostre o resumo</div>
+        <div class="parte p3"><b>regras</b>uma página por vez · nunca o nome de quem avaliou</div>`);
+      this.scr = html("div", "arq", p, `<div class="nome">scripts/ <i>o código</i></div>
+        <div class="parte"><b>baixar_avaliacoes.py</b>baixa, junta e resume: sempre do mesmo jeito</div>`);
+      const l2 = html("div", "linha2", p);
+      this.ref = html("div", "arq opc", l2, `<div class="nome">referencias/ <i>opcional</i></div>
+        <div class="parte">documentação, exemplos</div>`);
+      this.mod = html("div", "arq opc", l2, `<div class="nome">modelos/ <i>opcional</i></div>
+        <div class="parte">modelo de relatório, listas</div>`);
+      const f = html("div", "fluxo", g);
+      this.fl = [
+        html("div", "", f, `<b>1.</b> Você pede: "baixe as avaliações do iFood"`),
+        html("div", "", f, `<b>2.</b> O ChatGPT lê as <b>descrições</b> das habilidades instaladas e escolhe esta`),
+        html("div", "", f, `<b>3.</b> Lê o <b>SKILL.md</b> inteiro e segue o passo a passo`),
+        html("div", "", f, `<b>4.</b> Roda o <b>script</b> e consulta os arquivos de apoio, se precisar`),
+        html("div", "", f, `<b>5.</b> Mostra o resumo, sempre no mesmo formato`),
+      ];
+      this.partes = [...this.skill.querySelectorAll(".parte")];
+      esconde([this.scr, this.ref, this.mod, ...this.fl]);
+    },
+    passo(k, anim) {
+      // 0: o SKILL.md; 1: nome e descrição; 2: passo a passo e regras; 3: scripts; 4: opcionais; 5: o fluxo
+      this.partes[0].classList.toggle("on", k === 1);
+      this.partes[1].classList.toggle("on", k === 2);
+      this.partes[2].classList.toggle("on", k === 2);
+      this.skill.classList.toggle("on", k === 0);
+      mostra(this.scr, k >= 3, anim);
+      this.scr.classList.toggle("on", k === 3);
+      mostra(this.ref, k >= 4, anim);
+      mostra(this.mod, k >= 4, anim, 0.15);
+      this.ref.classList.toggle("on", k === 4);
+      this.mod.classList.toggle("on", k === 4);
+      this.fl.forEach((e, i) => mostra(e, k >= 5, anim, i * 0.25));
+    },
+  });
+
+  Motor.cena("ap-json", {
+    montar(caixa) {
+      this.pre = caixa.querySelector("pre.cod");
+      this.partes = this.pre ? [...this.pre.querySelectorAll(".jp")] : [];
+    },
+    passo(k) {
+      if (!this.pre) return;
+      this.pre.classList.toggle("focando", k > 0);
+      this.partes.forEach((e) => e.classList.toggle("agora", String(k) === e.dataset.k));
+    },
+  });
 })();
 </script>
     <script>/*
@@ -5501,33 +4926,33 @@ const DADOS_AP = {"contagem": {"app": "Itaú", "loja": "App Store", "n": 500, "m
  */
 window.QUIZ_PERGUNTAS = {
   q1: {
-    enunciado: "Uma habilidade com script contou 41 avaliações que citam o Pix, e deu 41 de novo na segunda vez. O que isso garante?",
+    enunciado: "A habilidade contar-termos deu 162 menções a preço em três conversas seguidas. O que dá para afirmar?",
     opcoes: [
-      "Que 41 é o número certo",
-      "Que a conta se repete; se a regra estiver errada, ela erra igual toda vez",
-      "Que o modelo não vai mais errar contas",
-      "Nada: o script também sorteia",
+      "Há exatamente 162 falas sobre preço no grupo focal",
+      "A mesma regra foi aplicada ao mesmo texto nas três vezes",
+      "O modelo leu e entendeu a transcrição inteira, três vezes",
+      "Qualquer outra habilidade de contagem também daria 162",
     ],
     certa: 1, limite: 25,
-    porque: "Mesmo número não é número certo. A vantagem do script é que a regra está escrita: dá para conferir, e corrigir a regra vale para sempre.",
+    porque: "Mesmo número não é número certo: \"filmando na cara\" entrou como preço. O que o script garante é a mesma regra, escrita e conferível; corrigir a lista de termos vale para sempre.",
   },
   q2: {
     enunciado: "Por que a média das avaliações escritas fica abaixo da nota que a página da loja mostra, em todos os apps e nas duas lojas?",
     opcoes: [
-      "A loja arredonda a nota para cima",
-      "A página soma milhões de notas sem texto, e quem escreve costuma escrever para reclamar",
-      "O feed só entrega as avaliações de 1 estrela",
-      "O script calculou a média errada",
+      "A loja arredonda a nota para cima na página",
+      "Quem escreve avaliação costuma escrever para reclamar",
+      "O feed só entrega as avaliações mais negativas",
+      "O script calculou a média de um jeito errado",
     ],
     certa: 1, limite: 25,
-    porque: "As avaliações escritas recentes não são uma amostra dos clientes: são um termômetro do que está incomodando agora.",
+    porque: "A página soma milhões de notas, a maioria sem texto. Quem escreve costuma escrever para reclamar: as avaliações escritas não são uma amostra dos clientes, são um termômetro do que está incomodando agora.",
   },
   q3: {
     enunciado: "Para \"Praticidade e ótimos descontos\", o Jev deu 55% para elogio geral e 44% para cupons e promoções. O que fazer?",
     opcoes: [
-      "Aceitar elogio geral: foi a opção mais provável",
-      "Apagar a avaliação da base",
-      "Rever o dicionário: dizer o que conta quando o texto elogia um desconto",
+      "Aceitar elogio geral, a opção mais provável",
+      "Apagar a avaliação, porque o Jev ficou em dúvida",
+      "Definir no dicionário onde entra o elogio a desconto",
       "Rodar de novo até a confiança passar de 90%",
     ],
     certa: 2, limite: 25,

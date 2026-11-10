@@ -4,33 +4,33 @@
  */
 window.QUIZ_PERGUNTAS = {
   q1: {
-    enunciado: "Uma habilidade com script contou 41 avaliações que citam o Pix, e deu 41 de novo na segunda vez. O que isso garante?",
+    enunciado: "A habilidade contar-termos deu 162 menções a preço em três conversas seguidas. O que dá para afirmar?",
     opcoes: [
-      "Que 41 é o número certo",
-      "Que a conta se repete; se a regra estiver errada, ela erra igual toda vez",
-      "Que o modelo não vai mais errar contas",
-      "Nada: o script também sorteia",
+      "Há exatamente 162 falas sobre preço no grupo focal",
+      "A mesma regra foi aplicada ao mesmo texto nas três vezes",
+      "O modelo leu e entendeu a transcrição inteira, três vezes",
+      "Qualquer outra habilidade de contagem também daria 162",
     ],
     certa: 1, limite: 25,
-    porque: "Mesmo número não é número certo. A vantagem do script é que a regra está escrita: dá para conferir, e corrigir a regra vale para sempre.",
+    porque: "Mesmo número não é número certo: \"filmando na cara\" entrou como preço. O que o script garante é a mesma regra, escrita e conferível; corrigir a lista de termos vale para sempre.",
   },
   q2: {
     enunciado: "Por que a média das avaliações escritas fica abaixo da nota que a página da loja mostra, em todos os apps e nas duas lojas?",
     opcoes: [
-      "A loja arredonda a nota para cima",
-      "A página soma milhões de notas sem texto, e quem escreve costuma escrever para reclamar",
-      "O feed só entrega as avaliações de 1 estrela",
-      "O script calculou a média errada",
+      "A loja arredonda a nota para cima na página",
+      "Quem escreve avaliação costuma escrever para reclamar",
+      "O feed só entrega as avaliações mais negativas",
+      "O script calculou a média de um jeito errado",
     ],
     certa: 1, limite: 25,
-    porque: "As avaliações escritas recentes não são uma amostra dos clientes: são um termômetro do que está incomodando agora.",
+    porque: "A página soma milhões de notas, a maioria sem texto. Quem escreve costuma escrever para reclamar: as avaliações escritas não são uma amostra dos clientes, são um termômetro do que está incomodando agora.",
   },
   q3: {
     enunciado: "Para \"Praticidade e ótimos descontos\", o Jev deu 55% para elogio geral e 44% para cupons e promoções. O que fazer?",
     opcoes: [
-      "Aceitar elogio geral: foi a opção mais provável",
-      "Apagar a avaliação da base",
-      "Rever o dicionário: dizer o que conta quando o texto elogia um desconto",
+      "Aceitar elogio geral, a opção mais provável",
+      "Apagar a avaliação, porque o Jev ficou em dúvida",
+      "Definir no dicionário onde entra o elogio a desconto",
       "Rodar de novo até a confiança passar de 90%",
     ],
     certa: 2, limite: 25,
