@@ -142,7 +142,9 @@
         await zerar();
         caixa.querySelector(".qz-nomes").replaceChildren();
         msg.textContent = "jogo zerado ✓";
+        caixa.querySelector(".qz-prof").classList.add("ok");
       } catch (e) {
+        caixa.querySelector(".qz-prof").classList.remove("ok");
         msg.textContent = e.message === "sem banco" ? "sem conexão com o banco: recarregue a página"
           : e.message === "sem chave" ? "falta a chave" : "o banco recusou: confira a chave";
       }
